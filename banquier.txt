@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/f98c220ed5855bb319f37772/script.js"></script>
+	<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Devenir banquier : formation, salaire et évolution</title>
+	<meta name="description" content="Le banquier ou la banquière, aussi appelé chargé de clientèle bancaire ou conseiller financier, est une figure importante du secteur bancaire." />
+	<link rel="canonical" href="https://www.vitacite.fr/banquier/" />
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Devenir banquier : formation, salaire et évolution" />
+	<meta property="og:description" content="Le banquier ou la banquière, aussi appelé chargé de clientèle bancaire ou conseiller financier, est une figure importante du secteur bancaire." />
+	<meta property="og:url" content="https://www.vitacite.fr/banquier/" />
+	<meta property="og:site_name" content="Vitacite" />
+	<meta property="article:published_time" content="2024-05-11T21:58:48+00:00" />
+	<meta property="article:modified_time" content="2024-05-12T18:12:21+00:00" />
+	<meta property="og:image" content="https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-scaled.jpg" />
+	<meta property="og:image:width" content="2560" />
+	<meta property="og:image:height" content="1695" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="ETLF" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Écrit par" />
+	<meta name="twitter:data1" content="ETLF" />
+	<meta name="twitter:label2" content="Durée de lecture estimée" />
+	<meta name="twitter:data2" content="9 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/www.vitacite.fr\/banquier\/#article","isPartOf":{"@id":"https:\/\/www.vitacite.fr\/banquier\/"},"author":{"name":"ETLF","@id":"https:\/\/www.vitacite.fr\/#\/schema\/person\/6cffdf0060c6b5c41e7cb6395c6a4b66"},"headline":"Comment devenir banquier ?","datePublished":"2024-05-11T21:58:48+00:00","dateModified":"2024-05-12T18:12:21+00:00","mainEntityOfPage":{"@id":"https:\/\/www.vitacite.fr\/banquier\/"},"wordCount":1918,"publisher":{"@id":"https:\/\/www.vitacite.fr\/#\/schema\/person\/6cffdf0060c6b5c41e7cb6395c6a4b66"},"image":{"@id":"https:\/\/www.vitacite.fr\/banquier\/#primaryimage"},"thumbnailUrl":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/05\/salaire-banquier-scaled.jpg","articleSection":["Finance"],"inLanguage":"fr-FR"},{"@type":"WebPage","@id":"https:\/\/www.vitacite.fr\/banquier\/","url":"https:\/\/www.vitacite.fr\/banquier\/","name":"Devenir banquier : formation, salaire et évolution","isPartOf":{"@id":"https:\/\/www.vitacite.fr\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.vitacite.fr\/banquier\/#primaryimage"},"image":{"@id":"https:\/\/www.vitacite.fr\/banquier\/#primaryimage"},"thumbnailUrl":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/05\/salaire-banquier-scaled.jpg","datePublished":"2024-05-11T21:58:48+00:00","dateModified":"2024-05-12T18:12:21+00:00","description":"Le banquier ou la banquière, aussi appelé chargé de clientèle bancaire ou conseiller financier, est une figure importante du secteur bancaire.","breadcrumb":{"@id":"https:\/\/www.vitacite.fr\/banquier\/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.vitacite.fr\/banquier\/"]}]},{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https:\/\/www.vitacite.fr\/banquier\/#primaryimage","url":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/05\/salaire-banquier-scaled.jpg","contentUrl":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/05\/salaire-banquier-scaled.jpg","width":2560,"height":1695,"caption":"salaire banquier"},{"@type":"BreadcrumbList","@id":"https:\/\/www.vitacite.fr\/banquier\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Vitacite","item":"https:\/\/www.vitacite.fr\/"},{"@type":"ListItem","position":2,"name":"Emplois","item":"https:\/\/www.vitacite.fr\/emplois\/"},{"@type":"ListItem","position":3,"name":"Fiches métiers","item":"https:\/\/www.vitacite.fr\/emplois\/fiches-metiers\/"},{"@type":"ListItem","position":4,"name":"Finance","item":"https:\/\/www.vitacite.fr\/emplois\/fiches-metiers\/finance\/"},{"@type":"ListItem","position":5,"name":"Comment devenir banquier ?"}]},{"@type":"WebSite","@id":"https:\/\/www.vitacite.fr\/#website","url":"https:\/\/www.vitacite.fr\/","name":"Vitacite","description":"Assurez votre réussite professionnelle","publisher":{"@id":"https:\/\/www.vitacite.fr\/#\/schema\/person\/6cffdf0060c6b5c41e7cb6395c6a4b66"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.vitacite.fr\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"fr-FR"},{"@type":["Person","Organization"],"@id":"https:\/\/www.vitacite.fr\/#\/schema\/person\/6cffdf0060c6b5c41e7cb6395c6a4b66","name":"ETLF","image":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/04\/cropped-LOGO-VITACITE-1.png","url":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/04\/cropped-LOGO-VITACITE-1.png","contentUrl":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/04\/cropped-LOGO-VITACITE-1.png","width":1229,"height":546,"caption":"ETLF"},"logo":{"@id":"https:\/\/www.vitacite.fr\/wp-content\/uploads\/2021\/04\/cropped-LOGO-VITACITE-1.png"},"sameAs":["http:\/\/www.vitacite.fr"],"url":"https:\/\/www.vitacite.fr\/author\/etlf\/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.vitacite.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vitacite.fr%2Fbanquier%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.vitacite.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vitacite.fr%2Fbanquier%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://www.vitacite.fr/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://www.vitacite.fr/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://www.vitacite.fr/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.vitacite.fr/wp-content/plugins/contact-form-7/includes/css/styles.css' media='all' />
+<link rel='stylesheet' id='toc-screen-css' href='https://www.vitacite.fr/wp-content/plugins/table-of-contents-plus/screen.min.css' media='all' />
+<style id="toc-screen-inline-css">
+div#toc_container {background: #ffffff;border: 1px solid #759311;}div#toc_container p.toc_title a:hover,div#toc_container ul.toc_list a:hover {color: #759311;}div#toc_container p.toc_title a:hover,div#toc_container ul.toc_list a:hover {color: #759311;}
+/*# sourceURL=toc-screen-inline-css */
+</style>
+<link rel='stylesheet' id='widgetopts-styles-css' href='https://www.vitacite.fr/wp-content/plugins/widget-options/assets/css/widget-options.css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_parent-css' href='https://www.vitacite.fr/wp-content/themes/ashe/style.css' media='all' />
+<link rel='stylesheet' id='ashe-style-css' href='https://www.vitacite.fr/wp-content/themes/ashe-child/style.css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://www.vitacite.fr/wp-content/themes/ashe/assets/css/fontawesome.min.css' media='all' />
+<link rel='stylesheet' id='fontello-css' href='https://www.vitacite.fr/wp-content/themes/ashe/assets/css/fontello.css' media='all' />
+<link rel='stylesheet' id='slick-css' href='https://www.vitacite.fr/wp-content/themes/ashe/assets/css/slick.css' media='all' />
+<link rel='stylesheet' id='scrollbar-css' href='https://www.vitacite.fr/wp-content/themes/ashe/assets/css/perfect-scrollbar.css' media='all' />
+<link rel='stylesheet' id='ashe-responsive-css' href='https://www.vitacite.fr/wp-content/themes/ashe/assets/css/responsive.css' media='all' />
+<link rel='stylesheet' id='ashe-playfair-font-css' href='//fonts.googleapis.com/css?family=Playfair+Display%3A400%2C700' media='all' />
+<link rel='stylesheet' id='ashe-opensans-font-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600italic%2C600%2C700italic%2C700' media='all' />
+<link rel='stylesheet' id='yarpp-thumbnails-css' href='https://www.vitacite.fr/wp-content/plugins/yet-another-related-posts-plugin/style/styles_thumbnails.css' media='all' />
+<style id="yarpp-thumbnails-inline-css">
+.yarpp-thumbnails-horizontal .yarpp-thumbnail {width: 130px;height: 170px;margin: 5px;margin-left: 0px;}.yarpp-thumbnail > img, .yarpp-thumbnail-default {width: 120px;height: 120px;margin: 5px;}.yarpp-thumbnails-horizontal .yarpp-thumbnail-title {margin: 7px;margin-top: 0px;width: 120px;}.yarpp-thumbnail-default > img {min-height: 120px;min-width: 120px;}
+/*# sourceURL=yarpp-thumbnails-inline-css */
+</style>
+<script id="jquery-core-js" src="https://www.vitacite.fr/wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="https://www.vitacite.fr/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+
+<!-- Extrait de code de la balise Google (gtag.js) ajouté par Site Kit -->
+<!-- Extrait Google Analytics ajouté par Site Kit -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-PLV8W6Z" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.vitacite.fr"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-PLV8W6Z");
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://www.vitacite.fr/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.vitacite.fr/wp-json/wp/v2/posts/181" /><link rel='shortlink' href='https://www.vitacite.fr/?p=181' />
+<meta name="generator" content="Site Kit by Google 1.178.0" /><style id="ashe_dynamic_css">body {background-color: #ffffff;}#top-bar {background-color: #ffffff;}#top-bar a {color: #000000;}#top-bar a:hover,#top-bar li.current-menu-item > a,#top-bar li.current-menu-ancestor > a,#top-bar .sub-menu li.current-menu-item > a,#top-bar .sub-menu li.current-menu-ancestor> a {color: #759311;}#top-menu .sub-menu,#top-menu .sub-menu a {background-color: #ffffff;border-color: rgba(0,0,0, 0.05);}@media screen and ( max-width: 979px ) {.top-bar-socials {float: none !important;}.top-bar-socials a {line-height: 40px !important;}}.header-logo a,.site-description {color: #111111;}.entry-header {background-color: #ffffff;}#main-nav {background-color: #ffffff;box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);}#featured-links h6 {background-color: rgba(255,255,255, 0.85);color: #000000;}#main-nav a,#main-nav i,#main-nav #s {color: #000000;}.main-nav-sidebar span,.sidebar-alt-close-btn span {background-color: #000000;}#main-nav a:hover,#main-nav i:hover,#main-nav li.current-menu-item > a,#main-nav li.current-menu-ancestor > a,#main-nav .sub-menu li.current-menu-item > a,#main-nav .sub-menu li.current-menu-ancestor> a {color: #759311;}.main-nav-sidebar:hover span {background-color: #759311;}#main-menu .sub-menu,#main-menu .sub-menu a {background-color: #ffffff;border-color: rgba(0,0,0, 0.05);}#main-nav #s {background-color: #ffffff;}#main-nav #s::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: rgba(0,0,0, 0.7);}#main-nav #s::-moz-placeholder { /* Firefox 19+ */color: rgba(0,0,0, 0.7);}#main-nav #s:-ms-input-placeholder { /* IE 10+ */color: rgba(0,0,0, 0.7);}#main-nav #s:-moz-placeholder { /* Firefox 18- */color: rgba(0,0,0, 0.7);}/* Background */.sidebar-alt,#featured-links,.main-content,.featured-slider-area,.page-content select,.page-content input,.page-content textarea {background-color: #ffffff;}/* Text */.page-content,.page-content select,.page-content input,.page-content textarea,.page-content .post-author a,.page-content .ashe-widget a,.page-content .comment-author {color: #464646;}/* Title */.page-content h1,.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6,.page-content .post-title a,.page-content .author-description h4 a,.page-content .related-posts h4 a,.page-content .blog-pagination .previous-page a,.page-content .blog-pagination .next-page a,blockquote,.page-content .post-share a {color: #030303;}.page-content .post-title a:hover {color: rgba(3,3,3, 0.75);}/* Meta */.page-content .post-date,.page-content .post-comments,.page-content .post-author,.page-content [data-layout*="list"] .post-author a,.page-content .related-post-date,.page-content .comment-meta a,.page-content .author-share a,.page-content .post-tags a,.page-content .tagcloud a,.widget_categories li,.widget_archive li,.ahse-subscribe-box p,.rpwwt-post-author,.rpwwt-post-categories,.rpwwt-post-date,.rpwwt-post-comments-number {color: #a1a1a1;}.page-content input::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #a1a1a1;}.page-content input::-moz-placeholder { /* Firefox 19+ */color: #a1a1a1;}.page-content input:-ms-input-placeholder { /* IE 10+ */color: #a1a1a1;}.page-content input:-moz-placeholder { /* Firefox 18- */color: #a1a1a1;}/* Accent */a,.post-categories,.page-content .ashe-widget.widget_text a {color: #759311;}/* Disable TMP.page-content .elementor a,.page-content .elementor a:hover {color: inherit;}*/.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {background: #759311;}a:not(.header-logo-a):hover {color: rgba(117,147,17, 0.8);}blockquote {border-color: #759311;}/* Selection */::-moz-selection {color: #ffffff;background: #759311;}::selection {color: #ffffff;background: #759311;}/* Border */.page-content .post-footer,[data-layout*="list"] .blog-grid > li,.page-content .author-description,.page-content .related-posts,.page-content .entry-comments,.page-content .ashe-widget li,.page-content #wp-calendar,.page-content #wp-calendar caption,.page-content #wp-calendar tbody td,.page-content .widget_nav_menu li a,.page-content .tagcloud a,.page-content select,.page-content input,.page-content textarea,.widget-title h2:before,.widget-title h2:after,.post-tags a,.gallery-caption,.wp-caption-text,table tr,table th,table td,pre,.category-description {border-color: #e8e8e8;}hr {background-color: #e8e8e8;}/* Buttons */.widget_search i,.widget_search #searchsubmit,.wp-block-search button,.single-navigation i,.page-content .submit,.page-content .blog-pagination.numeric a,.page-content .blog-pagination.load-more a,.page-content .ashe-subscribe-box input[type="submit"],.page-content .widget_wysija input[type="submit"],.page-content .post-password-form input[type="submit"],.page-content .wpcf7 [type="submit"] {color: #ffffff;background-color: #333333;}.single-navigation i:hover,.page-content .submit:hover,.ashe-boxed-style .page-content .submit:hover,.page-content .blog-pagination.numeric a:hover,.ashe-boxed-style .page-content .blog-pagination.numeric a:hover,.page-content .blog-pagination.numeric span,.page-content .blog-pagination.load-more a:hover,.page-content .ashe-subscribe-box input[type="submit"]:hover,.page-content .widget_wysija input[type="submit"]:hover,.page-content .post-password-form input[type="submit"]:hover,.page-content .wpcf7 [type="submit"]:hover {color: #ffffff;background-color: #759311;}/* Image Overlay */.image-overlay,#infscr-loading,.page-content h4.image-overlay {color: #ffffff;background-color: rgba(73,73,73, 0.3);}.image-overlay a,.post-slider .prev-arrow,.post-slider .next-arrow,.page-content .image-overlay a,#featured-slider .slick-arrow,#featured-slider .slider-dots {color: #ffffff;}.slide-caption {background: rgba(255,255,255, 0.95);}#featured-slider .slick-active {background: #ffffff;}#page-footer,#page-footer select,#page-footer input,#page-footer textarea {background-color: #f6f6f6;color: #333333;}#page-footer,#page-footer a,#page-footer select,#page-footer input,#page-footer textarea {color: #333333;}#page-footer #s::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #333333;}#page-footer #s::-moz-placeholder { /* Firefox 19+ */color: #333333;}#page-footer #s:-ms-input-placeholder { /* IE 10+ */color: #333333;}#page-footer #s:-moz-placeholder { /* Firefox 18- */color: #333333;}/* Title */#page-footer h1,#page-footer h2,#page-footer h3,#page-footer h4,#page-footer h5,#page-footer h6 {color: #111111;}#page-footer a:hover {color: #759311;}/* Border */#page-footer a,#page-footer .ashe-widget li,#page-footer #wp-calendar,#page-footer #wp-calendar caption,#page-footer #wp-calendar tbody td,#page-footer .widget_nav_menu li a,#page-footer select,#page-footer input,#page-footer textarea,#page-footer .widget-title h2:before,#page-footer .widget-title h2:after,.footer-widgets {border-color: #e0dbdb;}#page-footer hr {background-color: #e0dbdb;}.ashe-preloader-wrap {background-color: #ffffff;}@media screen and ( max-width: 768px ) {#featured-links {display: none;}}.header-logo a {font-family: 'Open Sans';}#top-menu li a {font-family: 'Open Sans';}#main-menu li a {font-family: 'Open Sans';}#mobile-menu li,.mobile-menu-btn a {font-family: 'Open Sans';}#top-menu li a,#main-menu li a,#mobile-menu li,.mobile-menu-btn a {text-transform: uppercase;}.boxed-wrapper {max-width: 1160px;}.sidebar-alt {max-width: 340px;left: -340px; padding: 85px 35px 0px;}.sidebar-left,.sidebar-right {width: 307px;}.main-container {width: calc(100% - 307px);width: -webkit-calc(100% - 307px);}#top-bar > div,#main-nav > div,#featured-links,.main-content,.page-footer-inner,.featured-slider-area.boxed-wrapper {padding-left: 40px;padding-right: 40px;}[data-layout*="list"] .blog-grid .has-post-thumbnail .post-media {float: left;max-width: 300px;width: 100%;}[data-layout*="list"] .blog-grid .has-post-thumbnail .post-media img {width: 100%;}[data-layout*="list"] .blog-grid .has-post-thumbnail .post-content-wrap {width: calc(100% - 300px);width: -webkit-calc(100% - 300px);float: left;padding-left: 37px;}[data-layout*="list"] .blog-grid > li {padding-bottom: 39px;}[data-layout*="list"] .blog-grid > li {margin-bottom: 39px;}[data-layout*="list"] .blog-grid .post-header, [data-layout*="list"] .blog-grid .read-more {text-align: left;}#top-menu {float: left;}.top-bar-socials {float: right;}.entry-header {height: 500px;background-image:url(https://www.vitacite.fr/wp-content/uploads/2021/04/cropped-cropped-IMAGE-DE-FOND-VITACITE.png);background-size: cover;}.entry-header {background-position: center center;}.logo-img {max-width: 500px;}.mini-logo a {max-width: 70px;}.header-logo a:not(.logo-img),.site-description {display: none;}#main-nav {text-align: center;}.main-nav-sidebar {position: absolute;top: 0px;left: 40px;z-index: 1;}.main-nav-icons {position: absolute;top: 0px;right: 40px;z-index: 2;}.mini-logo {position: absolute;left: auto;top: 0;}.main-nav-sidebar ~ .mini-logo {margin-left: 30px;}#featured-links .featured-link {margin-right: 20px;}#featured-links .featured-link:last-of-type {margin-right: 0;}#featured-links .featured-link {width: calc( (100% - -20px) / 0 - 1px);width: -webkit-calc( (100% - -20px) / 0- 1px);}.featured-link:nth-child(1) .cv-inner {display: none;}.featured-link:nth-child(2) .cv-inner {display: none;}.featured-link:nth-child(3) .cv-inner {display: none;}.blog-grid > li {width: 100%;margin-bottom: 30px;}.sidebar-right {padding-left: 37px;}.footer-widgets > .ashe-widget {width: 30%;margin-right: 5%;}.footer-widgets > .ashe-widget:nth-child(3n+3) {margin-right: 0;}.footer-widgets > .ashe-widget:nth-child(3n+4) {clear: both;}.copyright-info {float: right;}.footer-socials {float: left;}.woocommerce div.product .stock,.woocommerce div.product p.price,.woocommerce div.product span.price,.woocommerce ul.products li.product .price,.woocommerce-Reviews .woocommerce-review__author,.woocommerce form .form-row .required,.woocommerce form .form-row.woocommerce-invalid label,.woocommerce .page-content div.product .woocommerce-tabs ul.tabs li a {color: #464646;}.woocommerce a.remove:hover {color: #464646 !important;}.woocommerce a.remove,.woocommerce .product_meta,.page-content .woocommerce-breadcrumb,.page-content .woocommerce-review-link,.page-content .woocommerce-breadcrumb a,.page-content .woocommerce-MyAccount-navigation-link a,.woocommerce .woocommerce-info:before,.woocommerce .page-content .woocommerce-result-count,.woocommerce-page .page-content .woocommerce-result-count,.woocommerce-Reviews .woocommerce-review__published-date,.woocommerce .product_list_widget .quantity,.woocommerce .widget_products .amount,.woocommerce .widget_price_filter .price_slider_amount,.woocommerce .widget_recently_viewed_products .amount,.woocommerce .widget_top_rated_products .amount,.woocommerce .widget_recent_reviews .reviewer {color: #a1a1a1;}.woocommerce a.remove {color: #a1a1a1 !important;}p.demo_store,.woocommerce-store-notice,.woocommerce span.onsale { background-color: #759311;}.woocommerce .star-rating::before,.woocommerce .star-rating span::before,.woocommerce .page-content ul.products li.product .button,.page-content .woocommerce ul.products li.product .button,.page-content .woocommerce-MyAccount-navigation-link.is-active a,.page-content .woocommerce-MyAccount-navigation-link a:hover { color: #759311;}.woocommerce form.login,.woocommerce form.register,.woocommerce-account fieldset,.woocommerce form.checkout_coupon,.woocommerce .woocommerce-info,.woocommerce .woocommerce-error,.woocommerce .woocommerce-message,.woocommerce .widget_shopping_cart .total,.woocommerce.widget_shopping_cart .total,.woocommerce-Reviews .comment_container,.woocommerce-cart #payment ul.payment_methods,#add_payment_method #payment ul.payment_methods,.woocommerce-checkout #payment ul.payment_methods,.woocommerce div.product .woocommerce-tabs ul.tabs::before,.woocommerce div.product .woocommerce-tabs ul.tabs::after,.woocommerce div.product .woocommerce-tabs ul.tabs li,.woocommerce .woocommerce-MyAccount-navigation-link,.select2-container--default .select2-selection--single {border-color: #e8e8e8;}.woocommerce-cart #payment,#add_payment_method #payment,.woocommerce-checkout #payment,.woocommerce .woocommerce-info,.woocommerce .woocommerce-error,.woocommerce .woocommerce-message,.woocommerce div.product .woocommerce-tabs ul.tabs li {background-color: rgba(232,232,232, 0.3);}.woocommerce-cart #payment div.payment_box::before,#add_payment_method #payment div.payment_box::before,.woocommerce-checkout #payment div.payment_box::before {border-color: rgba(232,232,232, 0.5);}.woocommerce-cart #payment div.payment_box,#add_payment_method #payment div.payment_box,.woocommerce-checkout #payment div.payment_box {background-color: rgba(232,232,232, 0.5);}.page-content .woocommerce input.button,.page-content .woocommerce a.button,.page-content .woocommerce a.button.alt,.page-content .woocommerce button.button.alt,.page-content .woocommerce input.button.alt,.page-content .woocommerce #respond input#submit.alt,.woocommerce .page-content .widget_product_search input[type="submit"],.woocommerce .page-content .woocommerce-message .button,.woocommerce .page-content a.button.alt,.woocommerce .page-content button.button.alt,.woocommerce .page-content #respond input#submit,.woocommerce .page-content .widget_price_filter .button,.woocommerce .page-content .woocommerce-message .button,.woocommerce-page .page-content .woocommerce-message .button,.woocommerce .page-content nav.woocommerce-pagination ul li a,.woocommerce .page-content nav.woocommerce-pagination ul li span {color: #ffffff;background-color: #333333;}.page-content .woocommerce input.button:hover,.page-content .woocommerce a.button:hover,.page-content .woocommerce a.button.alt:hover,.ashe-boxed-style .page-content .woocommerce a.button.alt:hover,.page-content .woocommerce button.button.alt:hover,.page-content .woocommerce input.button.alt:hover,.page-content .woocommerce #respond input#submit.alt:hover,.woocommerce .page-content .woocommerce-message .button:hover,.woocommerce .page-content a.button.alt:hover,.woocommerce .page-content button.button.alt:hover,.ashe-boxed-style.woocommerce .page-content button.button.alt:hover,.ashe-boxed-style.woocommerce .page-content #respond input#submit:hover,.woocommerce .page-content #respond input#submit:hover,.woocommerce .page-content .widget_price_filter .button:hover,.woocommerce .page-content .woocommerce-message .button:hover,.woocommerce-page .page-content .woocommerce-message .button:hover,.woocommerce .page-content nav.woocommerce-pagination ul li a:hover,.woocommerce .page-content nav.woocommerce-pagination ul li span.current {color: #ffffff;background-color: #759311;}.woocommerce .page-content nav.woocommerce-pagination ul li a.prev,.woocommerce .page-content nav.woocommerce-pagination ul li a.next {color: #333333;}.woocommerce .page-content nav.woocommerce-pagination ul li a.prev:hover,.woocommerce .page-content nav.woocommerce-pagination ul li a.next:hover {color: #759311;}.woocommerce .page-content nav.woocommerce-pagination ul li a.prev:after,.woocommerce .page-content nav.woocommerce-pagination ul li a.next:after {color: #ffffff;}.woocommerce .page-content nav.woocommerce-pagination ul li a.prev:hover:after,.woocommerce .page-content nav.woocommerce-pagination ul li a.next:hover:after {color: #ffffff;}.cssload-cube{background-color:#333333;width:9px;height:9px;position:absolute;margin:auto;animation:cssload-cubemove 2s infinite ease-in-out;-o-animation:cssload-cubemove 2s infinite ease-in-out;-ms-animation:cssload-cubemove 2s infinite ease-in-out;-webkit-animation:cssload-cubemove 2s infinite ease-in-out;-moz-animation:cssload-cubemove 2s infinite ease-in-out}.cssload-cube1{left:13px;top:0;animation-delay:.1s;-o-animation-delay:.1s;-ms-animation-delay:.1s;-webkit-animation-delay:.1s;-moz-animation-delay:.1s}.cssload-cube2{left:25px;top:0;animation-delay:.2s;-o-animation-delay:.2s;-ms-animation-delay:.2s;-webkit-animation-delay:.2s;-moz-animation-delay:.2s}.cssload-cube3{left:38px;top:0;animation-delay:.3s;-o-animation-delay:.3s;-ms-animation-delay:.3s;-webkit-animation-delay:.3s;-moz-animation-delay:.3s}.cssload-cube4{left:0;top:13px;animation-delay:.1s;-o-animation-delay:.1s;-ms-animation-delay:.1s;-webkit-animation-delay:.1s;-moz-animation-delay:.1s}.cssload-cube5{left:13px;top:13px;animation-delay:.2s;-o-animation-delay:.2s;-ms-animation-delay:.2s;-webkit-animation-delay:.2s;-moz-animation-delay:.2s}.cssload-cube6{left:25px;top:13px;animation-delay:.3s;-o-animation-delay:.3s;-ms-animation-delay:.3s;-webkit-animation-delay:.3s;-moz-animation-delay:.3s}.cssload-cube7{left:38px;top:13px;animation-delay:.4s;-o-animation-delay:.4s;-ms-animation-delay:.4s;-webkit-animation-delay:.4s;-moz-animation-delay:.4s}.cssload-cube8{left:0;top:25px;animation-delay:.2s;-o-animation-delay:.2s;-ms-animation-delay:.2s;-webkit-animation-delay:.2s;-moz-animation-delay:.2s}.cssload-cube9{left:13px;top:25px;animation-delay:.3s;-o-animation-delay:.3s;-ms-animation-delay:.3s;-webkit-animation-delay:.3s;-moz-animation-delay:.3s}.cssload-cube10{left:25px;top:25px;animation-delay:.4s;-o-animation-delay:.4s;-ms-animation-delay:.4s;-webkit-animation-delay:.4s;-moz-animation-delay:.4s}.cssload-cube11{left:38px;top:25px;animation-delay:.5s;-o-animation-delay:.5s;-ms-animation-delay:.5s;-webkit-animation-delay:.5s;-moz-animation-delay:.5s}.cssload-cube12{left:0;top:38px;animation-delay:.3s;-o-animation-delay:.3s;-ms-animation-delay:.3s;-webkit-animation-delay:.3s;-moz-animation-delay:.3s}.cssload-cube13{left:13px;top:38px;animation-delay:.4s;-o-animation-delay:.4s;-ms-animation-delay:.4s;-webkit-animation-delay:.4s;-moz-animation-delay:.4s}.cssload-cube14{left:25px;top:38px;animation-delay:.5s;-o-animation-delay:.5s;-ms-animation-delay:.5s;-webkit-animation-delay:.5s;-moz-animation-delay:.5s}.cssload-cube15{left:38px;top:38px;animation-delay:.6s;-o-animation-delay:.6s;-ms-animation-delay:.6s;-webkit-animation-delay:.6s;-moz-animation-delay:.6s}.cssload-spinner{margin:auto;width:49px;height:49px;position:relative}@keyframes cssload-cubemove{35%{transform:scale(0.005)}50%{transform:scale(1.7)}65%{transform:scale(0.005)}}@-o-keyframes cssload-cubemove{35%{-o-transform:scale(0.005)}50%{-o-transform:scale(1.7)}65%{-o-transform:scale(0.005)}}@-ms-keyframes cssload-cubemove{35%{-ms-transform:scale(0.005)}50%{-ms-transform:scale(1.7)}65%{-ms-transform:scale(0.005)}}@-webkit-keyframes cssload-cubemove{35%{-webkit-transform:scale(0.005)}50%{-webkit-transform:scale(1.7)}65%{-webkit-transform:scale(0.005)}}@-moz-keyframes cssload-cubemove{35%{-moz-transform:scale(0.005)}50%{-moz-transform:scale(1.7)}65%{-moz-transform:scale(0.005)}}</style><style id="ashe_theme_styles"></style>
+<!-- Balises Meta Google AdSense ajoutées par Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- Fin des balises Meta End Google AdSense ajoutées par Site Kit -->
+
+<!-- Extrait Google AdSense ajouté par Site Kit -->
+<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9220360636249582&#038;host=ca-host-pub-2644536267352236"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<link rel="icon" href="https://www.vitacite.fr/wp-content/uploads/2021/04/cropped-competence-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.vitacite.fr/wp-content/uploads/2021/04/cropped-competence-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.vitacite.fr/wp-content/uploads/2021/04/cropped-competence-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.vitacite.fr/wp-content/uploads/2021/04/cropped-competence-270x270.png" />
+<style id="wp-custom-css">
+.page-content h2 {
+  color: #759311;
+}
+</style>
+<link rel='stylesheet' id='yarppRelatedCss-css' href='https://www.vitacite.fr/wp-content/plugins/yet-another-related-posts-plugin/style/related.css' media='all' />
+
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-181 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-ashe wp-child-theme-ashe-child">
+	
+	<!-- Preloader -->
+	
+	<!-- Page Wrapper -->
+	<div id="page-wrap">
+
+		<!-- Boxed Wrapper -->
+		<div id="page-header" >
+
+		
+	<div class="entry-header">
+		<div class="cv-outer">
+		<div class="cv-inner">
+			<div class="header-logo">
+				
+				
+					<a href="https://www.vitacite.fr/" title="Vitacite" class="logo-img">
+						<img src="https://www.vitacite.fr/wp-content/uploads/2021/04/cropped-LOGO-VITACITE-1.png" width="1229" height="546" alt="Vitacite">
+					</a>
+
+				
+								
+				<p class="site-description">Assurez votre réussite professionnelle</p>
+				
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+<div id="main-nav" class="clear-fix">
+
+	<div >	
+		
+		<!-- Alt Sidebar Icon -->
+		
+		<!-- Mini Logo -->
+		
+		<!-- Icons -->
+		<div class="main-nav-icons">
+							<div class="dark-mode-switcher">
+					<i class="fa-regular fa-moon" aria-hidden="true"></i>
+
+									</div>
+			
+					</div>
+
+		<nav class="main-menu-container"><ul id="main-menu" class=""><li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-9"><a href="https://www.vitacite.fr/emplois/">Emplois</a>
+<ul class="sub-menu">
+	<li id="menu-item-142" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-142"><a href="https://www.vitacite.fr/emplois/fiches-metiers/">Fiches métiers</a></li>
+</ul>
+</li>
+<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.vitacite.fr/entrepreneuriat/">Entrepreneuriat</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="https://www.vitacite.fr/entreprise/">Entreprise</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="https://www.vitacite.fr/formations/">Formations</a></li>
+<li id="menu-item-1428" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1428"><a href="https://www.vitacite.fr/business/">Investissement</a></li>
+</ul></nav>
+		<!-- Mobile Menu Button -->
+		<span class="mobile-menu-btn">
+			<a>Menu</a>		</span>
+
+		<nav class="mobile-menu-container"><ul id="mobile-menu" class=""><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-9"><a href="https://www.vitacite.fr/emplois/">Emplois</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-142"><a href="https://www.vitacite.fr/emplois/fiches-metiers/">Fiches métiers</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="https://www.vitacite.fr/entrepreneuriat/">Entrepreneuriat</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="https://www.vitacite.fr/entreprise/">Entreprise</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="https://www.vitacite.fr/formations/">Formations</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1428"><a href="https://www.vitacite.fr/business/">Investissement</a></li>
+ </ul></nav>
+	</div>
+
+</div><!-- #main-nav -->
+
+		</div><!-- .boxed-wrapper -->
+
+		<!-- Page Content -->
+		<div class="page-content">
+
+			
+			
+<!-- Page Content -->
+<div class="main-content clear-fix boxed-wrapper" data-sidebar-sticky="1">
+
+
+	
+	<!-- Main Container -->
+	<div class="main-container">
+
+
+<p id="breadcrumbs"><span><span><a href="https://www.vitacite.fr/">Vitacite</a></span> » <span><a href="https://www.vitacite.fr/emplois/">Emplois</a></span> » <span><a href="https://www.vitacite.fr/emplois/fiches-metiers/">Fiches métiers</a></span> » <span><a href="https://www.vitacite.fr/emplois/fiches-metiers/finance/">Finance</a></span> » <span class="breadcrumb_last" aria-current="page">Comment devenir banquier ?</span></span></p>
+
+		
+<article id="post-181" class="blog-post post-181 post type-post status-publish format-standard has-post-thumbnail hentry category-finance">
+
+	
+
+
+
+		<div class="post-media">
+		<img width="1140" height="755" src="https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-1140x755.jpg" class="attachment-ashe-full-thumbnail size-ashe-full-thumbnail wp-post-image" alt="salaire banquier" decoding="async" fetchpriority="high" srcset="https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-1140x755.jpg 1140w, https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-300x199.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-1024x678.jpg 1024w, https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-768x509.jpg 768w, https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-1536x1017.jpg 1536w, https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-2048x1356.jpg 2048w, https://www.vitacite.fr/wp-content/uploads/2021/05/salaire-banquier-500x330.jpg 500w" sizes="(max-width: 1140px) 100vw, 1140px" />	</div>
+	
+	<header class="post-header">
+
+		<div class="post-categories"><a href="https://www.vitacite.fr/emplois/fiches-metiers/finance/" rel="category tag">Finance</a> </div>
+				<h1 class="post-title">Comment devenir banquier ?</h1>
+		
+				<div class="post-meta clear-fix">
+
+							<span class="post-date">11 mai 2024</span>
+						
+			<span class="meta-sep">/</span>
+			
+			
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+
+		
+<p class="wp-block-paragraph">Le banquier ou la banquière, aussi appelé <a href="https://www.vitacite.fr/charge-clientele-banque/">chargé de clientèle bancaire</a> ou <strong>conseiller financier</strong>, est une figure importante du secteur bancaire. Il conseille les particuliers et les professionnels dans l&rsquo;achat de produits financiers et fait fructifier leur argent.</p>
+
+
+
+<div id="toc_container" class="no_bullets"><p class="toc_title">Sommaire</p><ul class="toc_list"><li><a href="#Le-metier"><span class="toc_number toc_depth_1">1</span> Le métier</a><ul><li><a href="#Missions-principales"><span class="toc_number toc_depth_2">1.1</span> Missions principales</a></li><li><a href="#Qualites-indispensables"><span class="toc_number toc_depth_2">1.2</span> Qualités indispensables</a></li><li><a href="#Differents-types-de-charge-de-clientele"><span class="toc_number toc_depth_2">1.3</span> Différents types de chargé de clientèle</a></li></ul></li><li><a href="#La-formation"><span class="toc_number toc_depth_1">2</span> La formation</a><ul><li><a href="#Combien-drsquoannee-drsquoetude-pour-devenir-banquier"><span class="toc_number toc_depth_2">2.1</span> Combien d&rsquo;année d&rsquo;étude pour devenir banquier ?</a></li><li><a href="#Quelle-etudes-ou-diplomes-pour-etre-banquier"><span class="toc_number toc_depth_2">2.2</span> Quelle études ou diplômes pour être banquier ?</a></li><li><a href="#Diplomes-en-2-ans"><span class="toc_number toc_depth_2">2.3</span> Diplômes en 2 ans</a></li><li><a href="#Diplomes-en-3-ans"><span class="toc_number toc_depth_2">2.4</span> Diplômes en 3 ans</a></li><li><a href="#Diplomes-en-5-ans"><span class="toc_number toc_depth_2">2.5</span> Diplômes en 5 ans</a></li></ul></li><li><a href="#Comment-financer-ses-etudes-pour-devenir-banquier-nbsp"><span class="toc_number toc_depth_1">3</span> Comment financer ses études pour devenir banquier ?&nbsp;</a><ul><li><a href="#Les-BCSnbsp"><span class="toc_number toc_depth_2">3.1</span> Les BCS&nbsp;</a></li><li><a href="#Lallocation-Erasmusnbsp"><span class="toc_number toc_depth_2">3.2</span> L’allocation Erasmus&nbsp;</a></li><li><a href="#Laide-a-la-mobilite-internationalenbsp"><span class="toc_number toc_depth_2">3.3</span> L’aide à la mobilité internationale&nbsp;</a></li><li><a href="#Le-CPF-pour-reprendre-ses-etudesnbsp"><span class="toc_number toc_depth_2">3.4</span> Le CPF pour reprendre ses études&nbsp;</a></li></ul></li><li><a href="#Le-salaire"><span class="toc_number toc_depth_1">4</span> Le salaire</a></li><li><a href="#La-perspective-drsquoevolution"><span class="toc_number toc_depth_1">5</span> La perspective d&rsquo;évolution</a></li></ul></div>
+<h2 class="wp-block-heading"><span id="Le-metier"><mark style="background-color:rgba(0, 0, 0, 0);color:#759311" class="has-inline-color">Le métier</mark></span></h2>
+
+
+
+<p class="wp-block-paragraph">Au sein des<strong> établissements bancaires</strong>, un banquier ou une banquière aura pour rôle clé de gérer un portefeuille de clients : des particuliers, des professionnels ou des entreprises. Avant de vous détailler les différences entre ces trois types de clientèle, nous allons vous détailler le travail quotidien de ce dernier.</p>
+
+
+
+<p class="wp-block-paragraph">En effet, celui-ci est l&rsquo;interlocuteur privilégié de sa clientèle. Il va devoir les conseiller dans leurs projets et les <strong>aider à gérer leur portefeuille mobilier et immobilier</strong> grâce aux données personnelles qu&rsquo;il recueille. C&rsquo;est donc une personne qui va exercer principalement un travail de conseil mais également de suivi de comptes et de proposition de différentes solutions de financement pour des demandes d&rsquo;investissements. Il y a aussi une partie commerciale dans ce métier avec des objectifs annuels pouvant être modifiés périodiquement.</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Missions-principales"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-black-color">Missions principales</mark></span></h3>
+
+
+
+<p class="wp-block-paragraph">Que fait un banquier ? </p>
+
+
+
+<p class="wp-block-paragraph">Le métier de banquier a pour missions : </p>
+
+
+
+<ul class="wp-block-list">
+<li>Accueil de la clientèle au sein de la banque</li>
+
+
+
+<li>Gestion et suivi des comptes de son portefeuille de clients. Cela doit se faire chaque jour.</li>
+
+
+
+<li>Prise de contact avec les clients afin de les éclairer au mieux dans leurs demandes ou en cas de problème</li>
+
+
+
+<li>Demandes de crédits mais aussi négociations des différents taux des contrats</li>
+
+
+
+<li>Proposition et ventes des différents placements financiers</li>
+
+
+
+<li>Négocier des autorisation de découverts pour ces clients</li>
+
+
+
+<li>Prospection de nouveaux clients pour enrichir son portefeuille</li>
+
+
+
+<li>Informer ses supérieurs</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><span id="Qualites-indispensables">Qualités indispensables</span></h3>
+
+
+
+<p class="wp-block-paragraph">Pour exercer avec brio ce métier, et devenir employé de banque, il est nécessaire d&rsquo;avoir certaines qualités .</p>
+
+
+
+<ul class="wp-block-list">
+<li>Avoir un très bon relationnel afin de maintenir de bonnes relations avec sa clientèle. Le but étant de pouvoir les fidéliser afin qu&rsquo;ils restent dans votre banque</li>
+
+
+
+<li>Un sens commercial pour réussir à vendre vos produits financiers</li>
+
+
+
+<li>Etre autonome et savoir prendre des décisions pour pouvoir proposer les meilleures solutions aux demandeurs de crédits ou autres demandes</li>
+
+
+
+<li>Avoir un esprit rigoureux et organisé afin de gérer correctement son portefeuille de clients</li>
+
+
+
+<li>Etre à l&rsquo;aise en maths, surtout pour ceux souhaitant s&rsquo;orienter dans le domaine financier</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">De même, avec la transformation numérique qui s&rsquo;opère depuis quelques années, le banquier doit savoir évoluer et s&rsquo;adapter pour être en conformité avec les nouvelles demandes de sa clientèle. Ainsi, <strong>le métier de téléconseiller bancaire est apparu</strong> avec le développement des banques en ligne. Ces missions sont toujours les mêmes mais il faut pouvoir gérer toutes les demandes à distance, soit par téléphone, soit par email.</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Differents-types-de-charge-de-clientele">Différents types de chargé de clientèle</span></h3>
+
+
+
+<p class="wp-block-paragraph">Comme mentionné précédemment, il en existe trois types :</p>
+
+
+
+<h4 class="wp-block-heading">Le conseiller bancaire particuliers</h4>
+
+
+
+<p class="wp-block-paragraph">Ici, cet employé, homme ou femme, est basé dans une agence. Il est rattaché au responsable du marché des particuliers dans les grandes agences et simplement au responsable d&rsquo;agence pour les plus petites structures.</p>
+
+
+
+<p class="wp-block-paragraph">Il s&rsquo;occupe de la clientèle dite « classique », c&rsquo;est-à-dire ceux ayant des demandes classiques : ouverture d&rsquo;un compte courant, ouverture d&rsquo;un compte épargne ou demande de crédit par exemple.</p>
+
+
+
+<p class="wp-block-paragraph">En effet, pour la clientèle disposant de plus de capital, les demandes sont gérées directement par un gestionnaire de patrimoine.</p>
+
+
+
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://www.vitacite.fr/banquier-investissement/" target="_blank" rel="dofollow" class="ua962cdf8abab4380ae84b12c013c1cf2"><!-- INLINE RELATED POSTS 1/2 //--><style> .ua962cdf8abab4380ae84b12c013c1cf2 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#FFFFFF; border:0!important; border-left:4px solid #16A085!important; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); text-decoration:none; } .ua962cdf8abab4380ae84b12c013c1cf2:active, .ua962cdf8abab4380ae84b12c013c1cf2:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .ua962cdf8abab4380ae84b12c013c1cf2 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 0.8; transition: opacity 250ms; webkit-transition: opacity 250ms; } .ua962cdf8abab4380ae84b12c013c1cf2 .ctaText { font-weight:bold; color:#16A085; text-decoration:none; font-size: 16px; } .ua962cdf8abab4380ae84b12c013c1cf2 .postTitle { color:#16A085; text-decoration: underline!important; font-size: 16px; } .ua962cdf8abab4380ae84b12c013c1cf2:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">A lire : </span>&nbsp; <span class="postTitle">Fichier métier : banquier d'investissement</span></div></a></div><h4 class="wp-block-heading">Le chargé de clientèle professionnels</h4>
+
+
+
+<p class="wp-block-paragraph">Le chargé de clientèle professionnels a pour mission est un peu plus différente car il se charge de conseiller, aider et accompagner les professionnels que ce soit des commerçants, artisans ou professions libérales.</p>
+
+
+
+<p class="wp-block-paragraph">Ce genre de clientèle nécessite plus de connaissances techniques que la gestion d&rsquo;un compte d&rsquo;un particulier. En effet, il doit souvent travailler sur des documents financiers ou comptables et en informer les services du siège de sa banque.</p>
+
+
+
+<p class="wp-block-paragraph">Dans la plupart des cas, ce type de conseiller est assez mobile car il peut souvent se déplacer sur leur lieu d&rsquo;activité.</p>
+
+
+
+<h4 class="wp-block-heading">Le conseiller financier entreprises</h4>
+
+
+
+<p class="wp-block-paragraph">Pour ce poste, il faut des connaissances encore plus importantes et donc un niveau d&rsquo;expérience plus important.</p>
+
+
+
+<p class="wp-block-paragraph">Il exerce principalement dans une banque de financement ou d&rsquo;investissement et s&rsquo;occupe des entreprises nommées « grands comptes » avec un chiffre d&rsquo;affaires assez important.</p>
+
+
+
+<p class="wp-block-paragraph">Ayez bien à l&rsquo;esprit que c&rsquo;est un métier orienté vers la stratégie financière puisqu&rsquo;il effectue régulièrement des analyses financières des sociétés dont il s&rsquo;occupe : étude de bilans ou analyse de l&rsquo;environnement de l&rsquo;entreprise par exemple.</p>
+
+
+
+<h2 class="wp-block-heading"><span id="La-formation"><mark style="background-color:rgba(0, 0, 0, 0);color:#759311" class="has-inline-color">La formation</mark></span></h2>
+
+
+
+<p class="wp-block-paragraph"><strong>Comment devenir banquier ? Quel bac pour devenir banquier ? Quelles études pour être banquier ? </strong>Vous allez tout savoir !</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Combien-drsquoannee-drsquoetude-pour-devenir-banquier">Combien d&rsquo;année d&rsquo;étude pour devenir banquier ?</span></h3>
+
+
+
+<p class="wp-block-paragraph">En fonction des postes souhaités dans le domaine bancaire, le nombre d&rsquo;année d&rsquo;études varie.</p>
+
+
+
+<p class="wp-block-paragraph">Pour un <strong>poste de chargé de clientèle particuliers</strong>, <em>2 ou 3 années d&rsquo;études suffiront</em> mais dans le cadre d&rsquo;un conseiller de clientèle entreprises, il faudra compter au <em>minimum un bac +5</em>, ce qui vous permettra d&rsquo;accéder au statut de cadre.</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Quelle-etudes-ou-diplomes-pour-etre-banquier">Quelle études ou diplômes pour être banquier ?</span></h3>
+
+
+
+<p class="wp-block-paragraph">Différents diplômes existent donc afin d&rsquo;atteindre ces métiers en fonction des objectifs des jeunes souhaitant se diriger vers ce métier :</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Diplomes-en-2-ans">Diplômes en 2 ans</span></h3>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://www.vitacite.fr/bts-banque/">BTS Banque</a></li>
+
+
+
+<li>BTS négociation et relation client</li>
+
+
+
+<li>BTS négociation et digitalisation de la relation client ou NDRC</li>
+
+
+
+<li>BTS management commercial opérationnel ou MCO</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><span id="Diplomes-en-3-ans">Diplômes en 3 ans</span></h3>
+
+
+
+<ul class="wp-block-list">
+<li>Bachelor responsable de clientèle banque, finance et assurance</li>
+
+
+
+<li>BUT Techniques de commercialisation</li>
+
+
+
+<li>BUT GEA</li>
+
+
+
+<li>Licence Pro assurance, banque, finance : chargé de clientèle</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><span id="Diplomes-en-5-ans">Diplômes en 5 ans</span></h3>
+
+
+
+<ul class="wp-block-list">
+<li>Master en école de commerce avec une spécialisation dans les domaines de la banque</li>
+
+
+
+<li>Master monnaie, banque, finance et assurances ou MBFA</li>
+
+
+
+<li>Master en gestion de patrimoine</li>
+
+
+
+<li>Master 2 sciences juridiques et financières</li>
+
+
+
+<li>Master 2 sciences politiques option finance</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;"><strong>A savoir</strong>:</span> Actuellement, pour occuper ce type de postes, plus de 60% des offres sont pourvues par des personnes ayant un diplôme Bac +4 ou Bac +5. Le recrutement se fait donc majoritairement sur des profils avec des diplômes assez élevés.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h2 class="wp-block-heading"><span id="Comment-financer-ses-etudes-pour-devenir-banquier-nbsp">Comment financer ses études pour devenir banquier ?&nbsp;</span></h2>
+
+
+
+<p class="wp-block-paragraph">Il y a aujourd’hui une multitude de solutions pour les étudiants qui cherchent une aide financière, afin de payer une partie des frais de scolarité. La plus connue du grand public est certainement la bourse. Pourtant, derrière ce nom générique se cache en réalité une multitude de possibilités. Regardez plutôt :</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Les-BCSnbsp">Les BCS&nbsp;</span></h3>
+
+
+
+<p class="wp-block-paragraph">Il s’agit d’une aide attribuée sur des critères sociaux, mais quoi qu’il arrive, il faut avoir moins de 28 ans pour pouvoir y prétendre. Pour l’obtenir, plusieurs éléments seront pris en compte :</p>
+
+
+
+<ul class="wp-block-list">
+<li>Le revenu des parents&nbsp;</li>
+
+
+
+<li>Le nombre de frères et sœurs encore à charge&nbsp;</li>
+
+
+
+<li>La distance étude-domicile&nbsp;</li>
+
+
+
+<li>Le type de diplôme que vous cherchez à obtenir&nbsp;</li>
+
+
+
+<li>Votre nationalité&nbsp;</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Le montant de l’aide est variable, puisqu’elle peut aller de la simple prise en charge des frais d’inscription, jusqu&rsquo;à une contribution à la vie étudiante et de campus (CVEC). Cela peut donc atteindre un peu moins de 6 000 euros, répartis sur toute l&rsquo;année scolaire. Il faut savoir que les lycéens, ayant obtenu la mention très bien au bac, pourront bénéficier d’une aide supplémentaire de 900 euros.&nbsp;&nbsp;&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Lallocation-Erasmusnbsp">L’allocation Erasmus&nbsp;</span></h3>
+
+
+
+<p class="wp-block-paragraph">Dans le cadre de ce programme d&rsquo;échange européen, il est possible d’obtenir une aide financière. La somme est très variable et de nombreux critères vont là encore entrer en ligne de compte. Il est à noter que cette allocation est cumulable avec la BCS.</p>
+
+
+
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://www.vitacite.fr/3-idees-recues-sur-le-metier-de-comptable/" target="_blank" rel="dofollow" class="u9e033a115bc94e9af36a41baa7ed0415"><!-- INLINE RELATED POSTS 2/2 //--><style> .u9e033a115bc94e9af36a41baa7ed0415 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#FFFFFF; border:0!important; border-left:4px solid #16A085!important; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17); text-decoration:none; } .u9e033a115bc94e9af36a41baa7ed0415:active, .u9e033a115bc94e9af36a41baa7ed0415:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .u9e033a115bc94e9af36a41baa7ed0415 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 0.8; transition: opacity 250ms; webkit-transition: opacity 250ms; } .u9e033a115bc94e9af36a41baa7ed0415 .ctaText { font-weight:bold; color:#16A085; text-decoration:none; font-size: 16px; } .u9e033a115bc94e9af36a41baa7ed0415 .postTitle { color:#16A085; text-decoration: underline!important; font-size: 16px; } .u9e033a115bc94e9af36a41baa7ed0415:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText">A lire : </span>&nbsp; <span class="postTitle">3 idées reçues sur le métier de comptable</span></div></a></div><h3 class="wp-block-heading"><span id="Laide-a-la-mobilite-internationalenbsp">L’aide à la mobilité internationale&nbsp;</span></h3>
+
+
+
+<p class="wp-block-paragraph">Il s&rsquo;agit d’une somme forfaitaire de 400 € par mois, pour les étudiants BCS. Attention, par contre, cette somme est versée par l&rsquo;établissement où vous allez étudier. Tous ne la pratiquent pas. Il faut donc bien se renseigner et bien choisir son établissement. Elle est souvent cumulable avec les autres aides que nous venons de citer.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading"><span id="Le-CPF-pour-reprendre-ses-etudesnbsp">Le CPF pour reprendre ses études&nbsp;</span></h3>
+
+
+
+<p class="wp-block-paragraph">Vous l’avez sans doute remarqué, toutes les aides que nous venons de citer sont réservées aux personnes qui ont suivi un cursus scolaire classique. Rassurez-vous, si vous avez abandonné vos études, depuis déjà plusieurs années et que vous êtes entré sur le marché du travail, il existe une solution pour devenir banquier : la <a href="https://www.maformation.fr/formations/domaine_banque-assurance_hub_cpf.html">Formation Banque-assurance CPF</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Vous l’avez compris, vous allez devoir utiliser l’argent accumulé sur votre compte CPF. Pour rappel, ce dernier est crédité de 800 euros par an pour un travailleur à temps complet et peut atteindre au maximum la somme de 8 000 euros. Contrairement aux anciens systèmes, les sommes accumulées ne seront pas perdues, même si vous vous retrouvez au chômage.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h2 class="wp-block-heading"><span id="Le-salaire"><mark style="background-color:rgba(0, 0, 0, 0);color:#759311" class="has-inline-color">Le salaire</mark></span></h2>
+
+
+
+<p class="wp-block-paragraph">Tout d&rsquo;abord il faut savoir que la rémunération est basée sur <strong>une partie fixe</strong> et <strong>une partie variable</strong>.</p>
+
+
+
+<p class="wp-block-paragraph">De cette manière, vous serez donc sûr d&rsquo;une partie de vos revenus mais pas de l&rsquo;autre. Cela dépendra de vos résultats sur l&rsquo;année. Pour vos revenus fixes, cela dépend bien entendu de votre expérience dans le domaine mais aussi du secteur géographique.</p>
+
+
+
+<p class="wp-block-paragraph">Cependant, pour vous donner une idée, les banquiers débutants peuvent espérer toucher <em>en moyenne 2400 euros bruts </em>par mois. Vous pouvez également ajouter une 13ème voire 14ème mois et une prime de fin d&rsquo;année. Un bon bonus pour votre salaire ! Le salaire de banquier peut donc être très variable. </p>
+
+
+
+<p class="wp-block-paragraph">Pour la partie variable, en pratique celle-ci représente <em>5 à 20% du salaire fixe</em> et cela est lié aux ventes individuelles ou collectives réalisées dans une agence.</p>
+
+
+
+<p class="wp-block-paragraph"><span style="text-decoration: underline;"><strong>A savoir</strong>:</span></p>
+
+
+
+<p class="wp-block-paragraph">Grâce à votre banque, vous aurez différentes opportunités qu&rsquo;il faudra savoir saisir :</p>
+
+
+
+<ul class="wp-block-list">
+<li>Elle dispose de certains avantages sociaux non négligeables : cotisations retraites ou mutuelle de groupe</li>
+
+
+
+<li>Elle propose différentes solutions d&rsquo;épargne salariale à ses employés comme le PEE ou le PER afin de placer par exemple les primes de participation ou d&rsquo;intéressements</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Vous aurez aussi la chance d&rsquo;obtenir des congés payés et RTT plus importants que la moyenne. En effet, votre employeur offre souvent des jours et des primes pour améliorer considérablement la vie de famille : enfants, paternité, mariages, décès&#8230; Enfin, il est souvent possible de se faire payer ses congés-payés non utilisés sur un compte épargne temps.</p>
+
+
+
+<h2 class="wp-block-heading"><span id="La-perspective-drsquoevolution"><mark style="background-color:rgba(0, 0, 0, 0);color:#759311" class="has-inline-color">La perspective d&rsquo;évolution</mark></span></h2>
+
+
+
+<p class="wp-block-paragraph">Il existe plusieurs possibilités d&rsquo;évolutions pour ce métier :</p>
+
+
+
+<ul class="wp-block-list">
+<li>Après plusieurs années d&rsquo;expérience, il peut décider de se spécialiser dans un autre domaine comme les assurances, l&rsquo;immobilier ou les placements boursiers par exemple.</li>
+
+
+
+<li>Après avoir été conseiller financier, puis spécialiste dans un domaine, il pourra s&rsquo;orienter vers des postes avec plus des responsabilités : <a href="https://www.vitacite.fr/gestionnaire-de-patrimoine/">gestionnaire de patrimoine</a>, analyste crédit, <a href="https://www.vitacite.fr/banquier-investissement/">banquier d&rsquo;investissement</a>, contrôleur financier ou même directeur d&rsquo;agence</li>
+
+
+
+<li>Vous pouvez aussi vouloir être à votre compte et devenir conseiller indépendant</li>
+
+
+
+<li>Il est également possible de <a href="https://www.vitacite.fr/repenser-son-avenir-apres-un-poste-en-banque/">s&rsquo;orienter vers un nouveau secteur porteur après une belle carrière en banque</a>.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Maintenant, vous n&rsquo;avez plus aucun prétexte pour vous lancer !</p>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-thumbnails'>
+<!-- YARPP Thumbnails -->
+<h3>Poursuivre sa lecture</h3>
+<div class="yarpp-thumbnails-horizontal">
+<a class='yarpp-thumbnail' rel='norewrite' href='https://www.vitacite.fr/gestionnaire-de-patrimoine/' title='Conseiller en gestion de patrimoine'>
+<img width="120" height="120" src="https://www.vitacite.fr/wp-content/uploads/2021/08/fiche-metier-conseiller-patrimoine-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="fichier métier gestionnaire de patrimoine" data-pin-nopin="true" srcset="https://www.vitacite.fr/wp-content/uploads/2021/08/fiche-metier-conseiller-patrimoine-120x120.jpg 120w, https://www.vitacite.fr/wp-content/uploads/2021/08/fiche-metier-conseiller-patrimoine-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2021/08/fiche-metier-conseiller-patrimoine-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2021/08/fiche-metier-conseiller-patrimoine-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2021/08/fiche-metier-conseiller-patrimoine-80x80.jpg 80w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">Conseiller en gestion de patrimoine</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://www.vitacite.fr/3-idees-recues-sur-le-metier-de-comptable/' title='3 idées reçues sur le métier de comptable'>
+<img width="120" height="120" src="https://www.vitacite.fr/wp-content/uploads/2022/07/3-idees-recues-sur-le-metier-de-comptable-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="" data-pin-nopin="true" srcset="https://www.vitacite.fr/wp-content/uploads/2022/07/3-idees-recues-sur-le-metier-de-comptable-120x120.jpg 120w, https://www.vitacite.fr/wp-content/uploads/2022/07/3-idees-recues-sur-le-metier-de-comptable-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2022/07/3-idees-recues-sur-le-metier-de-comptable-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2022/07/3-idees-recues-sur-le-metier-de-comptable-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2022/07/3-idees-recues-sur-le-metier-de-comptable-80x80.jpg 80w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">3 idées reçues sur le métier de comptable</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://www.vitacite.fr/banquier-investissement/' title='Fichier métier :  banquier d&rsquo;investissement'>
+<img width="120" height="120" src="https://www.vitacite.fr/wp-content/uploads/2024/02/banquier-investissement-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="un banquier d&#039;investissement avec un ordinateur à la main" data-pin-nopin="true" srcset="https://www.vitacite.fr/wp-content/uploads/2024/02/banquier-investissement-120x120.jpg 120w, https://www.vitacite.fr/wp-content/uploads/2024/02/banquier-investissement-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2024/02/banquier-investissement-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2024/02/banquier-investissement-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2024/02/banquier-investissement-80x80.jpg 80w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">Fichier métier :  banquier d&rsquo;investissement</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://www.vitacite.fr/charge-clientele-banque/' title='Devenir chargé de clientèle banque'>
+<img width="120" height="120" src="https://www.vitacite.fr/wp-content/uploads/2024/02/charge-clientele-banque-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="devenir un chargé de clientèle en banque" data-pin-nopin="true" srcset="https://www.vitacite.fr/wp-content/uploads/2024/02/charge-clientele-banque-120x120.jpg 120w, https://www.vitacite.fr/wp-content/uploads/2024/02/charge-clientele-banque-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2024/02/charge-clientele-banque-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2024/02/charge-clientele-banque-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2024/02/charge-clientele-banque-80x80.jpg 80w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">Devenir chargé de clientèle banque</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://www.vitacite.fr/devenir-comptable/' title='Comment devenir comptable ?'>
+<img width="120" height="120" src="https://www.vitacite.fr/wp-content/uploads/2024/03/comptable-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="un comptable pendant un bilan" data-pin-nopin="true" srcset="https://www.vitacite.fr/wp-content/uploads/2024/03/comptable-120x120.jpg 120w, https://www.vitacite.fr/wp-content/uploads/2024/03/comptable-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2024/03/comptable-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2024/03/comptable-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2024/03/comptable-80x80.jpg 80w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">Comment devenir comptable ?</span></a>
+</div>
+</div>
+	</div>
+
+	<footer class="post-footer">
+
+		
+		
+				
+	</footer>
+
+
+</article>
+<!-- Previous Post -->
+<a href="https://www.vitacite.fr/comment-rediger-un-compte-rendu-activite/" title="Comment rédiger un compte rendu d&#039;activité ?" class="single-navigation previous-post">
+	<img width="75" height="75" src="https://www.vitacite.fr/wp-content/uploads/2021/11/rediger-compte-rendu-75x75.jpg" class="attachment-ashe-single-navigation size-ashe-single-navigation wp-post-image" alt="Comment rédiger un compte rendu d&#039;activité ?" decoding="async" loading="lazy" srcset="https://www.vitacite.fr/wp-content/uploads/2021/11/rediger-compte-rendu-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2021/11/rediger-compte-rendu-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2021/11/rediger-compte-rendu-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2021/11/rediger-compte-rendu-80x80.jpg 80w, https://www.vitacite.fr/wp-content/uploads/2021/11/rediger-compte-rendu-120x120.jpg 120w" sizes="auto, (max-width: 75px) 100vw, 75px" />	<i class="fa-solid fa-angle-right"></i>
+</a>
+
+<!-- Next Post -->
+<a href="https://www.vitacite.fr/comment-ameliorer-la-gestion-du-stress-au-travail/" title="Comment améliorer la gestion du stress au travail ?" class="single-navigation next-post">
+	<img width="75" height="75" src="https://www.vitacite.fr/wp-content/uploads/2024/05/homme-stress-devant-ecran-75x75.jpg" class="attachment-ashe-single-navigation size-ashe-single-navigation wp-post-image" alt="gestion du stress devant un écran" decoding="async" loading="lazy" srcset="https://www.vitacite.fr/wp-content/uploads/2024/05/homme-stress-devant-ecran-75x75.jpg 75w, https://www.vitacite.fr/wp-content/uploads/2024/05/homme-stress-devant-ecran-150x150.jpg 150w, https://www.vitacite.fr/wp-content/uploads/2024/05/homme-stress-devant-ecran-300x300.jpg 300w, https://www.vitacite.fr/wp-content/uploads/2024/05/homme-stress-devant-ecran-80x80.jpg 80w, https://www.vitacite.fr/wp-content/uploads/2024/05/homme-stress-devant-ecran-120x120.jpg 120w" sizes="auto, (max-width: 75px) 100vw, 75px" />	<i class="fa-solid fa-angle-left"></i>
+</a>
+
+	</div><!-- .main-container -->
+
+
+	
+<div class="sidebar-right-wrap">
+	<aside class="sidebar-right">
+		<div id="search-2" class="widget ashe-widget widget_search"><form role="search" method="get" id="searchform" class="clear-fix" action="https://www.vitacite.fr/"><input type="search" name="s" id="s" placeholder="Recherche…" data-placeholder="Saisissez votre texte et appuyez sur Entrée..." value="" /><i class="fa-solid fa-magnifying-glass"></i><input type="submit" id="searchsubmit" value="st" /></form></div>	</aside>
+</div>
+
+</div><!-- .page-content -->
+
+
+</div><!-- .page-content -->
+
+<!-- Page Footer -->
+<footer id="page-footer" class="clear-fix">
+    
+    <!-- Scroll Top Button -->
+        <span class="scrolltop">
+    <i class="fa-solid fa-angle-up"></i>
+    </span>
+    
+    <div class="page-footer-inner boxed-wrapper">
+
+    <!-- Footer Widgets -->
+    
+    <div class="footer-copyright">
+        <div class="copyright-info">
+                </div>
+
+                
+        <div class="credit">
+            <p>© Copyright 2021 Vitacite.fr</p>        </div>
+
+    </div>
+
+    </div><!-- .boxed-wrapper -->
+
+</footer><!-- #page-footer -->
+
+</div><!-- #page-wrap -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ashe-child/*","/wp-content/themes/ashe/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-hooks-js" src="https://www.vitacite.fr/wp-includes/js/dist/hooks.min.js"></script>
+<script id="wp-i18n-js" src="https://www.vitacite.fr/wp-includes/js/dist/i18n.min.js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://www.vitacite.fr/wp-content/plugins/contact-form-7/includes/swv/js/index.js"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-02-06 12:02:14+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"fr"},"This contact form is placed in the wrong place.":["Ce formulaire de contact est plac\u00e9 dans un mauvais endroit."],"Error:":["Erreur\u00a0:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.vitacite.fr\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://www.vitacite.fr/wp-content/plugins/contact-form-7/includes/js/index.js"></script>
+<script id="toc-front-js-extra">
+var tocplus = {"smooth_scroll":"1","visibility_show":"Afficher","visibility_hide":"Masquer","visibility_hide_by_default":"1","width":"Auto"};
+//# sourceURL=toc-front-js-extra
+</script>
+<script id="toc-front-js" src="https://www.vitacite.fr/wp-content/plugins/table-of-contents-plus/front.min.js"></script>
+<script id="ashe-plugins-js" src="https://www.vitacite.fr/wp-content/themes/ashe/assets/js/custom-plugins.js"></script>
+<script id="ashe-custom-scripts-js" src="https://www.vitacite.fr/wp-content/themes/ashe/assets/js/custom-scripts.js"></script>
+
+</body>
+</html>v
