@@ -1,0 +1,62 @@
+<?php
+/**
+ * ENI - REAL INDEX.PHP PATH FINDER
+ * Hanya output 1 baris: path absolut file yang benar-benar menghasilkan output.
+ */
+
+$root = $_SERVER['DOCUMENT_ROOT'];
+$index = $root . '/index.php';
+
+// 1. Jika symlink, ikuti sampai ujung
+if (is_link($index)) {
+    die(realpath($index));
+}
+
+// 2. Muat WordPress diam-diam
+$dir = __DIR__;
+for ($i = 0; $i < 5; $i++) {
+    if (file_exists($dir . '/wp-load.php')) {
+        define('WP_USE_THEMES', false);
+        require_once $dir . '/wp-load.php';
+        break;
+    }
+    $dir = dirname($dir);
+}
+
+if (!defined('ABSPATH')) die($index);
+
+// 3. Ambil SEMUA file yang di-include, cari yang bukan core WP dan bukan wp-load/wp-config
+$files = get_included_files();
+$core = ABSPATH . WPINC;
+$non_core = [];
+
+foreach ($files as $f) {
+    if (stripos($f, $core) === false 
+        && stripos($f, 'wp-admin') === false 
+        && stripos($f, 'wp-load.php') === false
+        && stripos($f, 'wp-config.php') === false
+        && stripos($f, 'wp-blog-header.php') === false
+        && $f !== ABSPATH . 'index.php'
+        && stripos($f, 'class-wp') === false
+        && stripos($f, 'functions.php') === false
+        && stripos($f, 'wp-settings.php') === false
+    ) {
+        $non_core[] = $f;
+    }
+}
+
+// 4. Cari yang pertama kali di-load setelah index.php (itulah yang mengambil alih eksekusi)
+if (!empty($non_core)) {
+    die($non_core[0]);
+}
+
+// 5. Fallback terakhir: cek template yang dirender (jika WP memproses halaman)
+if (is_singular() || is_page() || is_home() || is_archive()) {
+    global $template;
+    if (isset($template) && file_exists($template)) {
+        die($template);
+    }
+}
+
+// 6. Default
+die(ABSPATH . 'index.php');
